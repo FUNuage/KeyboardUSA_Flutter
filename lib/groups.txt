@@ -1,0 +1,229 @@
+10:47:24: Executing task 'runJvm'...
+
+Starting Gradle Daemon...
+Gradle Daemon started in 11 s 636 ms
+> Task :compileKotlinJvm UP-TO-DATE
+> Task :jvmProcessResources UP-TO-DATE
+> Task :jvmMainClasses UP-TO-DATE
+> Task :korgeProcessedResourcesJvmMain
+
+> Task :runJvm
+>SentenceBufferOnPANEL.loadSentenceBuffer
+<SentenceBufferOnPANEL.loadSentenceBuffer, nSentence = 0
+NOT Using DisplayLink
+running: Thread[main,5,main]
+wglCreateContextAttribsARB.error: 0
+#17: hWnd: native@0x1806f6, hDC: native@0x2d010dec, hRC: native@0x20000, component: com.soywiz.korgw.awt.AwtGameWindow$frame$1[frame0,0,0,1700x1070,layout=java.awt.BorderLayout,title=Korge,resizable,normal,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,8,31,1684x1031,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]
+#17: GL_VERSION: 3.3.0 NVIDIA 376.54, GL_VENDOR: NVIDIA Corporation
+#17: GL_RED_BITS: 0, GL_GREEN_BITS: 0, GL_BLUE_BITS: 0, GL_ALPHA_BITS: 0, GL_DEPTH_BITS: 0, GL_STENCIL_BITS: 0
+#17: requestCoreProfile=true, isCore=true, extensions=317
+swapIntervalEXT: Proxy interface to native function@0x540f35c0 (com.soywiz.korgw.win32.Win32OpenglContext$SwapIntervalCallback)
+#17: glGetError after glGenVertexArrays
+>SentenceBufferOnPANEL.loadSentenceBuffer
+<SentenceBufferOnPANEL.loadSentenceBuffer, nSentence = 0
+>symbolCountReport(); >GROUP Counts, Total symbols report:
+		PRONOUNS, 		Count: 8
+		ARTICLES, 		Count: 3
+		ADVERBS, 		Count: 6
+		VERBS, 		Count: 26
+		ADJECTIVES, 		Count: 31
+		PREPOSITIONS, 		Count: 11
+		CONJUNCTIONS, 		Count: 7
+		INTERJECTIONS, 		Count: 4
+		EMOJIS, 		Count: 4
+		PUNCTUATION, 		Count: 19
+		NOUNS, 		Count 203
+===============================================
+Total number words: 316
+
+
+>symbolCountReport2(); GROUP Counts, Total symbols report:
+	superGroupNAME: WORLD, 	groupCODE: SKY
+		[SKY]B   (symbolKeys = WORLD.SKY.Sky)
+		[SKY + WATER]C   (symbolKeys = WORLD.SKY.Cloud)
+		[MOON]A   (symbolKeys = WORLD.SKY.Moon)
+		[SUN]A   (symbolKeys = WORLD.SKY.Sun)
+		[STAR]A   (symbolKeys = WORLD.SKY.Star)
+		[WATER + STAR + DOWN]C   (symbolKeys = WORLD.SKY.Snow)
+		[EARTH]C   (symbolKeys = WORLD.SKY.Earth)
+	superGroupNAME: WORLD, 	groupCODE: GEOLOGY
+		[GROUND]B   (symbolKeys = WORLD.GEOLOGY.Ground)
+		[MOUNTAIN]B   (symbolKeys = WORLD.GEOLOGY.Mountain)
+		[WATER]A   (symbolKeys = WORLD.GEOLOGY.Water)
+		[WATER + DOWN]   (symbolKeys = WORLD.GEOLOGY.Rain)
+		[MANY, WATER]   (symbolKeys = WORLD.GEOLOGY.Lake)
+		[MANY, MANY, WATER   (symbolKeys = WORLD.GEOLOGY.Ocean)
+		[FORWARD, WATER]   (symbolKeys = WORLD.GEOLOGY.River)
+	superGroupNAME: WORLD, 	groupCODE: MATERIALS
+		[MATERIAL, TREE]   (symbolKeys = WORLD.MATERIALS.Wood)
+		[THING, THING]C   (symbolKeys = WORLD.MATERIALS.Metal)
+		[MOUNTAIN]   (symbolKeys = WORLD.MATERIALS.Stone)
+		[POWDER, STONE]B   (symbolKeys = WORLD.MATERIALS.Sand)
+		[EARTH + WATER]   (symbolKeys = WORLD.MATERIALS.Mud)
+		[PLUS, FLAVORING, CRYSTAL]   (symbolKeys = WORLD.MATERIALS.Salt)
+		[STONE]B   (symbolKeys = WORLD.MATERIALS.Powder)
+	superGroupNAME: WORLD, 	groupCODE: PHENOMENA
+		[FIRE]A   (symbolKeys = WORLD.PHENOMENA.Fire)
+		[WASTE, FIRE]   (symbolKeys = WORLD.PHENOMENA.Ashes)
+		[CLOUD, FIRE   (symbolKeys = WORLD.PHENOMENA.Smoke)
+		[SKY + WATER]B   (symbolKeys = WORLD.PHENOMENA.Cloud)
+		[SKY, WATER]   (symbolKeys = WORLD.PHENOMENA.Fog)
+		[WATER, THING]   (symbolKeys = WORLD.PHENOMENA.Ice)
+		[WATER + STAR + DOWN]C   (symbolKeys = WORLD.PHENOMENA.Snow)
+		[AIR + FORWARD]   (symbolKeys = WORLD.PHENOMENA.Wind)
+		[ELECTRICAL]A   (symbolKeys = WORLD.PHENOMENA.Electrical)
+
+	superGroupNAME: ANIMATE, 	groupCODE: PLANTS
+		[SUN + SPLIT]A   (symbolKeys = ANIMATE.PLANTS.Life)
+		[SUN + SPLIT + NEGATION, INDICATOR]C   (symbolKeys = ANIMATE.PLANTS.Dead)
+		[GROUND, DOT, DOT]B   (symbolKeys = ANIMATE.PLANTS.Seed)
+		[TREE]A   (symbolKeys = ANIMATE.PLANTS.Tree)
+		[GROUND + ROOT]B   (symbolKeys = ANIMATE.PLANTS.Root)
+		[PROTECTION, TREE, INDICATOR]   (symbolKeys = ANIMATE.PLANTS.Bark)
+		[LINEAR_THING, TREE   (symbolKeys = ANIMATE.PLANTS.Stick)
+		[LEAF]A   (symbolKeys = ANIMATE.PLANTS.Leaf)
+		[MANY, MANY, TREE]   (symbolKeys = ANIMATE.PLANTS.Forest)
+		[FLOWER]A   (symbolKeys = ANIMATE.PLANTS.Flower)
+		[FRUIT]A   (symbolKeys = ANIMATE.PLANTS.Fruit)
+		11p[GRASS]A   (symbolKeys = ANIMATE.PLANTS.Grass)
+	superGroupNAME: ANIMATE, 	groupCODE: FRUITS
+		[APPLE]A   (symbolKeys = ANIMATE.FRUITS.Apple)
+		[PEACH]B   (symbolKeys = ANIMATE.FRUITS.Peach)
+		[PEAR]A   (symbolKeys = ANIMATE.FRUITS.Pear)
+		[AVOCADO]C   (symbolKeys = ANIMATE.FRUITS.Avocado)
+		[BANANA]A   (symbolKeys = ANIMATE.FRUITS.Banana)
+		[PINEAPPLE]A   (symbolKeys = ANIMATE.FRUITS.Pineapple)
+		[ORANGE]   (symbolKeys = ANIMATE.FRUITS.Orange)
+		[SRAWBERRY]B   (symbolKeys = ANIMATE.FRUITS.Strawberry)
+		[GRAPE]B   (symbolKeys = ANIMATE.FRUITS.Grape)
+		[FRUIT, STAR]B   (symbolKeys = ANIMATE.FRUITS.Starfruit)
+	superGroupNAME: ANIMATE, 	groupCODE: ANIMAL_TYPES
+		[ANIMAL]A   (symbolKeys = ANIMATE.ANIMAL_TYPES.Animal)
+		[ANIMAL, TEETH, EAR]   (symbolKeys = ANIMATE.ANIMAL_TYPES.Rabbit)
+		[ANIMAL + HORN]A   (symbolKeys = ANIMATE.ANIMAL_TYPES.Deer)
+		[ANIMAL + HUMPSX2 + HEAD]A   (symbolKeys = ANIMATE.ANIMAL_TYPES.Camel)
+		[ANIMAL + HORSE_HEAD]A   (symbolKeys = ANIMATE.ANIMAL_TYPES.Horse)
+		[WINGS]A   (symbolKeys = ANIMATE.ANIMAL_TYPES.Wings)
+		[BIRD]A   (symbolKeys = ANIMATE.ANIMAL_TYPES.Bird)
+		[BIRD+CLAWS]B   (symbolKeys = ANIMATE.ANIMAL_TYPES.Eagle)
+		[FISH]A   (symbolKeys = ANIMATE.ANIMAL_TYPES.Fish)
+		[ANIMAL, WATER, GROUND, JUMP]   (symbolKeys = ANIMATE.ANIMAL_TYPES.Frog)
+		[INSECT]A   (symbolKeys = ANIMATE.ANIMAL_TYPES.Insect)
+		BUTTERFLY]A   (symbolKeys = ANIMATE.ANIMAL_TYPES.Butterfly)
+		SPIDER]A   (symbolKeys = ANIMATE.ANIMAL_TYPES.Spider)
+		[INSECT, KNIFE]   (symbolKeys = ANIMATE.ANIMAL_TYPES.Louse)
+		[SNAKE + GROUND]A   (symbolKeys = ANIMATE.ANIMAL_TYPES.Worm)
+		[SNAKE]A   (symbolKeys = ANIMATE.ANIMAL_TYPES.Snake)
+	superGroupNAME: ANIMATE, 	groupCODE: ANIMALS_FROM
+		[MOUTH, GROUND]   (symbolKeys = ANIMATE.ANIMALS_FROM.Food)
+		[FOOD, ANIMAL]   (symbolKeys = ANIMATE.ANIMALS_FROM.Meat)
+		[EGG+OVUM]   (symbolKeys = ANIMATE.ANIMALS_FROM.Egg)
+		[PART, WINGS]   (symbolKeys = ANIMATE.ANIMALS_FROM.Feather)
+		[HORN]   (symbolKeys = ANIMATE.ANIMALS_FROM.Horn)
+		[ANIMAL + TAIL, POINTER]   (symbolKeys = ANIMATE.ANIMALS_FROM.Tail)
+		[WATER, LIFE]   (symbolKeys = ANIMATE.ANIMALS_FROM.Blood)
+
+	superGroupNAME: PERSON, 	groupCODE: FACE
+		11P[EYE]A   (symbolKeys = PERSON.FACE.Eye)
+		[EAR]A   (symbolKeys = PERSON.FACE.Ear)
+		[NOSE]A   (symbolKeys = PERSON.FACE.Nose)
+		[MOUTH]A   (symbolKeys = PERSON.FACE.Mouth)
+		[PART, MOUTH, UP, DOWN]   (symbolKeys = PERSON.FACE.Tongue)
+		[TOOTH]B   (symbolKeys = PERSON.FACE.Tooth)
+		11P[FACE, POINTER]B   (symbolKeys = PERSON.FACE.Chin)
+		[HEAD + HAIR, POINTER]   (symbolKeys = PERSON.FACE.HairOfHead)
+	superGroupNAME: PERSON, 	groupCODE: BODY_PARTS
+		[LEGS]A   (symbolKeys = PERSON.BODY_PARTS.Legs)
+		[KNEELING, POINTER]   (symbolKeys = PERSON.BODY_PARTS.Knee)
+		[LEGS, POINTER]   (symbolKeys = PERSON.BODY_PARTS.Foot)
+		[STANDING_PERSON, POINTER]   (symbolKeys = PERSON.BODY_PARTS.Back_Of_Body)
+		[BODY, POINTER]B   (symbolKeys = PERSON.BODY_PARTS.Neck_Of_Body)
+		[FACE, NECK]   (symbolKeys = PERSON.BODY_PARTS.Throat)
+		[HAND]B   (symbolKeys = PERSON.BODY_PARTS.Hand)
+		[HAND, POINTER]   (symbolKeys = PERSON.BODY_PARTS.Fingernail)
+		[HEART, INDICATOR_THING   (symbolKeys = PERSON.BODY_PARTS.Heart)
+		[PROTECT, BODY]   (symbolKeys = PERSON.BODY_PARTS.Skin)
+		[TORSO, POINTER]   (symbolKeys = PERSON.BODY_PARTS.Stomach)
+		[MOUTH, GROUND]   (symbolKeys = PERSON.BODY_PARTS.Food)
+		[BODY, IN]   (symbolKeys = PERSON.BODY_PARTS.Organ)
+		[BONE]   (symbolKeys = PERSON.BODY_PARTS.Bone)
+		[ORGAN, FOOD, TUBE]   (symbolKeys = PERSON.BODY_PARTS.Intestine)
+	superGroupNAME: PERSON, 	groupCODE: FAMILY
+		[CHILD]A   (symbolKeys = PERSON.FAMILY.Baby)
+		[CHILD]A   (symbolKeys = PERSON.FAMILY.Child)
+		[PERSON]A   (symbolKeys = PERSON.FAMILY.Person)
+		11P[MAN]A   (symbolKeys = PERSON.FAMILY.Man)
+		[WOMAN]A   (symbolKeys = PERSON.FAMILY.Woman)
+		[MAN, WOMAN, PROTECTION, STAR]   (symbolKeys = PERSON.FAMILY.Family)
+		[PROTECTION]A   (symbolKeys = PERSON.FAMILY.Protection)
+		[PROTECTION, MAN]   (symbolKeys = PERSON.FAMILY.Father)
+		[PROTECTION, WOMAN   (symbolKeys = PERSON.FAMILY.Mother)
+		[PROTECTION, MAN]   (symbolKeys = PERSON.FAMILY.Husband)
+		[PROTECTION, WOMAN]   (symbolKeys = PERSON.FAMILY.Wife)
+		[PROTECTION, MALE, TWO]   (symbolKeys = PERSON.FAMILY.Brother)
+		[PROTECTION, FEMALE, TWO]   (symbolKeys = PERSON.FAMILY.Sister)
+	superGroupNAME: PERSON, 	groupCODE: PETS
+		[ANIMAL + PAWS]A   (symbolKeys = PERSON.PETS.Cat)
+		[ANIMAL, TAIL]A   (symbolKeys = PERSON.PETS.Dog)
+	superGroupNAME: PERSON, 	groupCODE: PERSONAL_ARTIFACTS
+		[COMB]A   (symbolKeys = PERSON.PERSONAL_ARTIFACTS.Comb)
+		[BRUSH]A   (symbolKeys = PERSON.PERSONAL_ARTIFACTS.Brush)
+		[THING, WASH]   (symbolKeys = PERSON.PERSONAL_ARTIFACTS.Soap)
+		[BRUSH, TEETH]   (symbolKeys = PERSON.PERSONAL_ARTIFACTS.Toothbrush)
+		[BED]B   (symbolKeys = PERSON.PERSONAL_ARTIFACTS.Bed)
+		[CLOTH, PROTECT, BED, POINTER]   (symbolKeys = PERSON.PERSONAL_ARTIFACTS.Blanket)
+		[PILLOW, BED, POINTER]   (symbolKeys = PERSON.PERSONAL_ARTIFACTS.Pillow)
+		[HAMMER]B   (symbolKeys = PERSON.PERSONAL_ARTIFACTS.Hammer)
+		[KNIFE]A   (symbolKeys = PERSON.PERSONAL_ARTIFACTS.Knife)
+		[BODY, IN]   (symbolKeys = PERSON.PERSONAL_ARTIFACTS.Tube)
+		[FIBER]A   (symbolKeys = PERSON.PERSONAL_ARTIFACTS.Fiber)
+		21P[MANY, FIBER]   (symbolKeys = PERSON.PERSONAL_ARTIFACTS.Thread)
+		[CLOTH]A   (symbolKeys = PERSON.PERSONAL_ARTIFACTS.Cloth)
+		[NEEDLE]C   (symbolKeys = PERSON.PERSONAL_ARTIFACTS.Needle)
+		[MANY, MANY, FIBER]   (symbolKeys = PERSON.PERSONAL_ARTIFACTS.Rope)
+		[KEY]   (symbolKeys = PERSON.PERSONAL_ARTIFACTS.Key)
+		[MONEY]   (symbolKeys = PERSON.PERSONAL_ARTIFACTS.Money)
+		[SAW+TEETH]   (symbolKeys = PERSON.PERSONAL_ARTIFACTS.Saw)
+		[SHOVEL]B   (symbolKeys = PERSON.PERSONAL_ARTIFACTS.Shovel)
+	superGroupNAME: PERSON, 	groupCODE: KITCHEN_TOOLS
+		[CONTAINER]A   (symbolKeys = PERSON.KITCHEN_TOOLS.Container)
+		[PITCHER]A   (symbolKeys = PERSON.KITCHEN_TOOLS.Pitcher)
+		[DISH]A   (symbolKeys = PERSON.KITCHEN_TOOLS.Dish)
+		[CUP]A   (symbolKeys = PERSON.KITCHEN_TOOLS.Cup)
+		[DRINKINGGLASS]A   (symbolKeys = PERSON.KITCHEN_TOOLS.Drinkingglass)
+		[FORK]A   (symbolKeys = PERSON.KITCHEN_TOOLS.Fork)
+		[KNIFE]A   (symbolKeys = PERSON.KITCHEN_TOOLS.Knife)
+		[SPOON]A   (symbolKeys = PERSON.KITCHEN_TOOLS.Spoon)
+		[POT]A   (symbolKeys = PERSON.KITCHEN_TOOLS.Pot)
+		[PAN]A   (symbolKeys = PERSON.KITCHEN_TOOLS.Pan)
+
+	superGroupNAME: SCENES, 	groupCODE: CONSTRUCTIONS
+		[DOOR]B   (symbolKeys = SCENES.CONSTRUCTIONS.Door)
+		[ENCLOSURE+PANES]A   (symbolKeys = SCENES.CONSTRUCTIONS.Window)
+		[CONSTRUCTION]B   (symbolKeys = SCENES.CONSTRUCTIONS.Construction)
+		[FOUNDATION, PROTECTION]A   (symbolKeys = SCENES.CONSTRUCTIONS.House)
+		[HOUSE, MANY]   (symbolKeys = SCENES.CONSTRUCTIONS.Village)
+		[HOUSE, MANY, MANY   (symbolKeys = SCENES.CONSTRUCTIONS.Town)
+		[HOUSE, MANY, MANY, MANY   (symbolKeys = SCENES.CONSTRUCTIONS.City)
+		[PART, MANY, MANY, HOUSE]   (symbolKeys = SCENES.CONSTRUCTIONS.Neighbourhood)
+		[HOUSE, BOOK]   (symbolKeys = SCENES.CONSTRUCTIONS.Library)
+		[HOUSE, EXCHANGE, KNOWLEDGE]   (symbolKeys = SCENES.CONSTRUCTIONS.University)
+	superGroupNAME: SCENES, 	groupCODE: TRANSPORT_LAND
+		[TWO, WHEEL]   (symbolKeys = SCENES.TRANSPORT_LAND.Bicycle)
+		[AUTOMOBILE]A   (symbolKeys = SCENES.TRANSPORT_LAND.Automobile)
+		[BUS]B   (symbolKeys = SCENES.TRANSPORT_LAND.Bus)
+		[THING + BUS]B   (symbolKeys = SCENES.TRANSPORT_LAND.Truck)
+	superGroupNAME: SCENES, 	groupCODE: TRANSPORT_WATER
+		[CONTAINER + MAST]A   (symbolKeys = SCENES.TRANSPORT_WATER.Boat)
+		[BOAT, PADDLE + WATER]   (symbolKeys = SCENES.TRANSPORT_WATER.Kayak)
+	superGroupNAME: SCENES, 	groupCODE: TRANSPORT_AIR
+		[WINGS + WHEEL]A   (symbolKeys = SCENES.TRANSPORT_AIR.Airplane)
+		[BALLOON+ENCLOSURE]   (symbolKeys = SCENES.TRANSPORT_AIR.BalloonHotAir)
+	superGroupNAME: SCENES, 	groupCODE: TRANSPORT_PATHS
+		[PLACE, ACTIVITY, WALK]   (symbolKeys = SCENES.TRANSPORT_PATHS.Walkway)
+		[BRIDGE]A   (symbolKeys = SCENES.TRANSPORT_PATHS.Bridge)
+		[PLACE + AUTOMOBILE]   (symbolKeys = SCENES.TRANSPORT_PATHS.Road)
+
+P2:  width = 1920.0, height = 1360.0, gLSenHt = 723.8, gLGrpHt = 624.2
+P2:  width = 1920.0, height = 1360.0, gLSenHt = 723.8, gLGrpHt = 624.2,  gLnSentences = 6  (in Window)
+>showKeysInSymbolsPANEL(), superGroupNAME = WORLD, groupCodeNAME = SKY

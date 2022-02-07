@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'top_left_panel.dart';
+import 'top_right_panel.dart';
+import 'bottom_panel.dart';
 
 void main() {
   runApp(const MyApp());
@@ -49,14 +51,10 @@ class _MyHomePageState extends State<MyHomePage> {
             Row(
               children: <Widget>[
                 TopLeftPanel(),
+                TopRightPanel(),
               ],
             ),
-            Container(
-              width: MediaQuery.of(context).size.width,
-              height: MediaQuery.of(context).size.height / 2,
-              decoration: BoxDecoration(
-                  border: Border.all(color: Colors.black), color: Colors.grey),
-            ),
+            BottomPanel()
           ],
         ),
       ),

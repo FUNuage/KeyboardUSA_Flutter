@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-class World extends StatelessWidget {
-  Color mainColor = const Color(0xff59a091);
-  Color secondaryColor = const Color(0xffefcbcc);
+class Concepts extends StatelessWidget {
+  Color mainColor = const Color(0xff8a546c);
+  Color secondaryColor = const Color(0xff91cdda);
 
   @override
   Widget build(BuildContext context) {
@@ -11,7 +11,7 @@ class World extends StatelessWidget {
           padding: EdgeInsets.only(top: 5),
           child: OutlinedButton(
             style: OutlinedButton.styleFrom(
-              primary: Colors.black,
+              primary: secondaryColor,
               backgroundColor: mainColor,
               minimumSize: Size(80, 65),
               side: BorderSide(
@@ -27,7 +27,7 @@ class World extends StatelessWidget {
           padding: EdgeInsets.only(top: 5),
           child: OutlinedButton(
             style: OutlinedButton.styleFrom(
-              primary: Colors.black,
+              primary: secondaryColor,
               backgroundColor: mainColor,
               minimumSize: Size(80, 65),
               side: BorderSide(
@@ -37,13 +37,13 @@ class World extends StatelessWidget {
               ),
             ),
             onPressed: () {},
-            child: const Text('1'),
+            child: const Text('2'),
           )),
       Padding(
           padding: EdgeInsets.only(top: 5),
           child: OutlinedButton(
             style: OutlinedButton.styleFrom(
-              primary: Colors.black,
+              primary: secondaryColor,
               backgroundColor: mainColor,
               minimumSize: Size(80, 65),
               side: BorderSide(
@@ -53,13 +53,13 @@ class World extends StatelessWidget {
               ),
             ),
             onPressed: () {},
-            child: const Text('1'),
+            child: const Text('3'),
           )),
       Padding(
           padding: EdgeInsets.only(top: 5),
           child: OutlinedButton(
             style: OutlinedButton.styleFrom(
-              primary: Colors.black,
+              primary: secondaryColor,
               backgroundColor: mainColor,
               minimumSize: Size(80, 65),
               side: BorderSide(
@@ -69,7 +69,23 @@ class World extends StatelessWidget {
               ),
             ),
             onPressed: () {},
-            child: const Text('1'),
+            child: const Text('4'),
+          )),
+      Padding(
+          padding: EdgeInsets.only(top: 5),
+          child: OutlinedButton(
+            style: OutlinedButton.styleFrom(
+              primary: secondaryColor,
+              backgroundColor: mainColor,
+              minimumSize: Size(80, 65),
+              side: BorderSide(
+                width: 4.0,
+                color: secondaryColor,
+                style: BorderStyle.solid,
+              ),
+            ),
+            onPressed: () {},
+            child: const Text('5'),
           )),
     ]);
   }

@@ -15,25 +15,31 @@ class TopLeftPanel extends StatelessWidget {
         width: MediaQuery.of(context).size.width / 2,
         height: MediaQuery.of(context).size.height / 2 + 50,
         decoration: BoxDecoration(
-            border: Border.all(color: Colors.white), color: backgroundColor),
+            borderRadius: BorderRadius.all(
+              Radius.circular(10),
+            ), //BorderRadius.all,
+            border: Border.all(
+              color: Colors.white,
+              width: 2.0,
+            ),
+            color: backgroundColor),
         child: Column(children: <Widget>[
           Language(),
-          Align(
-            alignment: Alignment.topCenter,
-            child: Row(
-              children: <Widget>[
-                World(),
-                SizedBox(width: 50),
-                Animate(),
-                SizedBox(width: 50),
-                Person(),
-                SizedBox(width: 50),
-                Scenes(),
-                SizedBox(width: 50),
-                Concepts()
-              ],
-            ),
-          )
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              World(),
+              SizedBox(width: 50),
+              Animate(),
+              SizedBox(width: 50),
+              Person(),
+              SizedBox(width: 50),
+              Scenes(),
+              SizedBox(width: 50),
+              Concepts()
+            ],
+          ),
         ]));
   }
 }

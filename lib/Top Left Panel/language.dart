@@ -7,6 +7,7 @@ class Language extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
         Padding(
             padding: EdgeInsets.only(right: 5),

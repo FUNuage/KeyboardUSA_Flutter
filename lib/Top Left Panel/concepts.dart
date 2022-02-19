@@ -1,8 +1,39 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class Concepts extends StatelessWidget {
   Color mainColor = const Color(0xff8a546c);
   Color secondaryColor = const Color(0xff91cdda);
+
+  final Widget shapesSymbol = SvgPicture.asset(
+    'assets/bliss_symbols/Concepts/shape,form.svg',
+    width: 50,
+    height: 50,
+    color: const Color(0xffefcbcc),
+  );
+
+  final Widget timeSymbol = SvgPicture.asset(
+    'assets/bliss_symbols/Concepts/time.svg',
+    width: 50,
+    height: 50,
+    color: const Color(0xffefcbcc),
+  );
+
+  final Widget colorsGroupSymbol = SvgPicture.asset(
+    'assets/bliss_symbols/Concepts/colour.svg',
+    width: 50,
+    height: 50,
+    color: const Color(0xffefcbcc),
+  );
+
+  final Widget directionsSymbol = SvgPicture.asset(
+    'assets/bliss_symbols/Concepts/direction,cardinal_point.svg',
+    width: 50,
+    height: 50,
+    color: const Color(0xffefcbcc),
+  );
+
+  // enumeration
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +52,7 @@ class Concepts extends StatelessWidget {
               ),
             ),
             onPressed: () {},
-            child: const Text('1'),
+            child: timeSymbol,
           )),
       Padding(
           padding: EdgeInsets.only(top: 5),
@@ -53,7 +84,7 @@ class Concepts extends StatelessWidget {
               ),
             ),
             onPressed: () {},
-            child: const Text('3'),
+            child: colorsGroupSymbol,
           )),
       Padding(
           padding: EdgeInsets.only(top: 5),
@@ -69,7 +100,7 @@ class Concepts extends StatelessWidget {
               ),
             ),
             onPressed: () {},
-            child: const Text('4'),
+            child: directionsSymbol,
           )),
       Padding(
           padding: EdgeInsets.only(top: 5),
@@ -85,7 +116,7 @@ class Concepts extends StatelessWidget {
               ),
             ),
             onPressed: () {},
-            child: const Text('5'),
+            child: shapesSymbol,
           )),
     ]);
   }

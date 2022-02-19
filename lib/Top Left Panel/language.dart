@@ -1,8 +1,64 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class Language extends StatelessWidget {
-  Color mainColor = const Color(0xff467f51);
-  Color secondaryColor = const Color(0xffa9cfb4);
+  // emojis, punctuation
+
+  final Widget pronounsSymbol = SvgPicture.asset(
+    'assets/bliss_symbols/Language/pronoun.svg',
+    width: 50,
+    height: 50,
+    color: Colors.black,
+  );
+
+  final Widget articlesSymbol = SvgPicture.asset(
+    'assets/bliss_symbols/Language/article.svg',
+    width: 50,
+    height: 50,
+    color: Colors.black,
+  );
+
+  final Widget adverbsSymbol = SvgPicture.asset(
+    'assets/bliss_symbols/Language/adverb.svg',
+    width: 50,
+    height: 50,
+    color: Colors.black,
+  );
+
+  final Widget verbsSymbol = SvgPicture.asset(
+    'assets/bliss_symbols/Language/verb.svg',
+    width: 50,
+    height: 50,
+    color: Colors.black,
+  );
+
+  final Widget adjectivesSymbol = SvgPicture.asset(
+    'assets/bliss_symbols/Language/adjective.svg',
+    width: 50,
+    height: 50,
+    color: Colors.black,
+  );
+
+  final Widget prepositionsSymbol = SvgPicture.asset(
+    'assets/bliss_symbols/Language/preposition.svg',
+    width: 50,
+    height: 50,
+    color: Colors.black,
+  );
+
+  final Widget conjunctionsSymbol = SvgPicture.asset(
+    'assets/bliss_symbols/Language/conjunction.svg',
+    width: 50,
+    height: 50,
+    color: Colors.black,
+  );
+
+  final Widget interjectionsSymbol = SvgPicture.asset(
+    'assets/bliss_symbols/Language/interjection.svg',
+    width: 50,
+    height: 50,
+    color: Colors.black,
+  );
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +74,7 @@ class Language extends StatelessWidget {
                 minimumSize: Size(80, 65),
               ),
               onPressed: () {},
-              child: const Text('1'),
+              child: pronounsSymbol,
             )),
         Padding(
             padding: EdgeInsets.only(right: 5),
@@ -29,7 +85,7 @@ class Language extends StatelessWidget {
                 minimumSize: Size(80, 65),
               ),
               onPressed: () {},
-              child: const Text('1'),
+              child: articlesSymbol,
             )),
         Padding(
             padding: EdgeInsets.only(right: 5),
@@ -40,7 +96,7 @@ class Language extends StatelessWidget {
                 minimumSize: Size(80, 65),
               ),
               onPressed: () {},
-              child: const Text('1'),
+              child: adverbsSymbol,
             )),
         Padding(
             padding: EdgeInsets.only(right: 5),
@@ -51,7 +107,7 @@ class Language extends StatelessWidget {
                 minimumSize: Size(80, 65),
               ),
               onPressed: () {},
-              child: const Text('1'),
+              child: verbsSymbol,
             )),
         Padding(
             padding: EdgeInsets.only(right: 5),
@@ -62,7 +118,7 @@ class Language extends StatelessWidget {
                 minimumSize: Size(80, 65),
               ),
               onPressed: () {},
-              child: const Text('1'),
+              child: adjectivesSymbol,
             )),
         Padding(
             padding: EdgeInsets.only(right: 5),
@@ -73,7 +129,7 @@ class Language extends StatelessWidget {
                 minimumSize: Size(80, 65),
               ),
               onPressed: () {},
-              child: const Text('1'),
+              child: prepositionsSymbol,
             )),
         Padding(
             padding: EdgeInsets.only(right: 5),
@@ -84,7 +140,7 @@ class Language extends StatelessWidget {
                 minimumSize: Size(80, 65),
               ),
               onPressed: () {},
-              child: const Text('1'),
+              child: conjunctionsSymbol,
             )),
         Padding(
             padding: EdgeInsets.only(right: 5),
@@ -95,7 +151,7 @@ class Language extends StatelessWidget {
                 minimumSize: Size(80, 65),
               ),
               onPressed: () {},
-              child: const Text('1'),
+              child: interjectionsSymbol,
             )),
         Padding(
             padding: EdgeInsets.only(right: 5),
@@ -106,7 +162,7 @@ class Language extends StatelessWidget {
                 minimumSize: Size(80, 65),
               ),
               onPressed: () {},
-              child: const Text('1'),
+              child: const Text('☺'),
             )),
         Padding(
             padding: EdgeInsets.only(right: 5),
@@ -117,7 +173,7 @@ class Language extends StatelessWidget {
                 minimumSize: Size(80, 65),
               ),
               onPressed: () {},
-              child: const Text('1'),
+              child: const Text(','),
             )),
       ],
     );

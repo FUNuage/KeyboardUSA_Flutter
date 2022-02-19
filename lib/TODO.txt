@@ -1,0 +1,7 @@
+
+
+next
+- add symbols for all groups, even if placeholders
+- get those to bring up the words
+- improve styling of symbols and buttons
+- button class, DRY

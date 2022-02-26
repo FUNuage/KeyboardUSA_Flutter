@@ -23,7 +23,7 @@ class TopRightPanel extends StatelessWidget {
         color: backgroundColor,
       ),
       child: Visibility(
-          visible: MyHomePageState.skyGroup,
+          visible: HomePageState.skyGroup,
           child: Padding(
             padding: EdgeInsets.all(10),
             child: SkyGroup(),

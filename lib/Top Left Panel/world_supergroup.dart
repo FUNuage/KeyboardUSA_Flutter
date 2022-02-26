@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-import '../main.dart';
-import '../Top Right Panel/sky_group.dart';
-import 'top_left_panel.dart';
-
 class WorldSupergroup extends StatelessWidget {
   Color mainColor = const Color(0xff59a091);
   Color secondaryColor = const Color(0xffefcbcc);
@@ -37,8 +33,8 @@ class WorldSupergroup extends StatelessWidget {
     color: const Color(0xffefcbcc),
   );
 
-  final VoidCallback ToggleBlocks;
-  WorldSupergroup(this.ToggleBlocks);
+  final VoidCallback toggleSkyGroup;
+  WorldSupergroup(this.toggleSkyGroup);
 
   @override
   Widget build(BuildContext context) {
@@ -56,7 +52,7 @@ class WorldSupergroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () => ToggleBlocks(),
+            onPressed: () => toggleSkyGroup(),
             child: skySymbol,
           )),
       Padding(

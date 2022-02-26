@@ -1,18 +1,15 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
 
 import 'Top Left Panel/top_left_panel.dart';
 import 'Top Right Panel/top_right_panel.dart';
-import 'Top Right Panel/sky_group.dart';
 import 'bottom_panel.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const App());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+class App extends StatelessWidget {
+  const App({Key? key}) : super(key: key);
 
   // This widget is the root of your application.
   @override
@@ -22,24 +19,24 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Bliss Keyboard'),
+      home: const HomePage(title: 'Bliss Keyboard'),
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({Key? key, required this.title}) : super(key: key);
+class HomePage extends StatefulWidget {
+  const HomePage({Key? key, required this.title}) : super(key: key);
 
   final String title;
 
   @override
-  State<MyHomePage> createState() => MyHomePageState();
+  State<HomePage> createState() => HomePageState();
 }
 
-class MyHomePageState extends State<MyHomePage> {
+class HomePageState extends State<HomePage> {
   static bool skyGroup = false;
 
-  void ToggleBlocks() {
+  void toggleSkyGroup() {
     setState(() {
       skyGroup = !skyGroup;
     });
@@ -53,7 +50,7 @@ class MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Row(children: <Widget>[
-              TopLeftPanel(ToggleBlocks),
+              TopLeftPanel(toggleSkyGroup),
               TopRightPanel(),
             ]),
             // ElevatedButton(

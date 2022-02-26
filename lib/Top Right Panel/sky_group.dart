@@ -1,14 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-import '../main.dart';
-
-class SkyGroup extends StatefulWidget {
-  @override
-  SkyGroupState createState() => SkyGroupState();
-}
-
-class SkyGroupState extends State<SkyGroup> {
+class SkyGroup extends StatelessWidget {
   Color mainColor = const Color(0xff59a091);
   Color secondaryColor = Color(0xffefcbcc);
 
@@ -51,25 +44,22 @@ class SkyGroupState extends State<SkyGroup> {
   Widget build(BuildContext context) {
     return Column(
       children: <Widget>[
-        Visibility(
-          child: Padding(
-            padding: EdgeInsets.only(top: 5),
-            child: OutlinedButton(
-              style: OutlinedButton.styleFrom(
-                fixedSize: Size(100, 65),
-                primary: secondaryColor,
-                backgroundColor: mainColor,
-                side: BorderSide(
-                  width: 4.0,
-                  color: secondaryColor,
-                  style: BorderStyle.solid,
-                ),
+        Padding(
+          padding: EdgeInsets.only(top: 5),
+          child: OutlinedButton(
+            style: OutlinedButton.styleFrom(
+              fixedSize: Size(100, 65),
+              primary: secondaryColor,
+              backgroundColor: mainColor,
+              side: BorderSide(
+                width: 4.0,
+                color: secondaryColor,
+                style: BorderStyle.solid,
               ),
-              onPressed: () {},
-              child: skySymbol,
             ),
+            onPressed: () {},
+            child: skySymbol,
           ),
-          visible: MyHomePageState.skyGroup,
         ),
         Padding(
           padding: EdgeInsets.only(top: 5),

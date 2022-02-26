@@ -6,13 +6,11 @@ import 'person_supergroup.dart';
 import 'scenes_supergroup.dart';
 import 'concepts_supergroup.dart';
 
-import '../main.dart';
-
 class TopLeftPanel extends StatelessWidget {
   Color backgroundColor = Color(0xff111111);
 
-  final VoidCallback ToggleBlocks;
-  TopLeftPanel(this.ToggleBlocks);
+  final VoidCallback toggleSkyGroup;
+  TopLeftPanel(this.toggleSkyGroup);
 
   @override
   Widget build(BuildContext context) {
@@ -34,7 +32,7 @@ class TopLeftPanel extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              WorldSupergroup(ToggleBlocks),
+              WorldSupergroup(toggleSkyGroup),
               SizedBox(width: 50),
               AnimateSupergroup(),
               SizedBox(width: 50),

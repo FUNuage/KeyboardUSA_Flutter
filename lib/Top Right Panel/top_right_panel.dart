@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../main.dart';
 import 'sky_group.dart';
-import 'animate_group.dart';
+import 'geology_group.dart';
 
 class TopRightPanel extends StatelessWidget {
   Color backgroundColor = Color(0xff111111);
@@ -31,10 +31,10 @@ class TopRightPanel extends StatelessWidget {
                 child: SkyGroup(),
               )),
           Visibility(
-              visible: HomePageState.animateGroup,
+              visible: HomePageState.geologyGroup,
               child: Padding(
                 padding: EdgeInsets.all(10),
-                child: AnimateGroup(),
+                child: GeologyGroup(),
               )),
         ]));
   }

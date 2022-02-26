@@ -26,6 +26,20 @@ class SkyGroup extends StatelessWidget {
     color: const Color(0xffefcbcc),
   );
 
+  final Widget sunSymbol = SvgPicture.asset(
+    'assets/bliss_symbols/World/SkyGroup/sun.svg',
+    width: 50,
+    height: 50,
+    color: const Color(0xffefcbcc),
+  );
+
+  final Widget starSymbol = SvgPicture.asset(
+    'assets/bliss_symbols/World/SkyGroup/star.svg',
+    width: 50,
+    height: 50,
+    color: const Color(0xffefcbcc),
+  );
+
   final Widget snowSymbol = SvgPicture.asset(
     'assets/bliss_symbols/World/SkyGroup/snow.svg',
     width: 50,
@@ -93,6 +107,40 @@ class SkyGroup extends StatelessWidget {
             ),
             onPressed: () {},
             child: moonSymbol,
+          ),
+        ),
+        Padding(
+          padding: EdgeInsets.only(top: 5),
+          child: OutlinedButton(
+            style: OutlinedButton.styleFrom(
+              fixedSize: Size(100, 65),
+              primary: secondaryColor,
+              backgroundColor: mainColor,
+              side: BorderSide(
+                width: 4.0,
+                color: secondaryColor,
+                style: BorderStyle.solid,
+              ),
+            ),
+            onPressed: () {},
+            child: sunSymbol,
+          ),
+        ),
+        Padding(
+          padding: EdgeInsets.only(top: 5),
+          child: OutlinedButton(
+            style: OutlinedButton.styleFrom(
+              fixedSize: Size(100, 65),
+              primary: secondaryColor,
+              backgroundColor: mainColor,
+              side: BorderSide(
+                width: 4.0,
+                color: secondaryColor,
+                style: BorderStyle.solid,
+              ),
+            ),
+            onPressed: () {},
+            child: starSymbol,
           ),
         ),
         Padding(

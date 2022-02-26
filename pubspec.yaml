@@ -66,7 +66,9 @@ flutter:
     - assets/bliss_symbols/Person/
     - assets/bliss_symbols/Scenes/
     - assets/bliss_symbols/World/
-  #   - images/a_dot_ham.jpeg
+    - assets/bliss_symbols/World/SkyGroup/
+    - assets/bliss_symbols/World/GeologyGroup/
+    
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

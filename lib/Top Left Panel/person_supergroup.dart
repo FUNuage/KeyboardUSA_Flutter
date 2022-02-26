@@ -7,43 +7,37 @@ class PersonSupergroup extends StatelessWidget {
 
   final Widget bodyPartSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Person/body,trunk.svg',
-    width: 50,
-    height: 50,
+    width: 100,
     color: const Color(0xffefcbcc),
   );
 
   final Widget faceSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Person/face.svg',
-    width: 50,
-    height: 50,
+    width: 100,
     color: const Color(0xffefcbcc),
   );
 
   final Widget familySymbol = SvgPicture.asset(
     'assets/bliss_symbols/Person/family,couple.svg',
-    width: 50,
-    height: 50,
+    width: 100,
     color: const Color(0xffefcbcc),
   );
 
   final Widget kitchenToolsSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Person/kitchen_tool,utensil.svg',
-    width: 50,
-    height: 50,
+    width: 100,
     color: const Color(0xffefcbcc),
   );
 
   final Widget petsSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Person/pet.svg',
-    width: 50,
-    height: 50,
+    width: 100,
     color: const Color(0xffefcbcc),
   );
 
   final Widget personalArtifactsSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Person/man-made_item,artefact,artifact,product.svg',
-    width: 50,
-    height: 50,
+    width: 100,
     color: const Color(0xffefcbcc),
   );
 
@@ -57,7 +51,10 @@ class PersonSupergroup extends StatelessWidget {
             style: OutlinedButton.styleFrom(
               primary: secondaryColor,
               backgroundColor: mainColor,
-              minimumSize: Size(80, 65),
+              fixedSize: Size(80, 65),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0),
+              ),
               side: BorderSide(
                 width: 4.0,
                 color: secondaryColor,
@@ -73,7 +70,10 @@ class PersonSupergroup extends StatelessWidget {
             style: OutlinedButton.styleFrom(
               primary: secondaryColor,
               backgroundColor: mainColor,
-              minimumSize: Size(80, 65),
+              fixedSize: Size(80, 65),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0),
+              ),
               side: BorderSide(
                 width: 4.0,
                 color: secondaryColor,
@@ -89,7 +89,10 @@ class PersonSupergroup extends StatelessWidget {
             style: OutlinedButton.styleFrom(
               primary: secondaryColor,
               backgroundColor: mainColor,
-              minimumSize: Size(80, 65),
+              fixedSize: Size(80, 65),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0),
+              ),
               side: BorderSide(
                 width: 4.0,
                 color: secondaryColor,
@@ -105,7 +108,10 @@ class PersonSupergroup extends StatelessWidget {
             style: OutlinedButton.styleFrom(
               primary: secondaryColor,
               backgroundColor: mainColor,
-              minimumSize: Size(80, 65),
+              fixedSize: Size(80, 65),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0),
+              ),
               side: BorderSide(
                 width: 4.0,
                 color: secondaryColor,
@@ -121,7 +127,10 @@ class PersonSupergroup extends StatelessWidget {
             style: OutlinedButton.styleFrom(
               primary: secondaryColor,
               backgroundColor: mainColor,
-              minimumSize: Size(80, 65),
+              fixedSize: Size(80, 65),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0),
+              ),
               side: BorderSide(
                 width: 4.0,
                 color: secondaryColor,
@@ -137,7 +146,10 @@ class PersonSupergroup extends StatelessWidget {
             style: OutlinedButton.styleFrom(
               primary: secondaryColor,
               backgroundColor: mainColor,
-              minimumSize: Size(80, 65),
+              fixedSize: Size(80, 65),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0),
+              ),
               side: BorderSide(
                 width: 4.0,
                 color: secondaryColor,

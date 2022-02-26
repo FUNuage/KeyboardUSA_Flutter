@@ -7,15 +7,13 @@ class AnimateSupergroup extends StatelessWidget {
 
   final Widget plantsSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Animate/plant.svg',
-    width: 50,
-    height: 50,
+    width: 100,
     color: const Color(0xffefcbcc),
   );
 
   final Widget fruitsSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Animate/fruit.svg',
-    width: 50,
-    height: 50,
+    width: 100,
     color: const Color(0xffefcbcc),
   );
 
@@ -30,7 +28,10 @@ class AnimateSupergroup extends StatelessWidget {
             style: OutlinedButton.styleFrom(
               primary: secondaryColor,
               backgroundColor: mainColor,
-              minimumSize: Size(80, 65),
+              fixedSize: Size(80, 65),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0),
+              ),
               side: BorderSide(
                 width: 4.0,
                 color: secondaryColor,
@@ -46,7 +47,10 @@ class AnimateSupergroup extends StatelessWidget {
             style: OutlinedButton.styleFrom(
               primary: secondaryColor,
               backgroundColor: mainColor,
-              minimumSize: Size(80, 65),
+              fixedSize: Size(80, 65),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0),
+              ),
               side: BorderSide(
                 width: 4.0,
                 color: secondaryColor,
@@ -62,7 +66,10 @@ class AnimateSupergroup extends StatelessWidget {
             style: OutlinedButton.styleFrom(
               primary: secondaryColor,
               backgroundColor: mainColor,
-              minimumSize: Size(80, 65),
+              fixedSize: Size(80, 65),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0),
+              ),
               side: BorderSide(
                 width: 4.0,
                 color: secondaryColor,
@@ -78,7 +85,10 @@ class AnimateSupergroup extends StatelessWidget {
             style: OutlinedButton.styleFrom(
               primary: secondaryColor,
               backgroundColor: mainColor,
-              minimumSize: Size(80, 65),
+              fixedSize: Size(80, 65),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0),
+              ),
               side: BorderSide(
                 width: 4.0,
                 color: secondaryColor,

@@ -7,35 +7,29 @@ class WorldSupergroup extends StatelessWidget {
 
   final Widget skySymbol = SvgPicture.asset(
     'assets/bliss_symbols/world/sky.svg',
-    width: 50,
-    height: 50,
+    width: 100,
     color: const Color(0xffefcbcc),
   );
 
   final Widget geologySymbol = SvgPicture.asset(
     'assets/bliss_symbols/world/stone,rock.svg',
-    width: 50,
-    height: 50,
+    width: 100,
     color: const Color(0xffefcbcc),
   );
 
   final Widget materialsSymbol = SvgPicture.asset(
     'assets/bliss_symbols/world/material,raw_material,stuff.svg',
-    width: 50,
-    height: 50,
+    width: 100,
     color: const Color(0xffefcbcc),
   );
 
   final Widget phenomenaSymbol = SvgPicture.asset(
     'assets/bliss_symbols/world/wind.svg',
-    width: 50,
-    height: 50,
     color: const Color(0xffefcbcc),
+    width: 100,
   );
 
   final VoidCallback toggleSkyGroup;
-  //WorldSupergroup(this.toggleSkyGroup);
-
   final VoidCallback toggleAnimateGroup;
   WorldSupergroup(this.toggleSkyGroup, this.toggleAnimateGroup);
 
@@ -48,7 +42,10 @@ class WorldSupergroup extends StatelessWidget {
             style: OutlinedButton.styleFrom(
               primary: Colors.black,
               backgroundColor: mainColor,
-              minimumSize: Size(80, 65),
+              fixedSize: Size(80, 65),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0),
+              ),
               side: BorderSide(
                 width: 4.0,
                 color: secondaryColor,
@@ -64,7 +61,10 @@ class WorldSupergroup extends StatelessWidget {
             style: OutlinedButton.styleFrom(
               primary: Colors.black,
               backgroundColor: mainColor,
-              minimumSize: Size(80, 65),
+              fixedSize: Size(80, 65),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0),
+              ),
               side: BorderSide(
                 width: 4.0,
                 color: secondaryColor,
@@ -80,7 +80,10 @@ class WorldSupergroup extends StatelessWidget {
             style: OutlinedButton.styleFrom(
               primary: Colors.black,
               backgroundColor: mainColor,
-              minimumSize: Size(80, 65),
+              fixedSize: Size(80, 65),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0),
+              ),
               side: BorderSide(
                 width: 4.0,
                 color: secondaryColor,
@@ -96,7 +99,10 @@ class WorldSupergroup extends StatelessWidget {
             style: OutlinedButton.styleFrom(
               primary: Colors.black,
               backgroundColor: mainColor,
-              minimumSize: Size(80, 65),
+              fixedSize: Size(80, 65),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0),
+              ),
               side: BorderSide(
                 width: 4.0,
                 color: secondaryColor,

@@ -7,55 +7,48 @@ class LanguageSupergroup extends StatelessWidget {
   final Widget pronounsSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/pronoun.svg',
     color: Colors.black,
-    width: 80,
+    width: 100,
   );
 
   final Widget articlesSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/article.svg',
-    width: 50,
-    height: 50,
+    width: 100,
     color: Colors.black,
   );
 
   final Widget adverbsSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/adverb.svg',
-    width: 50,
-    height: 50,
+    width: 100,
     color: Colors.black,
   );
 
   final Widget verbsSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/verb.svg',
-    width: 50,
-    height: 50,
+    width: 100,
     color: Colors.black,
   );
 
   final Widget adjectivesSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/adjective.svg',
-    width: 50,
-    height: 50,
+    width: 100,
     color: Colors.black,
   );
 
   final Widget prepositionsSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/preposition.svg',
-    width: 50,
-    height: 50,
+    width: 100,
     color: Colors.black,
   );
 
   final Widget conjunctionsSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/conjunction.svg',
-    width: 50,
-    height: 50,
+    width: 100,
     color: Colors.black,
   );
 
   final Widget interjectionsSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/interjection.svg',
-    width: 50,
-    height: 50,
+    width: 100,
     color: Colors.black,
   );
 
@@ -71,6 +64,9 @@ class LanguageSupergroup extends StatelessWidget {
                 primary: Colors.black,
                 backgroundColor: Color(0xff714c84),
                 fixedSize: Size(80, 65),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10.0),
+                ),
               ),
               onPressed: () {},
               child: pronounsSymbol,
@@ -81,7 +77,10 @@ class LanguageSupergroup extends StatelessWidget {
               style: OutlinedButton.styleFrom(
                 primary: Colors.black,
                 backgroundColor: Color(0xff2fb4c3),
-                minimumSize: Size(80, 65),
+                fixedSize: Size(80, 65),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10.0),
+                ),
               ),
               onPressed: () {},
               child: articlesSymbol,
@@ -92,7 +91,10 @@ class LanguageSupergroup extends StatelessWidget {
               style: OutlinedButton.styleFrom(
                 primary: Colors.black,
                 backgroundColor: Color(0xffc58137),
-                minimumSize: Size(80, 65),
+                fixedSize: Size(80, 65),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10.0),
+                ),
               ),
               onPressed: () {},
               child: adverbsSymbol,
@@ -103,7 +105,10 @@ class LanguageSupergroup extends StatelessWidget {
               style: OutlinedButton.styleFrom(
                 primary: Colors.black,
                 backgroundColor: Color(0xffcb1d41),
-                minimumSize: Size(80, 65),
+                fixedSize: Size(80, 65),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10.0),
+                ),
               ),
               onPressed: () {},
               child: verbsSymbol,
@@ -114,7 +119,10 @@ class LanguageSupergroup extends StatelessWidget {
               style: OutlinedButton.styleFrom(
                 primary: Colors.black,
                 backgroundColor: Color(0xff425aa8),
-                minimumSize: Size(80, 65),
+                fixedSize: Size(80, 65),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10.0),
+                ),
               ),
               onPressed: () {},
               child: adjectivesSymbol,
@@ -125,7 +133,10 @@ class LanguageSupergroup extends StatelessWidget {
               style: OutlinedButton.styleFrom(
                 primary: Colors.black,
                 backgroundColor: Color(0xff66b282),
-                minimumSize: Size(80, 65),
+                fixedSize: Size(80, 65),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10.0),
+                ),
               ),
               onPressed: () {},
               child: prepositionsSymbol,
@@ -136,7 +147,10 @@ class LanguageSupergroup extends StatelessWidget {
               style: OutlinedButton.styleFrom(
                 primary: Colors.black,
                 backgroundColor: Color(0xffe8b3f5),
-                minimumSize: Size(80, 65),
+                fixedSize: Size(80, 65),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10.0),
+                ),
               ),
               onPressed: () {},
               child: conjunctionsSymbol,
@@ -147,7 +161,10 @@ class LanguageSupergroup extends StatelessWidget {
               style: OutlinedButton.styleFrom(
                 primary: Colors.black,
                 backgroundColor: Color(0xffedaf4c),
-                minimumSize: Size(80, 65),
+                fixedSize: Size(80, 65),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10.0),
+                ),
               ),
               onPressed: () {},
               child: interjectionsSymbol,
@@ -158,7 +175,10 @@ class LanguageSupergroup extends StatelessWidget {
               style: OutlinedButton.styleFrom(
                 primary: Colors.black,
                 backgroundColor: Color(0xfff4e269),
-                minimumSize: Size(80, 65),
+                fixedSize: Size(80, 65),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10.0),
+                ),
               ),
               onPressed: () {},
               child: const Text('☺'),
@@ -169,7 +189,10 @@ class LanguageSupergroup extends StatelessWidget {
               style: OutlinedButton.styleFrom(
                 primary: Colors.black,
                 backgroundColor: Color(0xffa4a59e),
-                minimumSize: Size(80, 65),
+                fixedSize: Size(80, 65),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10.0),
+                ),
               ),
               onPressed: () {},
               child: const Text(','),

@@ -7,50 +7,43 @@ class SkyGroup extends StatelessWidget {
 
   final Widget skySymbol = SvgPicture.asset(
     'assets/bliss_symbols/World/SkyGroup/sky.svg',
-    width: 50,
-    height: 50,
+    width: 100,
     color: const Color(0xffefcbcc),
   );
 
   final Widget cloudSymbol = SvgPicture.asset(
     'assets/bliss_symbols/World/SkyGroup/cloud.svg',
-    width: 50,
-    height: 50,
+    width: 100,
     color: const Color(0xffefcbcc),
   );
 
   final Widget moonSymbol = SvgPicture.asset(
     'assets/bliss_symbols/World/SkyGroup/moon.svg',
-    width: 50,
-    height: 50,
+    width: 100,
     color: const Color(0xffefcbcc),
   );
 
   final Widget sunSymbol = SvgPicture.asset(
     'assets/bliss_symbols/World/SkyGroup/sun.svg',
-    width: 50,
-    height: 50,
+    width: 100,
     color: const Color(0xffefcbcc),
   );
 
   final Widget starSymbol = SvgPicture.asset(
     'assets/bliss_symbols/World/SkyGroup/star.svg',
-    width: 50,
-    height: 50,
+    width: 100,
     color: const Color(0xffefcbcc),
   );
 
   final Widget snowSymbol = SvgPicture.asset(
     'assets/bliss_symbols/World/SkyGroup/snow.svg',
-    width: 50,
-    height: 50,
+    width: 100,
     color: const Color(0xffefcbcc),
   );
 
   final Widget earthSymbol = SvgPicture.asset(
     'assets/bliss_symbols/World/SkyGroup/earth,globe,world.svg',
-    width: 50,
-    height: 50,
+    width: 100,
     color: const Color(0xffefcbcc),
   );
 
@@ -62,7 +55,7 @@ class SkyGroup extends StatelessWidget {
           padding: EdgeInsets.only(top: 5),
           child: OutlinedButton(
             style: OutlinedButton.styleFrom(
-              fixedSize: Size(100, 65),
+              fixedSize: Size(80, 65),
               primary: secondaryColor,
               backgroundColor: mainColor,
               side: BorderSide(
@@ -79,7 +72,7 @@ class SkyGroup extends StatelessWidget {
           padding: EdgeInsets.only(top: 5),
           child: OutlinedButton(
             style: OutlinedButton.styleFrom(
-              fixedSize: Size(100, 65),
+              fixedSize: Size(80, 65),
               primary: secondaryColor,
               backgroundColor: mainColor,
               side: BorderSide(
@@ -96,7 +89,7 @@ class SkyGroup extends StatelessWidget {
           padding: EdgeInsets.only(top: 5),
           child: OutlinedButton(
             style: OutlinedButton.styleFrom(
-              fixedSize: Size(100, 65),
+              fixedSize: Size(80, 65),
               primary: secondaryColor,
               backgroundColor: mainColor,
               side: BorderSide(
@@ -113,7 +106,7 @@ class SkyGroup extends StatelessWidget {
           padding: EdgeInsets.only(top: 5),
           child: OutlinedButton(
             style: OutlinedButton.styleFrom(
-              fixedSize: Size(100, 65),
+              fixedSize: Size(80, 65),
               primary: secondaryColor,
               backgroundColor: mainColor,
               side: BorderSide(
@@ -130,7 +123,7 @@ class SkyGroup extends StatelessWidget {
           padding: EdgeInsets.only(top: 5),
           child: OutlinedButton(
             style: OutlinedButton.styleFrom(
-              fixedSize: Size(100, 65),
+              fixedSize: Size(80, 65),
               primary: secondaryColor,
               backgroundColor: mainColor,
               side: BorderSide(
@@ -147,7 +140,7 @@ class SkyGroup extends StatelessWidget {
           padding: EdgeInsets.only(top: 5),
           child: OutlinedButton(
             style: OutlinedButton.styleFrom(
-              fixedSize: Size(100, 65),
+              fixedSize: Size(80, 65),
               primary: secondaryColor,
               backgroundColor: mainColor,
               side: BorderSide(
@@ -164,7 +157,7 @@ class SkyGroup extends StatelessWidget {
           padding: EdgeInsets.only(top: 5),
           child: OutlinedButton(
             style: OutlinedButton.styleFrom(
-              fixedSize: Size(100, 65),
+              fixedSize: Size(80, 65),
               primary: secondaryColor,
               backgroundColor: mainColor,
               side: BorderSide(

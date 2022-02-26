@@ -9,15 +9,13 @@ class ScenesSupergroup extends StatelessWidget {
 
   final Widget constructionsSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Scenes/structure,construction.svg',
-    width: 50,
-    height: 50,
+    width: 100,
     color: const Color(0xffefcbcc),
   );
 
   final Widget transportSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Scenes/transport,transportation.svg',
-    width: 50,
-    height: 50,
+    width: 100,
     color: const Color(0xffefcbcc),
   );
 
@@ -30,7 +28,10 @@ class ScenesSupergroup extends StatelessWidget {
             style: OutlinedButton.styleFrom(
               primary: secondaryColor,
               backgroundColor: mainColor,
-              minimumSize: Size(80, 65),
+              fixedSize: Size(80, 65),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0),
+              ),
               side: BorderSide(
                 width: 4.0,
                 color: secondaryColor,
@@ -46,7 +47,10 @@ class ScenesSupergroup extends StatelessWidget {
             style: OutlinedButton.styleFrom(
               primary: secondaryColor,
               backgroundColor: mainColor,
-              minimumSize: Size(80, 65),
+              fixedSize: Size(80, 65),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0),
+              ),
               side: BorderSide(
                 width: 4.0,
                 color: secondaryColor,
@@ -62,7 +66,10 @@ class ScenesSupergroup extends StatelessWidget {
             style: OutlinedButton.styleFrom(
               primary: secondaryColor,
               backgroundColor: mainColor,
-              minimumSize: Size(80, 65),
+              fixedSize: Size(80, 65),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0),
+              ),
               side: BorderSide(
                 width: 4.0,
                 color: secondaryColor,
@@ -78,7 +85,10 @@ class ScenesSupergroup extends StatelessWidget {
             style: OutlinedButton.styleFrom(
               primary: secondaryColor,
               backgroundColor: mainColor,
-              minimumSize: Size(80, 65),
+              fixedSize: Size(80, 65),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0),
+              ),
               side: BorderSide(
                 width: 4.0,
                 color: secondaryColor,
@@ -94,7 +104,10 @@ class ScenesSupergroup extends StatelessWidget {
             style: OutlinedButton.styleFrom(
               primary: secondaryColor,
               backgroundColor: mainColor,
-              minimumSize: Size(80, 65),
+              fixedSize: Size(80, 65),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0),
+              ),
               side: BorderSide(
                 width: 4.0,
                 color: secondaryColor,

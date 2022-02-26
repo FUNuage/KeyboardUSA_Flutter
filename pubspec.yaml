@@ -68,6 +68,7 @@ flutter:
     - assets/bliss_symbols/World/
     - assets/bliss_symbols/World/SkyGroup/
     - assets/bliss_symbols/World/GeologyGroup/
+    - assets/bliss_symbols/World/MaterialsGroup/
     
 
   # An image asset can refer to one or more resolution-specific "variants", see

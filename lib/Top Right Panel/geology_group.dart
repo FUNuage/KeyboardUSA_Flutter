@@ -50,6 +50,7 @@ class GeologyGroup extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
         Padding(
           padding: EdgeInsets.only(top: 5),
@@ -58,6 +59,9 @@ class GeologyGroup extends StatelessWidget {
               fixedSize: Size(80, 65),
               primary: secondaryColor,
               backgroundColor: mainColor,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0),
+              ),
               side: BorderSide(
                 width: 4.0,
                 color: secondaryColor,
@@ -75,6 +79,9 @@ class GeologyGroup extends StatelessWidget {
               fixedSize: Size(80, 65),
               primary: secondaryColor,
               backgroundColor: mainColor,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0),
+              ),
               side: BorderSide(
                 width: 4.0,
                 color: secondaryColor,
@@ -92,6 +99,9 @@ class GeologyGroup extends StatelessWidget {
               fixedSize: Size(80, 65),
               primary: secondaryColor,
               backgroundColor: mainColor,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0),
+              ),
               side: BorderSide(
                 width: 4.0,
                 color: secondaryColor,
@@ -103,12 +113,15 @@ class GeologyGroup extends StatelessWidget {
           ),
         ),
         Padding(
-          padding: EdgeInsets.only(top: 5),
+          padding: EdgeInsets.only(top: 5, bottom: 5),
           child: OutlinedButton(
             style: OutlinedButton.styleFrom(
               fixedSize: Size(80, 65),
               primary: secondaryColor,
               backgroundColor: mainColor,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0),
+              ),
               side: BorderSide(
                 width: 4.0,
                 color: secondaryColor,
@@ -119,40 +132,48 @@ class GeologyGroup extends StatelessWidget {
             child: rainSymbol,
           ),
         ),
-        Padding(
-          padding: EdgeInsets.only(top: 5),
-          child: OutlinedButton(
-            style: OutlinedButton.styleFrom(
-              fixedSize: Size(80, 65),
-              primary: secondaryColor,
-              backgroundColor: mainColor,
-              side: BorderSide(
-                width: 4.0,
-                color: secondaryColor,
-                style: BorderStyle.solid,
+        Row(children: [
+          Padding(
+            padding: EdgeInsets.only(right: 5),
+            child: OutlinedButton(
+              style: OutlinedButton.styleFrom(
+                fixedSize: Size(80, 65),
+                primary: secondaryColor,
+                backgroundColor: mainColor,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10.0),
+                ),
+                side: BorderSide(
+                  width: 4.0,
+                  color: secondaryColor,
+                  style: BorderStyle.solid,
+                ),
               ),
+              onPressed: () {},
+              child: lakeSymbol,
             ),
-            onPressed: () {},
-            child: lakeSymbol,
           ),
-        ),
-        Padding(
-          padding: EdgeInsets.only(top: 5),
-          child: OutlinedButton(
-            style: OutlinedButton.styleFrom(
-              fixedSize: Size(80, 65),
-              primary: secondaryColor,
-              backgroundColor: mainColor,
-              side: BorderSide(
-                width: 4.0,
-                color: secondaryColor,
-                style: BorderStyle.solid,
+          Padding(
+            padding: EdgeInsets.only(right: 5),
+            child: OutlinedButton(
+              style: OutlinedButton.styleFrom(
+                fixedSize: Size(80, 65),
+                primary: secondaryColor,
+                backgroundColor: mainColor,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10.0),
+                ),
+                side: BorderSide(
+                  width: 4.0,
+                  color: secondaryColor,
+                  style: BorderStyle.solid,
+                ),
               ),
+              onPressed: () {},
+              child: oceanSymbol,
             ),
-            onPressed: () {},
-            child: oceanSymbol,
-          ),
-        ),
+          )
+        ]),
         Padding(
           padding: EdgeInsets.only(top: 5),
           child: OutlinedButton(
@@ -160,6 +181,9 @@ class GeologyGroup extends StatelessWidget {
               fixedSize: Size(80, 65),
               primary: secondaryColor,
               backgroundColor: mainColor,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0),
+              ),
               side: BorderSide(
                 width: 4.0,
                 color: secondaryColor,

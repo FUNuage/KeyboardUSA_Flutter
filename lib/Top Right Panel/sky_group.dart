@@ -50,6 +50,7 @@ class SkyGroup extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
         Padding(
           padding: EdgeInsets.only(top: 5),
@@ -58,6 +59,9 @@ class SkyGroup extends StatelessWidget {
               fixedSize: Size(80, 65),
               primary: secondaryColor,
               backgroundColor: mainColor,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0),
+              ),
               side: BorderSide(
                 width: 4.0,
                 color: secondaryColor,
@@ -69,12 +73,15 @@ class SkyGroup extends StatelessWidget {
           ),
         ),
         Padding(
-          padding: EdgeInsets.only(top: 5),
+          padding: EdgeInsets.only(top: 5, bottom: 5),
           child: OutlinedButton(
             style: OutlinedButton.styleFrom(
               fixedSize: Size(80, 65),
               primary: secondaryColor,
               backgroundColor: mainColor,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0),
+              ),
               side: BorderSide(
                 width: 4.0,
                 color: secondaryColor,
@@ -85,22 +92,69 @@ class SkyGroup extends StatelessWidget {
             child: cloudSymbol,
           ),
         ),
-        Padding(
-          padding: EdgeInsets.only(top: 5),
-          child: OutlinedButton(
-            style: OutlinedButton.styleFrom(
-              fixedSize: Size(80, 65),
-              primary: secondaryColor,
-              backgroundColor: mainColor,
-              side: BorderSide(
-                width: 4.0,
-                color: secondaryColor,
-                style: BorderStyle.solid,
+        Row(
+          children: [
+            Padding(
+              padding: EdgeInsets.only(right: 5),
+              child: OutlinedButton(
+                style: OutlinedButton.styleFrom(
+                  fixedSize: Size(80, 65),
+                  primary: secondaryColor,
+                  backgroundColor: mainColor,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10.0),
+                  ),
+                  side: BorderSide(
+                    width: 4.0,
+                    color: secondaryColor,
+                    style: BorderStyle.solid,
+                  ),
+                ),
+                onPressed: () {},
+                child: moonSymbol,
               ),
             ),
-            onPressed: () {},
-            child: moonSymbol,
-          ),
+            Padding(
+              padding: EdgeInsets.only(right: 5),
+              child: OutlinedButton(
+                style: OutlinedButton.styleFrom(
+                  fixedSize: Size(80, 65),
+                  primary: secondaryColor,
+                  backgroundColor: mainColor,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10.0),
+                  ),
+                  side: BorderSide(
+                    width: 4.0,
+                    color: secondaryColor,
+                    style: BorderStyle.solid,
+                  ),
+                ),
+                onPressed: () {},
+                child: sunSymbol,
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.only(right: 5),
+              child: OutlinedButton(
+                style: OutlinedButton.styleFrom(
+                  fixedSize: Size(80, 65),
+                  primary: secondaryColor,
+                  backgroundColor: mainColor,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10.0),
+                  ),
+                  side: BorderSide(
+                    width: 4.0,
+                    color: secondaryColor,
+                    style: BorderStyle.solid,
+                  ),
+                ),
+                onPressed: () {},
+                child: starSymbol,
+              ),
+            )
+          ],
         ),
         Padding(
           padding: EdgeInsets.only(top: 5),
@@ -109,40 +163,9 @@ class SkyGroup extends StatelessWidget {
               fixedSize: Size(80, 65),
               primary: secondaryColor,
               backgroundColor: mainColor,
-              side: BorderSide(
-                width: 4.0,
-                color: secondaryColor,
-                style: BorderStyle.solid,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0),
               ),
-            ),
-            onPressed: () {},
-            child: sunSymbol,
-          ),
-        ),
-        Padding(
-          padding: EdgeInsets.only(top: 5),
-          child: OutlinedButton(
-            style: OutlinedButton.styleFrom(
-              fixedSize: Size(80, 65),
-              primary: secondaryColor,
-              backgroundColor: mainColor,
-              side: BorderSide(
-                width: 4.0,
-                color: secondaryColor,
-                style: BorderStyle.solid,
-              ),
-            ),
-            onPressed: () {},
-            child: starSymbol,
-          ),
-        ),
-        Padding(
-          padding: EdgeInsets.only(top: 5),
-          child: OutlinedButton(
-            style: OutlinedButton.styleFrom(
-              fixedSize: Size(80, 65),
-              primary: secondaryColor,
-              backgroundColor: mainColor,
               side: BorderSide(
                 width: 4.0,
                 color: secondaryColor,
@@ -160,6 +183,9 @@ class SkyGroup extends StatelessWidget {
               fixedSize: Size(80, 65),
               primary: secondaryColor,
               backgroundColor: mainColor,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0),
+              ),
               side: BorderSide(
                 width: 4.0,
                 color: secondaryColor,

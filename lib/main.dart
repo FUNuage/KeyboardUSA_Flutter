@@ -36,11 +36,13 @@ class HomePage extends StatefulWidget {
 class HomePageState extends State<HomePage> {
   static bool skyGroup = false;
   static bool geologyGroup = false;
+  static bool materialsGroup = false;
 
   void toggleSkyGroup() {
     setState(() {
       skyGroup = !skyGroup;
       geologyGroup = false;
+      materialsGroup = false;
     });
   }
 
@@ -48,6 +50,15 @@ class HomePageState extends State<HomePage> {
     setState(() {
       geologyGroup = !geologyGroup;
       skyGroup = false;
+      materialsGroup = false;
+    });
+  }
+
+  void toggleMaterialsGroup() {
+    setState(() {
+      materialsGroup = !materialsGroup;
+      skyGroup = false;
+      geologyGroup = false;
     });
   }
 
@@ -59,7 +70,8 @@ class HomePageState extends State<HomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Row(children: <Widget>[
-              TopLeftPanel(toggleSkyGroup, toggleGeologyGroup),
+              TopLeftPanel(
+                  toggleSkyGroup, toggleGeologyGroup, toggleMaterialsGroup),
               TopRightPanel(),
             ]),
             BottomPanel(),

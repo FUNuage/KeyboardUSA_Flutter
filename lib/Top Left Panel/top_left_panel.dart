@@ -1,18 +1,23 @@
 import 'package:flutter/material.dart';
-import 'language.dart';
-import 'world.dart';
-import 'animate.dart';
-import 'person.dart';
-import 'scenes.dart';
-import 'concepts.dart';
+import 'language_supergroup.dart';
+import 'world_supergroup.dart';
+import 'animate_supergroup.dart';
+import 'person_supergroup.dart';
+import 'scenes_supergroup.dart';
+import 'concepts_supergroup.dart';
+
+import '../main.dart';
 
 class TopLeftPanel extends StatelessWidget {
   Color backgroundColor = Color(0xff111111);
 
+  final VoidCallback ToggleBlocks;
+  TopLeftPanel(this.ToggleBlocks);
+
   @override
   Widget build(BuildContext context) {
     return Container(
-        width: MediaQuery.of(context).size.width / 2,
+        width: MediaQuery.of(context).size.width / 1.5,
         height: MediaQuery.of(context).size.height / 2 + 50,
         decoration: BoxDecoration(
             borderRadius: BorderRadius.all(
@@ -24,20 +29,20 @@ class TopLeftPanel extends StatelessWidget {
             ),
             color: backgroundColor),
         child: Column(children: <Widget>[
-          Language(),
+          LanguageSupergroup(),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              World(),
+              WorldSupergroup(ToggleBlocks),
               SizedBox(width: 50),
-              Animate(),
+              AnimateSupergroup(),
               SizedBox(width: 50),
-              Person(),
+              PersonSupergroup(),
               SizedBox(width: 50),
-              Scenes(),
+              ScenesSupergroup(),
               SizedBox(width: 50),
-              Concepts()
+              ConceptsSupergroup(),
             ],
           ),
         ]));

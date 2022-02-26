@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class Language extends StatelessWidget {
+class LanguageSupergroup extends StatelessWidget {
   // emojis, punctuation
 
   final Widget pronounsSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/pronoun.svg',
-    width: 50,
-    height: 50,
     color: Colors.black,
+    width: 80,
   );
 
   final Widget articlesSymbol = SvgPicture.asset(
@@ -71,7 +70,7 @@ class Language extends StatelessWidget {
               style: OutlinedButton.styleFrom(
                 primary: Colors.black,
                 backgroundColor: Color(0xff714c84),
-                minimumSize: Size(80, 65),
+                fixedSize: Size(80, 65),
               ),
               onPressed: () {},
               child: pronounsSymbol,

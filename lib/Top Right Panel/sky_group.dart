@@ -1,50 +1,83 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class Concepts extends StatelessWidget {
-  Color mainColor = const Color(0xff8a546c);
-  Color secondaryColor = const Color(0xff91cdda);
+import '../main.dart';
 
-  final Widget shapesSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Concepts/shape,form.svg',
+class SkyGroup extends StatefulWidget {
+  @override
+  SkyGroupState createState() => SkyGroupState();
+}
+
+class SkyGroupState extends State<SkyGroup> {
+  Color mainColor = const Color(0xff59a091);
+  Color secondaryColor = Color(0xffefcbcc);
+
+  final Widget skySymbol = SvgPicture.asset(
+    'assets/bliss_symbols/World/SkyGroup/sky.svg',
     width: 50,
     height: 50,
     color: const Color(0xffefcbcc),
   );
 
-  final Widget timeSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Concepts/time.svg',
+  final Widget cloudSymbol = SvgPicture.asset(
+    'assets/bliss_symbols/World/SkyGroup/cloud.svg',
     width: 50,
     height: 50,
     color: const Color(0xffefcbcc),
   );
 
-  final Widget colorsGroupSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Concepts/colour.svg',
+  final Widget moonSymbol = SvgPicture.asset(
+    'assets/bliss_symbols/World/SkyGroup/moon.svg',
     width: 50,
     height: 50,
     color: const Color(0xffefcbcc),
   );
 
-  final Widget directionsSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Concepts/direction,cardinal_point.svg',
+  final Widget snowSymbol = SvgPicture.asset(
+    'assets/bliss_symbols/World/SkyGroup/snow.svg',
     width: 50,
     height: 50,
     color: const Color(0xffefcbcc),
   );
 
-  // enumeration
+  final Widget earthSymbol = SvgPicture.asset(
+    'assets/bliss_symbols/World/SkyGroup/earth,globe,world.svg',
+    width: 50,
+    height: 50,
+    color: const Color(0xffefcbcc),
+  );
 
   @override
   Widget build(BuildContext context) {
-    return Column(children: <Widget>[
-      Padding(
+    return Column(
+      children: <Widget>[
+        Visibility(
+          child: Padding(
+            padding: EdgeInsets.only(top: 5),
+            child: OutlinedButton(
+              style: OutlinedButton.styleFrom(
+                fixedSize: Size(100, 65),
+                primary: secondaryColor,
+                backgroundColor: mainColor,
+                side: BorderSide(
+                  width: 4.0,
+                  color: secondaryColor,
+                  style: BorderStyle.solid,
+                ),
+              ),
+              onPressed: () {},
+              child: skySymbol,
+            ),
+          ),
+          visible: MyHomePageState.skyGroup,
+        ),
+        Padding(
           padding: EdgeInsets.only(top: 5),
           child: OutlinedButton(
             style: OutlinedButton.styleFrom(
+              fixedSize: Size(100, 65),
               primary: secondaryColor,
               backgroundColor: mainColor,
-              minimumSize: Size(80, 65),
               side: BorderSide(
                 width: 4.0,
                 color: secondaryColor,
@@ -52,15 +85,16 @@ class Concepts extends StatelessWidget {
               ),
             ),
             onPressed: () {},
-            child: timeSymbol,
-          )),
-      Padding(
+            child: cloudSymbol,
+          ),
+        ),
+        Padding(
           padding: EdgeInsets.only(top: 5),
           child: OutlinedButton(
             style: OutlinedButton.styleFrom(
+              fixedSize: Size(100, 65),
               primary: secondaryColor,
               backgroundColor: mainColor,
-              minimumSize: Size(80, 65),
               side: BorderSide(
                 width: 4.0,
                 color: secondaryColor,
@@ -68,15 +102,16 @@ class Concepts extends StatelessWidget {
               ),
             ),
             onPressed: () {},
-            child: const Text('2'),
-          )),
-      Padding(
+            child: moonSymbol,
+          ),
+        ),
+        Padding(
           padding: EdgeInsets.only(top: 5),
           child: OutlinedButton(
             style: OutlinedButton.styleFrom(
+              fixedSize: Size(100, 65),
               primary: secondaryColor,
               backgroundColor: mainColor,
-              minimumSize: Size(80, 65),
               side: BorderSide(
                 width: 4.0,
                 color: secondaryColor,
@@ -84,15 +119,16 @@ class Concepts extends StatelessWidget {
               ),
             ),
             onPressed: () {},
-            child: colorsGroupSymbol,
-          )),
-      Padding(
+            child: snowSymbol,
+          ),
+        ),
+        Padding(
           padding: EdgeInsets.only(top: 5),
           child: OutlinedButton(
             style: OutlinedButton.styleFrom(
+              fixedSize: Size(100, 65),
               primary: secondaryColor,
               backgroundColor: mainColor,
-              minimumSize: Size(80, 65),
               side: BorderSide(
                 width: 4.0,
                 color: secondaryColor,
@@ -100,24 +136,10 @@ class Concepts extends StatelessWidget {
               ),
             ),
             onPressed: () {},
-            child: directionsSymbol,
-          )),
-      Padding(
-          padding: EdgeInsets.only(top: 5),
-          child: OutlinedButton(
-            style: OutlinedButton.styleFrom(
-              primary: secondaryColor,
-              backgroundColor: mainColor,
-              minimumSize: Size(80, 65),
-              side: BorderSide(
-                width: 4.0,
-                color: secondaryColor,
-                style: BorderStyle.solid,
-              ),
-            ),
-            onPressed: () {},
-            child: shapesSymbol,
-          )),
-    ]);
+            child: earthSymbol,
+          ),
+        ),
+      ],
+    );
   }
 }

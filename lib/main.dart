@@ -1,7 +1,10 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 
 import 'Top Left Panel/top_left_panel.dart';
-import 'top_right_panel.dart';
+import 'Top Right Panel/top_right_panel.dart';
+import 'Top Right Panel/sky_group.dart';
 import 'bottom_panel.dart';
 
 void main() {
@@ -30,10 +33,18 @@ class MyHomePage extends StatefulWidget {
   final String title;
 
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  State<MyHomePage> createState() => MyHomePageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class MyHomePageState extends State<MyHomePage> {
+  static bool skyGroup = false;
+
+  void ToggleBlocks() {
+    setState(() {
+      skyGroup = !skyGroup;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -41,13 +52,15 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Row(
-              children: <Widget>[
-                TopLeftPanel(),
-                TopRightPanel(),
-              ],
-            ),
-            BottomPanel()
+            Row(children: <Widget>[
+              TopLeftPanel(ToggleBlocks),
+              TopRightPanel(),
+            ]),
+            // ElevatedButton(
+            //   onPressed: makeVisible,
+            //   child: null,
+            // ),
+            BottomPanel(),
           ],
         ),
       ),

@@ -1,26 +1,53 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class Scenes extends StatelessWidget {
-  Color mainColor = const Color(0xff4d60a2);
-  Color secondaryColor = const Color(0xffd0c4e4);
+class PersonSupergroup extends StatelessWidget {
+  Color mainColor = const Color(0xffa58544);
+  Color secondaryColor = const Color(0xffe9d58a);
 
-  // constructions, transportLand, transportWater, transportAir, transportPaths
-
-  final Widget constructionsSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Scenes/structure,construction.svg',
+  final Widget bodyPartSymbol = SvgPicture.asset(
+    'assets/bliss_symbols/Person/body,trunk.svg',
     width: 50,
     height: 50,
     color: const Color(0xffefcbcc),
   );
 
-  final Widget transportSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Scenes/transport,transportation.svg',
+  final Widget faceSymbol = SvgPicture.asset(
+    'assets/bliss_symbols/Person/face.svg',
     width: 50,
     height: 50,
     color: const Color(0xffefcbcc),
   );
 
+  final Widget familySymbol = SvgPicture.asset(
+    'assets/bliss_symbols/Person/family,couple.svg',
+    width: 50,
+    height: 50,
+    color: const Color(0xffefcbcc),
+  );
+
+  final Widget kitchenToolsSymbol = SvgPicture.asset(
+    'assets/bliss_symbols/Person/kitchen_tool,utensil.svg',
+    width: 50,
+    height: 50,
+    color: const Color(0xffefcbcc),
+  );
+
+  final Widget petsSymbol = SvgPicture.asset(
+    'assets/bliss_symbols/Person/pet.svg',
+    width: 50,
+    height: 50,
+    color: const Color(0xffefcbcc),
+  );
+
+  final Widget personalArtifactsSymbol = SvgPicture.asset(
+    'assets/bliss_symbols/Person/man-made_item,artefact,artifact,product.svg',
+    width: 50,
+    height: 50,
+    color: const Color(0xffefcbcc),
+  );
+
+  // personalArtifacts
   @override
   Widget build(BuildContext context) {
     return Column(children: <Widget>[
@@ -38,7 +65,7 @@ class Scenes extends StatelessWidget {
               ),
             ),
             onPressed: () {},
-            child: constructionsSymbol,
+            child: faceSymbol,
           )),
       Padding(
           padding: EdgeInsets.only(top: 5),
@@ -54,7 +81,7 @@ class Scenes extends StatelessWidget {
               ),
             ),
             onPressed: () {},
-            child: transportSymbol,
+            child: bodyPartSymbol,
           )),
       Padding(
           padding: EdgeInsets.only(top: 5),
@@ -70,7 +97,7 @@ class Scenes extends StatelessWidget {
               ),
             ),
             onPressed: () {},
-            child: transportSymbol,
+            child: familySymbol,
           )),
       Padding(
           padding: EdgeInsets.only(top: 5),
@@ -86,7 +113,7 @@ class Scenes extends StatelessWidget {
               ),
             ),
             onPressed: () {},
-            child: transportSymbol,
+            child: petsSymbol,
           )),
       Padding(
           padding: EdgeInsets.only(top: 5),
@@ -102,7 +129,23 @@ class Scenes extends StatelessWidget {
               ),
             ),
             onPressed: () {},
-            child: transportSymbol,
+            child: personalArtifactsSymbol,
+          )),
+      Padding(
+          padding: EdgeInsets.only(top: 5),
+          child: OutlinedButton(
+            style: OutlinedButton.styleFrom(
+              primary: secondaryColor,
+              backgroundColor: mainColor,
+              minimumSize: Size(80, 65),
+              side: BorderSide(
+                width: 4.0,
+                color: secondaryColor,
+                style: BorderStyle.solid,
+              ),
+            ),
+            onPressed: () {},
+            child: kitchenToolsSymbol,
           )),
     ]);
   }

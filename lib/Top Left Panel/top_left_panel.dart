@@ -10,7 +10,8 @@ class TopLeftPanel extends StatelessWidget {
   Color backgroundColor = Color(0xff111111);
 
   final VoidCallback toggleSkyGroup;
-  TopLeftPanel(this.toggleSkyGroup);
+  final VoidCallback toggleAnimateGroup;
+  TopLeftPanel(this.toggleSkyGroup, this.toggleAnimateGroup);
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +33,7 @@ class TopLeftPanel extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              WorldSupergroup(toggleSkyGroup),
+              WorldSupergroup(toggleSkyGroup, toggleAnimateGroup),
               SizedBox(width: 50),
               AnimateSupergroup(),
               SizedBox(width: 50),

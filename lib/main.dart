@@ -35,10 +35,17 @@ class HomePage extends StatefulWidget {
 
 class HomePageState extends State<HomePage> {
   static bool skyGroup = false;
+  static bool animateGroup = false;
 
   void toggleSkyGroup() {
     setState(() {
       skyGroup = !skyGroup;
+    });
+  }
+
+  void toggleAnimateGroup() {
+    setState(() {
+      animateGroup = !animateGroup;
     });
   }
 
@@ -50,13 +57,9 @@ class HomePageState extends State<HomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Row(children: <Widget>[
-              TopLeftPanel(toggleSkyGroup),
+              TopLeftPanel(toggleSkyGroup, toggleAnimateGroup),
               TopRightPanel(),
             ]),
-            // ElevatedButton(
-            //   onPressed: makeVisible,
-            //   child: null,
-            // ),
             BottomPanel(),
           ],
         ),

@@ -17,7 +17,11 @@ class AnimateSupergroup extends StatelessWidget {
     color: const Color(0xffefcbcc),
   );
 
-  //animalTypes, animalsFrom
+  final VoidCallback togglePlantsGroup;
+  final VoidCallback toggleFruitsGroup;
+  final VoidCallback toggleAnimalTypesGroup;
+  AnimateSupergroup(this.togglePlantsGroup, this.toggleFruitsGroup,
+      this.toggleAnimalTypesGroup);
 
   @override
   Widget build(BuildContext context) {
@@ -38,7 +42,7 @@ class AnimateSupergroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => togglePlantsGroup(),
             child: plantsSymbol,
           )),
       Padding(
@@ -57,7 +61,7 @@ class AnimateSupergroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => toggleFruitsGroup(),
             child: fruitsSymbol,
           )),
       Padding(
@@ -76,7 +80,7 @@ class AnimateSupergroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => toggleAnimalTypesGroup(),
             child: const Text('1'),
           )),
       Padding(

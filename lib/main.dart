@@ -37,12 +37,20 @@ class HomePageState extends State<HomePage> {
   static bool skyGroup = false;
   static bool geologyGroup = false;
   static bool materialsGroup = false;
+  static bool phenomenaGroup = false;
+  static bool plantsGroup = false;
+  static bool fruitsGroup = false;
+  static bool animalTypesGroup = false;
 
   void toggleSkyGroup() {
     setState(() {
       skyGroup = !skyGroup;
       geologyGroup = false;
       materialsGroup = false;
+      phenomenaGroup = false;
+      plantsGroup = false;
+      fruitsGroup = false;
+      animalTypesGroup = false;
     });
   }
 
@@ -51,6 +59,10 @@ class HomePageState extends State<HomePage> {
       geologyGroup = !geologyGroup;
       skyGroup = false;
       materialsGroup = false;
+      phenomenaGroup = false;
+      plantsGroup = false;
+      fruitsGroup = false;
+      animalTypesGroup = false;
     });
   }
 
@@ -59,6 +71,58 @@ class HomePageState extends State<HomePage> {
       materialsGroup = !materialsGroup;
       skyGroup = false;
       geologyGroup = false;
+      phenomenaGroup = false;
+      plantsGroup = false;
+      fruitsGroup = false;
+      animalTypesGroup = false;
+    });
+  }
+
+  void togglePhenomenaGroup() {
+    setState(() {
+      phenomenaGroup = !phenomenaGroup;
+      skyGroup = false;
+      geologyGroup = false;
+      materialsGroup = false;
+      plantsGroup = false;
+      fruitsGroup = false;
+      animalTypesGroup = false;
+    });
+  }
+
+  void togglePlantsGroup() {
+    setState(() {
+      plantsGroup = !plantsGroup;
+      skyGroup = false;
+      geologyGroup = false;
+      materialsGroup = false;
+      phenomenaGroup = false;
+      fruitsGroup = false;
+      animalTypesGroup = false;
+    });
+  }
+
+  void toggleFruitsGroup() {
+    setState(() {
+      fruitsGroup = !fruitsGroup;
+      skyGroup = false;
+      geologyGroup = false;
+      materialsGroup = false;
+      phenomenaGroup = false;
+      plantsGroup = false;
+      animalTypesGroup = false;
+    });
+  }
+
+  void toggleAnimalTypesGroup() {
+    setState(() {
+      animalTypesGroup = !animalTypesGroup;
+      skyGroup = false;
+      geologyGroup = false;
+      materialsGroup = false;
+      phenomenaGroup = false;
+      plantsGroup = false;
+      fruitsGroup = false;
     });
   }
 
@@ -71,7 +135,13 @@ class HomePageState extends State<HomePage> {
           children: <Widget>[
             Row(children: <Widget>[
               TopLeftPanel(
-                  toggleSkyGroup, toggleGeologyGroup, toggleMaterialsGroup),
+                  toggleSkyGroup,
+                  toggleGeologyGroup,
+                  toggleMaterialsGroup,
+                  togglePhenomenaGroup,
+                  togglePlantsGroup,
+                  toggleFruitsGroup,
+                  toggleAnimalTypesGroup),
               TopRightPanel(),
             ]),
             BottomPanel(),

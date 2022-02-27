@@ -12,8 +12,19 @@ class TopLeftPanel extends StatelessWidget {
   final VoidCallback toggleSkyGroup;
   final VoidCallback toggleGeologyGroup;
   final VoidCallback toggleMaterialsGroup;
+  final VoidCallback togglePhenomenaGroup;
+  final VoidCallback togglePlantsGroup;
+  final VoidCallback toggleFruitsGroup;
+  final VoidCallback toggleAnimalTypesGroup;
+
   TopLeftPanel(
-      this.toggleSkyGroup, this.toggleGeologyGroup, this.toggleMaterialsGroup);
+      this.toggleSkyGroup,
+      this.toggleGeologyGroup,
+      this.toggleMaterialsGroup,
+      this.togglePhenomenaGroup,
+      this.togglePlantsGroup,
+      this.toggleFruitsGroup,
+      this.toggleAnimalTypesGroup);
 
   @override
   Widget build(BuildContext context) {
@@ -35,10 +46,11 @@ class TopLeftPanel extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              WorldSupergroup(
-                  toggleSkyGroup, toggleGeologyGroup, toggleMaterialsGroup),
+              WorldSupergroup(toggleSkyGroup, toggleGeologyGroup,
+                  toggleMaterialsGroup, togglePhenomenaGroup),
               SizedBox(width: 50),
-              AnimateSupergroup(),
+              AnimateSupergroup(
+                  togglePlantsGroup, toggleFruitsGroup, toggleAnimalTypesGroup),
               SizedBox(width: 50),
               PersonSupergroup(),
               SizedBox(width: 50),

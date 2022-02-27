@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
 
 import '../main.dart';
-import 'sky_group.dart';
-import 'geology_group.dart';
-import 'materials_group.dart';
+import 'World Super Group/sky_group.dart';
+import 'World Super Group/geology_group.dart';
+import 'World Super Group/materials_group.dart';
+import 'World Super Group/phenomena_group.dart';
+import 'Animate Super Group/plants_group.dart';
+import 'Animate Super Group/fruits_group.dart';
+import 'Animate Super Group/animal_types_group.dart';
 
 class TopRightPanel extends StatelessWidget {
   Color backgroundColor = Color(0xff111111);
@@ -42,6 +46,30 @@ class TopRightPanel extends StatelessWidget {
               child: Padding(
                 padding: EdgeInsets.all(10),
                 child: MaterialsGroup(),
+              )),
+          Visibility(
+              visible: HomePageState.phenomenaGroup,
+              child: Padding(
+                padding: EdgeInsets.all(10),
+                child: PhenomenaGroup(),
+              )),
+          Visibility(
+              visible: HomePageState.plantsGroup,
+              child: Padding(
+                padding: EdgeInsets.all(10),
+                child: PlantsGroup(),
+              )),
+          Visibility(
+              visible: HomePageState.fruitsGroup,
+              child: Padding(
+                padding: EdgeInsets.all(10),
+                child: FruitsGroup(),
+              )),
+          Visibility(
+              visible: HomePageState.animalTypesGroup,
+              child: Padding(
+                padding: EdgeInsets.all(10),
+                child: AnimalTypesGroup(),
               )),
         ]));
   }

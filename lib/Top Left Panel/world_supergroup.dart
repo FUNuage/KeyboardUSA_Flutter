@@ -32,9 +32,10 @@ class WorldSupergroup extends StatelessWidget {
   final VoidCallback toggleSkyGroup;
   final VoidCallback toggleGeologyGroup;
   final VoidCallback toggleMaterialsGroup;
+  final VoidCallback togglePhenomenaGroup;
 
-  WorldSupergroup(
-      this.toggleSkyGroup, this.toggleGeologyGroup, this.toggleMaterialsGroup);
+  WorldSupergroup(this.toggleSkyGroup, this.toggleGeologyGroup,
+      this.toggleMaterialsGroup, this.togglePhenomenaGroup);
 
   @override
   Widget build(BuildContext context) {
@@ -112,7 +113,7 @@ class WorldSupergroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => togglePhenomenaGroup(),
             child: phenomenaSymbol,
           )),
     ]);

@@ -73,6 +73,7 @@ flutter:
     - assets/bliss_symbols/Animate/PlantsGroup/
     - assets/bliss_symbols/Animate/FruitsGroup/
     - assets/bliss_symbols/Animate/AnimalTypesGroup/
+    - assets/bliss_symbols/Animate/AnimalsFromGroup/
     
 
   # An image asset can refer to one or more resolution-specific "variants", see

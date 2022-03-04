@@ -41,6 +41,7 @@ class HomePageState extends State<HomePage> {
   static bool plantsGroup = false;
   static bool fruitsGroup = false;
   static bool animalTypesGroup = false;
+  static bool animalsFromGroup = false;
 
   void toggleSkyGroup() {
     setState(() {
@@ -126,6 +127,18 @@ class HomePageState extends State<HomePage> {
     });
   }
 
+  void toggleAnimalsFromGroup() {
+    setState(() {
+      animalsFromGroup = !animalsFromGroup;
+      skyGroup = false;
+      geologyGroup = false;
+      materialsGroup = false;
+      phenomenaGroup = false;
+      plantsGroup = false;
+      fruitsGroup = false;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -141,7 +154,8 @@ class HomePageState extends State<HomePage> {
                   togglePhenomenaGroup,
                   togglePlantsGroup,
                   toggleFruitsGroup,
-                  toggleAnimalTypesGroup),
+                  toggleAnimalTypesGroup,
+                  toggleAnimalsFromGroup),
               TopRightPanel(),
             ]),
             BottomPanel(),

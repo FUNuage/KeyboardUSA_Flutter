@@ -1,11 +1,3 @@
-// animal, rabbit, deer, camel, horse
-// wings, bird, eagle
-// fish
-// frog
-// insect, butterfly, spider, louse
-// worm
-// snake
-
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 

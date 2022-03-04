@@ -17,11 +17,18 @@ class AnimateSupergroup extends StatelessWidget {
     color: const Color(0xffefcbcc),
   );
 
+  final Widget animalSymbol = SvgPicture.asset(
+    'assets/bliss_symbols/Animate/animal,beast.svg',
+    width: 100,
+    color: const Color(0xffefcbcc),
+  );
+
   final VoidCallback togglePlantsGroup;
   final VoidCallback toggleFruitsGroup;
   final VoidCallback toggleAnimalTypesGroup;
+  final VoidCallback toggleAnimalsFromGroup;
   AnimateSupergroup(this.togglePlantsGroup, this.toggleFruitsGroup,
-      this.toggleAnimalTypesGroup);
+      this.toggleAnimalTypesGroup, this.toggleAnimalsFromGroup);
 
   @override
   Widget build(BuildContext context) {
@@ -81,7 +88,7 @@ class AnimateSupergroup extends StatelessWidget {
               ),
             ),
             onPressed: () => toggleAnimalTypesGroup(),
-            child: const Text('1'),
+            child: animalSymbol,
           )),
       Padding(
           padding: EdgeInsets.only(top: 5),
@@ -99,8 +106,8 @@ class AnimateSupergroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
-            child: const Text('1'),
+            onPressed: () => toggleAnimalsFromGroup(),
+            child: animalSymbol,
           )),
     ]);
   }

@@ -78,7 +78,10 @@ flutter:
     - assets/bliss_symbols/Person/FaceGroup/
     - assets/bliss_symbols/Person/BodyPartsGroup/
     - assets/bliss_symbols/Person/FamilyGroup/
-    
+    - assets/bliss_symbols/Person/PetsGroup/
+    - assets/bliss_symbols/Person/PersonalArtifactsGroup/   
+    - assets/bliss_symbols/Person/KitchenToolsGroup/    
+    - assets/bliss_symbols/Scenes/ConstructionGroup/    
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

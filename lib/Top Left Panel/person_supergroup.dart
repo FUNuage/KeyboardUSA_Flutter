@@ -44,8 +44,16 @@ class PersonSupergroup extends StatelessWidget {
   final VoidCallback toggleFaceGroup;
   final VoidCallback toggleBodyPartsGroup;
   final VoidCallback toggleFamilyGroup;
+  final VoidCallback togglePetsGroup;
+  final VoidCallback togglePersonalArtifactsGroup;
+  final VoidCallback toggleKitchenToolsGroup;
   PersonSupergroup(
-      this.toggleFaceGroup, this.toggleBodyPartsGroup, this.toggleFamilyGroup);
+      this.toggleFaceGroup,
+      this.toggleBodyPartsGroup,
+      this.toggleFamilyGroup,
+      this.togglePetsGroup,
+      this.togglePersonalArtifactsGroup,
+      this.toggleKitchenToolsGroup);
 
   // personalArtifacts
   @override
@@ -124,7 +132,7 @@ class PersonSupergroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => togglePetsGroup(),
             child: petsSymbol,
           )),
       Padding(
@@ -143,7 +151,7 @@ class PersonSupergroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => togglePersonalArtifactsGroup(),
             child: personalArtifactsSymbol,
           )),
       Padding(
@@ -162,7 +170,7 @@ class PersonSupergroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => toggleKitchenToolsGroup(),
             child: kitchenToolsSymbol,
           )),
     ]);

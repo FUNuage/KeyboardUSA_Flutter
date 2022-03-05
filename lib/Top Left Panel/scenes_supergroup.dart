@@ -19,6 +19,9 @@ class ScenesSupergroup extends StatelessWidget {
     color: const Color(0xffefcbcc),
   );
 
+  final VoidCallback toggleConstructionGroup;
+  ScenesSupergroup(this.toggleConstructionGroup);
+
   @override
   Widget build(BuildContext context) {
     return Column(children: <Widget>[
@@ -38,7 +41,7 @@ class ScenesSupergroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => toggleConstructionGroup(),
             child: constructionsSymbol,
           )),
       Padding(

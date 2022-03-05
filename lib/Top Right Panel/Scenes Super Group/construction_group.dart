@@ -1,66 +1,66 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class KitchenToolsGroup extends StatelessWidget {
-  Color mainColor = const Color(0xffa58544);
-  Color secondaryColor = const Color(0xffe9d58a);
+class ConstructionGroup extends StatelessWidget {
+  Color mainColor = const Color(0xff4d60a2);
+  Color secondaryColor = const Color(0xffd0c4e4);
 
-  final Widget containerSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Person/KitchenToolsGroup/container,basket_(high).svg',
+  final Widget doorSymbol = SvgPicture.asset(
+    'assets/bliss_symbols/Scenes/ConstructionGroup/door.svg',
     width: 100,
     color: const Color(0xffefcbcc),
   );
 
-  final Widget pitcherSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Person/KitchenToolsGroup/pitcher,jug,kettle,pot.svg',
+  final Widget windowSymbol = SvgPicture.asset(
+    'assets/bliss_symbols/Scenes/ConstructionGroup/window.svg',
     width: 100,
     color: const Color(0xffefcbcc),
   );
 
-  final Widget dishSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Person/KitchenToolsGroup/dish,plate,platter.svg',
+  final Widget constructionSymbol = SvgPicture.asset(
+    'assets/bliss_symbols/Scenes/ConstructionGroup/structure,construction.svg',
     width: 100,
     color: const Color(0xffefcbcc),
   );
 
-  final Widget cupSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Person/KitchenToolsGroup/cup.svg',
+  final Widget houseSymbol = SvgPicture.asset(
+    'assets/bliss_symbols/Scenes/ConstructionGroup/house,building,dwelling,residence.svg',
     width: 100,
     color: const Color(0xffefcbcc),
   );
 
-  final Widget drinkingGlassSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Person/KitchenToolsGroup/glass,drinking_glass.svg',
+  final Widget villageSymbol = SvgPicture.asset(
+    'assets/bliss_symbols/Scenes/ConstructionGroup/village.svg',
     width: 100,
     color: const Color(0xffefcbcc),
   );
 
-  final Widget forkSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Person/KitchenToolsGroup/fork.svg',
+  final Widget townSymbol = SvgPicture.asset(
+    'assets/bliss_symbols/Scenes/ConstructionGroup/town,city_(small).svg',
     width: 100,
     color: const Color(0xffefcbcc),
   );
 
-  final Widget knifeSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Person/KitchenToolsGroup/knife,sword.svg',
+  final Widget citySymbol = SvgPicture.asset(
+    'assets/bliss_symbols/Scenes/ConstructionGroup/city,metropolis.svg',
     width: 100,
     color: const Color(0xffefcbcc),
   );
 
-  final Widget spoonSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Person/KitchenToolsGroup/spoon.svg',
+  final Widget neighbourhoodSymbol = SvgPicture.asset(
+    'assets/bliss_symbols/Scenes/ConstructionGroup/district,city_district,neighbourhood_(town).svg',
     width: 100,
     color: const Color(0xffefcbcc),
   );
 
-  final Widget potSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Person/KitchenToolsGroup/pot,kettle,boiler.svg',
+  final Widget librarySymbol = SvgPicture.asset(
+    'assets/bliss_symbols/Scenes/ConstructionGroup/library_(building).svg',
     width: 100,
     color: const Color(0xffefcbcc),
   );
 
-  final Widget panSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Person/KitchenToolsGroup/pot,pan.svg',
+  final Widget universitySymbol = SvgPicture.asset(
+    'assets/bliss_symbols/Scenes/ConstructionGroup/university.svg',
     width: 100,
     color: const Color(0xffefcbcc),
   );
@@ -88,7 +88,7 @@ class KitchenToolsGroup extends StatelessWidget {
                 ),
               ),
               onPressed: () {},
-              child: containerSymbol,
+              child: doorSymbol,
             ),
           ),
           Padding(
@@ -108,30 +108,30 @@ class KitchenToolsGroup extends StatelessWidget {
                 ),
               ),
               onPressed: () {},
-              child: pitcherSymbol,
-            ),
-          ),
-          Padding(
-            padding: EdgeInsets.only(top: 5, right: 5),
-            child: OutlinedButton(
-              style: OutlinedButton.styleFrom(
-                fixedSize: Size(80, 65),
-                primary: secondaryColor,
-                backgroundColor: mainColor,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(10.0),
-                ),
-                side: BorderSide(
-                  width: 4.0,
-                  color: secondaryColor,
-                  style: BorderStyle.solid,
-                ),
-              ),
-              onPressed: () {},
-              child: dishSymbol,
+              child: windowSymbol,
             ),
           ),
         ]),
+        Padding(
+          padding: EdgeInsets.only(top: 5, right: 5),
+          child: OutlinedButton(
+            style: OutlinedButton.styleFrom(
+              fixedSize: Size(80, 65),
+              primary: secondaryColor,
+              backgroundColor: mainColor,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0),
+              ),
+              side: BorderSide(
+                width: 4.0,
+                color: secondaryColor,
+                style: BorderStyle.solid,
+              ),
+            ),
+            onPressed: () {},
+            child: constructionSymbol,
+          ),
+        ),
         Row(children: [
           Padding(
             padding: EdgeInsets.only(top: 5, right: 5),
@@ -150,7 +150,7 @@ class KitchenToolsGroup extends StatelessWidget {
                 ),
               ),
               onPressed: () {},
-              child: cupSymbol,
+              child: houseSymbol,
             ),
           ),
           Padding(
@@ -170,29 +170,7 @@ class KitchenToolsGroup extends StatelessWidget {
                 ),
               ),
               onPressed: () {},
-              child: drinkingGlassSymbol,
-            ),
-          )
-        ]),
-        Row(children: [
-          Padding(
-            padding: EdgeInsets.only(top: 5, right: 5),
-            child: OutlinedButton(
-              style: OutlinedButton.styleFrom(
-                fixedSize: Size(80, 65),
-                primary: secondaryColor,
-                backgroundColor: mainColor,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(10.0),
-                ),
-                side: BorderSide(
-                  width: 4.0,
-                  color: secondaryColor,
-                  style: BorderStyle.solid,
-                ),
-              ),
-              onPressed: () {},
-              child: forkSymbol,
+              child: villageSymbol,
             ),
           ),
           Padding(
@@ -212,7 +190,7 @@ class KitchenToolsGroup extends StatelessWidget {
                 ),
               ),
               onPressed: () {},
-              child: knifeSymbol,
+              child: townSymbol,
             ),
           ),
           Padding(
@@ -232,52 +210,70 @@ class KitchenToolsGroup extends StatelessWidget {
                 ),
               ),
               onPressed: () {},
-              child: spoonSymbol,
-            ),
-          )
-        ]),
-        Row(children: [
-          Padding(
-            padding: EdgeInsets.only(top: 5, right: 5),
-            child: OutlinedButton(
-              style: OutlinedButton.styleFrom(
-                fixedSize: Size(80, 65),
-                primary: secondaryColor,
-                backgroundColor: mainColor,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(10.0),
-                ),
-                side: BorderSide(
-                  width: 4.0,
-                  color: secondaryColor,
-                  style: BorderStyle.solid,
-                ),
-              ),
-              onPressed: () {},
-              child: potSymbol,
-            ),
-          ),
-          Padding(
-            padding: EdgeInsets.only(top: 5, right: 5),
-            child: OutlinedButton(
-              style: OutlinedButton.styleFrom(
-                fixedSize: Size(80, 65),
-                primary: secondaryColor,
-                backgroundColor: mainColor,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(10.0),
-                ),
-                side: BorderSide(
-                  width: 4.0,
-                  color: secondaryColor,
-                  style: BorderStyle.solid,
-                ),
-              ),
-              onPressed: () {},
-              child: panSymbol,
+              child: citySymbol,
             ),
           ),
         ]),
+        Padding(
+          padding: EdgeInsets.only(top: 5, right: 5),
+          child: OutlinedButton(
+            style: OutlinedButton.styleFrom(
+              fixedSize: Size(80, 65),
+              primary: secondaryColor,
+              backgroundColor: mainColor,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0),
+              ),
+              side: BorderSide(
+                width: 4.0,
+                color: secondaryColor,
+                style: BorderStyle.solid,
+              ),
+            ),
+            onPressed: () {},
+            child: neighbourhoodSymbol,
+          ),
+        ),
+        Padding(
+          padding: EdgeInsets.only(top: 5, right: 5),
+          child: OutlinedButton(
+            style: OutlinedButton.styleFrom(
+              fixedSize: Size(80, 65),
+              primary: secondaryColor,
+              backgroundColor: mainColor,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0),
+              ),
+              side: BorderSide(
+                width: 4.0,
+                color: secondaryColor,
+                style: BorderStyle.solid,
+              ),
+            ),
+            onPressed: () {},
+            child: librarySymbol,
+          ),
+        ),
+        Padding(
+          padding: EdgeInsets.only(top: 5, right: 5),
+          child: OutlinedButton(
+            style: OutlinedButton.styleFrom(
+              fixedSize: Size(80, 65),
+              primary: secondaryColor,
+              backgroundColor: mainColor,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0),
+              ),
+              side: BorderSide(
+                width: 4.0,
+                color: secondaryColor,
+                style: BorderStyle.solid,
+              ),
+            ),
+            onPressed: () {},
+            child: universitySymbol,
+          ),
+        ),
       ],
     );
   }

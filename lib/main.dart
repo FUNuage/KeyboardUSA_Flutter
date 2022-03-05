@@ -46,6 +46,10 @@ class HomePageState extends State<HomePage> {
   static bool faceGroup = false;
   static bool bodyPartsGroup = false;
   static bool familyGroup = false;
+  static bool petsGroup = false;
+  static bool personalArtifactsGroup = false;
+  static bool kitchenToolsGroup = false;
+  static bool constructionGroup = false;
 
   void toggleWorldSuperGroup() {
     setState(() {
@@ -65,6 +69,17 @@ class HomePageState extends State<HomePage> {
     });
   }
 
+  void togglePersonSuperGroup() {
+    setState(() {
+      faceGroup = false;
+      bodyPartsGroup = false;
+      familyGroup = false;
+      petsGroup = false;
+      personalArtifactsGroup = false;
+      kitchenToolsGroup = false;
+    });
+  }
+
   void toggleSkyGroup() {
     setState(() {
       if (groupName == "") {
@@ -77,6 +92,7 @@ class HomePageState extends State<HomePage> {
       materialsGroup = false;
       phenomenaGroup = false;
       toggleAnimateSuperGroup();
+      togglePersonSuperGroup();
     });
   }
 
@@ -92,6 +108,7 @@ class HomePageState extends State<HomePage> {
       materialsGroup = false;
       phenomenaGroup = false;
       toggleAnimateSuperGroup();
+      togglePersonSuperGroup();
     });
   }
 
@@ -107,6 +124,7 @@ class HomePageState extends State<HomePage> {
       geologyGroup = false;
       phenomenaGroup = false;
       toggleAnimateSuperGroup();
+      togglePersonSuperGroup();
     });
   }
 
@@ -122,6 +140,7 @@ class HomePageState extends State<HomePage> {
       geologyGroup = false;
       materialsGroup = false;
       toggleAnimateSuperGroup();
+      togglePersonSuperGroup();
     });
   }
 
@@ -137,6 +156,7 @@ class HomePageState extends State<HomePage> {
       animalTypesGroup = false;
       animalsFromGroup = false;
       toggleWorldSuperGroup();
+      togglePersonSuperGroup();
     });
   }
 
@@ -152,6 +172,7 @@ class HomePageState extends State<HomePage> {
       animalTypesGroup = false;
       animalsFromGroup = false;
       toggleWorldSuperGroup();
+      togglePersonSuperGroup();
     });
   }
 
@@ -167,6 +188,7 @@ class HomePageState extends State<HomePage> {
       fruitsGroup = false;
       animalsFromGroup = false;
       toggleWorldSuperGroup();
+      togglePersonSuperGroup();
     });
   }
 
@@ -182,6 +204,7 @@ class HomePageState extends State<HomePage> {
       fruitsGroup = false;
       animalTypesGroup = false;
       toggleWorldSuperGroup();
+      togglePersonSuperGroup();
     });
   }
 
@@ -195,6 +218,9 @@ class HomePageState extends State<HomePage> {
       faceGroup = !faceGroup;
       bodyPartsGroup = false;
       familyGroup = false;
+      petsGroup = false;
+      personalArtifactsGroup = false;
+      kitchenToolsGroup = false;
       toggleWorldSuperGroup();
       toggleAnimateSuperGroup();
     });
@@ -210,6 +236,9 @@ class HomePageState extends State<HomePage> {
       bodyPartsGroup = !bodyPartsGroup;
       faceGroup = false;
       familyGroup = false;
+      petsGroup = false;
+      personalArtifactsGroup = false;
+      kitchenToolsGroup = false;
       toggleWorldSuperGroup();
       toggleAnimateSuperGroup();
     });
@@ -225,8 +254,79 @@ class HomePageState extends State<HomePage> {
       familyGroup = !familyGroup;
       faceGroup = false;
       bodyPartsGroup = false;
+      petsGroup = false;
+      personalArtifactsGroup = false;
+      kitchenToolsGroup = false;
       toggleWorldSuperGroup();
       toggleAnimateSuperGroup();
+    });
+  }
+
+  void togglePetsGroup() {
+    setState(() {
+      if (groupName == "") {
+        groupName = "Pets group";
+      } else {
+        groupName = "";
+      }
+      petsGroup = !petsGroup;
+      familyGroup = false;
+      faceGroup = false;
+      bodyPartsGroup = false;
+      personalArtifactsGroup = false;
+      kitchenToolsGroup = false;
+      toggleWorldSuperGroup();
+      toggleAnimateSuperGroup();
+    });
+  }
+
+  void togglePersonalArtifactsGroup() {
+    setState(() {
+      if (groupName == "") {
+        groupName = "Personal Artifacts group";
+      } else {
+        groupName = "";
+      }
+      personalArtifactsGroup = !personalArtifactsGroup;
+      petsGroup = false;
+      familyGroup = false;
+      faceGroup = false;
+      bodyPartsGroup = false;
+      kitchenToolsGroup = false;
+      toggleWorldSuperGroup();
+      toggleAnimateSuperGroup();
+    });
+  }
+
+  void toggleKitchenToolsGroup() {
+    setState(() {
+      if (groupName == "") {
+        groupName = "Kitchen Tools group";
+      } else {
+        groupName = "";
+      }
+      kitchenToolsGroup = !kitchenToolsGroup;
+      personalArtifactsGroup = false;
+      petsGroup = false;
+      familyGroup = false;
+      faceGroup = false;
+      bodyPartsGroup = false;
+      toggleWorldSuperGroup();
+      toggleAnimateSuperGroup();
+    });
+  }
+
+  void toggleConstructionGroup() {
+    setState(() {
+      if (groupName == "") {
+        groupName = "Construction group";
+      } else {
+        groupName = "";
+      }
+      constructionGroup = !constructionGroup;
+      toggleWorldSuperGroup();
+      toggleAnimateSuperGroup();
+      togglePersonSuperGroup();
     });
   }
 
@@ -249,7 +349,11 @@ class HomePageState extends State<HomePage> {
                   toggleAnimalsFromGroup,
                   toggleFaceGroup,
                   toggleBodyPartsGroup,
-                  toggleFamilyGroup),
+                  toggleFamilyGroup,
+                  togglePetsGroup,
+                  togglePersonalArtifactsGroup,
+                  toggleKitchenToolsGroup,
+                  toggleConstructionGroup),
               TopRightPanel(),
             ]),
             BottomPanel(),

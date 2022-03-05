@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../main.dart';
 import 'language_supergroup.dart';
 import 'world_supergroup.dart';
 import 'animate_supergroup.dart';
@@ -8,6 +9,8 @@ import 'concepts_supergroup.dart';
 
 class TopLeftPanel extends StatelessWidget {
   Color backgroundColor = Color(0xff111111);
+
+  String groupName = HomePageState.groupName;
 
   final VoidCallback toggleSkyGroup;
   final VoidCallback toggleGeologyGroup;
@@ -65,6 +68,15 @@ class TopLeftPanel extends StatelessWidget {
               ConceptsSupergroup(),
             ],
           ),
+          Align(
+            alignment: Alignment.bottomRight,
+            child: Padding(
+                padding: EdgeInsets.only(right: 5, bottom: 5),
+                child: Text(
+                  groupName,
+                  style: TextStyle(color: Colors.white),
+                )),
+          )
         ]));
   }
 }

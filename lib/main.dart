@@ -34,6 +34,7 @@ class HomePage extends StatefulWidget {
 }
 
 class HomePageState extends State<HomePage> {
+  static String groupName = "";
   static bool skyGroup = false;
   static bool geologyGroup = false;
   static bool materialsGroup = false;
@@ -65,6 +66,7 @@ class HomePageState extends State<HomePage> {
 
   void toggleSkyGroup() {
     setState(() {
+      groupName = "Sky group";
       skyGroup = !skyGroup;
       geologyGroup = false;
       materialsGroup = false;
@@ -75,6 +77,7 @@ class HomePageState extends State<HomePage> {
 
   void toggleGeologyGroup() {
     setState(() {
+      groupName = "Geology group";
       geologyGroup = !geologyGroup;
       skyGroup = false;
       materialsGroup = false;
@@ -85,6 +88,7 @@ class HomePageState extends State<HomePage> {
 
   void toggleMaterialsGroup() {
     setState(() {
+      groupName = "Materials group";
       materialsGroup = !materialsGroup;
       skyGroup = false;
       geologyGroup = false;
@@ -95,6 +99,7 @@ class HomePageState extends State<HomePage> {
 
   void togglePhenomenaGroup() {
     setState(() {
+      groupName = "Phenomena group";
       phenomenaGroup = !phenomenaGroup;
       skyGroup = false;
       geologyGroup = false;
@@ -105,6 +110,7 @@ class HomePageState extends State<HomePage> {
 
   void togglePlantsGroup() {
     setState(() {
+      groupName = "Plants group";
       plantsGroup = !plantsGroup;
       fruitsGroup = false;
       animalTypesGroup = false;
@@ -115,6 +121,7 @@ class HomePageState extends State<HomePage> {
 
   void toggleFruitsGroup() {
     setState(() {
+      groupName = "Fruits group";
       fruitsGroup = !fruitsGroup;
       plantsGroup = false;
       animalTypesGroup = false;
@@ -125,6 +132,7 @@ class HomePageState extends State<HomePage> {
 
   void toggleAnimalTypesGroup() {
     setState(() {
+      groupName = "Animal Types group";
       animalTypesGroup = !animalTypesGroup;
       plantsGroup = false;
       fruitsGroup = false;
@@ -135,6 +143,7 @@ class HomePageState extends State<HomePage> {
 
   void toggleAnimalsFromGroup() {
     setState(() {
+      groupName = "Animals From group";
       animalsFromGroup = !animalsFromGroup;
       plantsGroup = false;
       fruitsGroup = false;
@@ -145,6 +154,7 @@ class HomePageState extends State<HomePage> {
 
   void toggleFaceGroup() {
     setState(() {
+      groupName = "Face group";
       faceGroup = !faceGroup;
       bodyPartsGroup = false;
       toggleWorldSuperGroup();
@@ -154,6 +164,7 @@ class HomePageState extends State<HomePage> {
 
   void toggleBodyPartsGroup() {
     setState(() {
+      groupName = "Body Parts group";
       bodyPartsGroup = !bodyPartsGroup;
       faceGroup = false;
       toggleWorldSuperGroup();
@@ -170,16 +181,17 @@ class HomePageState extends State<HomePage> {
           children: <Widget>[
             Row(children: <Widget>[
               TopLeftPanel(
-                  toggleSkyGroup,
-                  toggleGeologyGroup,
-                  toggleMaterialsGroup,
-                  togglePhenomenaGroup,
-                  togglePlantsGroup,
-                  toggleFruitsGroup,
-                  toggleAnimalTypesGroup,
-                  toggleAnimalsFromGroup,
-                  toggleFaceGroup,
-                  toggleBodyPartsGroup),
+                toggleSkyGroup,
+                toggleGeologyGroup,
+                toggleMaterialsGroup,
+                togglePhenomenaGroup,
+                togglePlantsGroup,
+                toggleFruitsGroup,
+                toggleAnimalTypesGroup,
+                toggleAnimalsFromGroup,
+                toggleFaceGroup,
+                toggleBodyPartsGroup,
+              ),
               TopRightPanel(),
             ]),
             BottomPanel(),

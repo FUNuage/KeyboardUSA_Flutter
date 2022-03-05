@@ -42,6 +42,26 @@ class HomePageState extends State<HomePage> {
   static bool fruitsGroup = false;
   static bool animalTypesGroup = false;
   static bool animalsFromGroup = false;
+  static bool faceGroup = false;
+  static bool bodyPartsGroup = false;
+
+  void toggleWorldSuperGroup() {
+    setState(() {
+      skyGroup = false;
+      geologyGroup = false;
+      materialsGroup = false;
+      phenomenaGroup = false;
+    });
+  }
+
+  void toggleAnimateSuperGroup() {
+    setState(() {
+      plantsGroup = false;
+      fruitsGroup = false;
+      animalTypesGroup = false;
+      animalsFromGroup = false;
+    });
+  }
 
   void toggleSkyGroup() {
     setState(() {
@@ -49,9 +69,7 @@ class HomePageState extends State<HomePage> {
       geologyGroup = false;
       materialsGroup = false;
       phenomenaGroup = false;
-      plantsGroup = false;
-      fruitsGroup = false;
-      animalTypesGroup = false;
+      toggleAnimateSuperGroup();
     });
   }
 
@@ -61,9 +79,7 @@ class HomePageState extends State<HomePage> {
       skyGroup = false;
       materialsGroup = false;
       phenomenaGroup = false;
-      plantsGroup = false;
-      fruitsGroup = false;
-      animalTypesGroup = false;
+      toggleAnimateSuperGroup();
     });
   }
 
@@ -73,9 +89,7 @@ class HomePageState extends State<HomePage> {
       skyGroup = false;
       geologyGroup = false;
       phenomenaGroup = false;
-      plantsGroup = false;
-      fruitsGroup = false;
-      animalTypesGroup = false;
+      toggleAnimateSuperGroup();
     });
   }
 
@@ -85,57 +99,65 @@ class HomePageState extends State<HomePage> {
       skyGroup = false;
       geologyGroup = false;
       materialsGroup = false;
-      plantsGroup = false;
-      fruitsGroup = false;
-      animalTypesGroup = false;
+      toggleAnimateSuperGroup();
     });
   }
 
   void togglePlantsGroup() {
     setState(() {
       plantsGroup = !plantsGroup;
-      skyGroup = false;
-      geologyGroup = false;
-      materialsGroup = false;
-      phenomenaGroup = false;
       fruitsGroup = false;
       animalTypesGroup = false;
+      animalsFromGroup = false;
+      toggleWorldSuperGroup();
     });
   }
 
   void toggleFruitsGroup() {
     setState(() {
       fruitsGroup = !fruitsGroup;
-      skyGroup = false;
-      geologyGroup = false;
-      materialsGroup = false;
-      phenomenaGroup = false;
       plantsGroup = false;
       animalTypesGroup = false;
+      animalsFromGroup = false;
+      toggleWorldSuperGroup();
     });
   }
 
   void toggleAnimalTypesGroup() {
     setState(() {
       animalTypesGroup = !animalTypesGroup;
-      skyGroup = false;
-      geologyGroup = false;
-      materialsGroup = false;
-      phenomenaGroup = false;
       plantsGroup = false;
       fruitsGroup = false;
+      animalsFromGroup = false;
+      toggleWorldSuperGroup();
     });
   }
 
   void toggleAnimalsFromGroup() {
     setState(() {
       animalsFromGroup = !animalsFromGroup;
-      skyGroup = false;
-      geologyGroup = false;
-      materialsGroup = false;
-      phenomenaGroup = false;
       plantsGroup = false;
       fruitsGroup = false;
+      animalTypesGroup = false;
+      toggleWorldSuperGroup();
+    });
+  }
+
+  void toggleFaceGroup() {
+    setState(() {
+      faceGroup = !faceGroup;
+      bodyPartsGroup = false;
+      toggleWorldSuperGroup();
+      toggleAnimateSuperGroup();
+    });
+  }
+
+  void toggleBodyPartsGroup() {
+    setState(() {
+      bodyPartsGroup = !bodyPartsGroup;
+      faceGroup = false;
+      toggleWorldSuperGroup();
+      toggleAnimateSuperGroup();
     });
   }
 
@@ -155,7 +177,9 @@ class HomePageState extends State<HomePage> {
                   togglePlantsGroup,
                   toggleFruitsGroup,
                   toggleAnimalTypesGroup,
-                  toggleAnimalsFromGroup),
+                  toggleAnimalsFromGroup,
+                  toggleFaceGroup,
+                  toggleBodyPartsGroup),
               TopRightPanel(),
             ]),
             BottomPanel(),

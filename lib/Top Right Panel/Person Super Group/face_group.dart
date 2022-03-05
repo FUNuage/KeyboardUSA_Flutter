@@ -2,53 +2,53 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class FaceGroup extends StatelessWidget {
-  Color mainColor = const Color(0xff467f51);
-  Color secondaryColor = const Color(0xffa9cfb4);
+  Color mainColor = const Color(0xffa58544);
+  Color secondaryColor = const Color(0xffe9d58a);
 
   final Widget eyeSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Person/AnimalTypesGroup/animal,beast.svg',
+    'assets/bliss_symbols/Person/FaceGroup/eye.svg',
     width: 100,
     color: const Color(0xffefcbcc),
   );
 
   final Widget earSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Person/AnimalTypesGroup/rabbit,hare.svg',
+    'assets/bliss_symbols/Person/FaceGroup/ear.svg',
     width: 100,
     color: const Color(0xffefcbcc),
   );
 
   final Widget noseSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Person/AnimalTypesGroup/deer,cervine_(animal),cervid.svg',
+    'assets/bliss_symbols/Person/FaceGroup/nose.svg',
     width: 100,
     color: const Color(0xffefcbcc),
   );
 
   final Widget mouthSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Person/AnimalTypesGroup/camel.svg',
+    'assets/bliss_symbols/Person/FaceGroup/mouth.svg',
     width: 100,
     color: const Color(0xffefcbcc),
   );
 
   final Widget tongueSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Person/AnimalTypesGroup/horse.svg',
+    'assets/bliss_symbols/Person/FaceGroup/tongue.svg',
     width: 100,
     color: const Color(0xffefcbcc),
   );
 
   final Widget toothSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Person/AnimalTypesGroup/wing(s).svg',
+    'assets/bliss_symbols/Person/FaceGroup/tooth.svg',
     width: 100,
     color: const Color(0xffefcbcc),
   );
 
   final Widget chinSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Person/AnimalTypesGroup/bird.svg',
+    'assets/bliss_symbols/Person/FaceGroup/chin.svg',
     width: 100,
     color: const Color(0xffefcbcc),
   );
 
   final Widget hairOfHeadSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Person/AnimalTypesGroup/bird_of_prey,raptor,falcon,hawk,eagle.svg',
+    'assets/bliss_symbols/Person/FaceGroup/hair_(head).svg',
     width: 100,
     color: const Color(0xffefcbcc),
   );

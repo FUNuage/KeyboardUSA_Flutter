@@ -35,6 +35,7 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   flutter_svg: ^1.0.3
+  flame: ^1.0.0
 
 dev_dependencies:
   flutter_test:
@@ -74,6 +75,8 @@ flutter:
     - assets/bliss_symbols/Animate/FruitsGroup/
     - assets/bliss_symbols/Animate/AnimalTypesGroup/
     - assets/bliss_symbols/Animate/AnimalsFromGroup/
+    - assets/bliss_symbols/Person/FaceGroup/
+    - assets/bliss_symbols/Person/BodyPartsGroup/
     
 
   # An image asset can refer to one or more resolution-specific "variants", see

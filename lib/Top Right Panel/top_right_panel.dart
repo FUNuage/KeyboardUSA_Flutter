@@ -9,6 +9,8 @@ import 'Animate Super Group/plants_group.dart';
 import 'Animate Super Group/fruits_group.dart';
 import 'Animate Super Group/animal_types_group.dart';
 import 'Animate Super Group/animals_from_group.dart';
+import 'Person Super Group/face_group.dart';
+import 'Person Super Group/body_parts_group.dart';
 
 class TopRightPanel extends StatelessWidget {
   Color backgroundColor = Color(0xff111111);
@@ -77,6 +79,18 @@ class TopRightPanel extends StatelessWidget {
               child: Padding(
                 padding: EdgeInsets.all(10),
                 child: AnimalsFromGroup(),
+              )),
+          Visibility(
+              visible: HomePageState.faceGroup,
+              child: Padding(
+                padding: EdgeInsets.all(10),
+                child: FaceGroup(),
+              )),
+          Visibility(
+              visible: HomePageState.bodyPartsGroup,
+              child: Padding(
+                padding: EdgeInsets.all(10),
+                child: BodyPartsGroup(),
               )),
         ]));
   }

@@ -41,6 +41,10 @@ class PersonSupergroup extends StatelessWidget {
     color: const Color(0xffefcbcc),
   );
 
+  final VoidCallback toggleFaceGroup;
+  final VoidCallback toggleBodyPartsGroup;
+  PersonSupergroup(this.toggleFaceGroup, this.toggleBodyPartsGroup);
+
   // personalArtifacts
   @override
   Widget build(BuildContext context) {
@@ -61,7 +65,7 @@ class PersonSupergroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => toggleFaceGroup(),
             child: faceSymbol,
           )),
       Padding(
@@ -80,7 +84,7 @@ class PersonSupergroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => toggleBodyPartsGroup(),
             child: bodyPartSymbol,
           )),
       Padding(

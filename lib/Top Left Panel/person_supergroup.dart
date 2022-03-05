@@ -43,7 +43,9 @@ class PersonSupergroup extends StatelessWidget {
 
   final VoidCallback toggleFaceGroup;
   final VoidCallback toggleBodyPartsGroup;
-  PersonSupergroup(this.toggleFaceGroup, this.toggleBodyPartsGroup);
+  final VoidCallback toggleFamilyGroup;
+  PersonSupergroup(
+      this.toggleFaceGroup, this.toggleBodyPartsGroup, this.toggleFamilyGroup);
 
   // personalArtifacts
   @override
@@ -103,7 +105,7 @@ class PersonSupergroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => toggleFamilyGroup(),
             child: familySymbol,
           )),
       Padding(

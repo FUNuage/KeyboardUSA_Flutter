@@ -22,6 +22,7 @@ class TopLeftPanel extends StatelessWidget {
   final VoidCallback toggleAnimalsFromGroup;
   final VoidCallback toggleFaceGroup;
   final VoidCallback toggleBodyPartsGroup;
+  final VoidCallback toggleFamilyGroup;
 
   TopLeftPanel(
       this.toggleSkyGroup,
@@ -33,7 +34,8 @@ class TopLeftPanel extends StatelessWidget {
       this.toggleAnimalTypesGroup,
       this.toggleAnimalsFromGroup,
       this.toggleFaceGroup,
-      this.toggleBodyPartsGroup);
+      this.toggleBodyPartsGroup,
+      this.toggleFamilyGroup);
 
   @override
   Widget build(BuildContext context) {
@@ -61,7 +63,8 @@ class TopLeftPanel extends StatelessWidget {
               AnimateSupergroup(togglePlantsGroup, toggleFruitsGroup,
                   toggleAnimalTypesGroup, toggleAnimalsFromGroup),
               SizedBox(width: 50),
-              PersonSupergroup(toggleFaceGroup, toggleBodyPartsGroup),
+              PersonSupergroup(
+                  toggleFaceGroup, toggleBodyPartsGroup, toggleFamilyGroup),
               SizedBox(width: 50),
               ScenesSupergroup(),
               SizedBox(width: 50),

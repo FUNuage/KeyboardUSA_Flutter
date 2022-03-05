@@ -45,6 +45,7 @@ class HomePageState extends State<HomePage> {
   static bool animalsFromGroup = false;
   static bool faceGroup = false;
   static bool bodyPartsGroup = false;
+  static bool familyGroup = false;
 
   void toggleWorldSuperGroup() {
     setState(() {
@@ -66,7 +67,11 @@ class HomePageState extends State<HomePage> {
 
   void toggleSkyGroup() {
     setState(() {
-      groupName = "Sky group";
+      if (groupName == "") {
+        groupName = "Sky group";
+      } else {
+        groupName = "";
+      }
       skyGroup = !skyGroup;
       geologyGroup = false;
       materialsGroup = false;
@@ -77,7 +82,11 @@ class HomePageState extends State<HomePage> {
 
   void toggleGeologyGroup() {
     setState(() {
-      groupName = "Geology group";
+      if (groupName == "") {
+        groupName = "Geology group";
+      } else {
+        groupName = "";
+      }
       geologyGroup = !geologyGroup;
       skyGroup = false;
       materialsGroup = false;
@@ -88,7 +97,11 @@ class HomePageState extends State<HomePage> {
 
   void toggleMaterialsGroup() {
     setState(() {
-      groupName = "Materials group";
+      if (groupName == "") {
+        groupName = "Materials group";
+      } else {
+        groupName = "";
+      }
       materialsGroup = !materialsGroup;
       skyGroup = false;
       geologyGroup = false;
@@ -99,7 +112,11 @@ class HomePageState extends State<HomePage> {
 
   void togglePhenomenaGroup() {
     setState(() {
-      groupName = "Phenomena group";
+      if (groupName == "") {
+        groupName = "Phenomena group";
+      } else {
+        groupName = "";
+      }
       phenomenaGroup = !phenomenaGroup;
       skyGroup = false;
       geologyGroup = false;
@@ -110,7 +127,11 @@ class HomePageState extends State<HomePage> {
 
   void togglePlantsGroup() {
     setState(() {
-      groupName = "Plants group";
+      if (groupName == "") {
+        groupName = "Plants group";
+      } else {
+        groupName = "";
+      }
       plantsGroup = !plantsGroup;
       fruitsGroup = false;
       animalTypesGroup = false;
@@ -121,7 +142,11 @@ class HomePageState extends State<HomePage> {
 
   void toggleFruitsGroup() {
     setState(() {
-      groupName = "Fruits group";
+      if (groupName == "") {
+        groupName = "Fruits group";
+      } else {
+        groupName = "";
+      }
       fruitsGroup = !fruitsGroup;
       plantsGroup = false;
       animalTypesGroup = false;
@@ -132,7 +157,11 @@ class HomePageState extends State<HomePage> {
 
   void toggleAnimalTypesGroup() {
     setState(() {
-      groupName = "Animal Types group";
+      if (groupName == "") {
+        groupName = "Animal Types group";
+      } else {
+        groupName = "";
+      }
       animalTypesGroup = !animalTypesGroup;
       plantsGroup = false;
       fruitsGroup = false;
@@ -143,7 +172,11 @@ class HomePageState extends State<HomePage> {
 
   void toggleAnimalsFromGroup() {
     setState(() {
-      groupName = "Animals From group";
+      if (groupName == "") {
+        groupName = "Animals From group";
+      } else {
+        groupName = "";
+      }
       animalsFromGroup = !animalsFromGroup;
       plantsGroup = false;
       fruitsGroup = false;
@@ -154,9 +187,14 @@ class HomePageState extends State<HomePage> {
 
   void toggleFaceGroup() {
     setState(() {
-      groupName = "Face group";
+      if (groupName == "") {
+        groupName = "Face group";
+      } else {
+        groupName = "";
+      }
       faceGroup = !faceGroup;
       bodyPartsGroup = false;
+      familyGroup = false;
       toggleWorldSuperGroup();
       toggleAnimateSuperGroup();
     });
@@ -164,9 +202,29 @@ class HomePageState extends State<HomePage> {
 
   void toggleBodyPartsGroup() {
     setState(() {
-      groupName = "Body Parts group";
+      if (groupName == "") {
+        groupName = "Body Parts group";
+      } else {
+        groupName = "";
+      }
       bodyPartsGroup = !bodyPartsGroup;
       faceGroup = false;
+      familyGroup = false;
+      toggleWorldSuperGroup();
+      toggleAnimateSuperGroup();
+    });
+  }
+
+  void toggleFamilyGroup() {
+    setState(() {
+      if (groupName == "") {
+        groupName = "Family group";
+      } else {
+        groupName = "";
+      }
+      familyGroup = !familyGroup;
+      faceGroup = false;
+      bodyPartsGroup = false;
       toggleWorldSuperGroup();
       toggleAnimateSuperGroup();
     });
@@ -181,17 +239,17 @@ class HomePageState extends State<HomePage> {
           children: <Widget>[
             Row(children: <Widget>[
               TopLeftPanel(
-                toggleSkyGroup,
-                toggleGeologyGroup,
-                toggleMaterialsGroup,
-                togglePhenomenaGroup,
-                togglePlantsGroup,
-                toggleFruitsGroup,
-                toggleAnimalTypesGroup,
-                toggleAnimalsFromGroup,
-                toggleFaceGroup,
-                toggleBodyPartsGroup,
-              ),
+                  toggleSkyGroup,
+                  toggleGeologyGroup,
+                  toggleMaterialsGroup,
+                  togglePhenomenaGroup,
+                  togglePlantsGroup,
+                  toggleFruitsGroup,
+                  toggleAnimalTypesGroup,
+                  toggleAnimalsFromGroup,
+                  toggleFaceGroup,
+                  toggleBodyPartsGroup,
+                  toggleFamilyGroup),
               TopRightPanel(),
             ]),
             BottomPanel(),

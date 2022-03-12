@@ -70,7 +70,7 @@ class TopLeftPanel extends StatelessWidget {
         child: Column(children: <Widget>[
           LanguageSupergroup(),
           Row(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               WorldSupergroup(toggleSkyGroup, toggleGeologyGroup,

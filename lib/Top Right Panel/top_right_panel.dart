@@ -137,24 +137,24 @@ class TopRightPanel extends StatelessWidget {
                 padding: EdgeInsets.all(10),
                 child: TransportGroundGroup(),
               )),
-          // Visibility(
-          //     visible: HomePageState.transportWaterGroup,
-          //     child: Padding(
-          //       padding: EdgeInsets.all(10),
-          //       child: TransportWaterGroup(),
-          //     )),
+          Visibility(
+              visible: HomePageState.transportWaterGroup,
+              child: Padding(
+                padding: EdgeInsets.all(10),
+                child: TransportWaterGroup(),
+              )),
           Visibility(
               visible: HomePageState.transportAirGroup,
               child: Padding(
                 padding: EdgeInsets.all(10),
                 child: TransportAirGroup(),
               )),
-          // Visibility(
-          //     visible: HomePageState.transportPathsGroup,
-          //     child: Padding(
-          //       padding: EdgeInsets.all(10),
-          //       child: TransportPathsGroup(),
-          //     )),
+          Visibility(
+              visible: HomePageState.transportPathsGroup,
+              child: Padding(
+                padding: EdgeInsets.all(10),
+                child: TransportPathsGroup(),
+              )),
         ]));
   }
 }

@@ -27,6 +27,10 @@ class TopLeftPanel extends StatelessWidget {
   final VoidCallback togglePersonalArtifactsGroup;
   final VoidCallback toggleKitchenToolsGroup;
   final VoidCallback toggleConstructionGroup;
+  final VoidCallback toggleTransportGroundGroup;
+  final VoidCallback toggleTransportWaterGroup;
+  final VoidCallback toggleTransportAirGroup;
+  final VoidCallback toggleTransportPathsGroup;
 
   TopLeftPanel(
       this.toggleSkyGroup,
@@ -43,7 +47,11 @@ class TopLeftPanel extends StatelessWidget {
       this.togglePetsGroup,
       this.togglePersonalArtifactsGroup,
       this.toggleKitchenToolsGroup,
-      this.toggleConstructionGroup);
+      this.toggleConstructionGroup,
+      this.toggleTransportGroundGroup,
+      this.toggleTransportWaterGroup,
+      this.toggleTransportAirGroup,
+      this.toggleTransportPathsGroup);
 
   @override
   Widget build(BuildContext context) {
@@ -80,8 +88,11 @@ class TopLeftPanel extends StatelessWidget {
                   toggleKitchenToolsGroup),
               SizedBox(width: 50),
               ScenesSupergroup(
-                toggleConstructionGroup,
-              ),
+                  toggleConstructionGroup,
+                  toggleTransportGroundGroup,
+                  toggleTransportWaterGroup,
+                  toggleTransportAirGroup,
+                  toggleTransportPathsGroup),
               SizedBox(width: 50),
               ConceptsSupergroup(),
             ],

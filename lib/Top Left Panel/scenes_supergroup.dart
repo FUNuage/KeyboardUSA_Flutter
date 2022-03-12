@@ -20,7 +20,16 @@ class ScenesSupergroup extends StatelessWidget {
   );
 
   final VoidCallback toggleConstructionGroup;
-  ScenesSupergroup(this.toggleConstructionGroup);
+  final VoidCallback toggleTransportGroundGroup;
+  final VoidCallback toggleTransportWaterGroup;
+  final VoidCallback toggleTransportAirGroup;
+  final VoidCallback toggleTransportPathsGroup;
+  ScenesSupergroup(
+      this.toggleConstructionGroup,
+      this.toggleTransportGroundGroup,
+      this.toggleTransportWaterGroup,
+      this.toggleTransportAirGroup,
+      this.toggleTransportPathsGroup);
 
   @override
   Widget build(BuildContext context) {
@@ -60,7 +69,7 @@ class ScenesSupergroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => toggleTransportGroundGroup(),
             child: transportSymbol,
           )),
       Padding(
@@ -79,7 +88,7 @@ class ScenesSupergroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => toggleTransportWaterGroup(),
             child: transportSymbol,
           )),
       Padding(
@@ -98,7 +107,7 @@ class ScenesSupergroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => toggleTransportAirGroup(),
             child: transportSymbol,
           )),
       Padding(
@@ -117,7 +126,7 @@ class ScenesSupergroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => toggleTransportPathsGroup(),
             child: transportSymbol,
           )),
     ]);

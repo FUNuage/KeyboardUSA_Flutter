@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'Top Left Panel/top_left_panel.dart';
 import 'Top Right Panel/top_right_panel.dart';
-import 'bottom_panel.dart';
+import 'Bottom Panel/bottom_panel.dart';
 
 void main() {
   runApp(const App());
@@ -50,6 +50,10 @@ class HomePageState extends State<HomePage> {
   static bool personalArtifactsGroup = false;
   static bool kitchenToolsGroup = false;
   static bool constructionGroup = false;
+  static bool transportGroundGroup = false;
+  static bool transportWaterGroup = false;
+  static bool transportAirGroup = false;
+  static bool transportPathsGroup = false;
 
   void toggleWorldSuperGroup() {
     setState(() {
@@ -324,6 +328,82 @@ class HomePageState extends State<HomePage> {
         groupName = "";
       }
       constructionGroup = !constructionGroup;
+      transportGroundGroup = false;
+      transportWaterGroup = false;
+      transportAirGroup = false;
+      transportPathsGroup = false;
+      toggleWorldSuperGroup();
+      toggleAnimateSuperGroup();
+      togglePersonSuperGroup();
+    });
+  }
+
+  void toggleTransportGroundGroup() {
+    setState(() {
+      if (groupName == "") {
+        groupName = "Transport Ground group";
+      } else {
+        groupName = "";
+      }
+      transportGroundGroup = !transportGroundGroup;
+      constructionGroup = false;
+      transportWaterGroup = false;
+      transportAirGroup = false;
+      transportPathsGroup = false;
+      toggleWorldSuperGroup();
+      toggleAnimateSuperGroup();
+      togglePersonSuperGroup();
+    });
+  }
+
+  void toggleTransportWaterGroup() {
+    setState(() {
+      if (groupName == "") {
+        groupName = "Transport Water group";
+      } else {
+        groupName = "";
+      }
+      transportWaterGroup = !transportWaterGroup;
+      constructionGroup = false;
+      transportGroundGroup = false;
+      transportAirGroup = false;
+      transportPathsGroup = false;
+      toggleWorldSuperGroup();
+      toggleAnimateSuperGroup();
+      togglePersonSuperGroup();
+    });
+  }
+
+  void toggleTransportAirGroup() {
+    setState(() {
+      if (groupName == "") {
+        groupName = "Transport Air group";
+      } else {
+        groupName = "";
+      }
+      transportAirGroup = !transportAirGroup;
+      constructionGroup = false;
+      transportGroundGroup = false;
+      transportWaterGroup = false;
+      transportPathsGroup = false;
+      toggleWorldSuperGroup();
+      toggleAnimateSuperGroup();
+      togglePersonSuperGroup();
+    });
+  }
+
+  void toggleTransportPathsGroup() {
+    setState(() {
+      if (groupName == "") {
+        groupName = "Transport Paths group";
+      } else {
+        groupName = "";
+      }
+      transportPathsGroup = !transportPathsGroup;
+      constructionGroup = false;
+      transportGroundGroup = false;
+      transportWaterGroup = false;
+      transportAirGroup = false;
       toggleWorldSuperGroup();
       toggleAnimateSuperGroup();
       togglePersonSuperGroup();
@@ -353,7 +433,11 @@ class HomePageState extends State<HomePage> {
                   togglePetsGroup,
                   togglePersonalArtifactsGroup,
                   toggleKitchenToolsGroup,
-                  toggleConstructionGroup),
+                  toggleConstructionGroup,
+                  toggleTransportGroundGroup,
+                  toggleTransportWaterGroup,
+                  toggleTransportAirGroup,
+                  toggleTransportPathsGroup),
               TopRightPanel(),
             ]),
             BottomPanel(),

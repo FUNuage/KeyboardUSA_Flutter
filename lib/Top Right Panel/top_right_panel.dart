@@ -16,6 +16,10 @@ import 'Person Super Group/pets_group.dart';
 import 'Person Super Group/personal_artifacts_group.dart';
 import 'Person Super Group/kitchen_tools_group.dart';
 import 'Scenes Super Group/construction_group.dart';
+import 'Scenes Super Group/transport_ground_group.dart';
+import 'Scenes Super Group/transport_water_group.dart';
+import 'Scenes Super Group/transport_air_group.dart';
+import 'Scenes Super Group/transport_paths_group.dart';
 
 class TopRightPanel extends StatelessWidget {
   Color backgroundColor = Color(0xff111111);
@@ -127,6 +131,30 @@ class TopRightPanel extends StatelessWidget {
                 padding: EdgeInsets.all(10),
                 child: ConstructionGroup(),
               )),
+          Visibility(
+              visible: HomePageState.transportGroundGroup,
+              child: Padding(
+                padding: EdgeInsets.all(10),
+                child: TransportGroundGroup(),
+              )),
+          // Visibility(
+          //     visible: HomePageState.transportWaterGroup,
+          //     child: Padding(
+          //       padding: EdgeInsets.all(10),
+          //       child: TransportWaterGroup(),
+          //     )),
+          Visibility(
+              visible: HomePageState.transportAirGroup,
+              child: Padding(
+                padding: EdgeInsets.all(10),
+                child: TransportAirGroup(),
+              )),
+          // Visibility(
+          //     visible: HomePageState.transportPathsGroup,
+          //     child: Padding(
+          //       padding: EdgeInsets.all(10),
+          //       child: TransportPathsGroup(),
+          //     )),
         ]));
   }
 }

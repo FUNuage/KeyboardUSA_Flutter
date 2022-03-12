@@ -54,6 +54,9 @@ class HomePageState extends State<HomePage> {
   static bool transportWaterGroup = false;
   static bool transportAirGroup = false;
   static bool transportPathsGroup = false;
+  static bool timeGroup = false;
+  static bool enumerationGroup = false;
+  static bool colorsGroup = false;
 
   void toggleWorldSuperGroup() {
     setState(() {
@@ -84,6 +87,16 @@ class HomePageState extends State<HomePage> {
     });
   }
 
+  void toggleScenesSuperGroup() {
+    setState(() {
+      constructionGroup = false;
+      transportGroundGroup = false;
+      transportWaterGroup = false;
+      transportAirGroup = false;
+      transportPathsGroup = false;
+    });
+  }
+
   void toggleSkyGroup() {
     setState(() {
       if (groupName == "") {
@@ -97,6 +110,7 @@ class HomePageState extends State<HomePage> {
       phenomenaGroup = false;
       toggleAnimateSuperGroup();
       togglePersonSuperGroup();
+      toggleScenesSuperGroup();
     });
   }
 
@@ -113,6 +127,7 @@ class HomePageState extends State<HomePage> {
       phenomenaGroup = false;
       toggleAnimateSuperGroup();
       togglePersonSuperGroup();
+      toggleScenesSuperGroup();
     });
   }
 
@@ -129,6 +144,7 @@ class HomePageState extends State<HomePage> {
       phenomenaGroup = false;
       toggleAnimateSuperGroup();
       togglePersonSuperGroup();
+      toggleScenesSuperGroup();
     });
   }
 
@@ -145,6 +161,7 @@ class HomePageState extends State<HomePage> {
       materialsGroup = false;
       toggleAnimateSuperGroup();
       togglePersonSuperGroup();
+      toggleScenesSuperGroup();
     });
   }
 
@@ -161,6 +178,7 @@ class HomePageState extends State<HomePage> {
       animalsFromGroup = false;
       toggleWorldSuperGroup();
       togglePersonSuperGroup();
+      toggleScenesSuperGroup();
     });
   }
 
@@ -177,6 +195,7 @@ class HomePageState extends State<HomePage> {
       animalsFromGroup = false;
       toggleWorldSuperGroup();
       togglePersonSuperGroup();
+      toggleScenesSuperGroup();
     });
   }
 
@@ -193,6 +212,7 @@ class HomePageState extends State<HomePage> {
       animalsFromGroup = false;
       toggleWorldSuperGroup();
       togglePersonSuperGroup();
+      toggleScenesSuperGroup();
     });
   }
 
@@ -209,6 +229,7 @@ class HomePageState extends State<HomePage> {
       animalTypesGroup = false;
       toggleWorldSuperGroup();
       togglePersonSuperGroup();
+      toggleScenesSuperGroup();
     });
   }
 
@@ -227,6 +248,7 @@ class HomePageState extends State<HomePage> {
       kitchenToolsGroup = false;
       toggleWorldSuperGroup();
       toggleAnimateSuperGroup();
+      toggleScenesSuperGroup();
     });
   }
 
@@ -245,6 +267,7 @@ class HomePageState extends State<HomePage> {
       kitchenToolsGroup = false;
       toggleWorldSuperGroup();
       toggleAnimateSuperGroup();
+      toggleScenesSuperGroup();
     });
   }
 
@@ -263,6 +286,7 @@ class HomePageState extends State<HomePage> {
       kitchenToolsGroup = false;
       toggleWorldSuperGroup();
       toggleAnimateSuperGroup();
+      toggleScenesSuperGroup();
     });
   }
 
@@ -281,6 +305,7 @@ class HomePageState extends State<HomePage> {
       kitchenToolsGroup = false;
       toggleWorldSuperGroup();
       toggleAnimateSuperGroup();
+      toggleScenesSuperGroup();
     });
   }
 
@@ -299,6 +324,7 @@ class HomePageState extends State<HomePage> {
       kitchenToolsGroup = false;
       toggleWorldSuperGroup();
       toggleAnimateSuperGroup();
+      toggleScenesSuperGroup();
     });
   }
 
@@ -317,6 +343,7 @@ class HomePageState extends State<HomePage> {
       bodyPartsGroup = false;
       toggleWorldSuperGroup();
       toggleAnimateSuperGroup();
+      toggleScenesSuperGroup();
     });
   }
 
@@ -410,6 +437,57 @@ class HomePageState extends State<HomePage> {
     });
   }
 
+  void toggleTimeGroup() {
+    setState(() {
+      if (groupName == "") {
+        groupName = "Time group";
+      } else {
+        groupName = "";
+      }
+      timeGroup = !timeGroup;
+
+      toggleWorldSuperGroup();
+      toggleAnimateSuperGroup();
+      togglePersonSuperGroup();
+      toggleScenesSuperGroup();
+    });
+  }
+
+  void toggleEnumerationGroup() {
+    setState(() {
+      if (groupName == "") {
+        groupName = "Enumeration group";
+      } else {
+        groupName = "";
+      }
+      enumerationGroup = !enumerationGroup;
+      timeGroup = false;
+
+      toggleWorldSuperGroup();
+      toggleAnimateSuperGroup();
+      togglePersonSuperGroup();
+      toggleScenesSuperGroup();
+    });
+  }
+
+  void toggleColorsGroup() {
+    setState(() {
+      if (groupName == "") {
+        groupName = "Colors group";
+      } else {
+        groupName = "";
+      }
+      colorsGroup = !colorsGroup;
+      timeGroup = false;
+      enumerationGroup = false;
+
+      toggleWorldSuperGroup();
+      toggleAnimateSuperGroup();
+      togglePersonSuperGroup();
+      toggleScenesSuperGroup();
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -437,7 +515,10 @@ class HomePageState extends State<HomePage> {
                   toggleTransportGroundGroup,
                   toggleTransportWaterGroup,
                   toggleTransportAirGroup,
-                  toggleTransportPathsGroup),
+                  toggleTransportPathsGroup,
+                  toggleTimeGroup,
+                  toggleEnumerationGroup,
+                  toggleColorsGroup),
               TopRightPanel(),
             ]),
             BottomPanel(),

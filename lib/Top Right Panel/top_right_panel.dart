@@ -20,6 +20,9 @@ import 'Scenes Super Group/transport_ground_group.dart';
 import 'Scenes Super Group/transport_water_group.dart';
 import 'Scenes Super Group/transport_air_group.dart';
 import 'Scenes Super Group/transport_paths_group.dart';
+import 'Concepts Super Group/time_group.dart';
+import 'Concepts Super Group/enumeration_group.dart';
+import 'Concepts Super Group/colors_group.dart';
 
 class TopRightPanel extends StatelessWidget {
   Color backgroundColor = Color(0xff111111);
@@ -154,6 +157,24 @@ class TopRightPanel extends StatelessWidget {
               child: Padding(
                 padding: EdgeInsets.all(10),
                 child: TransportPathsGroup(),
+              )),
+          Visibility(
+              visible: HomePageState.timeGroup,
+              child: Padding(
+                padding: EdgeInsets.all(10),
+                child: TimeGroup(),
+              )),
+          Visibility(
+              visible: HomePageState.enumerationGroup,
+              child: Padding(
+                padding: EdgeInsets.all(10),
+                child: EnumerationGroup(),
+              )),
+          Visibility(
+              visible: HomePageState.colorsGroup,
+              child: Padding(
+                padding: EdgeInsets.all(10),
+                child: ColorsGroup(),
               )),
         ]));
   }

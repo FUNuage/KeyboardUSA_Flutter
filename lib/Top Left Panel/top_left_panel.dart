@@ -31,6 +31,9 @@ class TopLeftPanel extends StatelessWidget {
   final VoidCallback toggleTransportWaterGroup;
   final VoidCallback toggleTransportAirGroup;
   final VoidCallback toggleTransportPathsGroup;
+  final VoidCallback toggleTimeGroup;
+  final VoidCallback toggleEnumerationGroup;
+  final VoidCallback toggleColorsGroup;
 
   TopLeftPanel(
       this.toggleSkyGroup,
@@ -51,7 +54,10 @@ class TopLeftPanel extends StatelessWidget {
       this.toggleTransportGroundGroup,
       this.toggleTransportWaterGroup,
       this.toggleTransportAirGroup,
-      this.toggleTransportPathsGroup);
+      this.toggleTransportPathsGroup,
+      this.toggleTimeGroup,
+      this.toggleEnumerationGroup,
+      this.toggleColorsGroup);
 
   @override
   Widget build(BuildContext context) {
@@ -94,7 +100,8 @@ class TopLeftPanel extends StatelessWidget {
                   toggleTransportAirGroup,
                   toggleTransportPathsGroup),
               SizedBox(width: 50),
-              ConceptsSupergroup(),
+              ConceptsSupergroup(
+                  toggleTimeGroup, toggleEnumerationGroup, toggleColorsGroup),
             ],
           ),
           Align(

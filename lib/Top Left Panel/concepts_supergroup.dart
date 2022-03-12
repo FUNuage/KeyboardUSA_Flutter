@@ -29,7 +29,12 @@ class ConceptsSupergroup extends StatelessWidget {
     color: const Color(0xffefcbcc),
   );
 
-  // enumeration
+  final VoidCallback toggleTimeGroup;
+  final VoidCallback toggleEnumerationGroup;
+  final VoidCallback toggleColorsGroup;
+
+  ConceptsSupergroup(this.toggleTimeGroup, this.toggleEnumerationGroup,
+      this.toggleColorsGroup);
 
   @override
   Widget build(BuildContext context) {
@@ -50,7 +55,7 @@ class ConceptsSupergroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => toggleTimeGroup(),
             child: timeSymbol,
           )),
       Padding(
@@ -69,7 +74,7 @@ class ConceptsSupergroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => toggleEnumerationGroup(),
             child: const Text('2'),
           )),
       Padding(
@@ -88,7 +93,7 @@ class ConceptsSupergroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => toggleColorsGroup(),
             child: colorsGroupSymbol,
           )),
       Padding(

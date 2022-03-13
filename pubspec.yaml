@@ -89,6 +89,15 @@ flutter:
     - assets/bliss_symbols/Concepts/TimeGroup/
     - assets/bliss_symbols/Concepts/EnumerationGroup/
     - assets/bliss_symbols/Concepts/ColorsGroup/
+    - assets/bliss_symbols/Concepts/DirectionsGroup/
+    - assets/bliss_symbols/Concepts/ShapesGroup/
+    - assets/bliss_symbols/Language/AdjectivesGroup/
+    - assets/bliss_symbols/Language/AdverbsGroup/
+    - assets/bliss_symbols/Language/ArticlesGroup/
+    - assets/bliss_symbols/Language/ConjunctionsGroup/
+    - assets/bliss_symbols/Language/PrepositionsGroup/
+    - assets/bliss_symbols/Language/PronounsGroup/
+    - assets/bliss_symbols/Language/VerbsGroup/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

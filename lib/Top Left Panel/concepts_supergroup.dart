@@ -32,9 +32,16 @@ class ConceptsSupergroup extends StatelessWidget {
   final VoidCallback toggleTimeGroup;
   final VoidCallback toggleEnumerationGroup;
   final VoidCallback toggleColorsGroup;
+  final VoidCallback toggleDirectionsGroup;
+  final VoidCallback toggleShapesGroup;
 
-  ConceptsSupergroup(this.toggleTimeGroup, this.toggleEnumerationGroup,
-      this.toggleColorsGroup);
+  ConceptsSupergroup(
+    this.toggleTimeGroup,
+    this.toggleEnumerationGroup,
+    this.toggleColorsGroup,
+    this.toggleDirectionsGroup,
+    this.toggleShapesGroup,
+  );
 
   @override
   Widget build(BuildContext context) {
@@ -112,7 +119,7 @@ class ConceptsSupergroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => toggleDirectionsGroup(),
             child: directionsSymbol,
           )),
       Padding(
@@ -131,7 +138,7 @@ class ConceptsSupergroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => toggleShapesGroup(),
             child: shapesSymbol,
           )),
     ]);

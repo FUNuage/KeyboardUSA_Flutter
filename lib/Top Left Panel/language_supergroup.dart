@@ -52,6 +52,25 @@ class LanguageSupergroup extends StatelessWidget {
     color: Colors.black,
   );
 
+  final VoidCallback togglePronounsGroup;
+  // final VoidCallback toggleAdjectivesGroup;
+
+  final VoidCallback toggleArticlesGroup;
+  final VoidCallback toggleAdverbsGroup;
+  // final VoidCallback toggleConjunctionsGroup;
+  // final VoidCallback togglePrepositionsGroup;
+  // final VoidCallback toggleVerbsGroup;
+  LanguageSupergroup(
+    this.togglePronounsGroup,
+    // this.toggleAdjectivesGroup,
+
+    this.toggleArticlesGroup,
+    this.toggleAdverbsGroup,
+    // this.toggleConjunctionsGroup,
+    // this.togglePrepositionsGroup,
+    // this.toggleVerbsGroup
+  );
+
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -68,7 +87,7 @@ class LanguageSupergroup extends StatelessWidget {
                   borderRadius: BorderRadius.circular(10.0),
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => togglePronounsGroup(),
               child: pronounsSymbol,
             )),
         Padding(
@@ -82,7 +101,7 @@ class LanguageSupergroup extends StatelessWidget {
                   borderRadius: BorderRadius.circular(10.0),
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => toggleArticlesGroup(),
               child: articlesSymbol,
             )),
         Padding(
@@ -96,7 +115,7 @@ class LanguageSupergroup extends StatelessWidget {
                   borderRadius: BorderRadius.circular(10.0),
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => toggleAdverbsGroup(),
               child: adverbsSymbol,
             )),
         Padding(

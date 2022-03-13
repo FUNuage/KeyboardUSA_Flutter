@@ -23,6 +23,11 @@ import 'Scenes Super Group/transport_paths_group.dart';
 import 'Concepts Super Group/time_group.dart';
 import 'Concepts Super Group/enumeration_group.dart';
 import 'Concepts Super Group/colors_group.dart';
+import 'Concepts Super Group/directions_group.dart';
+import 'Concepts Super Group/shapes_group.dart';
+import 'Language Super Group/pronouns_group.dart';
+import 'Language Super Group/articles_group.dart';
+import 'Language Super Group/adverbs_group.dart';
 
 class TopRightPanel extends StatelessWidget {
   Color backgroundColor = Color(0xff111111);
@@ -175,6 +180,36 @@ class TopRightPanel extends StatelessWidget {
               child: Padding(
                 padding: EdgeInsets.all(10),
                 child: ColorsGroup(),
+              )),
+          Visibility(
+              visible: HomePageState.directionsGroup,
+              child: Padding(
+                padding: EdgeInsets.all(10),
+                child: DirectionsGroup(),
+              )),
+          Visibility(
+              visible: HomePageState.shapesGroup,
+              child: Padding(
+                padding: EdgeInsets.all(10),
+                child: ShapesGroup(),
+              )),
+          Visibility(
+              visible: HomePageState.pronounsGroup,
+              child: Padding(
+                padding: EdgeInsets.all(10),
+                child: PronounsGroup(),
+              )),
+          Visibility(
+              visible: HomePageState.articlesGroup,
+              child: Padding(
+                padding: EdgeInsets.all(10),
+                child: ArticlesGroup(),
+              )),
+          Visibility(
+              visible: HomePageState.adverbsGroup,
+              child: Padding(
+                padding: EdgeInsets.all(10),
+                child: AdverbsGroup(),
               )),
         ]));
   }

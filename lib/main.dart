@@ -57,6 +57,15 @@ class HomePageState extends State<HomePage> {
   static bool timeGroup = false;
   static bool enumerationGroup = false;
   static bool colorsGroup = false;
+  static bool directionsGroup = false;
+  static bool shapesGroup = false;
+  static bool pronounsGroup = false;
+  static bool adjectivesGroup = false;
+  static bool adverbsGroup = false;
+  static bool articlesGroup = false;
+  static bool conjunctionsGroup = false;
+  static bool prepositionsGroup = false;
+  static bool verbsGroup = false;
 
   void toggleWorldSuperGroup() {
     setState(() {
@@ -97,6 +106,16 @@ class HomePageState extends State<HomePage> {
     });
   }
 
+  void toggleConceptsSuperGroup() {
+    setState(() {
+      timeGroup = false;
+      colorsGroup = false;
+      directionsGroup = false;
+      enumerationGroup = false;
+      shapesGroup = false;
+    });
+  }
+
   void toggleSkyGroup() {
     setState(() {
       if (groupName == "") {
@@ -111,6 +130,7 @@ class HomePageState extends State<HomePage> {
       toggleAnimateSuperGroup();
       togglePersonSuperGroup();
       toggleScenesSuperGroup();
+      toggleConceptsSuperGroup();
     });
   }
 
@@ -128,6 +148,7 @@ class HomePageState extends State<HomePage> {
       toggleAnimateSuperGroup();
       togglePersonSuperGroup();
       toggleScenesSuperGroup();
+      toggleConceptsSuperGroup();
     });
   }
 
@@ -145,6 +166,7 @@ class HomePageState extends State<HomePage> {
       toggleAnimateSuperGroup();
       togglePersonSuperGroup();
       toggleScenesSuperGroup();
+      toggleConceptsSuperGroup();
     });
   }
 
@@ -162,6 +184,7 @@ class HomePageState extends State<HomePage> {
       toggleAnimateSuperGroup();
       togglePersonSuperGroup();
       toggleScenesSuperGroup();
+      toggleConceptsSuperGroup();
     });
   }
 
@@ -179,6 +202,7 @@ class HomePageState extends State<HomePage> {
       toggleWorldSuperGroup();
       togglePersonSuperGroup();
       toggleScenesSuperGroup();
+      toggleConceptsSuperGroup();
     });
   }
 
@@ -196,6 +220,7 @@ class HomePageState extends State<HomePage> {
       toggleWorldSuperGroup();
       togglePersonSuperGroup();
       toggleScenesSuperGroup();
+      toggleConceptsSuperGroup();
     });
   }
 
@@ -213,6 +238,7 @@ class HomePageState extends State<HomePage> {
       toggleWorldSuperGroup();
       togglePersonSuperGroup();
       toggleScenesSuperGroup();
+      toggleConceptsSuperGroup();
     });
   }
 
@@ -230,6 +256,7 @@ class HomePageState extends State<HomePage> {
       toggleWorldSuperGroup();
       togglePersonSuperGroup();
       toggleScenesSuperGroup();
+      toggleConceptsSuperGroup();
     });
   }
 
@@ -249,6 +276,7 @@ class HomePageState extends State<HomePage> {
       toggleWorldSuperGroup();
       toggleAnimateSuperGroup();
       toggleScenesSuperGroup();
+      toggleConceptsSuperGroup();
     });
   }
 
@@ -268,6 +296,7 @@ class HomePageState extends State<HomePage> {
       toggleWorldSuperGroup();
       toggleAnimateSuperGroup();
       toggleScenesSuperGroup();
+      toggleConceptsSuperGroup();
     });
   }
 
@@ -287,6 +316,7 @@ class HomePageState extends State<HomePage> {
       toggleWorldSuperGroup();
       toggleAnimateSuperGroup();
       toggleScenesSuperGroup();
+      toggleConceptsSuperGroup();
     });
   }
 
@@ -306,6 +336,7 @@ class HomePageState extends State<HomePage> {
       toggleWorldSuperGroup();
       toggleAnimateSuperGroup();
       toggleScenesSuperGroup();
+      toggleConceptsSuperGroup();
     });
   }
 
@@ -325,6 +356,7 @@ class HomePageState extends State<HomePage> {
       toggleWorldSuperGroup();
       toggleAnimateSuperGroup();
       toggleScenesSuperGroup();
+      toggleConceptsSuperGroup();
     });
   }
 
@@ -344,6 +376,7 @@ class HomePageState extends State<HomePage> {
       toggleWorldSuperGroup();
       toggleAnimateSuperGroup();
       toggleScenesSuperGroup();
+      toggleConceptsSuperGroup();
     });
   }
 
@@ -362,6 +395,7 @@ class HomePageState extends State<HomePage> {
       toggleWorldSuperGroup();
       toggleAnimateSuperGroup();
       togglePersonSuperGroup();
+      toggleConceptsSuperGroup();
     });
   }
 
@@ -380,6 +414,7 @@ class HomePageState extends State<HomePage> {
       toggleWorldSuperGroup();
       toggleAnimateSuperGroup();
       togglePersonSuperGroup();
+      toggleConceptsSuperGroup();
     });
   }
 
@@ -398,6 +433,7 @@ class HomePageState extends State<HomePage> {
       toggleWorldSuperGroup();
       toggleAnimateSuperGroup();
       togglePersonSuperGroup();
+      toggleConceptsSuperGroup();
     });
   }
 
@@ -416,6 +452,7 @@ class HomePageState extends State<HomePage> {
       toggleWorldSuperGroup();
       toggleAnimateSuperGroup();
       togglePersonSuperGroup();
+      toggleConceptsSuperGroup();
     });
   }
 
@@ -434,6 +471,7 @@ class HomePageState extends State<HomePage> {
       toggleWorldSuperGroup();
       toggleAnimateSuperGroup();
       togglePersonSuperGroup();
+      toggleConceptsSuperGroup();
     });
   }
 
@@ -450,6 +488,7 @@ class HomePageState extends State<HomePage> {
       toggleAnimateSuperGroup();
       togglePersonSuperGroup();
       toggleScenesSuperGroup();
+      toggleConceptsSuperGroup();
     });
   }
 
@@ -467,6 +506,7 @@ class HomePageState extends State<HomePage> {
       toggleAnimateSuperGroup();
       togglePersonSuperGroup();
       toggleScenesSuperGroup();
+      toggleConceptsSuperGroup();
     });
   }
 
@@ -485,6 +525,218 @@ class HomePageState extends State<HomePage> {
       toggleAnimateSuperGroup();
       togglePersonSuperGroup();
       toggleScenesSuperGroup();
+      toggleConceptsSuperGroup();
+    });
+  }
+
+  void toggleDirectionsGroup() {
+    setState(() {
+      if (groupName == "") {
+        groupName = "Directions group";
+      } else {
+        groupName = "";
+      }
+
+      directionsGroup = !directionsGroup;
+      colorsGroup = false;
+      timeGroup = false;
+      enumerationGroup = false;
+
+      toggleWorldSuperGroup();
+      toggleAnimateSuperGroup();
+      togglePersonSuperGroup();
+      toggleScenesSuperGroup();
+      toggleConceptsSuperGroup();
+    });
+  }
+
+  void toggleShapesGroup() {
+    setState(() {
+      if (groupName == "") {
+        groupName = "Shapes group";
+      } else {
+        groupName = "";
+      }
+
+      shapesGroup = !shapesGroup;
+      directionsGroup = false;
+      colorsGroup = false;
+      timeGroup = false;
+      enumerationGroup = false;
+
+      toggleWorldSuperGroup();
+      toggleAnimateSuperGroup();
+      togglePersonSuperGroup();
+      toggleScenesSuperGroup();
+      toggleConceptsSuperGroup();
+    });
+  }
+
+  void togglePronounsGroup() {
+    setState(() {
+      if (groupName == "") {
+        groupName = "Pronouns group";
+      } else {
+        groupName = "";
+      }
+
+      pronounsGroup = !pronounsGroup;
+      adjectivesGroup = false;
+      adverbsGroup = false;
+      articlesGroup = false;
+      conjunctionsGroup = false;
+      prepositionsGroup = false;
+      verbsGroup = false;
+
+      toggleWorldSuperGroup();
+      toggleAnimateSuperGroup();
+      togglePersonSuperGroup();
+      toggleScenesSuperGroup();
+      toggleConceptsSuperGroup();
+    });
+  }
+
+  void toggleAdjectivesGroup() {
+    setState(() {
+      if (groupName == "") {
+        groupName = "Adjectives group";
+      } else {
+        groupName = "";
+      }
+
+      adjectivesGroup = !adjectivesGroup;
+      pronounsGroup = false;
+      adverbsGroup = false;
+      articlesGroup = false;
+      conjunctionsGroup = false;
+      prepositionsGroup = false;
+      verbsGroup = false;
+
+      toggleWorldSuperGroup();
+      toggleAnimateSuperGroup();
+      togglePersonSuperGroup();
+      toggleScenesSuperGroup();
+      toggleConceptsSuperGroup();
+    });
+  }
+
+  void toggleAdverbsGroup() {
+    setState(() {
+      if (groupName == "") {
+        groupName = "Adverbs group";
+      } else {
+        groupName = "";
+      }
+
+      adverbsGroup = !adverbsGroup;
+      adjectivesGroup = false;
+      pronounsGroup = false;
+      articlesGroup = false;
+      conjunctionsGroup = false;
+      prepositionsGroup = false;
+      verbsGroup = false;
+
+      toggleWorldSuperGroup();
+      toggleAnimateSuperGroup();
+      togglePersonSuperGroup();
+      toggleScenesSuperGroup();
+      toggleConceptsSuperGroup();
+    });
+  }
+
+  void toggleArticlesGroup() {
+    setState(() {
+      if (groupName == "") {
+        groupName = "Articles group";
+      } else {
+        groupName = "";
+      }
+
+      articlesGroup = !articlesGroup;
+      adverbsGroup = false;
+      adjectivesGroup = false;
+      pronounsGroup = false;
+      conjunctionsGroup = false;
+      prepositionsGroup = false;
+      verbsGroup = false;
+
+      toggleWorldSuperGroup();
+      toggleAnimateSuperGroup();
+      togglePersonSuperGroup();
+      toggleScenesSuperGroup();
+      toggleConceptsSuperGroup();
+    });
+  }
+
+  void toggleConjunctionsGroup() {
+    setState(() {
+      if (groupName == "") {
+        groupName = "Conjunctions group";
+      } else {
+        groupName = "";
+      }
+
+      conjunctionsGroup = !conjunctionsGroup;
+      articlesGroup = false;
+      adverbsGroup = false;
+      adjectivesGroup = false;
+      pronounsGroup = false;
+      prepositionsGroup = false;
+      verbsGroup = false;
+
+      toggleWorldSuperGroup();
+      toggleAnimateSuperGroup();
+      togglePersonSuperGroup();
+      toggleScenesSuperGroup();
+      toggleConceptsSuperGroup();
+    });
+  }
+
+  void togglePrepositionsGroup() {
+    setState(() {
+      if (groupName == "") {
+        groupName = "Prepositions group";
+      } else {
+        groupName = "";
+      }
+
+      prepositionsGroup = !prepositionsGroup;
+      conjunctionsGroup = false;
+      articlesGroup = false;
+      adverbsGroup = false;
+      adjectivesGroup = false;
+      pronounsGroup = false;
+      verbsGroup = false;
+
+      toggleWorldSuperGroup();
+      toggleAnimateSuperGroup();
+      togglePersonSuperGroup();
+      toggleScenesSuperGroup();
+      toggleConceptsSuperGroup();
+    });
+  }
+
+  void toggleVerbsGroup() {
+    setState(() {
+      if (groupName == "") {
+        groupName = "Verbs group";
+      } else {
+        groupName = "";
+      }
+
+      verbsGroup = !verbsGroup;
+      prepositionsGroup = false;
+      conjunctionsGroup = false;
+      articlesGroup = false;
+      adverbsGroup = false;
+      adjectivesGroup = false;
+      pronounsGroup = false;
+
+      toggleWorldSuperGroup();
+      toggleAnimateSuperGroup();
+      togglePersonSuperGroup();
+      toggleScenesSuperGroup();
+      toggleConceptsSuperGroup();
     });
   }
 
@@ -518,7 +770,12 @@ class HomePageState extends State<HomePage> {
                   toggleTransportPathsGroup,
                   toggleTimeGroup,
                   toggleEnumerationGroup,
-                  toggleColorsGroup),
+                  toggleColorsGroup,
+                  toggleDirectionsGroup,
+                  toggleShapesGroup,
+                  togglePronounsGroup,
+                  toggleArticlesGroup,
+                  toggleAdverbsGroup),
               TopRightPanel(),
             ]),
             BottomPanel(),

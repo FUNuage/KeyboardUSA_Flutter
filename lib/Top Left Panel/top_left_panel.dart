@@ -34,6 +34,11 @@ class TopLeftPanel extends StatelessWidget {
   final VoidCallback toggleTimeGroup;
   final VoidCallback toggleEnumerationGroup;
   final VoidCallback toggleColorsGroup;
+  final VoidCallback toggleDirectionsGroup;
+  final VoidCallback toggleShapesGroup;
+  final VoidCallback togglePronounsGroup;
+  final VoidCallback toggleArticlesGroup;
+  final VoidCallback toggleAdverbsGroup;
 
   TopLeftPanel(
       this.toggleSkyGroup,
@@ -57,7 +62,12 @@ class TopLeftPanel extends StatelessWidget {
       this.toggleTransportPathsGroup,
       this.toggleTimeGroup,
       this.toggleEnumerationGroup,
-      this.toggleColorsGroup);
+      this.toggleColorsGroup,
+      this.toggleDirectionsGroup,
+      this.toggleShapesGroup,
+      this.togglePronounsGroup,
+      this.toggleArticlesGroup,
+      this.toggleAdverbsGroup);
 
   @override
   Widget build(BuildContext context) {
@@ -74,7 +84,8 @@ class TopLeftPanel extends StatelessWidget {
             ),
             color: backgroundColor),
         child: Column(children: <Widget>[
-          LanguageSupergroup(),
+          LanguageSupergroup(
+              togglePronounsGroup, toggleArticlesGroup, toggleAdverbsGroup),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -100,8 +111,8 @@ class TopLeftPanel extends StatelessWidget {
                   toggleTransportAirGroup,
                   toggleTransportPathsGroup),
               SizedBox(width: 50),
-              ConceptsSupergroup(
-                  toggleTimeGroup, toggleEnumerationGroup, toggleColorsGroup),
+              ConceptsSupergroup(toggleTimeGroup, toggleEnumerationGroup,
+                  toggleColorsGroup, toggleDirectionsGroup, toggleShapesGroup),
             ],
           ),
           Align(

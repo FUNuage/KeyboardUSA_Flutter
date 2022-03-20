@@ -47,6 +47,9 @@ class GeologyGroup extends StatelessWidget {
     color: const Color(0xffefcbcc),
   );
 
+  final VoidCallback addGroundWord;
+  GeologyGroup(this.addGroundWord);
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -68,7 +71,7 @@ class GeologyGroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => addGroundWord(),
             child: groundSymbol,
           ),
         ),

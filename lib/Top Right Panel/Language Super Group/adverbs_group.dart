@@ -5,43 +5,43 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class AdverbsGroup extends StatelessWidget {
-  Color mainColor = const Color(0xff8a546c);
-  Color secondaryColor = const Color(0xff91cdda);
+  Color mainColor = Color(0xffc58137);
+  Color secondaryColor = Color(0xffc58137);
 
   final Widget howSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/AdverbsGroup/how.svg',
     width: 100,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   final Widget howQSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/AdverbsGroup/how-(question).svg',
     width: 100,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   final Widget whenSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/AdverbsGroup/when.svg',
     width: 100,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   final Widget whereSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/AdverbsGroup/where.svg',
     width: 100,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   final Widget whereQSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/AdverbsGroup/where-(question).svg',
     width: 100,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   final Widget notSymbol = SvgPicture.asset(
     "assets/bliss_symbols/Language/AdverbsGroup/not,negative,no,don't,doesn't.svg",
     width: 100,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   @override

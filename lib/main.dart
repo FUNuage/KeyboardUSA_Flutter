@@ -4,6 +4,11 @@ import 'Top Left Panel/top_left_panel.dart';
 import 'Top Right Panel/top_right_panel.dart';
 import 'Bottom Panel/bottom_panel.dart';
 
+import 'Words/World Super Group/Sky Group/SkyWord.dart';
+import 'Words/World Super Group/Geology Group/GroundWord.dart';
+
+import 'Words/Animate Super Group/Animal Types Group/AnimalWord.dart';
+
 void main() {
   runApp(const App());
 }
@@ -33,6 +38,7 @@ class HomePage extends StatefulWidget {
   State<HomePage> createState() => HomePageState();
 }
 
+// Top Left Panel functions
 class HomePageState extends State<HomePage> {
   static String groupName = "";
   static bool skyGroup = false;
@@ -488,7 +494,6 @@ class HomePageState extends State<HomePage> {
       toggleAnimateSuperGroup();
       togglePersonSuperGroup();
       toggleScenesSuperGroup();
-      toggleConceptsSuperGroup();
     });
   }
 
@@ -506,7 +511,6 @@ class HomePageState extends State<HomePage> {
       toggleAnimateSuperGroup();
       togglePersonSuperGroup();
       toggleScenesSuperGroup();
-      toggleConceptsSuperGroup();
     });
   }
 
@@ -525,7 +529,6 @@ class HomePageState extends State<HomePage> {
       toggleAnimateSuperGroup();
       togglePersonSuperGroup();
       toggleScenesSuperGroup();
-      toggleConceptsSuperGroup();
     });
   }
 
@@ -546,7 +549,6 @@ class HomePageState extends State<HomePage> {
       toggleAnimateSuperGroup();
       togglePersonSuperGroup();
       toggleScenesSuperGroup();
-      toggleConceptsSuperGroup();
     });
   }
 
@@ -568,7 +570,6 @@ class HomePageState extends State<HomePage> {
       toggleAnimateSuperGroup();
       togglePersonSuperGroup();
       toggleScenesSuperGroup();
-      toggleConceptsSuperGroup();
     });
   }
 
@@ -740,6 +741,19 @@ class HomePageState extends State<HomePage> {
     });
   }
 
+  // Top Right Panel functions
+  void addSkyWord() {
+    setState(() {
+      BottomPanelState.cardList.add(SkyWord());
+    });
+  }
+
+  void addGroundWord() {
+    setState(() {
+      BottomPanelState.cardList.add(GroundWord());
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -776,7 +790,7 @@ class HomePageState extends State<HomePage> {
                   togglePronounsGroup,
                   toggleArticlesGroup,
                   toggleAdverbsGroup),
-              TopRightPanel(),
+              TopRightPanel(addGroundWord, addSkyWord),
             ]),
             BottomPanel(),
           ],

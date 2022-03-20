@@ -50,7 +50,13 @@ class VerbsGroup extends StatelessWidget {
   );
 
   final Widget sleepSymbol = SvgPicture.asset(
-    "assets/bliss_symbols/Language/VerbsGroup/eat-(to).svg",
+    "assets/bliss_symbols/Language/VerbsGroup/sleep-(to).svg",
+    width: 100,
+    color: const Color(0xffefcbcc),
+  );
+
+  final Widget drinkSymbol = SvgPicture.asset(
+    "assets/bliss_symbols/Language/VerbsGroup/drink-(to).svg",
     width: 100,
     color: const Color(0xffefcbcc),
   );
@@ -78,7 +84,7 @@ class VerbsGroup extends StatelessWidget {
                 ),
               ),
               onPressed: () {},
-              child: howSymbol,
+              child: amIsSymbol,
             ),
           ),
           Padding(
@@ -98,7 +104,7 @@ class VerbsGroup extends StatelessWidget {
                 ),
               ),
               onPressed: () {},
-              child: howQSymbol,
+              child: canSymbol,
             ),
           ),
           Padding(
@@ -118,7 +124,7 @@ class VerbsGroup extends StatelessWidget {
                 ),
               ),
               onPressed: () {},
-              child: whenSymbol,
+              child: seeSymbol,
             ),
           ),
           Padding(
@@ -138,7 +144,7 @@ class VerbsGroup extends StatelessWidget {
                 ),
               ),
               onPressed: () {},
-              child: whereSymbol,
+              child: hearSymbol,
             ),
           ),
           Padding(
@@ -158,7 +164,7 @@ class VerbsGroup extends StatelessWidget {
                 ),
               ),
               onPressed: () {},
-              child: whereQSymbol,
+              child: feelSymbol,
             ),
           )
         ]),
@@ -179,7 +185,7 @@ class VerbsGroup extends StatelessWidget {
               ),
             ),
             onPressed: () {},
-            child: notSymbol,
+            child: eatSymbol,
           ),
         ),
       ],

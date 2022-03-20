@@ -47,6 +47,9 @@ class SkyGroup extends StatelessWidget {
     color: const Color(0xffefcbcc),
   );
 
+  final VoidCallback addSkyWord;
+  SkyGroup(this.addSkyWord);
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -68,7 +71,7 @@ class SkyGroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => addSkyWord(),
             child: skySymbol,
           ),
         ),

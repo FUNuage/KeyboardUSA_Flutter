@@ -9,55 +9,55 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class PronounsGroup extends StatelessWidget {
-  Color mainColor = const Color(0xff8a546c);
-  Color secondaryColor = const Color(0xff91cdda);
+  Color mainColor = Color(0xff714c84);
+  Color secondaryColor = Color(0xff714c84);
 
   final Widget iSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/PronounsGroup/I,me,myself.svg',
     width: 100,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   final Widget meSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/PronounsGroup/I,me,myself.svg',
     width: 100,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   final Widget youSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/PronounsGroup/you,yourself.svg',
     width: 100,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   final Widget weSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/PronounsGroup/we,us,ourselves.svg',
     width: 100,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   final Widget heSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/PronounsGroup/he,him,himself.svg',
     width: 100,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   final Widget sheSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/PronounsGroup/she,her,herself.svg',
     width: 100,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   final Widget theySymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/PronounsGroup/they,them,themselves-(persons).svg',
     width: 100,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   final Widget thoseSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/PronounsGroup/those.svg',
     width: 100,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   @override

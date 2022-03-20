@@ -29,6 +29,12 @@ class ConceptsSupergroup extends StatelessWidget {
     color: const Color(0xffefcbcc),
   );
 
+  final Widget enumerationSymbol = SvgPicture.asset(
+    'assets/bliss_symbols/Concepts/number.svg',
+    width: 100,
+    color: const Color(0xffefcbcc),
+  );
+
   final VoidCallback toggleTimeGroup;
   final VoidCallback toggleEnumerationGroup;
   final VoidCallback toggleColorsGroup;
@@ -82,7 +88,7 @@ class ConceptsSupergroup extends StatelessWidget {
               ),
             ),
             onPressed: () => toggleEnumerationGroup(),
-            child: const Text('2'),
+            child: enumerationSymbol,
           )),
       Padding(
           padding: EdgeInsets.only(top: 5),

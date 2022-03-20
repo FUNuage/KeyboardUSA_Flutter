@@ -32,6 +32,10 @@ import 'Language Super Group/adverbs_group.dart';
 class TopRightPanel extends StatelessWidget {
   Color backgroundColor = Color(0xff111111);
 
+  final VoidCallback addGroundWord;
+  final VoidCallback addSkyWord;
+  TopRightPanel(this.addGroundWord, this.addSkyWord);
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -53,13 +57,13 @@ class TopRightPanel extends StatelessWidget {
               visible: HomePageState.skyGroup,
               child: Padding(
                 padding: EdgeInsets.all(10),
-                child: SkyGroup(),
+                child: SkyGroup(addSkyWord),
               )),
           Visibility(
               visible: HomePageState.geologyGroup,
               child: Padding(
                 padding: EdgeInsets.all(10),
-                child: GeologyGroup(),
+                child: GeologyGroup(addGroundWord),
               )),
           Visibility(
               visible: HomePageState.materialsGroup,

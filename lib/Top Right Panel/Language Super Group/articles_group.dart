@@ -5,25 +5,25 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class ArticlesGroup extends StatelessWidget {
-  Color mainColor = const Color(0xff8a546c);
-  Color secondaryColor = const Color(0xff91cdda);
+  Color mainColor = Color(0xff2fb4c3);
+  Color secondaryColor = Color(0xff2fb4c3);
 
   final Widget anSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/ArticlesGroup/a,an,any.svg',
     width: 100,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   final Widget thatThereSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/ArticlesGroup/that_(there).svg',
     width: 100,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   final Widget thisSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/ArticlesGroup/this.svg',
     width: 100,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   @override

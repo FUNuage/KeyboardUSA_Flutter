@@ -10,49 +10,49 @@ class DirectionsGroup extends StatelessWidget {
   Color secondaryColor = const Color(0xff91cdda);
 
   final Widget rightSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Concepts/ColorsGroup/right.svg',
+    'assets/bliss_symbols/Concepts/DirectionsGroup/right.svg',
     width: 100,
     color: const Color(0xffefcbcc),
   );
 
   final Widget leftSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Concepts/ColorsGroup/left.svg',
+    'assets/bliss_symbols/Concepts/DirectionsGroup/left.svg',
     width: 100,
     color: const Color(0xffefcbcc),
   );
 
   final Widget upSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Concepts/ColorsGroup/up,upward.svg',
+    'assets/bliss_symbols/Concepts/DirectionsGroup/up,upward.svg',
     width: 100,
     color: const Color(0xffefcbcc),
   );
 
   final Widget downSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Concepts/ColorsGroup/down,downward.svg',
+    'assets/bliss_symbols/Concepts/DirectionsGroup/down,downward.svg',
     width: 100,
     color: const Color(0xffefcbcc),
   );
 
   final Widget northSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Concepts/ColorsGroup/north.svg',
+    'assets/bliss_symbols/Concepts/DirectionsGroup/north.svg',
     width: 100,
     color: const Color(0xffefcbcc),
   );
 
   final Widget southSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Concepts/ColorsGroup/south.svg',
+    'assets/bliss_symbols/Concepts/DirectionsGroup/south.svg',
     width: 100,
     color: const Color(0xffefcbcc),
   );
 
   final Widget eastSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Concepts/ColorsGroup/east.svg',
+    'assets/bliss_symbols/Concepts/DirectionsGroup/east.svg',
     width: 100,
     color: const Color(0xffefcbcc),
   );
 
   final Widget westSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Concepts/ColorsGroup/west.svg',
+    'assets/bliss_symbols/Concepts/DirectionsGroup/west.svg',
     width: 100,
     color: const Color(0xffefcbcc),
   );

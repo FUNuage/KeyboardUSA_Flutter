@@ -59,16 +59,19 @@ class LanguageSupergroup extends StatelessWidget {
   final VoidCallback toggleAdjectivesGroup;
   final VoidCallback togglePrepositionsGroup;
   final VoidCallback toggleConjunctionsGroup;
+  final VoidCallback toggleInterjectionsGroup;
+  final VoidCallback toggleEmojisGroup;
 
   LanguageSupergroup(
-    this.togglePronounsGroup,
-    this.toggleArticlesGroup,
-    this.toggleAdverbsGroup,
-    this.toggleVerbsGroup,
-    this.toggleAdjectivesGroup,
-    this.togglePrepositionsGroup,
-    this.toggleConjunctionsGroup,
-  );
+      this.togglePronounsGroup,
+      this.toggleArticlesGroup,
+      this.toggleAdverbsGroup,
+      this.toggleVerbsGroup,
+      this.toggleAdjectivesGroup,
+      this.togglePrepositionsGroup,
+      this.toggleConjunctionsGroup,
+      this.toggleInterjectionsGroup,
+      this.toggleEmojisGroup);
 
   @override
   Widget build(BuildContext context) {
@@ -184,7 +187,7 @@ class LanguageSupergroup extends StatelessWidget {
                   borderRadius: BorderRadius.circular(10.0),
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => toggleInterjectionsGroup(),
               child: interjectionsSymbol,
             )),
         Padding(
@@ -198,7 +201,7 @@ class LanguageSupergroup extends StatelessWidget {
                   borderRadius: BorderRadius.circular(10.0),
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => toggleEmojisGroup(),
               child: const Text('☺'),
             )),
         Padding(

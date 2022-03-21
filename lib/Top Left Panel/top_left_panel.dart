@@ -43,6 +43,8 @@ class TopLeftPanel extends StatelessWidget {
   final VoidCallback toggleAdjectivesGroup;
   final VoidCallback togglePrepositionsGroup;
   final VoidCallback toggleConjunctionsGroup;
+  final VoidCallback toggleInterjectionsGroup;
+  final VoidCallback toggleEmojisGroup;
 
   TopLeftPanel(
       this.toggleSkyGroup,
@@ -75,7 +77,9 @@ class TopLeftPanel extends StatelessWidget {
       this.toggleVerbsGroup,
       this.toggleAdjectivesGroup,
       this.togglePrepositionsGroup,
-      this.toggleConjunctionsGroup);
+      this.toggleConjunctionsGroup,
+      this.toggleInterjectionsGroup,
+      this.toggleEmojisGroup);
 
   @override
   Widget build(BuildContext context) {
@@ -99,7 +103,9 @@ class TopLeftPanel extends StatelessWidget {
               toggleVerbsGroup,
               toggleAdjectivesGroup,
               togglePrepositionsGroup,
-              toggleConjunctionsGroup),
+              toggleConjunctionsGroup,
+              toggleInterjectionsGroup,
+              toggleEmojisGroup),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             crossAxisAlignment: CrossAxisAlignment.start,

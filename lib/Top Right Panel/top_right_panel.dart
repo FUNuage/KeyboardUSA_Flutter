@@ -32,6 +32,8 @@ import 'Language Super Group/verbs_group.dart';
 import 'Language Super Group/adjectives_group.dart';
 import 'Language Super Group/prepositions_group.dart';
 import 'Language Super Group/conjunctions_group.dart';
+import 'Language Super Group/interjections_group.dart';
+import 'Language Super Group/emojis_group.dart';
 
 class TopRightPanel extends StatelessWidget {
   Color backgroundColor = Color(0xff111111);
@@ -277,6 +279,18 @@ class TopRightPanel extends StatelessWidget {
               child: Padding(
                 padding: EdgeInsets.all(10),
                 child: ConjunctionsGroup(),
+              )),
+          Visibility(
+              visible: HomePageState.interjectionsGroup,
+              child: Padding(
+                padding: EdgeInsets.all(10),
+                child: InterjectionsGroup(),
+              )),
+          Visibility(
+              visible: HomePageState.emojisGroup,
+              child: Padding(
+                padding: EdgeInsets.all(10),
+                child: EmojisGroup(),
               )),
         ]));
   }

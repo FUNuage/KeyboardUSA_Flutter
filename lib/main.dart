@@ -84,6 +84,8 @@ class HomePageState extends State<HomePage> {
   static bool conjunctionsGroup = false;
   static bool prepositionsGroup = false;
   static bool verbsGroup = false;
+  static bool interjectionsGroup = false;
+  static bool emojisGroup = false;
 
   void toggleWorldSuperGroup() {
     setState(() {
@@ -753,6 +755,57 @@ class HomePageState extends State<HomePage> {
     });
   }
 
+  void toggleInterjectionsGroup() {
+    setState(() {
+      if (groupName == "") {
+        groupName = "Interjections group";
+      } else {
+        groupName = "";
+      }
+
+      interjectionsGroup = !interjectionsGroup;
+      verbsGroup = false;
+      prepositionsGroup = false;
+      conjunctionsGroup = false;
+      articlesGroup = false;
+      adverbsGroup = false;
+      adjectivesGroup = false;
+      pronounsGroup = false;
+
+      toggleWorldSuperGroup();
+      toggleAnimateSuperGroup();
+      togglePersonSuperGroup();
+      toggleScenesSuperGroup();
+      toggleConceptsSuperGroup();
+    });
+  }
+
+  void toggleEmojisGroup() {
+    setState(() {
+      if (groupName == "") {
+        groupName = "Emojis group";
+      } else {
+        groupName = "";
+      }
+
+      emojisGroup = !emojisGroup;
+      interjectionsGroup = false;
+      verbsGroup = false;
+      prepositionsGroup = false;
+      conjunctionsGroup = false;
+      articlesGroup = false;
+      adverbsGroup = false;
+      adjectivesGroup = false;
+      pronounsGroup = false;
+
+      toggleWorldSuperGroup();
+      toggleAnimateSuperGroup();
+      togglePersonSuperGroup();
+      toggleScenesSuperGroup();
+      toggleConceptsSuperGroup();
+    });
+  }
+
   // Top Right Panel functions
   void addSkyWord() {
     setState(() {
@@ -877,7 +930,9 @@ class HomePageState extends State<HomePage> {
                   toggleVerbsGroup,
                   toggleAdjectivesGroup,
                   togglePrepositionsGroup,
-                  toggleConjunctionsGroup),
+                  toggleConjunctionsGroup,
+                  toggleInterjectionsGroup,
+                  toggleEmojisGroup),
               TopRightPanel(
                   addGroundWord,
                   addSkyWord,

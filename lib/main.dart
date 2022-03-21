@@ -874,7 +874,8 @@ class HomePageState extends State<HomePage> {
                   togglePronounsGroup,
                   toggleArticlesGroup,
                   toggleAdverbsGroup,
-                  toggleVerbsGroup),
+                  toggleVerbsGroup,
+                  toggleAdjectivesGroup),
               TopRightPanel(
                   addGroundWord,
                   addSkyWord,

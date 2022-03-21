@@ -29,6 +29,7 @@ import 'Language Super Group/pronouns_group.dart';
 import 'Language Super Group/articles_group.dart';
 import 'Language Super Group/adverbs_group.dart';
 import 'Language Super Group/verbs_group.dart';
+import 'Language Super Group/adjectives_group.dart';
 
 class TopRightPanel extends StatelessWidget {
   Color backgroundColor = Color(0xff111111);
@@ -256,6 +257,12 @@ class TopRightPanel extends StatelessWidget {
               child: Padding(
                 padding: EdgeInsets.all(10),
                 child: VerbsGroup(),
+              )),
+          Visibility(
+              visible: HomePageState.adjectivesGroup,
+              child: Padding(
+                padding: EdgeInsets.all(10),
+                child: AdjectivesGroup(),
               )),
         ]));
   }

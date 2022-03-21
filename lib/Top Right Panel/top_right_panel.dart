@@ -31,6 +31,7 @@ import 'Language Super Group/adverbs_group.dart';
 import 'Language Super Group/verbs_group.dart';
 import 'Language Super Group/adjectives_group.dart';
 import 'Language Super Group/prepositions_group.dart';
+import 'Language Super Group/conjunctions_group.dart';
 
 class TopRightPanel extends StatelessWidget {
   Color backgroundColor = Color(0xff111111);
@@ -270,6 +271,12 @@ class TopRightPanel extends StatelessWidget {
               child: Padding(
                 padding: EdgeInsets.all(10),
                 child: PrepositionsGroup(),
+              )),
+          Visibility(
+              visible: HomePageState.conjunctionsGroup,
+              child: Padding(
+                padding: EdgeInsets.all(10),
+                child: ConjunctionsGroup(),
               )),
         ]));
   }

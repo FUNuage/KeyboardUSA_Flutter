@@ -58,7 +58,7 @@ class LanguageSupergroup extends StatelessWidget {
   final VoidCallback toggleVerbsGroup;
   final VoidCallback toggleAdjectivesGroup;
   final VoidCallback togglePrepositionsGroup;
-  // final VoidCallback toggleConjunctionsGroup;
+  final VoidCallback toggleConjunctionsGroup;
 
   LanguageSupergroup(
     this.togglePronounsGroup,
@@ -67,7 +67,7 @@ class LanguageSupergroup extends StatelessWidget {
     this.toggleVerbsGroup,
     this.toggleAdjectivesGroup,
     this.togglePrepositionsGroup,
-    // this.toggleConjunctionsGroup,
+    this.toggleConjunctionsGroup,
   );
 
   @override
@@ -170,7 +170,7 @@ class LanguageSupergroup extends StatelessWidget {
                   borderRadius: BorderRadius.circular(10.0),
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => toggleConjunctionsGroup(),
               child: conjunctionsSymbol,
             )),
         Padding(

@@ -28,13 +28,41 @@ import 'Concepts Super Group/shapes_group.dart';
 import 'Language Super Group/pronouns_group.dart';
 import 'Language Super Group/articles_group.dart';
 import 'Language Super Group/adverbs_group.dart';
+import 'Language Super Group/verbs_group.dart';
 
 class TopRightPanel extends StatelessWidget {
   Color backgroundColor = Color(0xff111111);
 
   final VoidCallback addGroundWord;
   final VoidCallback addSkyWord;
-  TopRightPanel(this.addGroundWord, this.addSkyWord);
+  final VoidCallback addCloudWord;
+  final VoidCallback addMoonWord;
+  final VoidCallback addSunWord;
+  final VoidCallback addStarWord;
+  final VoidCallback addSnowWord;
+  final VoidCallback addEarthWord;
+  final VoidCallback addMountainWord;
+  final VoidCallback addWaterWord;
+  final VoidCallback addRainWord;
+  final VoidCallback addLakeWord;
+  final VoidCallback addOceanWord;
+  final VoidCallback addRiverWord;
+
+  TopRightPanel(
+      this.addGroundWord,
+      this.addSkyWord,
+      this.addCloudWord,
+      this.addMoonWord,
+      this.addSunWord,
+      this.addStarWord,
+      this.addSnowWord,
+      this.addEarthWord,
+      this.addMountainWord,
+      this.addWaterWord,
+      this.addRainWord,
+      this.addLakeWord,
+      this.addOceanWord,
+      this.addRiverWord);
 
   @override
   Widget build(BuildContext context) {
@@ -57,13 +85,21 @@ class TopRightPanel extends StatelessWidget {
               visible: HomePageState.skyGroup,
               child: Padding(
                 padding: EdgeInsets.all(10),
-                child: SkyGroup(addSkyWord),
+                child: SkyGroup(addSkyWord, addCloudWord, addMoonWord,
+                    addSunWord, addStarWord, addSnowWord, addEarthWord),
               )),
           Visibility(
               visible: HomePageState.geologyGroup,
               child: Padding(
                 padding: EdgeInsets.all(10),
-                child: GeologyGroup(addGroundWord),
+                child: GeologyGroup(
+                    addGroundWord,
+                    addMountainWord,
+                    addWaterWord,
+                    addRainWord,
+                    addLakeWord,
+                    addOceanWord,
+                    addRiverWord),
               )),
           Visibility(
               visible: HomePageState.materialsGroup,
@@ -214,6 +250,12 @@ class TopRightPanel extends StatelessWidget {
               child: Padding(
                 padding: EdgeInsets.all(10),
                 child: AdverbsGroup(),
+              )),
+          Visibility(
+              visible: HomePageState.verbsGroup,
+              child: Padding(
+                padding: EdgeInsets.all(10),
+                child: VerbsGroup(),
               )),
         ]));
   }

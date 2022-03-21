@@ -48,7 +48,14 @@ class GeologyGroup extends StatelessWidget {
   );
 
   final VoidCallback addGroundWord;
-  GeologyGroup(this.addGroundWord);
+  final VoidCallback addMountainWord;
+  final VoidCallback addWaterWord;
+  final VoidCallback addRainWord;
+  final VoidCallback addLakeWord;
+  final VoidCallback addOceanWord;
+  final VoidCallback addRiverWord;
+  GeologyGroup(this.addGroundWord, this.addMountainWord, this.addWaterWord,
+      this.addRainWord, this.addLakeWord, this.addOceanWord, this.addRiverWord);
 
   @override
   Widget build(BuildContext context) {

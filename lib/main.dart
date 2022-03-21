@@ -4,10 +4,22 @@ import 'Top Left Panel/top_left_panel.dart';
 import 'Top Right Panel/top_right_panel.dart';
 import 'Bottom Panel/bottom_panel.dart';
 
-import 'Words/World Super Group/Sky Group/SkyWord.dart';
-import 'Words/World Super Group/Geology Group/GroundWord.dart';
+import 'Words/World Super Group/Sky Group/sky_word.dart';
+import 'Words/World Super Group/Sky Group/cloud_word.dart';
+import 'Words/World Super Group/Sky Group/moon_word.dart';
+import 'Words/World Super Group/Sky Group/sun_word.dart';
+import 'Words/World Super Group/Sky Group/star_word.dart';
+import 'Words/World Super Group/Sky Group/snow_word.dart';
+import 'Words/World Super Group/Sky Group/earth_word.dart';
+import 'Words/World Super Group/Geology Group/ground_word.dart';
+import 'Words/World Super Group/Geology Group/mountain_word.dart';
+import 'Words/World Super Group/Geology Group/water_word.dart';
+import 'Words/World Super Group/Geology Group/rain_word.dart';
+import 'Words/World Super Group/Geology Group/lake_word.dart';
+import 'Words/World Super Group/Geology Group/ocean_word.dart';
+import 'Words/World Super Group/Geology Group/river_word.dart';
 
-import 'Words/Animate Super Group/Animal Types Group/AnimalWord.dart';
+import 'Words/Animate Super Group/Animal Types Group/animal_word.dart';
 
 void main() {
   runApp(const App());
@@ -748,9 +760,81 @@ class HomePageState extends State<HomePage> {
     });
   }
 
+  void addCloudWord() {
+    setState(() {
+      BottomPanelState.cardList.add(CloudWord());
+    });
+  }
+
   void addGroundWord() {
     setState(() {
       BottomPanelState.cardList.add(GroundWord());
+    });
+  }
+
+  void addMoonWord() {
+    setState(() {
+      BottomPanelState.cardList.add(MoonWord());
+    });
+  }
+
+  void addSunWord() {
+    setState(() {
+      BottomPanelState.cardList.add(SunWord());
+    });
+  }
+
+  void addStarWord() {
+    setState(() {
+      BottomPanelState.cardList.add(StarWord());
+    });
+  }
+
+  void addSnowWord() {
+    setState(() {
+      BottomPanelState.cardList.add(SnowWord());
+    });
+  }
+
+  void addEarthWord() {
+    setState(() {
+      BottomPanelState.cardList.add(EarthWord());
+    });
+  }
+
+  void addMountainWord() {
+    setState(() {
+      BottomPanelState.cardList.add(MountainWord());
+    });
+  }
+
+  void addWaterWord() {
+    setState(() {
+      BottomPanelState.cardList.add(WaterWord());
+    });
+  }
+
+  void addRainWord() {
+    setState(() {
+      BottomPanelState.cardList.add(RainWord());
+    });
+  }
+
+  void addLakeWord() {
+    setState(() {
+      BottomPanelState.cardList.add(LakeWord());
+    });
+  }
+
+  void addOceanWord() {
+    setState(() {
+      BottomPanelState.cardList.add(OceanWord());
+    });
+  }
+
+  void addRiverWord() {
+    setState(() {
+      BottomPanelState.cardList.add(RiverWord());
     });
   }
 
@@ -789,8 +873,23 @@ class HomePageState extends State<HomePage> {
                   toggleShapesGroup,
                   togglePronounsGroup,
                   toggleArticlesGroup,
-                  toggleAdverbsGroup),
-              TopRightPanel(addGroundWord, addSkyWord),
+                  toggleAdverbsGroup,
+                  toggleVerbsGroup),
+              TopRightPanel(
+                  addGroundWord,
+                  addSkyWord,
+                  addCloudWord,
+                  addMoonWord,
+                  addSunWord,
+                  addStarWord,
+                  addSnowWord,
+                  addEarthWord,
+                  addMountainWord,
+                  addWaterWord,
+                  addRainWord,
+                  addLakeWord,
+                  addOceanWord,
+                  addRiverWord),
             ]),
             BottomPanel(),
           ],

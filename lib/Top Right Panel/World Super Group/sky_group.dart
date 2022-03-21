@@ -48,7 +48,14 @@ class SkyGroup extends StatelessWidget {
   );
 
   final VoidCallback addSkyWord;
-  SkyGroup(this.addSkyWord);
+  final VoidCallback addCloudWord;
+  final VoidCallback addMoonWord;
+  final VoidCallback addSunWord;
+  final VoidCallback addStarWord;
+  final VoidCallback addSnowWord;
+  final VoidCallback addEarthWord;
+  SkyGroup(this.addSkyWord, this.addCloudWord, this.addMoonWord,
+      this.addSunWord, this.addStarWord, this.addSnowWord, this.addEarthWord);
 
   @override
   Widget build(BuildContext context) {
@@ -91,7 +98,7 @@ class SkyGroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => addCloudWord(),
             child: cloudSymbol,
           ),
         ),
@@ -113,7 +120,7 @@ class SkyGroup extends StatelessWidget {
                     style: BorderStyle.solid,
                   ),
                 ),
-                onPressed: () {},
+                onPressed: () => addMoonWord(),
                 child: moonSymbol,
               ),
             ),
@@ -133,7 +140,7 @@ class SkyGroup extends StatelessWidget {
                     style: BorderStyle.solid,
                   ),
                 ),
-                onPressed: () {},
+                onPressed: () => addSunWord(),
                 child: sunSymbol,
               ),
             ),
@@ -153,7 +160,7 @@ class SkyGroup extends StatelessWidget {
                     style: BorderStyle.solid,
                   ),
                 ),
-                onPressed: () {},
+                onPressed: () => addStarWord(),
                 child: starSymbol,
               ),
             )
@@ -175,7 +182,7 @@ class SkyGroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => addSnowWord(),
             child: snowSymbol,
           ),
         ),
@@ -195,7 +202,7 @@ class SkyGroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => addEarthWord(),
             child: earthSymbol,
           ),
         ),

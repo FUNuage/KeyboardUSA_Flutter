@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-import '../Words/World Super Group/Sky Group/SkyWord.dart';
-import '../Words/World Super Group/Geology Group/GroundWord.dart';
-import '../Words/Animate Super Group/Animal Types Group/AnimalWord.dart';
-
 class BottomPanel extends StatefulWidget {
   const BottomPanel({Key? key}) : super(key: key);
 
@@ -38,13 +34,14 @@ class BottomPanelState extends State<BottomPanel> {
             alignment: Alignment.topLeft,
             width: MediaQuery.of(context).size.width,
             height: 90,
-            padding: const EdgeInsets.all(10.0),
+            margin: const EdgeInsets.all(10),
+            padding: const EdgeInsets.fromLTRB(0, 10, 0, 10),
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.all(
                   Radius.circular(10),
                 ), //BorderRadius.all,
                 border: Border.all(
-                  color: Colors.white,
+                  color: Colors.red,
                   width: 2.0,
                 ),
                 color: backgroundColor),

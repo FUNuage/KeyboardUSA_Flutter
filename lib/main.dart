@@ -18,6 +18,13 @@ import 'Words/World Super Group/Geology Group/rain_word.dart';
 import 'Words/World Super Group/Geology Group/lake_word.dart';
 import 'Words/World Super Group/Geology Group/ocean_word.dart';
 import 'Words/World Super Group/Geology Group/river_word.dart';
+import 'Words/World Super Group/Materials Group/wood_word.dart';
+import 'Words/World Super Group/Materials Group/metal_word.dart';
+import 'Words/World Super Group/Materials Group/mud_word.dart';
+import 'Words/World Super Group/Materials Group/powder_word.dart';
+import 'Words/World Super Group/Materials Group/salt_word.dart';
+import 'Words/World Super Group/Materials Group/sand_word.dart';
+import 'Words/World Super Group/Materials Group/stone_word.dart';
 
 import 'Words/Animate Super Group/Animal Types Group/animal_word.dart';
 
@@ -891,6 +898,48 @@ class HomePageState extends State<HomePage> {
     });
   }
 
+  void addWoodWord() {
+    setState(() {
+      BottomPanelState.cardList.add(WoodWord());
+    });
+  }
+
+  void addMetalWord() {
+    setState(() {
+      BottomPanelState.cardList.add(MetalWord());
+    });
+  }
+
+  void addMudWord() {
+    setState(() {
+      BottomPanelState.cardList.add(MudWord());
+    });
+  }
+
+  void addPowderWord() {
+    setState(() {
+      BottomPanelState.cardList.add(PowderWord());
+    });
+  }
+
+  void addSaltWord() {
+    setState(() {
+      BottomPanelState.cardList.add(SaltWord());
+    });
+  }
+
+  void addSandWord() {
+    setState(() {
+      BottomPanelState.cardList.add(SandWord());
+    });
+  }
+
+  void addStoneWord() {
+    setState(() {
+      BottomPanelState.cardList.add(StoneWord());
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -934,20 +983,28 @@ class HomePageState extends State<HomePage> {
                   toggleInterjectionsGroup,
                   toggleEmojisGroup),
               TopRightPanel(
-                  addGroundWord,
-                  addSkyWord,
-                  addCloudWord,
-                  addMoonWord,
-                  addSunWord,
-                  addStarWord,
-                  addSnowWord,
-                  addEarthWord,
-                  addMountainWord,
-                  addWaterWord,
-                  addRainWord,
-                  addLakeWord,
-                  addOceanWord,
-                  addRiverWord),
+                addGroundWord,
+                addSkyWord,
+                addCloudWord,
+                addMoonWord,
+                addSunWord,
+                addStarWord,
+                addSnowWord,
+                addEarthWord,
+                addMountainWord,
+                addWaterWord,
+                addRainWord,
+                addLakeWord,
+                addOceanWord,
+                addRiverWord,
+                addWoodWord,
+                addMetalWord,
+                addMudWord,
+                addPowderWord,
+                addSaltWord,
+                addSandWord,
+                addStoneWord,
+              ),
             ]),
             BottomPanel(),
           ],

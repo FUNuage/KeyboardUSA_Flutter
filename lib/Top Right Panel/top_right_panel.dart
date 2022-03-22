@@ -52,6 +52,13 @@ class TopRightPanel extends StatelessWidget {
   final VoidCallback addLakeWord;
   final VoidCallback addOceanWord;
   final VoidCallback addRiverWord;
+  final VoidCallback addWoodWord;
+  final VoidCallback addMetalWord;
+  final VoidCallback addStoneWord;
+  final VoidCallback addSandWord;
+  final VoidCallback addMudWord;
+  final VoidCallback addSaltWord;
+  final VoidCallback addPowderWord;
 
   TopRightPanel(
       this.addGroundWord,
@@ -67,7 +74,14 @@ class TopRightPanel extends StatelessWidget {
       this.addRainWord,
       this.addLakeWord,
       this.addOceanWord,
-      this.addRiverWord);
+      this.addRiverWord,
+      this.addWoodWord,
+      this.addMetalWord,
+      this.addStoneWord,
+      this.addSandWord,
+      this.addMudWord,
+      this.addSaltWord,
+      this.addPowderWord);
 
   @override
   Widget build(BuildContext context) {
@@ -110,7 +124,8 @@ class TopRightPanel extends StatelessWidget {
               visible: HomePageState.materialsGroup,
               child: Padding(
                 padding: EdgeInsets.all(10),
-                child: MaterialsGroup(),
+                child: MaterialsGroup(addWoodWord, addMetalWord, addStoneWord,
+                    addSandWord, addMudWord, addSaltWord, addPowderWord),
               )),
           Visibility(
               visible: HomePageState.phenomenaGroup,

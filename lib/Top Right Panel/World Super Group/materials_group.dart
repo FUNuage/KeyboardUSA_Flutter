@@ -47,6 +47,16 @@ class MaterialsGroup extends StatelessWidget {
     color: const Color(0xffefcbcc),
   );
 
+  final VoidCallback addWoodWord;
+  final VoidCallback addMetalWord;
+  final VoidCallback addStoneWord;
+  final VoidCallback addSandWord;
+  final VoidCallback addMudWord;
+  final VoidCallback addSaltWord;
+  final VoidCallback addPowderWord;
+  MaterialsGroup(this.addWoodWord, this.addMetalWord, this.addStoneWord,
+      this.addSandWord, this.addMudWord, this.addSaltWord, this.addPowderWord);
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -69,7 +79,7 @@ class MaterialsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addWoodWord(),
               child: woodSymbol,
             ),
           ),
@@ -89,7 +99,7 @@ class MaterialsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addMetalWord(),
               child: metalSymbol,
             ),
           )
@@ -111,7 +121,7 @@ class MaterialsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addStoneWord(),
               child: stoneSymbol,
             ),
           ),
@@ -131,7 +141,7 @@ class MaterialsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addSandWord(),
               child: sandSymbol,
             ),
           )
@@ -152,7 +162,7 @@ class MaterialsGroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => addMudWord(),
             child: mudSymbol,
           ),
         ),
@@ -172,7 +182,7 @@ class MaterialsGroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => addSaltWord(),
             child: saltSymbol,
           ),
         ),
@@ -192,7 +202,7 @@ class MaterialsGroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => addPowderWord(),
             child: powderSymbol,
           ),
         ),

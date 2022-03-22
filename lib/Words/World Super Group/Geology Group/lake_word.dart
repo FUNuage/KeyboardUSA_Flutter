@@ -5,18 +5,30 @@ class LakeWord extends StatelessWidget {
   Color mainColor = const Color(0xff59a091);
   Color secondaryColor = Color(0xffefcbcc);
 
-  final Widget lakeSymbol = SvgPicture.asset(
+  final Widget geologyGroupSymbol = SvgPicture.asset(
+    'assets/bliss_symbols/world/stone,rock.svg',
+    width: 35,
+    color: const Color(0xffefcbcc),
+  );
+  final Widget lakeWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/World/GeologyGroup/lake,pond.svg',
-    width: 100,
+    width: 57,
     color: const Color(0xffefcbcc),
   );
 
   @override
   Widget build(BuildContext context) {
     return Container(
-        width: 80.0,
+        width: 100.0,
         height: 65.0,
-        child: lakeSymbol,
+        child: Row(children: [
+          geologyGroupSymbol,
+          VerticalDivider(
+            width: 4,
+            color: secondaryColor,
+          ),
+          lakeWordSymbol,
+        ]),
         margin: const EdgeInsets.fromLTRB(10, 0, 10, 0),
         decoration: BoxDecoration(
           color: mainColor,
@@ -25,7 +37,7 @@ class LakeWord extends StatelessWidget {
           ), //BorderRadius.all,
           border: Border.all(
             color: secondaryColor,
-            width: 4.0,
+            width: 2.0,
           ),
         ));
   }

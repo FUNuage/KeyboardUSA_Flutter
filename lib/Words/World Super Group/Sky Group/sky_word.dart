@@ -5,18 +5,31 @@ class SkyWord extends StatelessWidget {
   Color mainColor = const Color(0xff59a091);
   Color secondaryColor = Color(0xffefcbcc);
 
-  final Widget skySymbol = SvgPicture.asset(
+  final Widget skyGroupSymbol = SvgPicture.asset(
     'assets/bliss_symbols/World/SkyGroup/sky.svg',
-    width: 100,
+    width: 35,
+    color: const Color(0xffefcbcc),
+  );
+
+  final Widget skyWordSymbol = SvgPicture.asset(
+    'assets/bliss_symbols/World/SkyGroup/sky.svg',
+    width: 57,
     color: const Color(0xffefcbcc),
   );
 
   @override
   Widget build(BuildContext context) {
     return Container(
-        width: 80.0,
+        width: 100.0,
         height: 65.0,
-        child: skySymbol,
+        child: Row(children: [
+          skyGroupSymbol,
+          VerticalDivider(
+            width: 4,
+            color: secondaryColor,
+          ),
+          skyWordSymbol,
+        ]),
         margin: const EdgeInsets.fromLTRB(10, 0, 10, 0),
         decoration: BoxDecoration(
           color: mainColor,
@@ -25,7 +38,7 @@ class SkyWord extends StatelessWidget {
           ), //BorderRadius.all,
           border: Border.all(
             color: secondaryColor,
-            width: 4.0,
+            width: 2.0,
           ),
         ));
   }

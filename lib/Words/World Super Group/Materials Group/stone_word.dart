@@ -10,7 +10,6 @@ class StoneWord extends StatelessWidget {
     width: 35,
     color: const Color(0xffefcbcc),
   );
-
   final Widget stoneWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/World/MaterialsGroup/stone,rock.svg',
     width: 57,

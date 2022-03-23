@@ -25,6 +25,15 @@ import 'Words/World Super Group/Materials Group/powder_word.dart';
 import 'Words/World Super Group/Materials Group/salt_word.dart';
 import 'Words/World Super Group/Materials Group/sand_word.dart';
 import 'Words/World Super Group/Materials Group/stone_word.dart';
+import 'Words/World Super Group/Phenomena Group/ashes_word.dart';
+import 'Words/World Super Group/Phenomena Group/electrical_word.dart';
+import 'Words/World Super Group/Phenomena Group/fire_word.dart';
+import 'Words/World Super Group/Phenomena Group/fog_word.dart';
+import 'Words/World Super Group/Phenomena Group/ice_word.dart';
+import 'Words/World Super Group/Phenomena Group/smoke_word.dart';
+import 'Words/World Super Group/Phenomena Group/snow_word.dart';
+import 'Words/World Super Group/Phenomena Group/wind_word.dart';
+import 'Words/World Super Group/Phenomena Group/cloud_word.dart';
 
 import 'Words/Animate Super Group/Animal Types Group/animal_word.dart';
 
@@ -820,9 +829,9 @@ class HomePageState extends State<HomePage> {
     });
   }
 
-  void addCloudWord() {
+  void addSkyGroupCloudWord() {
     setState(() {
-      BottomPanelState.cardList.add(CloudWord());
+      BottomPanelState.cardList.add(SkyGroupCloudWord());
     });
   }
 
@@ -850,9 +859,9 @@ class HomePageState extends State<HomePage> {
     });
   }
 
-  void addSnowWord() {
+  void addSkyGroupSnowWord() {
     setState(() {
-      BottomPanelState.cardList.add(SnowWord());
+      BottomPanelState.cardList.add(SkyGroupSnowWord());
     });
   }
 
@@ -940,6 +949,60 @@ class HomePageState extends State<HomePage> {
     });
   }
 
+  void addFireWord() {
+    setState(() {
+      BottomPanelState.cardList.add(FireWord());
+    });
+  }
+
+  void addAshesWord() {
+    setState(() {
+      BottomPanelState.cardList.add(AshesWord());
+    });
+  }
+
+  void addSmokeWord() {
+    setState(() {
+      BottomPanelState.cardList.add(SmokeWord());
+    });
+  }
+
+  void addPhenomenaGroupCloudWord() {
+    setState(() {
+      BottomPanelState.cardList.add(PhenomenaGroupCloudWord());
+    });
+  }
+
+  void addFogWord() {
+    setState(() {
+      BottomPanelState.cardList.add(FogWord());
+    });
+  }
+
+  void addIceWord() {
+    setState(() {
+      BottomPanelState.cardList.add(IceWord());
+    });
+  }
+
+  void addPhenomenaGroupSnowWord() {
+    setState(() {
+      BottomPanelState.cardList.add(PhenomenaGroupSnowWord());
+    });
+  }
+
+  void addWindWord() {
+    setState(() {
+      BottomPanelState.cardList.add(WindWord());
+    });
+  }
+
+  void addElectricalWord() {
+    setState(() {
+      BottomPanelState.cardList.add(ElectricalWord());
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -983,28 +1046,36 @@ class HomePageState extends State<HomePage> {
                   toggleInterjectionsGroup,
                   toggleEmojisGroup),
               TopRightPanel(
-                addGroundWord,
-                addSkyWord,
-                addCloudWord,
-                addMoonWord,
-                addSunWord,
-                addStarWord,
-                addSnowWord,
-                addEarthWord,
-                addMountainWord,
-                addWaterWord,
-                addRainWord,
-                addLakeWord,
-                addOceanWord,
-                addRiverWord,
-                addWoodWord,
-                addMetalWord,
-                addMudWord,
-                addPowderWord,
-                addSaltWord,
-                addSandWord,
-                addStoneWord,
-              ),
+                  addGroundWord,
+                  addSkyWord,
+                  addSkyGroupCloudWord,
+                  addMoonWord,
+                  addSunWord,
+                  addStarWord,
+                  addSkyGroupSnowWord,
+                  addEarthWord,
+                  addMountainWord,
+                  addWaterWord,
+                  addRainWord,
+                  addLakeWord,
+                  addOceanWord,
+                  addRiverWord,
+                  addWoodWord,
+                  addMetalWord,
+                  addStoneWord,
+                  addSandWord,
+                  addMudWord,
+                  addSaltWord,
+                  addPowderWord,
+                  addFireWord,
+                  addAshesWord,
+                  addSmokeWord,
+                  addPhenomenaGroupCloudWord,
+                  addFogWord,
+                  addIceWord,
+                  addPhenomenaGroupSnowWord,
+                  addWindWord,
+                  addElectricalWord)
             ]),
             BottomPanel(),
           ],

@@ -40,11 +40,11 @@ class TopRightPanel extends StatelessWidget {
 
   final VoidCallback addGroundWord;
   final VoidCallback addSkyWord;
-  final VoidCallback addCloudWord;
+  final VoidCallback addSkyGroupCloudWord;
   final VoidCallback addMoonWord;
   final VoidCallback addSunWord;
   final VoidCallback addStarWord;
-  final VoidCallback addSnowWord;
+  final VoidCallback addSkyGroupSnowWord;
   final VoidCallback addEarthWord;
   final VoidCallback addMountainWord;
   final VoidCallback addWaterWord;
@@ -59,15 +59,24 @@ class TopRightPanel extends StatelessWidget {
   final VoidCallback addMudWord;
   final VoidCallback addSaltWord;
   final VoidCallback addPowderWord;
+  final VoidCallback addFireWord;
+  final VoidCallback addAshesWord;
+  final VoidCallback addSmokeWord;
+  final VoidCallback addPhenomenaGroupCloudWord;
+  final VoidCallback addFogWord;
+  final VoidCallback addIceWord;
+  final VoidCallback addPhenomenaGroupSnowWord;
+  final VoidCallback addWindWord;
+  final VoidCallback addElectricalWord;
 
   TopRightPanel(
       this.addGroundWord,
       this.addSkyWord,
-      this.addCloudWord,
+      this.addSkyGroupCloudWord,
       this.addMoonWord,
       this.addSunWord,
       this.addStarWord,
-      this.addSnowWord,
+      this.addSkyGroupSnowWord,
       this.addEarthWord,
       this.addMountainWord,
       this.addWaterWord,
@@ -81,7 +90,16 @@ class TopRightPanel extends StatelessWidget {
       this.addSandWord,
       this.addMudWord,
       this.addSaltWord,
-      this.addPowderWord);
+      this.addPowderWord,
+      this.addFireWord,
+      this.addAshesWord,
+      this.addSmokeWord,
+      this.addPhenomenaGroupCloudWord,
+      this.addFogWord,
+      this.addIceWord,
+      this.addPhenomenaGroupSnowWord,
+      this.addWindWord,
+      this.addElectricalWord);
 
   @override
   Widget build(BuildContext context) {
@@ -104,8 +122,8 @@ class TopRightPanel extends StatelessWidget {
               visible: HomePageState.skyGroup,
               child: Padding(
                 padding: EdgeInsets.all(10),
-                child: SkyGroup(addSkyWord, addCloudWord, addMoonWord,
-                    addSunWord, addStarWord, addSnowWord, addEarthWord),
+                child: SkyGroup(addSkyWord, addSkyGroupCloudWord, addMoonWord,
+                    addSunWord, addStarWord, addSkyGroupSnowWord, addEarthWord),
               )),
           Visibility(
               visible: HomePageState.geologyGroup,
@@ -131,7 +149,16 @@ class TopRightPanel extends StatelessWidget {
               visible: HomePageState.phenomenaGroup,
               child: Padding(
                 padding: EdgeInsets.all(10),
-                child: PhenomenaGroup(),
+                child: PhenomenaGroup(
+                    addFireWord,
+                    addAshesWord,
+                    addSmokeWord,
+                    addPhenomenaGroupCloudWord,
+                    addFogWord,
+                    addIceWord,
+                    addPhenomenaGroupSnowWord,
+                    addWindWord,
+                    addElectricalWord),
               )),
           Visibility(
               visible: HomePageState.plantsGroup,

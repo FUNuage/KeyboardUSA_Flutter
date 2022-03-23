@@ -59,6 +59,26 @@ class PhenomenaGroup extends StatelessWidget {
     color: const Color(0xffefcbcc),
   );
 
+  final VoidCallback addFireWord;
+  final VoidCallback addAshesWord;
+  final VoidCallback addSmokeWord;
+  final VoidCallback addPhenomenaGroupCloudWord;
+  final VoidCallback addFogWord;
+  final VoidCallback addIceWord;
+  final VoidCallback addPhenomenaGroupSnowWord;
+  final VoidCallback addWindWord;
+  final VoidCallback addElectricalWord;
+  PhenomenaGroup(
+      this.addFireWord,
+      this.addAshesWord,
+      this.addSmokeWord,
+      this.addPhenomenaGroupCloudWord,
+      this.addFogWord,
+      this.addIceWord,
+      this.addPhenomenaGroupSnowWord,
+      this.addWindWord,
+      this.addElectricalWord);
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -81,7 +101,7 @@ class PhenomenaGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addFireWord(),
               child: fireSymbol,
             ),
           ),
@@ -101,7 +121,7 @@ class PhenomenaGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addAshesWord(),
               child: ashesSymbol,
             ),
           )
@@ -123,7 +143,7 @@ class PhenomenaGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addSmokeWord(),
               child: smokeSymbol,
             ),
           ),
@@ -143,7 +163,7 @@ class PhenomenaGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addPhenomenaGroupCloudWord(),
               child: cloudSymbol,
             ),
           )
@@ -164,7 +184,7 @@ class PhenomenaGroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => addFogWord(),
             child: fogSymbol,
           ),
         ),
@@ -184,7 +204,7 @@ class PhenomenaGroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => addIceWord(),
             child: iceSymbol,
           ),
         ),
@@ -204,7 +224,7 @@ class PhenomenaGroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => addPhenomenaGroupSnowWord(),
             child: snowSymbol,
           ),
         ),
@@ -224,7 +244,7 @@ class PhenomenaGroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => addWindWord(),
             child: windSymbol,
           ),
         ),
@@ -244,7 +264,7 @@ class PhenomenaGroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => addElectricalWord(),
             child: electricalSymbol,
           ),
         ),

@@ -5,12 +5,11 @@ class SandWord extends StatelessWidget {
   Color mainColor = const Color(0xff59a091);
   Color secondaryColor = Color(0xffefcbcc);
 
-  final Widget geologyGroupSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/world/stone,rock.svg',
+  final Widget materialsGroupSymbol = SvgPicture.asset(
+    'assets/bliss_symbols/world/material,raw_material,stuff.svg',
     width: 35,
     color: const Color(0xffefcbcc),
   );
-
   final Widget sandWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/World/MaterialsGroup/sand.svg',
     width: 57,
@@ -23,7 +22,7 @@ class SandWord extends StatelessWidget {
         width: 100.0,
         height: 65.0,
         child: Row(children: [
-          geologyGroupSymbol,
+          materialsGroupSymbol,
           VerticalDivider(
             width: 4,
             color: secondaryColor,

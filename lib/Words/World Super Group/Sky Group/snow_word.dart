@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class SnowWord extends StatelessWidget {
+class SkyGroupSnowWord extends StatelessWidget {
   Color mainColor = const Color(0xff59a091);
   Color secondaryColor = Color(0xffefcbcc);
 

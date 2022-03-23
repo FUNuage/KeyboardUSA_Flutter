@@ -48,14 +48,20 @@ class SkyGroup extends StatelessWidget {
   );
 
   final VoidCallback addSkyWord;
-  final VoidCallback addCloudWord;
+  final VoidCallback addSkyGroupCloudWord;
   final VoidCallback addMoonWord;
   final VoidCallback addSunWord;
   final VoidCallback addStarWord;
-  final VoidCallback addSnowWord;
+  final VoidCallback addSkyGroupSnowWord;
   final VoidCallback addEarthWord;
-  SkyGroup(this.addSkyWord, this.addCloudWord, this.addMoonWord,
-      this.addSunWord, this.addStarWord, this.addSnowWord, this.addEarthWord);
+  SkyGroup(
+      this.addSkyWord,
+      this.addSkyGroupCloudWord,
+      this.addMoonWord,
+      this.addSunWord,
+      this.addStarWord,
+      this.addSkyGroupSnowWord,
+      this.addEarthWord);
 
   @override
   Widget build(BuildContext context) {
@@ -98,7 +104,7 @@ class SkyGroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () => addCloudWord(),
+            onPressed: () => addSkyGroupCloudWord(),
             child: cloudSymbol,
           ),
         ),
@@ -182,7 +188,7 @@ class SkyGroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () => addSnowWord(),
+            onPressed: () => addSkyGroupSnowWord(),
             child: snowSymbol,
           ),
         ),

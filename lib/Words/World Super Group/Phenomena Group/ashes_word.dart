@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class SkyGroupCloudWord extends StatelessWidget {
+class AshesWord extends StatelessWidget {
   Color mainColor = const Color(0xff59a091);
   Color secondaryColor = Color(0xffefcbcc);
 
-  final Widget skyGroupSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/World/SkyGroup/sky.svg',
-    width: 35,
+  final Widget phenomenaGroupSymbol = SvgPicture.asset(
+    'assets/bliss_symbols/world/wind.svg',
     color: const Color(0xffefcbcc),
+    width: 35,
   );
 
-  final Widget cloudWordSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/World/SkyGroup/cloud.svg',
+  final Widget ashesWordSymbol = SvgPicture.asset(
+    'assets/bliss_symbols/World/PhenomenaGroup/ashes.svg',
     width: 57,
     color: const Color(0xffefcbcc),
   );
@@ -23,12 +23,12 @@ class SkyGroupCloudWord extends StatelessWidget {
         width: 100.0,
         height: 65.0,
         child: Row(children: [
-          skyGroupSymbol,
+          phenomenaGroupSymbol,
           VerticalDivider(
             width: 4,
             color: secondaryColor,
           ),
-          cloudWordSymbol,
+          ashesWordSymbol,
         ]),
         margin: const EdgeInsets.fromLTRB(10, 0, 10, 0),
         decoration: BoxDecoration(

@@ -65,6 +65,29 @@ class FruitsGroup extends StatelessWidget {
     color: const Color(0xffefcbcc),
   );
 
+  final VoidCallback addAppleWord;
+  final VoidCallback addPeachWord;
+  final VoidCallback addPearWord;
+  final VoidCallback addAvocadoWord;
+  final VoidCallback addBananaWord;
+  final VoidCallback addPineappleWord;
+  final VoidCallback addOrangeWord;
+  final VoidCallback addStrawberryWord;
+  final VoidCallback addGrapeWord;
+  final VoidCallback addStarfruitWord;
+
+  FruitsGroup(
+      this.addAppleWord,
+      this.addPeachWord,
+      this.addPearWord,
+      this.addAvocadoWord,
+      this.addBananaWord,
+      this.addPineappleWord,
+      this.addOrangeWord,
+      this.addStrawberryWord,
+      this.addGrapeWord,
+      this.addStarfruitWord);
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -87,7 +110,7 @@ class FruitsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addAppleWord(),
               child: appleSymbol,
             ),
           ),
@@ -107,7 +130,7 @@ class FruitsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addPeachWord(),
               child: peachSymbol,
             ),
           ),
@@ -127,7 +150,7 @@ class FruitsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addPearWord(),
               child: pearSymbol,
             ),
           )
@@ -149,7 +172,7 @@ class FruitsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addAvocadoWord(),
               child: avocadoSymbol,
             ),
           ),
@@ -169,7 +192,7 @@ class FruitsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addBananaWord(),
               child: bananaSymbol,
             ),
           ),
@@ -189,7 +212,7 @@ class FruitsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addPineappleWord(),
               child: pineappleSymbol,
             ),
           ),
@@ -209,7 +232,7 @@ class FruitsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addOrangeWord(),
               child: orangeSymbol,
             ),
           )
@@ -231,7 +254,7 @@ class FruitsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addStrawberryWord(),
               child: strawberrySymbol,
             ),
           ),
@@ -251,7 +274,7 @@ class FruitsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addGrapeWord(),
               child: grapeSymbol,
             ),
           )
@@ -272,7 +295,7 @@ class FruitsGroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => addStarfruitWord(),
             child: starfruitSymbol,
           ),
         ),

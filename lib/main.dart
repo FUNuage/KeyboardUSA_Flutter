@@ -46,6 +46,16 @@ import 'Words/Animate Super Group/Plants Group/root_word.dart';
 import 'Words/Animate Super Group/Plants Group/seed_word.dart';
 import 'Words/Animate Super Group/Plants Group/stick_word.dart';
 import 'Words/Animate Super Group/Plants Group/tree_word.dart';
+import 'Words/Animate Super Group/Fruits Group/apple_word.dart';
+import 'Words/Animate Super Group/Fruits Group/avocado_word.dart';
+import 'Words/Animate Super Group/Fruits Group/banana_word.dart';
+import 'Words/Animate Super Group/Fruits Group/grape_word.dart';
+import 'Words/Animate Super Group/Fruits Group/orange_word.dart';
+import 'Words/Animate Super Group/Fruits Group/peach_word.dart';
+import 'Words/Animate Super Group/Fruits Group/pear_word.dart';
+import 'Words/Animate Super Group/Fruits Group/pineapple_word.dart';
+import 'Words/Animate Super Group/Fruits Group/starfruit_word.dart';
+import 'Words/Animate Super Group/Fruits Group/strawberry_word.dart';
 
 import 'Words/Animate Super Group/Animal Types Group/animal_word.dart';
 
@@ -1087,6 +1097,66 @@ class HomePageState extends State<HomePage> {
     });
   }
 
+  void addAppleWord() {
+    setState(() {
+      BottomPanelState.cardList.add(AppleWord());
+    });
+  }
+
+  void addPeachWord() {
+    setState(() {
+      BottomPanelState.cardList.add(PeachWord());
+    });
+  }
+
+  void addPearWord() {
+    setState(() {
+      BottomPanelState.cardList.add(PearWord());
+    });
+  }
+
+  void addAvocadoWord() {
+    setState(() {
+      BottomPanelState.cardList.add(AvocadoWord());
+    });
+  }
+
+  void addBananaWord() {
+    setState(() {
+      BottomPanelState.cardList.add(BananaWord());
+    });
+  }
+
+  void addPineappleWord() {
+    setState(() {
+      BottomPanelState.cardList.add(PineappleWord());
+    });
+  }
+
+  void addOrangeWord() {
+    setState(() {
+      BottomPanelState.cardList.add(OrangeWord());
+    });
+  }
+
+  void addStrawberryWord() {
+    setState(() {
+      BottomPanelState.cardList.add(StrawberryWord());
+    });
+  }
+
+  void addGrapeWord() {
+    setState(() {
+      BottomPanelState.cardList.add(GrapeWord());
+    });
+  }
+
+  void addStarfruitWord() {
+    setState(() {
+      BottomPanelState.cardList.add(StarfruitWord());
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -1130,49 +1200,58 @@ class HomePageState extends State<HomePage> {
                   toggleInterjectionsGroup,
                   toggleEmojisGroup),
               TopRightPanel(
-                addGroundWord,
-                addSkyWord,
-                addSkyGroupCloudWord,
-                addMoonWord,
-                addSunWord,
-                addStarWord,
-                addSkyGroupSnowWord,
-                addEarthWord,
-                addMountainWord,
-                addWaterWord,
-                addRainWord,
-                addLakeWord,
-                addOceanWord,
-                addRiverWord,
-                addWoodWord,
-                addMetalWord,
-                addStoneWord,
-                addSandWord,
-                addMudWord,
-                addSaltWord,
-                addPowderWord,
-                addFireWord,
-                addAshesWord,
-                addSmokeWord,
-                addPhenomenaGroupCloudWord,
-                addFogWord,
-                addIceWord,
-                addPhenomenaGroupSnowWord,
-                addWindWord,
-                addElectricalWord,
-                addLifeWord,
-                addDeadWord,
-                addSeedWord,
-                addTreeWord,
-                addRootWord,
-                addBarkWord,
-                addStickWord,
-                addLeafWord,
-                addForestWord,
-                addFlowerWord,
-                addFruitWord,
-                addGrassWord,
-              )
+                  addGroundWord,
+                  addSkyWord,
+                  addSkyGroupCloudWord,
+                  addMoonWord,
+                  addSunWord,
+                  addStarWord,
+                  addSkyGroupSnowWord,
+                  addEarthWord,
+                  addMountainWord,
+                  addWaterWord,
+                  addRainWord,
+                  addLakeWord,
+                  addOceanWord,
+                  addRiverWord,
+                  addWoodWord,
+                  addMetalWord,
+                  addStoneWord,
+                  addSandWord,
+                  addMudWord,
+                  addSaltWord,
+                  addPowderWord,
+                  addFireWord,
+                  addAshesWord,
+                  addSmokeWord,
+                  addPhenomenaGroupCloudWord,
+                  addFogWord,
+                  addIceWord,
+                  addPhenomenaGroupSnowWord,
+                  addWindWord,
+                  addElectricalWord,
+                  addLifeWord,
+                  addDeadWord,
+                  addSeedWord,
+                  addTreeWord,
+                  addRootWord,
+                  addBarkWord,
+                  addStickWord,
+                  addLeafWord,
+                  addForestWord,
+                  addFlowerWord,
+                  addFruitWord,
+                  addGrassWord,
+                  addAppleWord,
+                  addPeachWord,
+                  addPearWord,
+                  addAvocadoWord,
+                  addBananaWord,
+                  addPineappleWord,
+                  addOrangeWord,
+                  addStrawberryWord,
+                  addGrapeWord,
+                  addStarfruitWord)
             ]),
             BottomPanel(),
           ],

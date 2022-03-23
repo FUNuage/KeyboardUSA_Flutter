@@ -80,6 +80,16 @@ class TopRightPanel extends StatelessWidget {
   final VoidCallback addSeedWord;
   final VoidCallback addStickWord;
   final VoidCallback addTreeWord;
+  final VoidCallback addAppleWord;
+  final VoidCallback addPeachWord;
+  final VoidCallback addPearWord;
+  final VoidCallback addAvocadoWord;
+  final VoidCallback addBananaWord;
+  final VoidCallback addPineappleWord;
+  final VoidCallback addOrangeWord;
+  final VoidCallback addStrawberryWord;
+  final VoidCallback addGrapeWord;
+  final VoidCallback addStarfruitWord;
 
   TopRightPanel(
       this.addGroundWord,
@@ -123,7 +133,17 @@ class TopRightPanel extends StatelessWidget {
       this.addRootWord,
       this.addSeedWord,
       this.addStickWord,
-      this.addTreeWord);
+      this.addTreeWord,
+      this.addAppleWord,
+      this.addPeachWord,
+      this.addPearWord,
+      this.addAvocadoWord,
+      this.addBananaWord,
+      this.addPineappleWord,
+      this.addOrangeWord,
+      this.addStrawberryWord,
+      this.addGrapeWord,
+      this.addStarfruitWord);
 
   @override
   Widget build(BuildContext context) {
@@ -206,7 +226,17 @@ class TopRightPanel extends StatelessWidget {
               visible: HomePageState.fruitsGroup,
               child: Padding(
                 padding: EdgeInsets.all(10),
-                child: FruitsGroup(),
+                child: FruitsGroup(
+                    addAppleWord,
+                    addPeachWord,
+                    addPearWord,
+                    addAvocadoWord,
+                    addBananaWord,
+                    addPineappleWord,
+                    addOrangeWord,
+                    addStrawberryWord,
+                    addGrapeWord,
+                    addStarfruitWord),
               )),
           Visibility(
               visible: HomePageState.animalTypesGroup,

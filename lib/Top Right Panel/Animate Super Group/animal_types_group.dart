@@ -101,6 +101,42 @@ class AnimalTypesGroup extends StatelessWidget {
     color: const Color(0xffefcbcc),
   );
 
+  final VoidCallback addAnimalWord;
+  final VoidCallback addRabbitWord;
+  final VoidCallback addDeerWord;
+  final VoidCallback addCamelWord;
+  final VoidCallback addHorseWord;
+  final VoidCallback addWingsWord;
+  final VoidCallback addBirdWord;
+  final VoidCallback addEagleWord;
+  final VoidCallback addFishWord;
+  final VoidCallback addFrogWord;
+  final VoidCallback addInsectWord;
+  final VoidCallback addButterflyWord;
+  final VoidCallback addSpiderWord;
+  final VoidCallback addLouseWord;
+  final VoidCallback addWormWord;
+  final VoidCallback addSnakeWord;
+
+  AnimalTypesGroup(
+    this.addAnimalWord,
+    this.addRabbitWord,
+    this.addDeerWord,
+    this.addCamelWord,
+    this.addHorseWord,
+    this.addWingsWord,
+    this.addBirdWord,
+    this.addEagleWord,
+    this.addFishWord,
+    this.addFrogWord,
+    this.addInsectWord,
+    this.addButterflyWord,
+    this.addSpiderWord,
+    this.addLouseWord,
+    this.addWormWord,
+    this.addSnakeWord,
+  );
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -123,7 +159,7 @@ class AnimalTypesGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addAnimalWord(),
               child: animalSymbol,
             ),
           ),
@@ -143,7 +179,7 @@ class AnimalTypesGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addRabbitWord(),
               child: rabbitSymbol,
             ),
           ),
@@ -163,7 +199,7 @@ class AnimalTypesGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addDeerWord(),
               child: deerSymbol,
             ),
           ),
@@ -183,7 +219,7 @@ class AnimalTypesGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addCamelWord(),
               child: camelSymbol,
             ),
           ),
@@ -203,7 +239,7 @@ class AnimalTypesGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addHorseWord(),
               child: horseSymbol,
             ),
           )
@@ -225,7 +261,7 @@ class AnimalTypesGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addWingsWord(),
               child: wingsSymbol,
             ),
           ),
@@ -245,7 +281,7 @@ class AnimalTypesGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addBirdWord(),
               child: birdSymbol,
             ),
           ),
@@ -265,7 +301,7 @@ class AnimalTypesGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addEagleWord(),
               child: eagleSymbol,
             ),
           ),
@@ -286,7 +322,7 @@ class AnimalTypesGroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => addFishWord(),
             child: fishSymbol,
           ),
         ),
@@ -306,7 +342,7 @@ class AnimalTypesGroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => addFrogWord(),
             child: frogSymbol,
           ),
         ),
@@ -327,7 +363,7 @@ class AnimalTypesGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addInsectWord(),
               child: insectSymbol,
             ),
           ),
@@ -347,7 +383,7 @@ class AnimalTypesGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addButterflyWord(),
               child: butterflySymbol,
             ),
           ),
@@ -367,7 +403,7 @@ class AnimalTypesGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addSpiderWord(),
               child: spiderSymbol,
             ),
           ),
@@ -387,7 +423,7 @@ class AnimalTypesGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addLouseWord(),
               child: louseSymbol,
             ),
           )
@@ -408,7 +444,7 @@ class AnimalTypesGroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => addWormWord(),
             child: wormSymbol,
           ),
         ),
@@ -428,7 +464,7 @@ class AnimalTypesGroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => addSnakeWord(),
             child: snakeSymbol,
           ),
         ),

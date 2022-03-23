@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class ButterlyWord extends StatelessWidget {
+class ButterflyWord extends StatelessWidget {
   Color mainColor = const Color(0xff467f51);
   Color secondaryColor = const Color(0xffa9cfb4);
 

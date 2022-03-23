@@ -90,6 +90,22 @@ class TopRightPanel extends StatelessWidget {
   final VoidCallback addStrawberryWord;
   final VoidCallback addGrapeWord;
   final VoidCallback addStarfruitWord;
+  final VoidCallback addAnimalWord;
+  final VoidCallback addRabbitWord;
+  final VoidCallback addDeerWord;
+  final VoidCallback addCamelWord;
+  final VoidCallback addHorseWord;
+  final VoidCallback addWingsWord;
+  final VoidCallback addBirdWord;
+  final VoidCallback addEagleWord;
+  final VoidCallback addFishWord;
+  final VoidCallback addFrogWord;
+  final VoidCallback addInsectWord;
+  final VoidCallback addButterflyWord;
+  final VoidCallback addSpiderWord;
+  final VoidCallback addLouseWord;
+  final VoidCallback addWormWord;
+  final VoidCallback addSnakeWord;
 
   TopRightPanel(
       this.addGroundWord,
@@ -143,7 +159,23 @@ class TopRightPanel extends StatelessWidget {
       this.addOrangeWord,
       this.addStrawberryWord,
       this.addGrapeWord,
-      this.addStarfruitWord);
+      this.addStarfruitWord,
+      this.addAnimalWord,
+      this.addRabbitWord,
+      this.addDeerWord,
+      this.addCamelWord,
+      this.addHorseWord,
+      this.addWingsWord,
+      this.addBirdWord,
+      this.addEagleWord,
+      this.addFishWord,
+      this.addFrogWord,
+      this.addInsectWord,
+      this.addButterflyWord,
+      this.addSpiderWord,
+      this.addLouseWord,
+      this.addWormWord,
+      this.addSnakeWord);
 
   @override
   Widget build(BuildContext context) {
@@ -242,7 +274,23 @@ class TopRightPanel extends StatelessWidget {
               visible: HomePageState.animalTypesGroup,
               child: Padding(
                 padding: EdgeInsets.all(10),
-                child: AnimalTypesGroup(),
+                child: AnimalTypesGroup(
+                    addAnimalWord,
+                    addRabbitWord,
+                    addDeerWord,
+                    addCamelWord,
+                    addHorseWord,
+                    addWingsWord,
+                    addBirdWord,
+                    addEagleWord,
+                    addFishWord,
+                    addFrogWord,
+                    addInsectWord,
+                    addButterflyWord,
+                    addSpiderWord,
+                    addLouseWord,
+                    addWormWord,
+                    addSnakeWord),
               )),
           Visibility(
               visible: HomePageState.animalsFromGroup,

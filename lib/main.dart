@@ -56,8 +56,22 @@ import 'Words/Animate Super Group/Fruits Group/pear_word.dart';
 import 'Words/Animate Super Group/Fruits Group/pineapple_word.dart';
 import 'Words/Animate Super Group/Fruits Group/starfruit_word.dart';
 import 'Words/Animate Super Group/Fruits Group/strawberry_word.dart';
-
 import 'Words/Animate Super Group/Animal Types Group/animal_word.dart';
+import 'Words/Animate Super Group/Animal Types Group/bird_word.dart';
+import 'Words/Animate Super Group/Animal Types Group/butterfly_word.dart';
+import 'Words/Animate Super Group/Animal Types Group/camel_word.dart';
+import 'Words/Animate Super Group/Animal Types Group/deer_word.dart';
+import 'Words/Animate Super Group/Animal Types Group/eagle_word.dart';
+import 'Words/Animate Super Group/Animal Types Group/fish_word.dart';
+import 'Words/Animate Super Group/Animal Types Group/frog_word.dart';
+import 'Words/Animate Super Group/Animal Types Group/horse_word.dart';
+import 'Words/Animate Super Group/Animal Types Group/insect_word.dart';
+import 'Words/Animate Super Group/Animal Types Group/louse_word.dart';
+import 'Words/Animate Super Group/Animal Types Group/rabbit_word.dart';
+import 'Words/Animate Super Group/Animal Types Group/snake_word.dart';
+import 'Words/Animate Super Group/Animal Types Group/spider_word.dart';
+import 'Words/Animate Super Group/Animal Types Group/wings_word.dart';
+import 'Words/Animate Super Group/Animal Types Group/worm_word.dart';
 
 void main() {
   runApp(const App());
@@ -1157,6 +1171,102 @@ class HomePageState extends State<HomePage> {
     });
   }
 
+  void addAnimalWord() {
+    setState(() {
+      BottomPanelState.cardList.add(AnimalWord());
+    });
+  }
+
+  void addRabbitWord() {
+    setState(() {
+      BottomPanelState.cardList.add(RabbitWord());
+    });
+  }
+
+  void addDeerWord() {
+    setState(() {
+      BottomPanelState.cardList.add(DeerWord());
+    });
+  }
+
+  void addCamelWord() {
+    setState(() {
+      BottomPanelState.cardList.add(CamelWord());
+    });
+  }
+
+  void addHorseWord() {
+    setState(() {
+      BottomPanelState.cardList.add(HorseWord());
+    });
+  }
+
+  void addWingsWord() {
+    setState(() {
+      BottomPanelState.cardList.add(WingsWord());
+    });
+  }
+
+  void addBirdWord() {
+    setState(() {
+      BottomPanelState.cardList.add(BirdWord());
+    });
+  }
+
+  void addEagleWord() {
+    setState(() {
+      BottomPanelState.cardList.add(EagleWord());
+    });
+  }
+
+  void addFishWord() {
+    setState(() {
+      BottomPanelState.cardList.add(FishWord());
+    });
+  }
+
+  void addFrogWord() {
+    setState(() {
+      BottomPanelState.cardList.add(FrogWord());
+    });
+  }
+
+  void addInsectWord() {
+    setState(() {
+      BottomPanelState.cardList.add(InsectWord());
+    });
+  }
+
+  void addButterflyWord() {
+    setState(() {
+      BottomPanelState.cardList.add(ButterflyWord());
+    });
+  }
+
+  void addSpiderWord() {
+    setState(() {
+      BottomPanelState.cardList.add(SpiderWord());
+    });
+  }
+
+  void addLouseWord() {
+    setState(() {
+      BottomPanelState.cardList.add(LouseWord());
+    });
+  }
+
+  void addWormWord() {
+    setState(() {
+      BottomPanelState.cardList.add(WormWord());
+    });
+  }
+
+  void addSnakeWord() {
+    setState(() {
+      BottomPanelState.cardList.add(SnakeWord());
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -1251,7 +1361,23 @@ class HomePageState extends State<HomePage> {
                   addOrangeWord,
                   addStrawberryWord,
                   addGrapeWord,
-                  addStarfruitWord)
+                  addStarfruitWord,
+                  addAnimalWord,
+                  addRabbitWord,
+                  addDeerWord,
+                  addCamelWord,
+                  addHorseWord,
+                  addWingsWord,
+                  addBirdWord,
+                  addEagleWord,
+                  addFishWord,
+                  addFrogWord,
+                  addInsectWord,
+                  addButterflyWord,
+                  addSpiderWord,
+                  addLouseWord,
+                  addWormWord,
+                  addSnakeWord)
             ]),
             BottomPanel(),
           ],

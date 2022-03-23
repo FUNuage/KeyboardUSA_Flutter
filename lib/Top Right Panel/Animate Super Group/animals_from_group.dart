@@ -52,6 +52,23 @@ class AnimalsFromGroup extends StatelessWidget {
     color: const Color(0xffefcbcc),
   );
 
+  final VoidCallback addFoodWord;
+  final VoidCallback addMeatWord;
+  final VoidCallback addEggWord;
+  final VoidCallback addFeatherWord;
+  final VoidCallback addHornsWord;
+  final VoidCallback addTailWord;
+  final VoidCallback addBloodWord;
+
+  AnimalsFromGroup(
+      this.addFoodWord,
+      this.addMeatWord,
+      this.addEggWord,
+      this.addFeatherWord,
+      this.addHornsWord,
+      this.addTailWord,
+      this.addBloodWord);
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -74,7 +91,7 @@ class AnimalsFromGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addFoodWord(),
               child: foodSymbol,
             ),
           ),
@@ -94,7 +111,7 @@ class AnimalsFromGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addMeatWord(),
               child: meatSymbol,
             ),
           )
@@ -116,7 +133,7 @@ class AnimalsFromGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addEggWord(),
               child: eggSymbol,
             ),
           ),
@@ -136,7 +153,7 @@ class AnimalsFromGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addFeatherWord(),
               child: featherSymbol,
             ),
           )
@@ -158,7 +175,7 @@ class AnimalsFromGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addHornsWord(),
               child: hornsSymbol,
             ),
           ),
@@ -178,7 +195,7 @@ class AnimalsFromGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addTailWord(),
               child: tailSymbol,
             ),
           ),
@@ -198,7 +215,7 @@ class AnimalsFromGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addBloodWord(),
               child: bloodSymbol,
             ),
           ),

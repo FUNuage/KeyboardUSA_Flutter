@@ -106,6 +106,13 @@ class TopRightPanel extends StatelessWidget {
   final VoidCallback addLouseWord;
   final VoidCallback addWormWord;
   final VoidCallback addSnakeWord;
+  final VoidCallback addBloodWord;
+  final VoidCallback addEggWord;
+  final VoidCallback addFeatherWord;
+  final VoidCallback addFoodWord;
+  final VoidCallback addHornsWord;
+  final VoidCallback addMeatWord;
+  final VoidCallback addTailWord;
 
   TopRightPanel(
       this.addGroundWord,
@@ -175,7 +182,14 @@ class TopRightPanel extends StatelessWidget {
       this.addSpiderWord,
       this.addLouseWord,
       this.addWormWord,
-      this.addSnakeWord);
+      this.addSnakeWord,
+      this.addBloodWord,
+      this.addEggWord,
+      this.addFeatherWord,
+      this.addFoodWord,
+      this.addHornsWord,
+      this.addMeatWord,
+      this.addTailWord);
 
   @override
   Widget build(BuildContext context) {
@@ -296,7 +310,14 @@ class TopRightPanel extends StatelessWidget {
               visible: HomePageState.animalsFromGroup,
               child: Padding(
                 padding: EdgeInsets.all(10),
-                child: AnimalsFromGroup(),
+                child: AnimalsFromGroup(
+                    addBloodWord,
+                    addEggWord,
+                    addFeatherWord,
+                    addFoodWord,
+                    addHornsWord,
+                    addMeatWord,
+                    addTailWord),
               )),
           Visibility(
               visible: HomePageState.faceGroup,

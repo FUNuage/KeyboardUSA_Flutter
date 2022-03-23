@@ -72,6 +72,13 @@ import 'Words/Animate Super Group/Animal Types Group/snake_word.dart';
 import 'Words/Animate Super Group/Animal Types Group/spider_word.dart';
 import 'Words/Animate Super Group/Animal Types Group/wings_word.dart';
 import 'Words/Animate Super Group/Animal Types Group/worm_word.dart';
+import 'Words/Animate Super Group/Animals From Group/blood_word.dart';
+import 'Words/Animate Super Group/Animals From Group/egg_word.dart';
+import 'Words/Animate Super Group/Animals From Group/feather_word.dart';
+import 'Words/Animate Super Group/Animals From Group/food_word.dart';
+import 'Words/Animate Super Group/Animals From Group/horns_word.dart';
+import 'Words/Animate Super Group/Animals From Group/meat_word.dart';
+import 'Words/Animate Super Group/Animals From Group/tail_word.dart';
 
 void main() {
   runApp(const App());
@@ -1267,6 +1274,48 @@ class HomePageState extends State<HomePage> {
     });
   }
 
+  void addBloodWord() {
+    setState(() {
+      BottomPanelState.cardList.add(BloodWord());
+    });
+  }
+
+  void addEggWord() {
+    setState(() {
+      BottomPanelState.cardList.add(EggWord());
+    });
+  }
+
+  void addFeatherWord() {
+    setState(() {
+      BottomPanelState.cardList.add(FeatherWord());
+    });
+  }
+
+  void addFoodWord() {
+    setState(() {
+      BottomPanelState.cardList.add(FoodWord());
+    });
+  }
+
+  void addHornsWord() {
+    setState(() {
+      BottomPanelState.cardList.add(HornsWord());
+    });
+  }
+
+  void addMeatWord() {
+    setState(() {
+      BottomPanelState.cardList.add(MeatWord());
+    });
+  }
+
+  void addTailWord() {
+    setState(() {
+      BottomPanelState.cardList.add(TailWord());
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -1377,7 +1426,14 @@ class HomePageState extends State<HomePage> {
                   addSpiderWord,
                   addLouseWord,
                   addWormWord,
-                  addSnakeWord)
+                  addSnakeWord,
+                  addFoodWord,
+                  addMeatWord,
+                  addEggWord,
+                  addFeatherWord,
+                  addHornsWord,
+                  addTailWord,
+                  addBloodWord)
             ]),
             BottomPanel(),
           ],

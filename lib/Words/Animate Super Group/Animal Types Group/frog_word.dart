@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class AnimalWord extends StatelessWidget {
+class FrogWord extends StatelessWidget {
   Color mainColor = const Color(0xff467f51);
   Color secondaryColor = const Color(0xffa9cfb4);
 
@@ -11,8 +11,8 @@ class AnimalWord extends StatelessWidget {
     color: const Color(0xffefcbcc),
   );
 
-  final Widget animalWordSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Animate/AnimalTypesGroup/animal,beast.svg',
+  final Widget frogWordSymbol = SvgPicture.asset(
+    'assets/bliss_symbols/Animate/AnimalTypesGroup/frog,toad.svg',
     width: 57,
     color: const Color(0xffefcbcc),
   );
@@ -28,7 +28,7 @@ class AnimalWord extends StatelessWidget {
             width: 4,
             color: secondaryColor,
           ),
-          animalWordSymbol,
+          frogWordSymbol,
         ]),
         margin: const EdgeInsets.fromLTRB(10, 0, 10, 0),
         decoration: BoxDecoration(

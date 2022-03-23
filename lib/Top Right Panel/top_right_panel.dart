@@ -68,6 +68,18 @@ class TopRightPanel extends StatelessWidget {
   final VoidCallback addPhenomenaGroupSnowWord;
   final VoidCallback addWindWord;
   final VoidCallback addElectricalWord;
+  final VoidCallback addBarkWord;
+  final VoidCallback addDeadWord;
+  final VoidCallback addFlowerWord;
+  final VoidCallback addForestWord;
+  final VoidCallback addFruitWord;
+  final VoidCallback addGrassWord;
+  final VoidCallback addLeafWord;
+  final VoidCallback addLifeWord;
+  final VoidCallback addRootWord;
+  final VoidCallback addSeedWord;
+  final VoidCallback addStickWord;
+  final VoidCallback addTreeWord;
 
   TopRightPanel(
       this.addGroundWord,
@@ -99,7 +111,19 @@ class TopRightPanel extends StatelessWidget {
       this.addIceWord,
       this.addPhenomenaGroupSnowWord,
       this.addWindWord,
-      this.addElectricalWord);
+      this.addElectricalWord,
+      this.addBarkWord,
+      this.addDeadWord,
+      this.addFlowerWord,
+      this.addForestWord,
+      this.addFruitWord,
+      this.addGrassWord,
+      this.addLeafWord,
+      this.addLifeWord,
+      this.addRootWord,
+      this.addSeedWord,
+      this.addStickWord,
+      this.addTreeWord);
 
   @override
   Widget build(BuildContext context) {
@@ -164,7 +188,19 @@ class TopRightPanel extends StatelessWidget {
               visible: HomePageState.plantsGroup,
               child: Padding(
                 padding: EdgeInsets.all(10),
-                child: PlantsGroup(),
+                child: PlantsGroup(
+                    addBarkWord,
+                    addDeadWord,
+                    addFlowerWord,
+                    addForestWord,
+                    addFruitWord,
+                    addGrassWord,
+                    addLeafWord,
+                    addLifeWord,
+                    addRootWord,
+                    addSeedWord,
+                    addStickWord,
+                    addTreeWord),
               )),
           Visibility(
               visible: HomePageState.fruitsGroup,

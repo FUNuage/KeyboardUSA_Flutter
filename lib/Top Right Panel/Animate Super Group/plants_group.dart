@@ -77,6 +77,32 @@ class PlantsGroup extends StatelessWidget {
     color: const Color(0xffefcbcc),
   );
 
+  final VoidCallback addLifeWord;
+  final VoidCallback addDeadWord;
+  final VoidCallback addSeedWord;
+  final VoidCallback addTreeWord;
+  final VoidCallback addRootWord;
+  final VoidCallback addBarkWord;
+  final VoidCallback addStickWord;
+  final VoidCallback addLeafWord;
+  final VoidCallback addForestWord;
+  final VoidCallback addFlowerWord;
+  final VoidCallback addFruitWord;
+  final VoidCallback addGrassWord;
+  PlantsGroup(
+      this.addLifeWord,
+      this.addDeadWord,
+      this.addSeedWord,
+      this.addTreeWord,
+      this.addRootWord,
+      this.addBarkWord,
+      this.addStickWord,
+      this.addLeafWord,
+      this.addForestWord,
+      this.addFlowerWord,
+      this.addFruitWord,
+      this.addGrassWord);
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -99,7 +125,7 @@ class PlantsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addLifeWord(),
               child: lifeSymbol,
             ),
           ),
@@ -119,7 +145,7 @@ class PlantsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addDeadWord(),
               child: deadSymbol,
             ),
           ),
@@ -139,7 +165,7 @@ class PlantsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addSeedWord(),
               child: seedSymbol,
             ),
           )
@@ -161,7 +187,7 @@ class PlantsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addTreeWord(),
               child: treeSymbol,
             ),
           ),
@@ -181,7 +207,7 @@ class PlantsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addRootWord(),
               child: rootSymbol,
             ),
           ),
@@ -201,7 +227,7 @@ class PlantsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addBarkWord(),
               child: barkSymbol,
             ),
           ),
@@ -221,7 +247,7 @@ class PlantsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addStickWord(),
               child: stickSymbol,
             ),
           ),
@@ -241,7 +267,7 @@ class PlantsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addLeafWord(),
               child: leafSymbol,
             ),
           ),
@@ -262,7 +288,7 @@ class PlantsGroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => addForestWord(),
             child: forestSymbol,
           ),
         ),
@@ -282,7 +308,7 @@ class PlantsGroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => addFlowerWord(),
             child: flowerSymbol,
           ),
         ),
@@ -302,7 +328,7 @@ class PlantsGroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => addFruitWord(),
             child: fruitSymbol,
           ),
         ),
@@ -322,7 +348,7 @@ class PlantsGroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => addGrassWord(),
             child: grassSymbol,
           ),
         ),

@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class AnimalWord extends StatelessWidget {
+class TreeWord extends StatelessWidget {
   Color mainColor = const Color(0xff467f51);
   Color secondaryColor = const Color(0xffa9cfb4);
 
-  final Widget animalsGroupSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Animate/animal,beast.svg',
+  final Widget plantsGroupSymbol = SvgPicture.asset(
+    'assets/bliss_symbols/Animate/plant.svg',
     width: 35,
     color: const Color(0xffefcbcc),
   );
 
-  final Widget animalWordSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Animate/AnimalTypesGroup/animal,beast.svg',
+  final Widget treeWordSymbol = SvgPicture.asset(
+    'assets/bliss_symbols/Animate/PlantsGroup/tree.svg',
     width: 57,
     color: const Color(0xffefcbcc),
   );
@@ -23,12 +23,12 @@ class AnimalWord extends StatelessWidget {
         width: 100.0,
         height: 65.0,
         child: Row(children: [
-          animalsGroupSymbol,
+          plantsGroupSymbol,
           VerticalDivider(
             width: 4,
             color: secondaryColor,
           ),
-          animalWordSymbol,
+          treeWordSymbol,
         ]),
         margin: const EdgeInsets.fromLTRB(10, 0, 10, 0),
         decoration: BoxDecoration(

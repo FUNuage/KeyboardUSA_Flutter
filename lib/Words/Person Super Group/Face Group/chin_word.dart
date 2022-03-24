@@ -12,7 +12,7 @@ class ChinWord extends StatelessWidget {
   );
 
   final Widget chinWordSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Person/BodyPartsGroup/bone.svg',
+    'assets/bliss_symbols/Person/FaceGroup/chin.svg',
     width: 57,
     color: const Color(0xffefcbcc),
   );

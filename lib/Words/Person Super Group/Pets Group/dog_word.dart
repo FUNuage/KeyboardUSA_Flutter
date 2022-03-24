@@ -7,7 +7,7 @@ class DogWord extends StatelessWidget {
 
   final Widget petsGroupSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Person/pet.svg',
-    width: 100,
+    width: 35,
     color: const Color(0xffefcbcc),
   );
 

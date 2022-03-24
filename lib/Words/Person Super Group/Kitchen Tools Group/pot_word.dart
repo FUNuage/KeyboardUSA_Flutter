@@ -12,7 +12,7 @@ class PotWord extends StatelessWidget {
   );
 
   final Widget potWordSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Person/KitchenToolsGroup/pot,pan.svg',
+    'assets/bliss_symbols/Person/KitchenToolsGroup/pot,kettle,boiler.svg',
     width: 57,
     color: const Color(0xffefcbcc),
   );

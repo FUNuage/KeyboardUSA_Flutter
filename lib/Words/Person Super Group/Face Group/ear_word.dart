@@ -12,7 +12,7 @@ class EarWord extends StatelessWidget {
   );
 
   final Widget earWordSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Person/BodyPartsGroup/ear.svg',
+    'assets/bliss_symbols/Person/FaceGroup/ear.svg',
     width: 57,
     color: const Color(0xffefcbcc),
   );

@@ -7,7 +7,7 @@ class ShovelWord extends StatelessWidget {
 
   final Widget personalArtifactsGroupSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Person/man-made_item,artefact,artifact,product.svg',
-    width: 100,
+    width: 35,
     color: const Color(0xffefcbcc),
   );
 

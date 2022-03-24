@@ -119,6 +119,47 @@ class PersonalArtifactsGroup extends StatelessWidget {
     color: const Color(0xffefcbcc),
   );
 
+  final VoidCallback addCombWord;
+  final VoidCallback addBrushWord;
+  final VoidCallback addSoapWord;
+  final VoidCallback addToothbrushWord;
+  final VoidCallback addBedWord;
+  final VoidCallback addBlanketWord;
+  final VoidCallback addPillowWord;
+  final VoidCallback addHammerWord;
+  final VoidCallback addPersonalArtifactsGroupKnifeWord;
+  final VoidCallback addTubeWord;
+  final VoidCallback addFiberWord;
+  final VoidCallback addThreadWord;
+  final VoidCallback addClothWord;
+  final VoidCallback addNeedleWord;
+  final VoidCallback addRopeWord;
+  final VoidCallback addKeyWord;
+  final VoidCallback addMoneyWord;
+  final VoidCallback addSawWord;
+  final VoidCallback addShovelWord;
+
+  PersonalArtifactsGroup(
+      this.addCombWord,
+      this.addBrushWord,
+      this.addSoapWord,
+      this.addToothbrushWord,
+      this.addBedWord,
+      this.addBlanketWord,
+      this.addPillowWord,
+      this.addHammerWord,
+      this.addPersonalArtifactsGroupKnifeWord,
+      this.addTubeWord,
+      this.addFiberWord,
+      this.addThreadWord,
+      this.addClothWord,
+      this.addNeedleWord,
+      this.addRopeWord,
+      this.addKeyWord,
+      this.addMoneyWord,
+      this.addSawWord,
+      this.addShovelWord);
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -141,7 +182,7 @@ class PersonalArtifactsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addCombWord(),
               child: combSymbol,
             ),
           ),
@@ -161,7 +202,7 @@ class PersonalArtifactsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addBrushWord(),
               child: brushSymbol,
             ),
           ),
@@ -181,7 +222,7 @@ class PersonalArtifactsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addSoapWord(),
               child: soapSymbol,
             ),
           ),
@@ -201,7 +242,7 @@ class PersonalArtifactsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addToothbrushWord(),
               child: toothbrushSymbol,
             ),
           ),
@@ -223,7 +264,7 @@ class PersonalArtifactsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addBedWord(),
               child: bedSymbol,
             ),
           ),
@@ -243,7 +284,7 @@ class PersonalArtifactsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addBlanketWord(),
               child: blanketSymbol,
             ),
           ),
@@ -263,7 +304,7 @@ class PersonalArtifactsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addPillowWord(),
               child: pillowSymbol,
             ),
           ),
@@ -285,7 +326,7 @@ class PersonalArtifactsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addHammerWord(),
               child: hammerSymbol,
             ),
           ),
@@ -305,7 +346,7 @@ class PersonalArtifactsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addPersonalArtifactsGroupKnifeWord(),
               child: knifeSymbol,
             ),
           )
@@ -326,7 +367,7 @@ class PersonalArtifactsGroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => addTubeWord(),
             child: tubeSymbol,
           ),
         ),
@@ -347,7 +388,7 @@ class PersonalArtifactsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addFiberWord(),
               child: fiberSymbol,
             ),
           ),
@@ -367,7 +408,7 @@ class PersonalArtifactsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addThreadWord(),
               child: threadSymbol,
             ),
           ),
@@ -387,7 +428,7 @@ class PersonalArtifactsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addClothWord(),
               child: clothSymbol,
             ),
           ),
@@ -407,7 +448,7 @@ class PersonalArtifactsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addNeedleWord(),
               child: needleSymbol,
             ),
           ),
@@ -427,7 +468,7 @@ class PersonalArtifactsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addRopeWord(),
               child: ropeSymbol,
             ),
           )
@@ -449,7 +490,7 @@ class PersonalArtifactsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addKeyWord(),
               child: keySymbol,
             ),
           ),
@@ -469,7 +510,7 @@ class PersonalArtifactsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addMoneyWord(),
               child: moneySymbol,
             ),
           )
@@ -491,7 +532,7 @@ class PersonalArtifactsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addSawWord(),
               child: sawSymbol,
             ),
           ),
@@ -511,7 +552,7 @@ class PersonalArtifactsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addShovelWord(),
               child: shovelSymbol,
             ),
           )

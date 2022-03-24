@@ -109,10 +109,77 @@ class TopRightPanel extends StatelessWidget {
   final VoidCallback addBloodWord;
   final VoidCallback addEggWord;
   final VoidCallback addFeatherWord;
-  final VoidCallback addFoodWord;
+  final VoidCallback addAnimalsFromGroupFoodWord;
   final VoidCallback addHornsWord;
   final VoidCallback addMeatWord;
   final VoidCallback addTailWord;
+  final VoidCallback addLegWord;
+  final VoidCallback addKneeWord;
+  final VoidCallback addFootWord;
+  final VoidCallback addBackOfBodyWord;
+  final VoidCallback addNeckOfBodyWord;
+  final VoidCallback addThroatWord;
+  final VoidCallback addHandWord;
+  final VoidCallback addFingernailWord;
+  final VoidCallback addHeartWord;
+  final VoidCallback addSkinWord;
+  final VoidCallback addStomachWord;
+  final VoidCallback addBodyPartsGroupFoodWord;
+  final VoidCallback addOrganWord;
+  final VoidCallback addBoneWord;
+  final VoidCallback addIntestineWord;
+  final VoidCallback addEyeWord;
+  final VoidCallback addEarWord;
+  final VoidCallback addNoseWord;
+  final VoidCallback addMouthWord;
+  final VoidCallback addTongueWord;
+  final VoidCallback addToothWord;
+  final VoidCallback addChinWord;
+  final VoidCallback addHairOfHeadWord;
+  final VoidCallback addBabyWord;
+  final VoidCallback addChildWord;
+  final VoidCallback addPersonWord;
+  final VoidCallback addManWord;
+  final VoidCallback addWomanWord;
+  final VoidCallback addFamilyWord;
+  final VoidCallback addProtectionWord;
+  final VoidCallback addFatherWord;
+  final VoidCallback addMotherWord;
+  final VoidCallback addHusbandWord;
+  final VoidCallback addWifeWord;
+  final VoidCallback addBrotherWord;
+  final VoidCallback addSisterWord;
+  final VoidCallback addCatWord;
+  final VoidCallback addDogWord;
+  final VoidCallback addCombWord;
+  final VoidCallback addBrushWord;
+  final VoidCallback addSoapWord;
+  final VoidCallback addToothbrushWord;
+  final VoidCallback addBedWord;
+  final VoidCallback addBlanketWord;
+  final VoidCallback addPillowWord;
+  final VoidCallback addHammerWord;
+  final VoidCallback addPersonalArtifactsGroupKnifeWord;
+  final VoidCallback addTubeWord;
+  final VoidCallback addFiberWord;
+  final VoidCallback addThreadWord;
+  final VoidCallback addClothWord;
+  final VoidCallback addNeedleWord;
+  final VoidCallback addRopeWord;
+  final VoidCallback addKeyWord;
+  final VoidCallback addMoneyWord;
+  final VoidCallback addSawWord;
+  final VoidCallback addShovelWord;
+  final VoidCallback addContainerWord;
+  final VoidCallback addPitcherWord;
+  final VoidCallback addDishWord;
+  final VoidCallback addCupWord;
+  final VoidCallback addDrinkingGlassWord;
+  final VoidCallback addForkWord;
+  final VoidCallback addKitchenToolsGroupKnifeWord;
+  final VoidCallback addSpoonWord;
+  final VoidCallback addPotWord;
+  final VoidCallback addPanWord;
 
   TopRightPanel(
       this.addGroundWord,
@@ -186,10 +253,77 @@ class TopRightPanel extends StatelessWidget {
       this.addBloodWord,
       this.addEggWord,
       this.addFeatherWord,
-      this.addFoodWord,
+      this.addAnimalsFromGroupFoodWord,
       this.addHornsWord,
       this.addMeatWord,
-      this.addTailWord);
+      this.addTailWord,
+      this.addLegWord,
+      this.addKneeWord,
+      this.addFootWord,
+      this.addBackOfBodyWord,
+      this.addNeckOfBodyWord,
+      this.addThroatWord,
+      this.addHandWord,
+      this.addFingernailWord,
+      this.addHeartWord,
+      this.addSkinWord,
+      this.addStomachWord,
+      this.addBodyPartsGroupFoodWord,
+      this.addOrganWord,
+      this.addBoneWord,
+      this.addIntestineWord,
+      this.addEyeWord,
+      this.addEarWord,
+      this.addNoseWord,
+      this.addMouthWord,
+      this.addTongueWord,
+      this.addToothWord,
+      this.addChinWord,
+      this.addHairOfHeadWord,
+      this.addBabyWord,
+      this.addChildWord,
+      this.addPersonWord,
+      this.addManWord,
+      this.addWomanWord,
+      this.addFamilyWord,
+      this.addProtectionWord,
+      this.addFatherWord,
+      this.addMotherWord,
+      this.addHusbandWord,
+      this.addWifeWord,
+      this.addBrotherWord,
+      this.addSisterWord,
+      this.addCatWord,
+      this.addDogWord,
+      this.addCombWord,
+      this.addBrushWord,
+      this.addSoapWord,
+      this.addToothbrushWord,
+      this.addBedWord,
+      this.addBlanketWord,
+      this.addPillowWord,
+      this.addHammerWord,
+      this.addPersonalArtifactsGroupKnifeWord,
+      this.addTubeWord,
+      this.addFiberWord,
+      this.addThreadWord,
+      this.addClothWord,
+      this.addNeedleWord,
+      this.addRopeWord,
+      this.addKeyWord,
+      this.addMoneyWord,
+      this.addSawWord,
+      this.addShovelWord,
+      this.addContainerWord,
+      this.addPitcherWord,
+      this.addDishWord,
+      this.addCupWord,
+      this.addDrinkingGlassWord,
+      this.addForkWord,
+      this.addKitchenToolsGroupKnifeWord,
+      this.addSpoonWord,
+      this.addPotWord,
+      this.addPanWord);
 
   @override
   Widget build(BuildContext context) {
@@ -314,7 +448,7 @@ class TopRightPanel extends StatelessWidget {
                     addBloodWord,
                     addEggWord,
                     addFeatherWord,
-                    addFoodWord,
+                    addAnimalsFromGroupFoodWord,
                     addHornsWord,
                     addMeatWord,
                     addTailWord),
@@ -323,37 +457,103 @@ class TopRightPanel extends StatelessWidget {
               visible: HomePageState.faceGroup,
               child: Padding(
                 padding: EdgeInsets.all(10),
-                child: FaceGroup(),
+                child: FaceGroup(
+                    addEyeWord,
+                    addEarWord,
+                    addNoseWord,
+                    addMouthWord,
+                    addTongueWord,
+                    addToothWord,
+                    addChinWord,
+                    addHairOfHeadWord),
               )),
           Visibility(
               visible: HomePageState.bodyPartsGroup,
               child: Padding(
                 padding: EdgeInsets.all(10),
-                child: BodyPartsGroup(),
+                child: BodyPartsGroup(
+                    addLegWord,
+                    addKneeWord,
+                    addFootWord,
+                    addBackOfBodyWord,
+                    addNeckOfBodyWord,
+                    addThroatWord,
+                    addHandWord,
+                    addFingernailWord,
+                    addHeartWord,
+                    addSkinWord,
+                    addStomachWord,
+                    addBodyPartsGroupFoodWord,
+                    addOrganWord,
+                    addBoneWord,
+                    addIntestineWord),
               )),
           Visibility(
               visible: HomePageState.familyGroup,
               child: Padding(
                 padding: EdgeInsets.all(10),
-                child: FamilyGroup(),
+                child: FamilyGroup(
+                    addBabyWord,
+                    addChildWord,
+                    addPersonWord,
+                    addManWord,
+                    addWomanWord,
+                    addFamilyWord,
+                    addProtectionWord,
+                    addFatherWord,
+                    addMotherWord,
+                    addHusbandWord,
+                    addWifeWord,
+                    addBrotherWord,
+                    addSisterWord),
               )),
           Visibility(
               visible: HomePageState.petsGroup,
               child: Padding(
                 padding: EdgeInsets.all(10),
-                child: PetsGroup(),
+                child: PetsGroup(addCatWord, addDogWord),
               )),
           Visibility(
               visible: HomePageState.personalArtifactsGroup,
               child: Padding(
                 padding: EdgeInsets.all(10),
-                child: PersonalArtifactsGroup(),
+                child: PersonalArtifactsGroup(
+                    addCombWord,
+                    addBrushWord,
+                    addSoapWord,
+                    addToothbrushWord,
+                    addBedWord,
+                    addBlanketWord,
+                    addPillowWord,
+                    addHammerWord,
+                    addPersonalArtifactsGroupKnifeWord,
+                    addTubeWord,
+                    addFiberWord,
+                    addThreadWord,
+                    addClothWord,
+                    addNeedleWord,
+                    addRopeWord,
+                    addKeyWord,
+                    addMoneyWord,
+                    addSawWord,
+                    addShovelWord),
               )),
           Visibility(
               visible: HomePageState.kitchenToolsGroup,
               child: Padding(
                 padding: EdgeInsets.all(10),
-                child: KitchenToolsGroup(),
+                child: KitchenToolsGroup(
+                  addContainerWord,
+                  addPitcherWord,
+                  addDishWord,
+                  addCupWord,
+                  addDrinkingGlassWord,
+                  addForkWord,
+                  addKitchenToolsGroupKnifeWord,
+                  addSpoonWord,
+                  addPotWord,
+                  addPanWord,
+                ),
               )),
           Visibility(
               visible: HomePageState.constructionGroup,

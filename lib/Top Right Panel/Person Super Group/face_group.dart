@@ -53,6 +53,25 @@ class FaceGroup extends StatelessWidget {
     color: const Color(0xffefcbcc),
   );
 
+  final VoidCallback addEyeWord;
+  final VoidCallback addEarWord;
+  final VoidCallback addNoseWord;
+  final VoidCallback addMouthWord;
+  final VoidCallback addTongueWord;
+  final VoidCallback addToothWord;
+  final VoidCallback addChinWord;
+  final VoidCallback addHairOfHeadWord;
+
+  FaceGroup(
+      this.addEyeWord,
+      this.addEarWord,
+      this.addNoseWord,
+      this.addMouthWord,
+      this.addTongueWord,
+      this.addToothWord,
+      this.addChinWord,
+      this.addHairOfHeadWord);
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -75,7 +94,7 @@ class FaceGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addEyeWord(),
               child: eyeSymbol,
             ),
           ),
@@ -95,7 +114,7 @@ class FaceGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addEarWord(),
               child: earSymbol,
             ),
           ),
@@ -115,7 +134,7 @@ class FaceGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addNoseWord(),
               child: noseSymbol,
             ),
           )
@@ -137,7 +156,7 @@ class FaceGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addMouthWord(),
               child: mouthSymbol,
             ),
           ),
@@ -157,7 +176,7 @@ class FaceGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addTongueWord(),
               child: tongueSymbol,
             ),
           ),
@@ -177,7 +196,7 @@ class FaceGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addToothWord(),
               child: toothSymbol,
             ),
           ),
@@ -198,7 +217,7 @@ class FaceGroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => addChinWord(),
             child: chinSymbol,
           ),
         ),
@@ -218,7 +237,7 @@ class FaceGroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => addHairOfHeadWord(),
             child: hairOfHeadSymbol,
           ),
         ),

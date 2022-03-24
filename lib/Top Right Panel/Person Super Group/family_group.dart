@@ -89,6 +89,35 @@ class FamilyGroup extends StatelessWidget {
     color: const Color(0xffefcbcc),
   );
 
+  final VoidCallback addBabyWord;
+  final VoidCallback addChildWord;
+  final VoidCallback addPersonWord;
+  final VoidCallback addManWord;
+  final VoidCallback addWomanWord;
+  final VoidCallback addFamilyWord;
+  final VoidCallback addProtectionWord;
+  final VoidCallback addFatherWord;
+  final VoidCallback addMotherWord;
+  final VoidCallback addHusbandWord;
+  final VoidCallback addWifeWord;
+  final VoidCallback addBrotherWord;
+  final VoidCallback addSisterWord;
+
+  FamilyGroup(
+      this.addBabyWord,
+      this.addChildWord,
+      this.addPersonWord,
+      this.addManWord,
+      this.addWomanWord,
+      this.addFamilyWord,
+      this.addProtectionWord,
+      this.addFatherWord,
+      this.addMotherWord,
+      this.addHusbandWord,
+      this.addWifeWord,
+      this.addBrotherWord,
+      this.addSisterWord);
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -111,7 +140,7 @@ class FamilyGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addBabyWord(),
               child: babySymbol,
             ),
           ),
@@ -131,7 +160,7 @@ class FamilyGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addChildWord(),
               child: childSymbol,
             ),
           ),
@@ -151,7 +180,7 @@ class FamilyGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addPersonWord(),
               child: personSymbol,
             ),
           )
@@ -173,7 +202,7 @@ class FamilyGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addManWord(),
               child: manSymbol,
             ),
           ),
@@ -193,7 +222,7 @@ class FamilyGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addWomanWord(),
               child: womanSymbol,
             ),
           ),
@@ -213,7 +242,7 @@ class FamilyGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addFamilyWord(),
               child: familySymbol,
             ),
           ),
@@ -235,7 +264,7 @@ class FamilyGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addProtectionWord(),
               child: protectionSymbol,
             ),
           ),
@@ -255,7 +284,7 @@ class FamilyGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addFatherWord(),
               child: fatherSymbol,
             ),
           ),
@@ -275,7 +304,7 @@ class FamilyGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addMotherWord(),
               child: motherSymbol,
             ),
           )
@@ -297,7 +326,7 @@ class FamilyGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addHusbandWord(),
               child: husbandSymbol,
             ),
           ),
@@ -317,7 +346,7 @@ class FamilyGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addWifeWord(),
               child: wifeSymbol,
             ),
           )
@@ -339,7 +368,7 @@ class FamilyGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addBrotherWord(),
               child: brotherSymbol,
             ),
           ),
@@ -359,7 +388,7 @@ class FamilyGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addSisterWord(),
               child: sisterSymbol,
             ),
           )

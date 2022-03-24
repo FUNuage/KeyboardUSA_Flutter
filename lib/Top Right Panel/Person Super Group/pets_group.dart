@@ -17,6 +17,11 @@ class PetsGroup extends StatelessWidget {
     color: const Color(0xffefcbcc),
   );
 
+  final VoidCallback addCatWord;
+  final VoidCallback addDogWord;
+
+  PetsGroup(this.addCatWord, this.addDogWord);
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -39,7 +44,7 @@ class PetsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addCatWord(),
               child: catSymbol,
             ),
           ),
@@ -59,7 +64,7 @@ class PetsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addDogWord(),
               child: dogSymbol,
             ),
           ),

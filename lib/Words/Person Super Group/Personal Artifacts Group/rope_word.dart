@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class AnimalsFromGroupFoodWord extends StatelessWidget {
-  Color mainColor = const Color(0xff467f51);
-  Color secondaryColor = const Color(0xffa9cfb4);
+class RopeWord extends StatelessWidget {
+  Color mainColor = const Color(0xffa58544);
+  Color secondaryColor = const Color(0xffe9d58a);
 
-  final Widget animalsGroupSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Animate/animal,beast.svg',
-    width: 35,
+  final Widget personalArtifactsGroupSymbol = SvgPicture.asset(
+    'assets/bliss_symbols/Person/man-made_item,artefact,artifact,product.svg',
+    width: 100,
     color: const Color(0xffefcbcc),
   );
 
-  final Widget foodWordSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Animate/AnimalsFromGroup/food.svg',
+  final Widget ropeWordSymbol = SvgPicture.asset(
+    'assets/bliss_symbols/Person/PersonalArtifactsGroup/rope,hawser.svg',
     width: 57,
     color: const Color(0xffefcbcc),
   );
@@ -23,12 +23,12 @@ class AnimalsFromGroupFoodWord extends StatelessWidget {
         width: 100.0,
         height: 65.0,
         child: Row(children: [
-          animalsGroupSymbol,
+          personalArtifactsGroupSymbol,
           VerticalDivider(
             width: 4,
             color: secondaryColor,
           ),
-          foodWordSymbol,
+          ropeWordSymbol,
         ]),
         margin: const EdgeInsets.fromLTRB(10, 0, 10, 0),
         decoration: BoxDecoration(

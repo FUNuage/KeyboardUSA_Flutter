@@ -65,6 +65,30 @@ class KitchenToolsGroup extends StatelessWidget {
     color: const Color(0xffefcbcc),
   );
 
+  final VoidCallback addContainerWord;
+  final VoidCallback addPitcherWord;
+  final VoidCallback addDishWord;
+  final VoidCallback addCupWord;
+  final VoidCallback addDrinkingGlassWord;
+  final VoidCallback addForkWord;
+  final VoidCallback addKitchenToolsGroupKnifeWord;
+  final VoidCallback addSpoonWord;
+  final VoidCallback addPotWord;
+  final VoidCallback addPanWord;
+
+  KitchenToolsGroup(
+    this.addContainerWord,
+    this.addPitcherWord,
+    this.addDishWord,
+    this.addCupWord,
+    this.addDrinkingGlassWord,
+    this.addForkWord,
+    this.addKitchenToolsGroupKnifeWord,
+    this.addSpoonWord,
+    this.addPotWord,
+    this.addPanWord,
+  );
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -87,7 +111,7 @@ class KitchenToolsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addContainerWord(),
               child: containerSymbol,
             ),
           ),
@@ -107,7 +131,7 @@ class KitchenToolsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addPitcherWord(),
               child: pitcherSymbol,
             ),
           ),
@@ -127,7 +151,7 @@ class KitchenToolsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addDishWord(),
               child: dishSymbol,
             ),
           ),
@@ -149,7 +173,7 @@ class KitchenToolsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addCupWord(),
               child: cupSymbol,
             ),
           ),
@@ -169,7 +193,7 @@ class KitchenToolsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addDrinkingGlassWord(),
               child: drinkingGlassSymbol,
             ),
           )
@@ -191,7 +215,7 @@ class KitchenToolsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addForkWord(),
               child: forkSymbol,
             ),
           ),
@@ -211,7 +235,7 @@ class KitchenToolsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addKitchenToolsGroupKnifeWord(),
               child: knifeSymbol,
             ),
           ),
@@ -231,7 +255,7 @@ class KitchenToolsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addSpoonWord(),
               child: spoonSymbol,
             ),
           )
@@ -253,7 +277,7 @@ class KitchenToolsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addPotWord(),
               child: potSymbol,
             ),
           ),
@@ -273,7 +297,7 @@ class KitchenToolsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addPanWord(),
               child: panSymbol,
             ),
           ),

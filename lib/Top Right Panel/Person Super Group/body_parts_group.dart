@@ -95,6 +95,40 @@ class BodyPartsGroup extends StatelessWidget {
     color: const Color(0xffefcbcc),
   );
 
+  final VoidCallback addLegWord;
+  final VoidCallback addKneeWord;
+  final VoidCallback addFootWord;
+  final VoidCallback addBackOfBodyWord;
+  final VoidCallback addNeckOfBodyWord;
+  final VoidCallback addThroatWord;
+  final VoidCallback addHandWord;
+  final VoidCallback addFingernailWord;
+  final VoidCallback addHeartWord;
+  final VoidCallback addSkinWord;
+  final VoidCallback addStomachWord;
+  final VoidCallback addBodyPartsGroupFoodWord;
+  final VoidCallback addOrganWord;
+  final VoidCallback addBoneWord;
+  final VoidCallback addIntestineWord;
+
+  BodyPartsGroup(
+    this.addLegWord,
+    this.addKneeWord,
+    this.addFootWord,
+    this.addBackOfBodyWord,
+    this.addNeckOfBodyWord,
+    this.addThroatWord,
+    this.addHandWord,
+    this.addFingernailWord,
+    this.addHeartWord,
+    this.addSkinWord,
+    this.addStomachWord,
+    this.addBodyPartsGroupFoodWord,
+    this.addOrganWord,
+    this.addBoneWord,
+    this.addIntestineWord,
+  );
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -117,7 +151,7 @@ class BodyPartsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addLegWord(),
               child: legSymbol,
             ),
           ),
@@ -137,7 +171,7 @@ class BodyPartsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addKneeWord(),
               child: kneeSymbol,
             ),
           ),
@@ -157,7 +191,7 @@ class BodyPartsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addFootWord(),
               child: footSymbol,
             ),
           )
@@ -179,7 +213,7 @@ class BodyPartsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addBackOfBodyWord(),
               child: backOfBodySymbol,
             ),
           ),
@@ -199,7 +233,7 @@ class BodyPartsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addNeckOfBodyWord(),
               child: neckOfBodySymbol,
             ),
           ),
@@ -219,7 +253,7 @@ class BodyPartsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addThroatWord(),
               child: throatSymbol,
             ),
           ),
@@ -241,7 +275,7 @@ class BodyPartsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addHandWord(),
               child: handSymbol,
             ),
           ),
@@ -261,7 +295,7 @@ class BodyPartsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addFingernailWord(),
               child: fingernailSymbol,
             ),
           )
@@ -283,7 +317,7 @@ class BodyPartsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addHeartWord(),
               child: heartSymbol,
             ),
           ),
@@ -303,7 +337,7 @@ class BodyPartsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addSkinWord(),
               child: skinSymbol,
             ),
           )
@@ -325,7 +359,7 @@ class BodyPartsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addStomachWord(),
               child: stomachSymbol,
             ),
           ),
@@ -345,7 +379,7 @@ class BodyPartsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addBodyPartsGroupFoodWord(),
               child: foodSymbol,
             ),
           )
@@ -367,7 +401,7 @@ class BodyPartsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addOrganWord(),
               child: organSymbol,
             ),
           ),
@@ -387,7 +421,7 @@ class BodyPartsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addBoneWord(),
               child: boneSymbol,
             ),
           )
@@ -408,7 +442,7 @@ class BodyPartsGroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => addIntestineWord(),
             child: intestineSymbol,
           ),
         )

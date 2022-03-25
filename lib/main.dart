@@ -168,6 +168,43 @@ import 'Words/Scenes Super Group/Transport Paths Group/walkway_word.dart';
 import 'Words/Scenes Super Group/Transport Paths Group/bridge_word.dart';
 import 'Words/Scenes Super Group/Transport water Group/boat_word.dart';
 import 'Words/Scenes Super Group/Transport water Group/kayak_word.dart';
+import 'Words/Concepts Super Group/Colors Group/blue_word.dart';
+import 'Words/Concepts Super Group/Colors Group/color_word.dart';
+import 'Words/Concepts Super Group/Colors Group/red_word.dart';
+import 'Words/Concepts Super Group/Colors Group/yellow_word.dart';
+import 'Words/Concepts Super Group/Colors Group/green_word.dart';
+import 'Words/Concepts Super Group/Directions Group/down_word.dart';
+import 'Words/Concepts Super Group/Directions Group/east_word.dart';
+import 'Words/Concepts Super Group/Directions Group/west_word.dart';
+import 'Words/Concepts Super Group/Directions Group/south_word.dart';
+import 'Words/Concepts Super Group/Directions Group/north_word.dart';
+import 'Words/Concepts Super Group/Directions Group/up_word.dart';
+import 'Words/Concepts Super Group/Directions Group/left_word.dart';
+import 'Words/Concepts Super Group/Directions Group/right_word.dart';
+import 'Words/Concepts Super Group/Enumeration Group/all_word.dart';
+import 'Words/Concepts Super Group/Enumeration Group/few_word.dart';
+import 'Words/Concepts Super Group/Enumeration Group/five_word.dart';
+import 'Words/Concepts Super Group/Enumeration Group/four_word.dart';
+import 'Words/Concepts Super Group/Enumeration Group/many_word.dart';
+import 'Words/Concepts Super Group/Enumeration Group/none_word.dart';
+import 'Words/Concepts Super Group/Enumeration Group/one_word.dart';
+import 'Words/Concepts Super Group/Enumeration Group/some_word.dart';
+import 'Words/Concepts Super Group/Enumeration Group/three_word.dart';
+import 'Words/Concepts Super Group/Enumeration Group/two_word.dart';
+import 'Words/Concepts Super Group/Shapes Group/curve_word.dart';
+import 'Words/Concepts Super Group/Shapes Group/shape_word.dart';
+import 'Words/Concepts Super Group/Shapes Group/diamond_shape_word.dart';
+import 'Words/Concepts Super Group/Shapes Group/square_shape_word.dart';
+import 'Words/Concepts Super Group/Shapes Group/round_shape_word.dart';
+import 'Words/Concepts Super Group/Shapes Group/triangle_shape_word.dart';
+import 'Words/Concepts Super Group/Shapes Group/perpendicular_word.dart';
+import 'Words/Concepts Super Group/Shapes Group/parallel_word.dart';
+import 'Words/Concepts Super Group/Shapes Group/line_word.dart';
+import 'Words/Concepts Super Group/Time Group/clock_word.dart';
+import 'Words/Concepts Super Group/Time Group/day_word.dart';
+import 'Words/Concepts Super Group/Time Group/night_word.dart';
+import 'Words/Concepts Super Group/Time Group/month_word.dart';
+import 'Words/Concepts Super Group/Time Group/year_word.dart';
 
 void main() {
   runApp(const App());
@@ -1933,6 +1970,228 @@ class HomePageState extends State<HomePage> {
     });
   }
 
+  void addClockWord() {
+    setState(() {
+      BottomPanelState.cardList.add(ClockWord());
+    });
+  }
+
+  void addDayWord() {
+    setState(() {
+      BottomPanelState.cardList.add(DayWord());
+    });
+  }
+
+  void addNightWord() {
+    setState(() {
+      BottomPanelState.cardList.add(NightWord());
+    });
+  }
+
+  void addMonthWord() {
+    setState(() {
+      BottomPanelState.cardList.add(MonthWord());
+    });
+  }
+
+  void addYearWord() {
+    setState(() {
+      BottomPanelState.cardList.add(YearWord());
+    });
+  }
+
+  void addNoneWord() {
+    setState(() {
+      BottomPanelState.cardList.add(NoneWord());
+    });
+  }
+
+  void addFewWord() {
+    setState(() {
+      BottomPanelState.cardList.add(FewWord());
+    });
+  }
+
+  void addSomeWord() {
+    setState(() {
+      BottomPanelState.cardList.add(SomeWord());
+    });
+  }
+
+  void addManyWord() {
+    setState(() {
+      BottomPanelState.cardList.add(ManyWord());
+    });
+  }
+
+  void addAllWord() {
+    setState(() {
+      BottomPanelState.cardList.add(AllWord());
+    });
+  }
+
+  void addOneWord() {
+    setState(() {
+      BottomPanelState.cardList.add(OneWord());
+    });
+  }
+
+  void addTwoWord() {
+    setState(() {
+      BottomPanelState.cardList.add(TwoWord());
+    });
+  }
+
+  void addThreeWord() {
+    setState(() {
+      BottomPanelState.cardList.add(ThreeWord());
+    });
+  }
+
+  void addFourWord() {
+    setState(() {
+      BottomPanelState.cardList.add(FourWord());
+    });
+  }
+
+  void addFiveWord() {
+    setState(() {
+      BottomPanelState.cardList.add(FiveWord());
+    });
+  }
+
+  void addColorWord() {
+    setState(() {
+      BottomPanelState.cardList.add(ColorWord());
+    });
+  }
+
+  void addRedWord() {
+    setState(() {
+      BottomPanelState.cardList.add(RedWord());
+    });
+  }
+
+  void addYellowWord() {
+    setState(() {
+      BottomPanelState.cardList.add(YellowWord());
+    });
+  }
+
+  void addGreenWord() {
+    setState(() {
+      BottomPanelState.cardList.add(GreenWord());
+    });
+  }
+
+  void addBlueWord() {
+    setState(() {
+      BottomPanelState.cardList.add(BlueWord());
+    });
+  }
+
+  void addRightWord() {
+    setState(() {
+      BottomPanelState.cardList.add(RightWord());
+    });
+  }
+
+  void addLeftWord() {
+    setState(() {
+      BottomPanelState.cardList.add(LeftWord());
+    });
+  }
+
+  void addUpWord() {
+    setState(() {
+      BottomPanelState.cardList.add(UpWord());
+    });
+  }
+
+  void addDownWord() {
+    setState(() {
+      BottomPanelState.cardList.add(DownWord());
+    });
+  }
+
+  void addNorthWord() {
+    setState(() {
+      BottomPanelState.cardList.add(NorthWord());
+    });
+  }
+
+  void addSouthWord() {
+    setState(() {
+      BottomPanelState.cardList.add(SouthWord());
+    });
+  }
+
+  void addEastWord() {
+    setState(() {
+      BottomPanelState.cardList.add(EastWord());
+    });
+  }
+
+  void addWestWord() {
+    setState(() {
+      BottomPanelState.cardList.add(WestWord());
+    });
+  }
+
+  void addShapeWord() {
+    setState(() {
+      BottomPanelState.cardList.add(ShapeWord());
+    });
+  }
+
+  void addLineWord() {
+    setState(() {
+      BottomPanelState.cardList.add(LineWord());
+    });
+  }
+
+  void addCurveWord() {
+    setState(() {
+      BottomPanelState.cardList.add(CurveWord());
+    });
+  }
+
+  void addRoundShapeWord() {
+    setState(() {
+      BottomPanelState.cardList.add(RoundShapeWord());
+    });
+  }
+
+  void addSquareShapeWord() {
+    setState(() {
+      BottomPanelState.cardList.add(SquareShapeWord());
+    });
+  }
+
+  void addTriangleShapeWord() {
+    setState(() {
+      BottomPanelState.cardList.add(TriangleShapeWord());
+    });
+  }
+
+  void addDiamondShapeWord() {
+    setState(() {
+      BottomPanelState.cardList.add(DiamondShapeWord());
+    });
+  }
+
+  void addParallelWord() {
+    setState(() {
+      BottomPanelState.cardList.add(ParallelWord());
+    });
+  }
+
+  void addPerpendicularWord() {
+    setState(() {
+      BottomPanelState.cardList.add(PerpendicularWord());
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -2138,7 +2397,44 @@ class HomePageState extends State<HomePage> {
                   addHotAirBalloonWord,
                   addWalkwayWord,
                   addBridgeWord,
-                  addRoadWord)
+                  addRoadWord,
+                  addClockWord,
+                  addDayWord,
+                  addNightWord,
+                  addMonthWord,
+                  addYearWord,
+                  addNoneWord,
+                  addFewWord,
+                  addSomeWord,
+                  addManyWord,
+                  addAllWord,
+                  addOneWord,
+                  addTwoWord,
+                  addThreeWord,
+                  addFourWord,
+                  addFiveWord,
+                  addColorWord,
+                  addRedWord,
+                  addYellowWord,
+                  addGreenWord,
+                  addBlueWord,
+                  addRightWord,
+                  addLeftWord,
+                  addUpWord,
+                  addDownWord,
+                  addNorthWord,
+                  addSouthWord,
+                  addEastWord,
+                  addWestWord,
+                  addShapeWord,
+                  addLineWord,
+                  addCurveWord,
+                  addRoundShapeWord,
+                  addSquareShapeWord,
+                  addTriangleShapeWord,
+                  addDiamondShapeWord,
+                  addParallelWord,
+                  addPerpendicularWord)
             ]),
             BottomPanel(),
           ],

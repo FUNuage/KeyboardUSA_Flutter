@@ -35,6 +35,15 @@ class TimeGroup extends StatelessWidget {
     color: const Color(0xffefcbcc),
   );
 
+  final VoidCallback addClockWord;
+  final VoidCallback addDayWord;
+  final VoidCallback addNightWord;
+  final VoidCallback addMonthWord;
+  final VoidCallback addYearWord;
+
+  TimeGroup(this.addClockWord, this.addDayWord, this.addNightWord,
+      this.addMonthWord, this.addYearWord);
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -56,7 +65,7 @@ class TimeGroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => addClockWord(),
             child: clockSymbol,
           ),
         ),
@@ -77,7 +86,7 @@ class TimeGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addDayWord(),
               child: daySymbol,
             ),
           ),
@@ -97,7 +106,7 @@ class TimeGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addNightWord(),
               child: nightSymbol,
             ),
           ),
@@ -119,7 +128,7 @@ class TimeGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addMonthWord(),
               child: monthSymbol,
             ),
           ),
@@ -139,7 +148,7 @@ class TimeGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addYearWord(),
               child: yearSymbol,
             ),
           ),

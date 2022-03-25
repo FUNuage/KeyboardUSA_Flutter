@@ -78,6 +78,29 @@ class EnumerationGroup extends StatelessWidget {
     color: const Color(0xffefcbcc),
   );
 
+  final VoidCallback addNoneWord;
+  final VoidCallback addFewWord;
+  final VoidCallback addSomeWord;
+  final VoidCallback addManyWord;
+  final VoidCallback addAllWord;
+  final VoidCallback addOneWord;
+  final VoidCallback addTwoWord;
+  final VoidCallback addThreeWord;
+  final VoidCallback addFourWord;
+  final VoidCallback addFiveWord;
+
+  EnumerationGroup(
+      this.addNoneWord,
+      this.addFewWord,
+      this.addSomeWord,
+      this.addManyWord,
+      this.addAllWord,
+      this.addOneWord,
+      this.addTwoWord,
+      this.addThreeWord,
+      this.addFourWord,
+      this.addFiveWord);
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -100,7 +123,7 @@ class EnumerationGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addNoneWord(),
               child: noneSymbol,
             ),
           ),
@@ -120,7 +143,7 @@ class EnumerationGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addFewWord(),
               child: fewSymbol,
             ),
           ),
@@ -140,7 +163,7 @@ class EnumerationGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addSomeWord(),
               child: someSymbol,
             ),
           ),
@@ -160,7 +183,7 @@ class EnumerationGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addManyWord(),
               child: manySymbol,
             ),
           ),
@@ -180,7 +203,7 @@ class EnumerationGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addAllWord(),
               child: allSymbol,
             ),
           ),
@@ -201,7 +224,7 @@ class EnumerationGroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => addOneWord(),
             child: oneSymbol,
           ),
         ),
@@ -221,7 +244,7 @@ class EnumerationGroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => addTwoWord(),
             child: twoSymbol,
           ),
         ),
@@ -241,7 +264,7 @@ class EnumerationGroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => addThreeWord(),
             child: threeSymbol,
           ),
         ),
@@ -261,7 +284,7 @@ class EnumerationGroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => addFourWord(),
             child: fourSymbol,
           ),
         ),
@@ -281,7 +304,7 @@ class EnumerationGroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => addFiveWord(),
             child: fiveSymbol,
           ),
         ),

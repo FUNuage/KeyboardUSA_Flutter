@@ -17,7 +17,7 @@ class ConceptsSupergroup extends StatelessWidget {
     color: const Color(0xffefcbcc),
   );
 
-  final Widget colorsGroupSymbol = SvgPicture.asset(
+  final Widget colorsSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Concepts/colour.svg',
     width: 100,
     color: const Color(0xffefcbcc),
@@ -107,7 +107,7 @@ class ConceptsSupergroup extends StatelessWidget {
               ),
             ),
             onPressed: () => toggleColorsGroup(),
-            child: colorsGroupSymbol,
+            child: colorsSymbol,
           )),
       Padding(
           padding: EdgeInsets.only(top: 5),

@@ -57,6 +57,26 @@ class DirectionsGroup extends StatelessWidget {
     color: const Color(0xffefcbcc),
   );
 
+  final VoidCallback addRightWord;
+  final VoidCallback addLeftWord;
+  final VoidCallback addUpWord;
+  final VoidCallback addDownWord;
+  final VoidCallback addNorthWord;
+  final VoidCallback addSouthWord;
+  final VoidCallback addEastWord;
+  final VoidCallback addWestWord;
+
+  DirectionsGroup(
+    this.addRightWord,
+    this.addLeftWord,
+    this.addUpWord,
+    this.addDownWord,
+    this.addNorthWord,
+    this.addSouthWord,
+    this.addEastWord,
+    this.addWestWord,
+  );
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -79,7 +99,7 @@ class DirectionsGroup extends StatelessWidget {
                     style: BorderStyle.solid,
                   ),
                 ),
-                onPressed: () {},
+                onPressed: () => addRightWord(),
                 child: rightSymbol,
               ),
             ),
@@ -99,7 +119,7 @@ class DirectionsGroup extends StatelessWidget {
                     style: BorderStyle.solid,
                   ),
                 ),
-                onPressed: () {},
+                onPressed: () => addLeftWord(),
                 child: leftSymbol,
               ),
             ),
@@ -121,7 +141,7 @@ class DirectionsGroup extends StatelessWidget {
                     style: BorderStyle.solid,
                   ),
                 ),
-                onPressed: () {},
+                onPressed: () => addUpWord(),
                 child: upSymbol,
               ),
             ),
@@ -141,7 +161,7 @@ class DirectionsGroup extends StatelessWidget {
                     style: BorderStyle.solid,
                   ),
                 ),
-                onPressed: () {},
+                onPressed: () => addDownWord(),
                 child: downSymbol,
               ),
             ),
@@ -163,7 +183,7 @@ class DirectionsGroup extends StatelessWidget {
                     style: BorderStyle.solid,
                   ),
                 ),
-                onPressed: () {},
+                onPressed: () => addNorthWord(),
                 child: northSymbol,
               ),
             ),
@@ -183,7 +203,7 @@ class DirectionsGroup extends StatelessWidget {
                     style: BorderStyle.solid,
                   ),
                 ),
-                onPressed: () {},
+                onPressed: () => addSouthWord(),
                 child: southSymbol,
               ),
             ),
@@ -203,7 +223,7 @@ class DirectionsGroup extends StatelessWidget {
                     style: BorderStyle.solid,
                   ),
                 ),
-                onPressed: () {},
+                onPressed: () => addEastWord(),
                 child: eastSymbol,
               ),
             ),
@@ -223,7 +243,7 @@ class DirectionsGroup extends StatelessWidget {
                     style: BorderStyle.solid,
                   ),
                 ),
-                onPressed: () {},
+                onPressed: () => addWestWord(),
                 child: westSymbol,
               ),
             ),

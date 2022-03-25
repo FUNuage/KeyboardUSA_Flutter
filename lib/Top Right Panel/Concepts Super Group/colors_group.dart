@@ -35,6 +35,20 @@ class ColorsGroup extends StatelessWidget {
     color: const Color(0xffefcbcc),
   );
 
+  final VoidCallback addColorWord;
+  final VoidCallback addRedWord;
+  final VoidCallback addYellowWord;
+  final VoidCallback addGreenWord;
+  final VoidCallback addBlueWord;
+
+  ColorsGroup(
+    this.addColorWord,
+    this.addRedWord,
+    this.addYellowWord,
+    this.addGreenWord,
+    this.addBlueWord,
+  );
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -56,7 +70,7 @@ class ColorsGroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => addColorWord(),
             child: colorSymbol,
           ),
         ),
@@ -77,7 +91,7 @@ class ColorsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addRedWord(),
               child: redSymbol,
             ),
           ),
@@ -97,7 +111,7 @@ class ColorsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addYellowWord(),
               child: yellowSymbol,
             ),
           ),
@@ -119,7 +133,7 @@ class ColorsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addGreenWord(),
               child: greenSymbol,
             ),
           ),
@@ -139,7 +153,7 @@ class ColorsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addBlueWord(),
               child: blueSymbol,
             ),
           ),

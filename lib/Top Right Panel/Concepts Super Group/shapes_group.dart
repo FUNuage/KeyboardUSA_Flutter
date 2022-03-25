@@ -64,6 +64,27 @@ class ShapesGroup extends StatelessWidget {
     color: const Color(0xffefcbcc),
   );
 
+  final VoidCallback addShapeWord;
+  final VoidCallback addLineWord;
+  final VoidCallback addCurveWord;
+  final VoidCallback addRoundShapeWord;
+  final VoidCallback addSquareShapeWord;
+  final VoidCallback addTriangleShapeWord;
+  final VoidCallback addDiamondShapeWord;
+  final VoidCallback addParallelWord;
+  final VoidCallback addPerpendicularWord;
+
+  ShapesGroup(
+      this.addShapeWord,
+      this.addLineWord,
+      this.addCurveWord,
+      this.addRoundShapeWord,
+      this.addSquareShapeWord,
+      this.addTriangleShapeWord,
+      this.addDiamondShapeWord,
+      this.addParallelWord,
+      this.addPerpendicularWord);
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -85,7 +106,7 @@ class ShapesGroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => addShapeWord(),
             child: shapeSymbol,
           ),
         ),
@@ -106,7 +127,7 @@ class ShapesGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addLineWord(),
               child: lineSymbol,
             ),
           ),
@@ -126,7 +147,7 @@ class ShapesGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addCurveWord(),
               child: curveSymbol,
             ),
           ),
@@ -148,7 +169,7 @@ class ShapesGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addRoundShapeWord(),
               child: roundShapeSymbol,
             ),
           ),
@@ -168,7 +189,7 @@ class ShapesGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addSquareShapeWord(),
               child: squareShapeSymbol,
             ),
           ),
@@ -188,7 +209,7 @@ class ShapesGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addTriangleShapeWord(),
               child: triangleShapeSymbol,
             ),
           ),
@@ -208,7 +229,7 @@ class ShapesGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addDiamondShapeWord(),
               child: diamondShapeSymbol,
             ),
           )
@@ -230,7 +251,7 @@ class ShapesGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addParallelWord(),
               child: parallelSymbol,
             ),
           ),
@@ -250,7 +271,7 @@ class ShapesGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addPerpendicularWord(),
               child: perpendicularSymbol,
             ),
           )

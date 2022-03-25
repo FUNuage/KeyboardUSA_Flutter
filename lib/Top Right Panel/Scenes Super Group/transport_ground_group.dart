@@ -6,28 +6,36 @@ class TransportGroundGroup extends StatelessWidget {
   Color secondaryColor = const Color(0xffd0c4e4);
 
   final Widget bicycleSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Scenes/ConstructionGroup/door.svg',
+    'assets/bliss_symbols/Scenes/TransportGroundGroup/bicycle.svg',
     width: 100,
     color: const Color(0xffefcbcc),
   );
 
   final Widget automobileSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Scenes/ConstructionGroup/window.svg',
+    'assets/bliss_symbols/Scenes/TransportGroundGroup/car,automobile,motor_vehicle.svg',
     width: 100,
     color: const Color(0xffefcbcc),
   );
 
   final Widget busSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Scenes/ConstructionGroup/door.svg',
+    'assets/bliss_symbols/Scenes/TransportGroundGroup/bus,coach.svg',
     width: 100,
     color: const Color(0xffefcbcc),
   );
 
   final Widget truckSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Scenes/ConstructionGroup/window.svg',
+    'assets/bliss_symbols/Scenes/TransportGroundGroup/truck,lorry.svg',
     width: 100,
     color: const Color(0xffefcbcc),
   );
+
+  final VoidCallback addBicycleWord;
+  final VoidCallback addAutomobileWord;
+  final VoidCallback addBusWord;
+  final VoidCallback addTruckWord;
+
+  TransportGroundGroup(this.addBicycleWord, this.addAutomobileWord,
+      this.addBusWord, this.addTruckWord);
 
   @override
   Widget build(BuildContext context) {
@@ -50,7 +58,7 @@ class TransportGroundGroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => addBicycleWord(),
             child: bicycleSymbol,
           ),
         ),
@@ -70,7 +78,7 @@ class TransportGroundGroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => addAutomobileWord(),
             child: automobileSymbol,
           ),
         ),
@@ -90,7 +98,7 @@ class TransportGroundGroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => addBusWord(),
             child: busSymbol,
           ),
         ),
@@ -110,7 +118,7 @@ class TransportGroundGroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => addTruckWord(),
             child: truckSymbol,
           ),
         )

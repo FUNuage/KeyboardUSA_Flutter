@@ -27,6 +27,13 @@ class TransportPathsGroup extends StatelessWidget {
     color: const Color(0xffefcbcc),
   );
 
+  final VoidCallback addWalkwayWord;
+  final VoidCallback addBridgeWord;
+  final VoidCallback addRoadWord;
+
+  TransportPathsGroup(
+      this.addWalkwayWord, this.addBridgeWord, this.addRoadWord);
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -48,7 +55,7 @@ class TransportPathsGroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => addWalkwayWord(),
             child: walkwaySymbol,
           ),
         ),
@@ -68,7 +75,7 @@ class TransportPathsGroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => addBridgeWord(),
             child: bridgeSymbol,
           ),
         ),
@@ -88,7 +95,7 @@ class TransportPathsGroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => addRoadWord(),
             child: roadSymbol,
           ),
         )

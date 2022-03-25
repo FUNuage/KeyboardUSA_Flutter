@@ -20,6 +20,11 @@ class TransportWaterGroup extends StatelessWidget {
     color: const Color(0xffefcbcc),
   );
 
+  final VoidCallback addBoatWord;
+  final VoidCallback addKayakWord;
+
+  TransportWaterGroup(this.addBoatWord, this.addKayakWord);
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -41,7 +46,7 @@ class TransportWaterGroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => addBoatWord(),
             child: boatSymbol,
           ),
         ),
@@ -61,7 +66,7 @@ class TransportWaterGroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => addKayakWord(),
             child: kayakSymbol,
           ),
         )

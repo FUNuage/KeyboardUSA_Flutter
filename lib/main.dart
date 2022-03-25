@@ -146,6 +146,28 @@ import 'Words/Person Super Group/Personal Artifacts Group/toothbrush_word.dart';
 import 'Words/Person Super Group/Personal Artifacts Group/tube_word.dart';
 import 'Words/Person Super Group/Pets Group/cat_word.dart';
 import 'Words/Person Super Group/Pets Group/dog_word.dart';
+import 'Words/Scenes Super Group/Construction Group/city_word.dart';
+import 'Words/Scenes Super Group/Construction Group/construction_word.dart';
+import 'Words/Scenes Super Group/Construction Group/door_word.dart';
+import 'Words/Scenes Super Group/Construction Group/house_word.dart';
+import 'Words/Scenes Super Group/Construction Group/library_word.dart';
+import 'Words/Scenes Super Group/Construction Group/neighbourhood_word.dart';
+import 'Words/Scenes Super Group/Construction Group/town_word.dart';
+import 'Words/Scenes Super Group/Construction Group/university_word.dart';
+import 'Words/Scenes Super Group/Construction Group/village_word.dart';
+import 'Words/Scenes Super Group/Construction Group/window_word.dart';
+import 'Words/Scenes Super Group/Transport Air Group/airplane_word.dart';
+import 'Words/Scenes Super Group/Transport Air Group/hot_air_balloon_word.dart';
+import 'Words/Scenes Super Group/Transport Ground Group/automobile_word.dart';
+import 'Words/Scenes Super Group/Transport Ground Group/bicycle_word.dart';
+import 'Words/Scenes Super Group/Transport Ground Group/bus_word.dart';
+import 'Words/Scenes Super Group/Transport Ground Group/truck_word.dart';
+import 'Words/Scenes Super Group/Transport Paths Group/bridge_word.dart';
+import 'Words/Scenes Super Group/Transport Paths Group/road_word.dart';
+import 'Words/Scenes Super Group/Transport Paths Group/walkway_word.dart';
+import 'Words/Scenes Super Group/Transport Paths Group/bridge_word.dart';
+import 'Words/Scenes Super Group/Transport water Group/boat_word.dart';
+import 'Words/Scenes Super Group/Transport water Group/kayak_word.dart';
 
 void main() {
   runApp(const App());
@@ -1785,6 +1807,132 @@ class HomePageState extends State<HomePage> {
     });
   }
 
+  void addCityWord() {
+    setState(() {
+      BottomPanelState.cardList.add(CityWord());
+    });
+  }
+
+  void addConstructionWord() {
+    setState(() {
+      BottomPanelState.cardList.add(ConstructionWord());
+    });
+  }
+
+  void addDoorWord() {
+    setState(() {
+      BottomPanelState.cardList.add(DoorWord());
+    });
+  }
+
+  void addHouseWord() {
+    setState(() {
+      BottomPanelState.cardList.add(HouseWord());
+    });
+  }
+
+  void addLibraryWord() {
+    setState(() {
+      BottomPanelState.cardList.add(LibraryWord());
+    });
+  }
+
+  void addNeighbourhoodWord() {
+    setState(() {
+      BottomPanelState.cardList.add(NeighbourhoodWord());
+    });
+  }
+
+  void addTownWord() {
+    setState(() {
+      BottomPanelState.cardList.add(TownWord());
+    });
+  }
+
+  void addUniversityWord() {
+    setState(() {
+      BottomPanelState.cardList.add(UniversityWord());
+    });
+  }
+
+  void addVillageWord() {
+    setState(() {
+      BottomPanelState.cardList.add(VillageWord());
+    });
+  }
+
+  void addWindowWord() {
+    setState(() {
+      BottomPanelState.cardList.add(WindowWord());
+    });
+  }
+
+  void addAirplaneWord() {
+    setState(() {
+      BottomPanelState.cardList.add(AirplaneWord());
+    });
+  }
+
+  void addHotAirBalloonWord() {
+    setState(() {
+      BottomPanelState.cardList.add(HotAirBalloonWord());
+    });
+  }
+
+  void addAutomobileWord() {
+    setState(() {
+      BottomPanelState.cardList.add(AutomobileWord());
+    });
+  }
+
+  void addBicycleWord() {
+    setState(() {
+      BottomPanelState.cardList.add(BicycleWord());
+    });
+  }
+
+  void addBusWord() {
+    setState(() {
+      BottomPanelState.cardList.add(BusWord());
+    });
+  }
+
+  void addTruckWord() {
+    setState(() {
+      BottomPanelState.cardList.add(TruckWord());
+    });
+  }
+
+  void addBridgeWord() {
+    setState(() {
+      BottomPanelState.cardList.add(BridgeWord());
+    });
+  }
+
+  void addRoadWord() {
+    setState(() {
+      BottomPanelState.cardList.add(RoadWord());
+    });
+  }
+
+  void addWalkwayWord() {
+    setState(() {
+      BottomPanelState.cardList.add(WalkwayWord());
+    });
+  }
+
+  void addBoatWord() {
+    setState(() {
+      BottomPanelState.cardList.add(BoatWord());
+    });
+  }
+
+  void addKayakWord() {
+    setState(() {
+      BottomPanelState.cardList.add(KayakWord());
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -1969,7 +2117,28 @@ class HomePageState extends State<HomePage> {
                   addKitchenToolsGroupKnifeWord,
                   addSpoonWord,
                   addPotWord,
-                  addPanWord)
+                  addPanWord,
+                  addDoorWord,
+                  addWindowWord,
+                  addConstructionWord,
+                  addHouseWord,
+                  addVillageWord,
+                  addTownWord,
+                  addCityWord,
+                  addNeighbourhoodWord,
+                  addLibraryWord,
+                  addUniversityWord,
+                  addBicycleWord,
+                  addAutomobileWord,
+                  addBusWord,
+                  addTruckWord,
+                  addBoatWord,
+                  addKayakWord,
+                  addAirplaneWord,
+                  addHotAirBalloonWord,
+                  addWalkwayWord,
+                  addBridgeWord,
+                  addRoadWord)
             ]),
             BottomPanel(),
           ],

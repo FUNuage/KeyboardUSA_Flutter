@@ -65,6 +65,29 @@ class ConstructionGroup extends StatelessWidget {
     color: const Color(0xffefcbcc),
   );
 
+  final VoidCallback addDoorWord;
+  final VoidCallback addWindowWord;
+  final VoidCallback addConstructionWord;
+  final VoidCallback addHouseWord;
+  final VoidCallback addVillageWord;
+  final VoidCallback addTownWord;
+  final VoidCallback addCityWord;
+  final VoidCallback addNeighbourhoodWord;
+  final VoidCallback addLibraryWord;
+  final VoidCallback addUniversityWord;
+
+  ConstructionGroup(
+      this.addDoorWord,
+      this.addWindowWord,
+      this.addConstructionWord,
+      this.addHouseWord,
+      this.addVillageWord,
+      this.addTownWord,
+      this.addCityWord,
+      this.addNeighbourhoodWord,
+      this.addLibraryWord,
+      this.addUniversityWord);
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -87,7 +110,7 @@ class ConstructionGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addDoorWord(),
               child: doorSymbol,
             ),
           ),
@@ -107,7 +130,7 @@ class ConstructionGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addWindowWord(),
               child: windowSymbol,
             ),
           ),
@@ -128,7 +151,7 @@ class ConstructionGroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => addConstructionWord(),
             child: constructionSymbol,
           ),
         ),
@@ -149,7 +172,7 @@ class ConstructionGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addHouseWord(),
               child: houseSymbol,
             ),
           ),
@@ -169,7 +192,7 @@ class ConstructionGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addVillageWord(),
               child: villageSymbol,
             ),
           ),
@@ -189,7 +212,7 @@ class ConstructionGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addTownWord(),
               child: townSymbol,
             ),
           ),
@@ -209,7 +232,7 @@ class ConstructionGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addCityWord(),
               child: citySymbol,
             ),
           ),
@@ -230,7 +253,7 @@ class ConstructionGroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => addNeighbourhoodWord(),
             child: neighbourhoodSymbol,
           ),
         ),
@@ -250,7 +273,7 @@ class ConstructionGroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => addLibraryWord(),
             child: librarySymbol,
           ),
         ),
@@ -270,7 +293,7 @@ class ConstructionGroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => addUniversityWord(),
             child: universitySymbol,
           ),
         ),

@@ -9,16 +9,21 @@ class TransportAirGroup extends StatelessWidget {
   Color secondaryColor = const Color(0xffd0c4e4);
 
   final Widget airplaneSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Scenes/ConstructionGroup/door.svg',
+    'assets/bliss_symbols/Scenes/TransportAirGroup/airplane,aeroplane,plane.svg',
     width: 100,
     color: const Color(0xffefcbcc),
   );
 
-  final Widget balloonHotAirSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Scenes/ConstructionGroup/window.svg',
+  final Widget hotAirBalloonSymbol = SvgPicture.asset(
+    'assets/bliss_symbols/Scenes/TransportAirGroup/balloon_(hot_air).svg',
     width: 100,
     color: const Color(0xffefcbcc),
   );
+
+  final VoidCallback addAirplaneWord;
+  final VoidCallback addHotAirBalloonWord;
+
+  TransportAirGroup(this.addAirplaneWord, this.addHotAirBalloonWord);
 
   @override
   Widget build(BuildContext context) {
@@ -41,7 +46,7 @@ class TransportAirGroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => addAirplaneWord(),
             child: airplaneSymbol,
           ),
         ),
@@ -61,8 +66,8 @@ class TransportAirGroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
-            child: balloonHotAirSymbol,
+            onPressed: () => addHotAirBalloonWord(),
+            child: hotAirBalloonSymbol,
           ),
         )
       ],

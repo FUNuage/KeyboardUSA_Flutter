@@ -1,18 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class SouthWord extends StatelessWidget {
-  Color mainColor = const Color(0xff8a546c);
-  Color secondaryColor = const Color(0xff91cdda);
+class BackspaceWord extends StatelessWidget {
+  Color mainColor = Color(0xffa4a59e);
+  Color secondaryColor = Color(0xffa4a59e);
 
-  final Widget directionsGroupSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Concepts/direction,cardinal_point.svg',
-    width: 35,
-    color: const Color(0xffefcbcc),
-  );
-
-  final Widget southWordSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Concepts/DirectionsGroup/south.svg',
+  final Widget backspaceWordSymbol = SvgPicture.asset(
+    'assets/bliss_symbols/Language/PunctuationGroup/backspace_(computer)-(to).svg',
     width: 57,
     color: const Color(0xffefcbcc),
   );
@@ -23,12 +17,12 @@ class SouthWord extends StatelessWidget {
         width: 100.0,
         height: 65.0,
         child: Row(children: [
-          directionsGroupSymbol,
+          const Text(','),
           VerticalDivider(
             width: 4,
             color: secondaryColor,
           ),
-          southWordSymbol,
+          backspaceWordSymbol,
         ]),
         margin: const EdgeInsets.fromLTRB(10, 0, 10, 0),
         decoration: BoxDecoration(

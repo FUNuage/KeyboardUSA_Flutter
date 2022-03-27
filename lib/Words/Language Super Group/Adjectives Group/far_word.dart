@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class SouthWord extends StatelessWidget {
-  Color mainColor = const Color(0xff8a546c);
-  Color secondaryColor = const Color(0xff91cdda);
+class FarWord extends StatelessWidget {
+  Color mainColor = Color(0xff425aa8);
+  Color secondaryColor = Color(0xff425aa8);
 
-  final Widget directionsGroupSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Concepts/direction,cardinal_point.svg',
+  final Widget adverbsGroupSymbol = SvgPicture.asset(
+    'assets/bliss_symbols/Language/adjective.svg',
+    color: Colors.black,
     width: 35,
-    color: const Color(0xffefcbcc),
   );
 
-  final Widget southWordSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Concepts/DirectionsGroup/south.svg',
+  final Widget farWordSymbol = SvgPicture.asset(
+    'assets/bliss_symbols/Language/AdverbsGroup/far,distant,remote.svg',
     width: 57,
     color: const Color(0xffefcbcc),
   );
@@ -23,12 +23,12 @@ class SouthWord extends StatelessWidget {
         width: 100.0,
         height: 65.0,
         child: Row(children: [
-          directionsGroupSymbol,
+          adverbsGroupSymbol,
           VerticalDivider(
             width: 4,
             color: secondaryColor,
           ),
-          southWordSymbol,
+          farWordSymbol,
         ]),
         margin: const EdgeInsets.fromLTRB(10, 0, 10, 0),
         decoration: BoxDecoration(

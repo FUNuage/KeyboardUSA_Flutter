@@ -12,7 +12,7 @@ class MonthWord extends StatelessWidget {
   );
 
   final Widget monthWordSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Concepts/TimeGroup/clock,timepiece.svg',
+    'assets/bliss_symbols/Concepts/TimeGroup/month.svg',
     width: 57,
     color: const Color(0xffefcbcc),
   );

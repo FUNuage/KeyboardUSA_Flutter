@@ -7,7 +7,7 @@ class NorthWord extends StatelessWidget {
 
   final Widget directionsGroupSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Concepts/direction,cardinal_point.svg',
-    width: 100,
+    width: 35,
     color: const Color(0xffefcbcc),
   );
 

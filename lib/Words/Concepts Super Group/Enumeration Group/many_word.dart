@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class ManyWord extends StatelessWidget {
+class EnumerationGroupManyWord extends StatelessWidget {
   Color mainColor = const Color(0xff8a546c);
   Color secondaryColor = const Color(0xff91cdda);
 

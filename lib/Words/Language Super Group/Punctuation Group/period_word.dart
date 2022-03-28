@@ -8,7 +8,7 @@ class PeriodWord extends StatelessWidget {
   final Widget periodWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/PunctuationGroup/period,point,full_stop,decimal_point.svg',
     width: 57,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   @override

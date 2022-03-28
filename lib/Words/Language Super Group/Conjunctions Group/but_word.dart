@@ -14,7 +14,7 @@ class ButWord extends StatelessWidget {
   final Widget butWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/ConjunctionsGroup/but,except.svg',
     width: 57,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   @override

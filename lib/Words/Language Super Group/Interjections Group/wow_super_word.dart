@@ -14,7 +14,7 @@ class WowSuperWord extends StatelessWidget {
   final Widget wowSuperWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/InterjectionsGroup/wow,super,great,neat,cool-(exclamatory).svg',
     width: 57,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   @override

@@ -14,7 +14,7 @@ class HowQWord extends StatelessWidget {
   final Widget howQWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/AdverbsGroup/how-(question).svg',
     width: 57,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   @override

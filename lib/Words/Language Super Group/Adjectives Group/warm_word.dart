@@ -14,7 +14,7 @@ class WarmWord extends StatelessWidget {
   final Widget warmWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/AdverbsGroup/warm.svg',
     width: 57,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   @override

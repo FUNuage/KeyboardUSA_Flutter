@@ -8,7 +8,7 @@ class EndOfDocumentWord extends StatelessWidget {
   final Widget endOfDocumentWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/PunctuationGroup/exclamation_mark.svg',
     width: 57,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   @override

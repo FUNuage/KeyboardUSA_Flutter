@@ -14,7 +14,7 @@ class BelowWord extends StatelessWidget {
   final Widget belowWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/PrepositionsGroup/under,below,inferior.svg',
     width: 57,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   @override

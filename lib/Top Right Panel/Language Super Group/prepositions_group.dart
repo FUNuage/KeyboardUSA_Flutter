@@ -77,6 +77,32 @@ class PrepositionsGroup extends StatelessWidget {
     color: Colors.black,
   );
 
+  final VoidCallback addAboveWord;
+  final VoidCallback addBelowWord;
+  final VoidCallback addBeforeWord;
+  final VoidCallback addAfterWord;
+  final VoidCallback addInsideWord;
+  final VoidCallback addOutsideWord;
+  final VoidCallback addIndoorsWord;
+  final VoidCallback addOutdoorsWord;
+  final VoidCallback addAtWord;
+  final VoidCallback addOnWord;
+  final VoidCallback addToWord;
+
+  PrepositionsGroup(
+    this.addAboveWord,
+    this.addBelowWord,
+    this.addBeforeWord,
+    this.addAfterWord,
+    this.addInsideWord,
+    this.addOutsideWord,
+    this.addIndoorsWord,
+    this.addOutdoorsWord,
+    this.addAtWord,
+    this.addOnWord,
+    this.addToWord,
+  );
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -99,7 +125,7 @@ class PrepositionsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addAboveWord(),
               child: aboveSymbol,
             ),
           ),
@@ -119,7 +145,7 @@ class PrepositionsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addBelowWord(),
               child: belowSymbol,
             ),
           ),
@@ -139,7 +165,7 @@ class PrepositionsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addBeforeWord(),
               child: beforeSymbol,
             ),
           ),
@@ -159,7 +185,7 @@ class PrepositionsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addAfterWord(),
               child: afterSymbol,
             ),
           ),
@@ -181,7 +207,7 @@ class PrepositionsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addInsideWord(),
               child: insideSymbol,
             ),
           ),
@@ -201,7 +227,7 @@ class PrepositionsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addOutsideWord(),
               child: outsideSymbol,
             ),
           )
@@ -223,7 +249,7 @@ class PrepositionsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addIndoorsWord(),
               child: indoorsSymbol,
             ),
           ),
@@ -243,7 +269,7 @@ class PrepositionsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addOutdoorsWord(),
               child: outdoorsSymbol,
             ),
           )
@@ -265,7 +291,7 @@ class PrepositionsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addAtWord(),
               child: atSymbol,
             ),
           ),
@@ -285,7 +311,7 @@ class PrepositionsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addOnWord(),
               child: onSymbol,
             ),
           )
@@ -306,7 +332,7 @@ class PrepositionsGroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => addToWord(),
             child: toSymbol,
           ),
         )

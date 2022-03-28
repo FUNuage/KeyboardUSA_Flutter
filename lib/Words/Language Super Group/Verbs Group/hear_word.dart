@@ -14,7 +14,7 @@ class HearWord extends StatelessWidget {
   final Widget hearWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/VerbsGroup/hear,listen-(to).svg',
     width: 57,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   @override

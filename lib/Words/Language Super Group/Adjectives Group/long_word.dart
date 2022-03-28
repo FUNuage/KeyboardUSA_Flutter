@@ -14,7 +14,7 @@ class LongWord extends StatelessWidget {
   final Widget longWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/AdverbsGroup/long.svg',
     width: 57,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   @override

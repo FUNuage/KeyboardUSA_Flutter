@@ -14,7 +14,7 @@ class MoveCarryWord extends StatelessWidget {
   final Widget moveCarryWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/VerbsGroup/carry,move,transport-(to).svg',
     width: 57,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   @override

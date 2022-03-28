@@ -14,7 +14,7 @@ class ToWord extends StatelessWidget {
   final Widget toWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/PrepositionsGroup/to,toward,towards.svg',
     width: 57,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   @override

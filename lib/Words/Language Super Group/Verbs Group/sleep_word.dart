@@ -14,7 +14,7 @@ class SleepWord extends StatelessWidget {
   final Widget sleepWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/VerbsGroup/sleep-(to).svg',
     width: 57,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   @override

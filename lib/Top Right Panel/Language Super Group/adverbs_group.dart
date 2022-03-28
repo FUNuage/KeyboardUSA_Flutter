@@ -44,6 +44,22 @@ class AdverbsGroup extends StatelessWidget {
     color: Colors.black,
   );
 
+  final VoidCallback addHowWord;
+  final VoidCallback addHowQWord;
+  final VoidCallback addWhenWord;
+  final VoidCallback addWhereWord;
+  final VoidCallback addWhereQWord;
+  final VoidCallback addNotWord;
+
+  AdverbsGroup(
+    this.addHowWord,
+    this.addHowQWord,
+    this.addWhenWord,
+    this.addWhereWord,
+    this.addWhereQWord,
+    this.addNotWord,
+  );
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -66,7 +82,7 @@ class AdverbsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addHowWord(),
               child: howSymbol,
             ),
           ),
@@ -86,7 +102,7 @@ class AdverbsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addHowQWord(),
               child: howQSymbol,
             ),
           ),
@@ -106,7 +122,7 @@ class AdverbsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addWhenWord(),
               child: whenSymbol,
             ),
           ),
@@ -126,7 +142,7 @@ class AdverbsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addWhereWord(),
               child: whereSymbol,
             ),
           ),
@@ -146,7 +162,7 @@ class AdverbsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addWhereQWord(),
               child: whereQSymbol,
             ),
           )
@@ -167,7 +183,7 @@ class AdverbsGroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => addNotWord(),
             child: notSymbol,
           ),
         ),

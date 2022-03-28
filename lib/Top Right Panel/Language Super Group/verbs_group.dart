@@ -164,6 +164,60 @@ class VerbsGroup extends StatelessWidget {
     color: Colors.black,
   );
 
+  final VoidCallback addAmIsWord;
+  final VoidCallback addCanWord;
+  final VoidCallback addSeeWord;
+  final VoidCallback addHearWord;
+  final VoidCallback addFeelWord;
+  final VoidCallback addEatWord;
+  final VoidCallback addSleepWord;
+  final VoidCallback addDrinkWord;
+  final VoidCallback addHurtWord;
+  final VoidCallback addMoveCarryWord;
+  final VoidCallback addJumpWord;
+  final VoidCallback addCrawlWord;
+  final VoidCallback addWalkWord;
+  final VoidCallback addRunWord;
+  final VoidCallback addFlyWord;
+  final VoidCallback addHaveWord;
+  final VoidCallback addBounceWord;
+  final VoidCallback addStandWord;
+  final VoidCallback addSitWord;
+  final VoidCallback addLieDownWord;
+  final VoidCallback addGetWord;
+  final VoidCallback addGiveWord;
+  final VoidCallback addKnowWord;
+  final VoidCallback addPullWord;
+  final VoidCallback addPushWord;
+
+  VerbsGroup(
+    this.addAmIsWord,
+    this.addCanWord,
+    this.addSeeWord,
+    this.addHearWord,
+    this.addFeelWord,
+    this.addEatWord,
+    this.addSleepWord,
+    this.addDrinkWord,
+    this.addHurtWord,
+    this.addMoveCarryWord,
+    this.addJumpWord,
+    this.addCrawlWord,
+    this.addWalkWord,
+    this.addRunWord,
+    this.addFlyWord,
+    this.addHaveWord,
+    this.addBounceWord,
+    this.addStandWord,
+    this.addSitWord,
+    this.addLieDownWord,
+    this.addGetWord,
+    this.addGiveWord,
+    this.addKnowWord,
+    this.addPullWord,
+    this.addPushWord,
+  );
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -186,7 +240,7 @@ class VerbsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addAmIsWord(),
               child: amIsSymbol,
             ),
           ),
@@ -206,7 +260,7 @@ class VerbsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addCanWord(),
               child: canSymbol,
             ),
           ),
@@ -226,7 +280,7 @@ class VerbsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addSeeWord(),
               child: seeSymbol,
             ),
           ),
@@ -246,7 +300,7 @@ class VerbsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addHearWord(),
               child: hearSymbol,
             ),
           ),
@@ -266,7 +320,7 @@ class VerbsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addFeelWord(),
               child: feelSymbol,
             ),
           )
@@ -288,7 +342,7 @@ class VerbsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addEatWord(),
               child: eatSymbol,
             ),
           ),
@@ -308,7 +362,7 @@ class VerbsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addSleepWord(),
               child: sleepSymbol,
             ),
           ),
@@ -328,7 +382,7 @@ class VerbsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addDrinkWord(),
               child: drinkSymbol,
             ),
           ),
@@ -348,7 +402,7 @@ class VerbsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addHurtWord(),
               child: huntSymbol,
             ),
           )
@@ -370,7 +424,7 @@ class VerbsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addMoveCarryWord(),
               child: moveCarrySymbol,
             ),
           ),
@@ -390,7 +444,7 @@ class VerbsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addJumpWord(),
               child: jumpSymbol,
             ),
           ),
@@ -410,7 +464,7 @@ class VerbsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addCrawlWord(),
               child: crawlSymbol,
             ),
           ),
@@ -430,7 +484,7 @@ class VerbsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addWalkWord(),
               child: walkSymbol,
             ),
           ),
@@ -450,7 +504,7 @@ class VerbsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addRunWord(),
               child: runSymbol,
             ),
           ),
@@ -470,7 +524,7 @@ class VerbsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addFlyWord(),
               child: flySymbol,
             ),
           )
@@ -492,7 +546,7 @@ class VerbsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addHaveWord(),
               child: haveSymbol,
             ),
           ),
@@ -512,7 +566,7 @@ class VerbsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addBounceWord(),
               child: bounceSymbol,
             ),
           ),
@@ -534,7 +588,7 @@ class VerbsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addStandWord(),
               child: standSymbol,
             ),
           ),
@@ -554,7 +608,7 @@ class VerbsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addSitWord(),
               child: sitSymbol,
             ),
           ),
@@ -574,7 +628,7 @@ class VerbsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addLieDownWord(),
               child: lieDownSymbol,
             ),
           )
@@ -596,7 +650,7 @@ class VerbsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addGetWord(),
               child: getSymbol,
             ),
           ),
@@ -616,7 +670,7 @@ class VerbsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addGiveWord(),
               child: giveSymbol,
             ),
           ),
@@ -636,7 +690,7 @@ class VerbsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addKnowWord(),
               child: knowSymbol,
             ),
           ),
@@ -658,7 +712,7 @@ class VerbsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addPullWord(),
               child: pullSymbol,
             ),
           ),
@@ -678,7 +732,7 @@ class VerbsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addPushWord(),
               child: pushSymbol,
             ),
           ),

@@ -14,7 +14,7 @@ class ThisWord extends StatelessWidget {
   final Widget thisWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/ArticlesGroup/this.svg',
     width: 57,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   @override

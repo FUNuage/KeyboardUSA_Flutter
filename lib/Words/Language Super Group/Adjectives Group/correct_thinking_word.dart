@@ -14,7 +14,7 @@ class CorrectThinkingWord extends StatelessWidget {
   final Widget correctThinkingWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/AdverbsGroup/correct_thinking.svg',
     width: 57,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   @override

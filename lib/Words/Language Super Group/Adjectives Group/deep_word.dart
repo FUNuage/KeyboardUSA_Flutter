@@ -14,7 +14,7 @@ class DeepWord extends StatelessWidget {
   final Widget deepWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/AdverbsGroup/deep.svg',
     width: 57,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   @override

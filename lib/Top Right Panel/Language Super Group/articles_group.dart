@@ -26,6 +26,16 @@ class ArticlesGroup extends StatelessWidget {
     color: Colors.black,
   );
 
+  final VoidCallback addAnWord;
+  final VoidCallback addThatThereWord;
+  final VoidCallback addThisWord;
+
+  ArticlesGroup(
+    this.addAnWord,
+    this.addThatThereWord,
+    this.addThisWord,
+  );
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -47,7 +57,7 @@ class ArticlesGroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => addAnWord(),
             child: anSymbol,
           ),
         ),
@@ -68,7 +78,7 @@ class ArticlesGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addThatThereWord(),
               child: thatThereSymbol,
             ),
           ),
@@ -88,7 +98,7 @@ class ArticlesGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addThisWord(),
               child: thisSymbol,
             ),
           )

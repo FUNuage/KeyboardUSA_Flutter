@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class ToWord extends StatelessWidget {
+class AndWord extends StatelessWidget {
   Color mainColor = Color(0xffe8b3f5);
   Color secondaryColor = Color(0xffe8b3f5);
 
@@ -14,7 +14,7 @@ class ToWord extends StatelessWidget {
   final Widget andWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/ConjunctionsGroup/and,also,plus,too.svg',
     width: 57,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   @override

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class FewWord extends StatelessWidget {
+class EnumerationGroupFewWord extends StatelessWidget {
   Color mainColor = const Color(0xff8a546c);
   Color secondaryColor = const Color(0xff91cdda);
 

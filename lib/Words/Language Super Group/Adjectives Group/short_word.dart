@@ -14,7 +14,7 @@ class ShortWord extends StatelessWidget {
   final Widget shortWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/AdverbsGroup/short.svg',
     width: 57,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   @override

@@ -14,7 +14,7 @@ class WalkWord extends StatelessWidget {
   final Widget walkWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/VerbsGroup/walk,walking.svg',
     width: 57,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   @override

@@ -60,6 +60,26 @@ class PronounsGroup extends StatelessWidget {
     color: Colors.black,
   );
 
+  final VoidCallback addIWord;
+  final VoidCallback addMeWord;
+  final VoidCallback addYouWord;
+  final VoidCallback addWeWord;
+  final VoidCallback addHeWord;
+  final VoidCallback addSheWord;
+  final VoidCallback addTheyWord;
+  final VoidCallback addThoseWord;
+
+  PronounsGroup(
+    this.addIWord,
+    this.addMeWord,
+    this.addYouWord,
+    this.addWeWord,
+    this.addHeWord,
+    this.addSheWord,
+    this.addTheyWord,
+    this.addThoseWord,
+  );
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -82,7 +102,7 @@ class PronounsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addIWord(),
               child: iSymbol,
             ),
           ),
@@ -102,7 +122,7 @@ class PronounsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addMeWord(),
               child: meSymbol,
             ),
           )
@@ -123,7 +143,7 @@ class PronounsGroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => addYouWord(),
             child: youSymbol,
           ),
         ),
@@ -143,7 +163,7 @@ class PronounsGroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => addWeWord(),
             child: weSymbol,
           ),
         ),
@@ -164,7 +184,7 @@ class PronounsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addHeWord(),
               child: heSymbol,
             ),
           ),
@@ -184,7 +204,7 @@ class PronounsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addSheWord(),
               child: sheSymbol,
             ),
           ),
@@ -205,7 +225,7 @@ class PronounsGroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => addTheyWord(),
             child: theySymbol,
           ),
         ),
@@ -225,7 +245,7 @@ class PronounsGroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => addThoseWord(),
             child: thoseSymbol,
           ),
         ),

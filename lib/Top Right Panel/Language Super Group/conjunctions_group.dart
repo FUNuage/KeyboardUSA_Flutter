@@ -52,6 +52,24 @@ class ConjunctionsGroup extends StatelessWidget {
     color: Colors.black,
   );
 
+  final VoidCallback addIfWord;
+  final VoidCallback addThereforeWord;
+  final VoidCallback addBecauseWord;
+  final VoidCallback addAndWord;
+  final VoidCallback addOrWord;
+  final VoidCallback addButWord;
+  final VoidCallback addUnlessWord;
+
+  ConjunctionsGroup(
+    this.addIfWord,
+    this.addThereforeWord,
+    this.addBecauseWord,
+    this.addAndWord,
+    this.addOrWord,
+    this.addButWord,
+    this.addUnlessWord,
+  );
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -73,7 +91,7 @@ class ConjunctionsGroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => addIfWord(),
             child: ifSymbol,
           ),
         ),
@@ -94,7 +112,7 @@ class ConjunctionsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addThereforeWord(),
               child: thereforeSymbol,
             ),
           ),
@@ -114,7 +132,7 @@ class ConjunctionsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addBecauseWord(),
               child: becauseSymbol,
             ),
           )
@@ -136,7 +154,7 @@ class ConjunctionsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addAndWord(),
               child: andSymbol,
             ),
           ),
@@ -156,7 +174,7 @@ class ConjunctionsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addOrWord(),
               child: orSymbol,
             ),
           )
@@ -178,7 +196,7 @@ class ConjunctionsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addButWord(),
               child: butSymbol,
             ),
           ),
@@ -198,7 +216,7 @@ class ConjunctionsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addUnlessWord(),
               child: unlessSymbol,
             ),
           )

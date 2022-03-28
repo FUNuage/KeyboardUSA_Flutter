@@ -14,7 +14,7 @@ class WhereWord extends StatelessWidget {
   final Widget whereWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/AdverbsGroup/where.svg',
     width: 57,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   @override

@@ -14,7 +14,7 @@ class BecauseWord extends StatelessWidget {
   final Widget becauseWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/ConjunctionsGroup/because.svg',
     width: 57,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   @override

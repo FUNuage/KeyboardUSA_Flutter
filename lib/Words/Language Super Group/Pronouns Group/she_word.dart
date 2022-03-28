@@ -14,7 +14,7 @@ class SheWord extends StatelessWidget {
   final Widget sheWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/PronounsGroup/she,her,herself.svg',
     width: 57,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   @override

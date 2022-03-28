@@ -14,7 +14,7 @@ class FeelWord extends StatelessWidget {
   final Widget feelWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/VerbsGroup/feel-(to).svg',
     width: 57,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   @override

@@ -14,7 +14,7 @@ class NoIndeedWord extends StatelessWidget {
   final Widget noIndeedWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/InterjectionsGroup/no-(exclamatory).svg',
     width: 57,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   @override

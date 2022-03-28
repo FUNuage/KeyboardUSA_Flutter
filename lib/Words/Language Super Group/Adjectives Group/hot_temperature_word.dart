@@ -14,7 +14,7 @@ class HotTemperatureWord extends StatelessWidget {
   final Widget hotTemperatureWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/AdverbsGroup/hot_(temperature).svg',
     width: 57,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   @override

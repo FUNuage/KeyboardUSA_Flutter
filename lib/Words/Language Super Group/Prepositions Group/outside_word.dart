@@ -14,7 +14,7 @@ class OutsideWord extends StatelessWidget {
   final Widget outsideWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/PrepositionsGroup/out,exterior,external,outside.svg',
     width: 57,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   @override

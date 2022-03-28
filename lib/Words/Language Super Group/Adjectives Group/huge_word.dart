@@ -14,7 +14,7 @@ class HugeWord extends StatelessWidget {
   final Widget hugeWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/AdverbsGroup/huge.svg',
     width: 57,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   @override

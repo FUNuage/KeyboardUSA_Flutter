@@ -14,7 +14,7 @@ class MeWord extends StatelessWidget {
   final Widget meWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/PronounsGroup/I,me,myself.svg',
     width: 57,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   @override

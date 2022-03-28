@@ -14,7 +14,7 @@ class CrawlWord extends StatelessWidget {
   final Widget crawlWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/VerbsGroup/crawl-(to).svg',
     width: 57,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   @override

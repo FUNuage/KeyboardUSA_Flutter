@@ -14,7 +14,7 @@ class ThereforeWord extends StatelessWidget {
   final Widget thereforeWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/ConjunctionsGroup/therefore,so,so_that.svg',
     width: 57,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   @override

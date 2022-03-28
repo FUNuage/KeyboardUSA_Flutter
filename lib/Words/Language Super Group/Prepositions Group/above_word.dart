@@ -14,7 +14,7 @@ class AboveWord extends StatelessWidget {
   final Widget aboveWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/PrepositionsGroup/over,above,superior.svg',
     width: 57,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   @override

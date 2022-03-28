@@ -14,7 +14,7 @@ class PullWord extends StatelessWidget {
   final Widget pullWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/VerbsGroup/pull,pulling.svg',
     width: 57,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   @override

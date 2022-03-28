@@ -8,7 +8,7 @@ class EllipseWord extends StatelessWidget {
   final Widget ellipseWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/PunctuationGroup/oval,ellipse_(shape).svg',
     width: 57,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   @override

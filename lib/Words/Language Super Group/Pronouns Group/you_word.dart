@@ -14,7 +14,7 @@ class YouWord extends StatelessWidget {
   final Widget youWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/PronounsGroup/you_word.svg',
     width: 57,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   @override

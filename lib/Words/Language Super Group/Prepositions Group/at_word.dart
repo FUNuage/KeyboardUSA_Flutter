@@ -14,7 +14,7 @@ class AtWord extends StatelessWidget {
   final Widget atWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/PrepositionsGroup/at.svg',
     width: 57,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   @override

@@ -14,7 +14,7 @@ class SlowWord extends StatelessWidget {
   final Widget slowWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/AdverbsGroup/slow,slowly.svg',
     width: 57,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   @override

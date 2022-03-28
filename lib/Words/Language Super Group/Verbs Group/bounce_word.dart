@@ -14,7 +14,7 @@ class BounceWord extends StatelessWidget {
   final Widget bounceWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/VerbsGroup/reflection.svg',
     width: 57,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   @override

@@ -14,7 +14,7 @@ class EatWord extends StatelessWidget {
   final Widget eatWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/VerbsGroup/eat-(to).svg',
     width: 57,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   @override

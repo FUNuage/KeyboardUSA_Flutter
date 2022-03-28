@@ -33,6 +33,18 @@ class InterjectionsGroup extends StatelessWidget {
     color: Colors.black,
   );
 
+  final VoidCallback addYesIndeedWord;
+  final VoidCallback addNoIndeedWord;
+  final VoidCallback addWowSuperWord;
+  final VoidCallback addHelpExclamatoryWord;
+
+  InterjectionsGroup(
+    this.addYesIndeedWord,
+    this.addNoIndeedWord,
+    this.addWowSuperWord,
+    this.addHelpExclamatoryWord,
+  );
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -55,7 +67,7 @@ class InterjectionsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addYesIndeedWord(),
               child: yesIndeedSymbol,
             ),
           ),
@@ -75,7 +87,7 @@ class InterjectionsGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addNoIndeedWord(),
               child: noIndeedSymbol,
             ),
           )
@@ -96,7 +108,7 @@ class InterjectionsGroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => addWowSuperWord(),
             child: wowSuperSymbol,
           ),
         ),
@@ -116,7 +128,7 @@ class InterjectionsGroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => addHelpExclamatoryWord(),
             child: helpExclamatorySymbol,
           ),
         ),

@@ -14,7 +14,7 @@ class FarWord extends StatelessWidget {
   final Widget farWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/AdverbsGroup/far,distant,remote.svg',
     width: 57,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   @override

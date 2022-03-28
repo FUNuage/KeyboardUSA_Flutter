@@ -14,7 +14,7 @@ class BeforeWord extends StatelessWidget {
   final Widget beforeWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/PrepositionsGroup/before,in_front_of,prior_to.svg',
     width: 57,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   @override

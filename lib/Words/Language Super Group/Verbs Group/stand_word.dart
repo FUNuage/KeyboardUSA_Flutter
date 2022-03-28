@@ -14,7 +14,7 @@ class StandWord extends StatelessWidget {
   final Widget standWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/VerbsGroup/stand-(to).svg',
     width: 57,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   @override

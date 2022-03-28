@@ -14,7 +14,7 @@ class FlyWord extends StatelessWidget {
   final Widget flyWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/VerbsGroup/fly-(to).svg',
     width: 57,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   @override

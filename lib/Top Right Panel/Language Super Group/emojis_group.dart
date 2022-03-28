@@ -31,6 +31,18 @@ class EmojisGroup extends StatelessWidget {
   //   color: Colors.black,
   // );
 
+  final VoidCallback addFaceSmileyWord;
+  final VoidCallback addFaceFrownyWord;
+  final VoidCallback addFaceIdeaWord;
+  final VoidCallback addFaceStraightWord;
+
+  EmojisGroup(
+    this.addFaceSmileyWord,
+    this.addFaceFrownyWord,
+    this.addFaceIdeaWord,
+    this.addFaceStraightWord,
+  );
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -54,7 +66,7 @@ class EmojisGroup extends StatelessWidget {
                       style: BorderStyle.solid,
                     ),
                   ),
-                  onPressed: () {},
+                  onPressed: () => addFaceSmileyWord(),
                   child: Text("To add"),
                 ),
               ),
@@ -74,7 +86,7 @@ class EmojisGroup extends StatelessWidget {
                       style: BorderStyle.solid,
                     ),
                   ),
-                  onPressed: () {},
+                  onPressed: () => addFaceFrownyWord(),
                   child: Text("To add"),
                 ),
               ),
@@ -94,7 +106,7 @@ class EmojisGroup extends StatelessWidget {
                       style: BorderStyle.solid,
                     ),
                   ),
-                  onPressed: () {},
+                  onPressed: () => addFaceIdeaWord(),
                   child: Text("To add"),
                 ),
               ),
@@ -114,7 +126,7 @@ class EmojisGroup extends StatelessWidget {
                       style: BorderStyle.solid,
                     ),
                   ),
-                  onPressed: () {},
+                  onPressed: () => addFaceStraightWord(),
                   child: Text("To add"),
                 ),
               ),

@@ -14,7 +14,7 @@ class GetWord extends StatelessWidget {
   final Widget getWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/VerbsGroup/get,acquire,receive-(to).svg',
     width: 57,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   @override

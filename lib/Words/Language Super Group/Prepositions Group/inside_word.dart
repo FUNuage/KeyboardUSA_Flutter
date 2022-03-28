@@ -14,7 +14,7 @@ class InsideWord extends StatelessWidget {
   final Widget insideWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/PrepositionsGroup/in,inside,interior,internal.svg',
     width: 57,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   @override

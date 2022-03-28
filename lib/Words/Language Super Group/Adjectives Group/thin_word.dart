@@ -14,7 +14,7 @@ class ThinWord extends StatelessWidget {
   final Widget thinWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/AdverbsGroup/thin,slim,narrow.svg',
     width: 57,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   @override

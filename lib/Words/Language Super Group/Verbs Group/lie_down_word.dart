@@ -14,7 +14,7 @@ class LieDownWord extends StatelessWidget {
   final Widget lieDownWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/VerbsGroup/lie_down,lie-(to).svg',
     width: 57,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   @override

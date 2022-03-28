@@ -31,6 +31,22 @@ class PunctuationGroup extends StatelessWidget {
     color: Colors.black,
   );
 
+  final VoidCallback addAnWord;
+  final VoidCallback addThatThereWord;
+  final VoidCallback addWhenWord;
+  final VoidCallback addWhereWord;
+  final VoidCallback addWhereQWord;
+  final VoidCallback addNotWord;
+
+  PunctuationGroup(
+    this.addAnWord,
+    this.addThatThereWord,
+    this.addWhenWord,
+    this.addWhereWord,
+    this.addWhereQWord,
+    this.addNotWord,
+  );
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -52,7 +68,7 @@ class PunctuationGroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => addAnWord(),
             child: anSymbol,
           ),
         ),
@@ -73,7 +89,7 @@ class PunctuationGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addThatThereWord(),
               child: thatThereSymbol,
             ),
           ),
@@ -93,7 +109,7 @@ class PunctuationGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => {},
               child: thisSymbol,
             ),
           )

@@ -14,7 +14,7 @@ class IfWord extends StatelessWidget {
   final Widget ifWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/ConjunctionsGroup/if.svg',
     width: 57,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   @override

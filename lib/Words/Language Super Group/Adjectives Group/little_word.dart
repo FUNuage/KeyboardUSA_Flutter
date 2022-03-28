@@ -14,7 +14,7 @@ class LittleWord extends StatelessWidget {
   final Widget littleWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/AdverbsGroup/little,small.svg',
     width: 57,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   @override

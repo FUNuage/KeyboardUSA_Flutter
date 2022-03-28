@@ -14,7 +14,7 @@ class CanWord extends StatelessWidget {
   final Widget canWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/VerbsGroup/can,be_able-(to).svg',
     width: 57,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   @override

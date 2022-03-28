@@ -14,7 +14,7 @@ class RottenWord extends StatelessWidget {
   final Widget rottenWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/AdverbsGroup/rotten,decomposed.svg',
     width: 57,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   @override

@@ -14,7 +14,7 @@ class FullWord extends StatelessWidget {
   final Widget fullWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/AdverbsGroup/full.svg',
     width: 57,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   @override

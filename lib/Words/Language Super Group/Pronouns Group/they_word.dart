@@ -14,7 +14,7 @@ class TheyWord extends StatelessWidget {
   final Widget heWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/PronounsGroup/they,them,themselves-(persons).svg',
     width: 57,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   @override

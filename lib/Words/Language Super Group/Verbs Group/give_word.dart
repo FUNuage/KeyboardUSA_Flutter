@@ -14,7 +14,7 @@ class GiveWord extends StatelessWidget {
   final Widget giveWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/VerbsGroup/give,offer,provide-(to).svg',
     width: 57,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   @override

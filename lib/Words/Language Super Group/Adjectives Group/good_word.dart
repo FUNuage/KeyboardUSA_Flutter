@@ -14,7 +14,7 @@ class GoodWord extends StatelessWidget {
   final Widget goodWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/AdverbsGroup/good,well,fine,ok,okay,all_right.svg',
     width: 57,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   @override

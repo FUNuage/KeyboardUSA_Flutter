@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class HeWord extends StatelessWidget {
+class IWord extends StatelessWidget {
   Color mainColor = Color(0xff714c84);
   Color secondaryColor = Color(0xff714c84);
 
@@ -14,7 +14,7 @@ class HeWord extends StatelessWidget {
   final Widget heWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/PronounsGroup/I,me,myself.svg',
     width: 57,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   @override

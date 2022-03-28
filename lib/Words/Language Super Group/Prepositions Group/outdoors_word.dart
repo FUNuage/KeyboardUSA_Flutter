@@ -14,7 +14,7 @@ class OutdoorsWord extends StatelessWidget {
   final Widget outdoorsWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/PrepositionsGroup/outdoor,outdoors.svg',
     width: 57,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   @override

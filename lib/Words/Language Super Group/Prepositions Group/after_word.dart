@@ -14,7 +14,7 @@ class AfterWord extends StatelessWidget {
   final Widget afterWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/PrepositionsGroup/after,behind.svg',
     width: 57,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   @override

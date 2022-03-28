@@ -8,7 +8,7 @@ class ListToConsole2Word extends StatelessWidget {
   final Widget listToConsole2WordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/PunctuationGroup/exclamation_mark.svg',
     width: 57,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   @override

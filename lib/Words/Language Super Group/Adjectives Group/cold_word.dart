@@ -14,7 +14,7 @@ class ColdWord extends StatelessWidget {
   final Widget coldWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/AdverbsGroup/cold.svg',
     width: 57,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   @override

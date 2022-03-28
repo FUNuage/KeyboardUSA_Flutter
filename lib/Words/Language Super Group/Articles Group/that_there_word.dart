@@ -14,7 +14,7 @@ class ThatThereWord extends StatelessWidget {
   final Widget thatThereWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/ArticlesGroup/that_(there).svg',
     width: 57,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   @override

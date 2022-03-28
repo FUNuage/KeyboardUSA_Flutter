@@ -14,7 +14,7 @@ class NotWord extends StatelessWidget {
   final Widget notWordSymbol = SvgPicture.asset(
     "assets/bliss_symbols/Language/AdverbsGroup/not,negative,no,don't,doesn't.svg",
     width: 57,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   @override

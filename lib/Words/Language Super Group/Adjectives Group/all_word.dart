@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class AllWord extends StatelessWidget {
+class AdjectivesGroupAllWord extends StatelessWidget {
   Color mainColor = Color(0xff425aa8);
   Color secondaryColor = Color(0xff425aa8);
 
@@ -14,7 +14,7 @@ class AllWord extends StatelessWidget {
   final Widget allWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/AdverbsGroup/all,every,everything,total,whole.svg',
     width: 57,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   @override

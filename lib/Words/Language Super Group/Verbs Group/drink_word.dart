@@ -14,7 +14,7 @@ class DrinkWord extends StatelessWidget {
   final Widget drinkWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/VerbsGroup/drink-(to).svg',
     width: 57,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   @override

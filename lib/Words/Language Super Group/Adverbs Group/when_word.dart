@@ -14,7 +14,7 @@ class WhenWord extends StatelessWidget {
   final Widget whenWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/AdverbsGroup/when.svg',
     width: 57,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   @override

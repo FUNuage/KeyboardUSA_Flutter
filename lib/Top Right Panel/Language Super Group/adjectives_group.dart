@@ -181,6 +181,64 @@ class AdjectivesGroup extends StatelessWidget {
     color: Colors.black,
   );
 
+  final VoidCallback addGoodWord;
+  final VoidCallback addBadWord;
+  final VoidCallback addHugeWord;
+  final VoidCallback addBigWord;
+  final VoidCallback addLittleWord;
+  final VoidCallback addHighTallWord;
+  final VoidCallback addDeepWord;
+  final VoidCallback addShortWord;
+  final VoidCallback addLongWord;
+  final VoidCallback addSlowWord;
+  final VoidCallback addFastWord;
+  final VoidCallback addAdjectivesGroupNoneWord;
+  final VoidCallback addAdjectivesGroupFewWord;
+  final VoidCallback addAdjectivesGroupSomeWord;
+  final VoidCallback addAdjectivesGroupManyWord;
+  final VoidCallback addAdjectivesGroupAllWord;
+  final VoidCallback addThinWord;
+  final VoidCallback addWideWord;
+  final VoidCallback addFarWord;
+  final VoidCallback addRottenWord;
+  final VoidCallback addColdWord;
+  final VoidCallback addWarmWord;
+  final VoidCallback addHotTemperatureWord;
+  final VoidCallback addCorrectThinkingWord;
+  final VoidCallback addIncorrectThinkingWord;
+  final VoidCallback addFullWord;
+  final VoidCallback addEmptyWord;
+
+  AdjectivesGroup(
+    this.addGoodWord,
+    this.addBadWord,
+    this.addHugeWord,
+    this.addBigWord,
+    this.addLittleWord,
+    this.addHighTallWord,
+    this.addDeepWord,
+    this.addShortWord,
+    this.addLongWord,
+    this.addSlowWord,
+    this.addFastWord,
+    this.addAdjectivesGroupNoneWord,
+    this.addAdjectivesGroupFewWord,
+    this.addAdjectivesGroupSomeWord,
+    this.addAdjectivesGroupManyWord,
+    this.addAdjectivesGroupAllWord,
+    this.addThinWord,
+    this.addWideWord,
+    this.addFarWord,
+    this.addRottenWord,
+    this.addColdWord,
+    this.addWarmWord,
+    this.addHotTemperatureWord,
+    this.addCorrectThinkingWord,
+    this.addIncorrectThinkingWord,
+    this.addFullWord,
+    this.addEmptyWord,
+  );
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -203,7 +261,7 @@ class AdjectivesGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addGoodWord(),
               child: goodSymbol,
             ),
           ),
@@ -223,7 +281,7 @@ class AdjectivesGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addBadWord(),
               child: badSymbol,
             ),
           ),
@@ -245,7 +303,7 @@ class AdjectivesGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addHugeWord(),
               child: hugeSymbol,
             ),
           ),
@@ -265,7 +323,7 @@ class AdjectivesGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addBigWord(),
               child: bigSymbol,
             ),
           ),
@@ -285,7 +343,7 @@ class AdjectivesGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addLittleWord(),
               child: littleSymbol,
             ),
           ),
@@ -305,7 +363,7 @@ class AdjectivesGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addHighTallWord(),
               child: highTallSymbol,
             ),
           ),
@@ -325,7 +383,7 @@ class AdjectivesGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addDeepWord(),
               child: deepSymbol,
             ),
           ),
@@ -347,7 +405,7 @@ class AdjectivesGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addShortWord(),
               child: shortSymbol,
             ),
           ),
@@ -367,7 +425,7 @@ class AdjectivesGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addLongWord(),
               child: longSymbol,
             ),
           ),
@@ -387,7 +445,7 @@ class AdjectivesGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addSlowWord(),
               child: slowSymbol,
             ),
           ),
@@ -407,7 +465,7 @@ class AdjectivesGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addFastWord(),
               child: fastSymbol,
             ),
           ),
@@ -429,7 +487,7 @@ class AdjectivesGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addAdjectivesGroupNoneWord(),
               child: noneSymbol,
             ),
           ),
@@ -449,7 +507,7 @@ class AdjectivesGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addAdjectivesGroupFewWord(),
               child: fewSymbol,
             ),
           ),
@@ -469,7 +527,7 @@ class AdjectivesGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addAdjectivesGroupSomeWord(),
               child: someSymbol,
             ),
           ),
@@ -489,7 +547,7 @@ class AdjectivesGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addAdjectivesGroupManyWord(),
               child: manySymbol,
             ),
           ),
@@ -509,7 +567,7 @@ class AdjectivesGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addAdjectivesGroupAllWord(),
               child: allSymbol,
             ),
           ),
@@ -531,7 +589,7 @@ class AdjectivesGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addThinWord(),
               child: thinSymbol,
             ),
           ),
@@ -551,7 +609,7 @@ class AdjectivesGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addWideWord(),
               child: wideSymbol,
             ),
           ),
@@ -573,7 +631,7 @@ class AdjectivesGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addFarWord(),
               child: farSymbol,
             ),
           ),
@@ -593,7 +651,7 @@ class AdjectivesGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addRottenWord(),
               child: rottenSymbol,
             ),
           ),
@@ -613,7 +671,7 @@ class AdjectivesGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addColdWord(),
               child: coldSymbol,
             ),
           ),
@@ -633,7 +691,7 @@ class AdjectivesGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addWarmWord(),
               child: warmSymbol,
             ),
           ),
@@ -653,7 +711,7 @@ class AdjectivesGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addHotTemperatureWord(),
               child: hotTemperatureSymbol,
             ),
           ),
@@ -675,7 +733,7 @@ class AdjectivesGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addCorrectThinkingWord(),
               child: correctThinkingSymbol,
             ),
           ),
@@ -695,7 +753,7 @@ class AdjectivesGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addIncorrectThinkingWord(),
               child: incorrectThinkingSymbol,
             ),
           ),
@@ -715,7 +773,7 @@ class AdjectivesGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addFullWord(),
               child: fullSymbol,
             ),
           ),
@@ -735,7 +793,7 @@ class AdjectivesGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => addEmptyWord(),
               child: emptySymbol,
             ),
           ),

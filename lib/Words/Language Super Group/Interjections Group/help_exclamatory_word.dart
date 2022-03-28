@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class UnlessWord extends StatelessWidget {
+class HelpExclamatoryWord extends StatelessWidget {
   Color mainColor = Color(0xffedaf4c);
   Color secondaryColor = Color(0xffedaf4c);
 
@@ -14,7 +14,7 @@ class UnlessWord extends StatelessWidget {
   final Widget unlessWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/InterjectionsGroup/help,aid,assist,serve,support-(to).svg',
     width: 57,
-    color: const Color(0xffefcbcc),
+    color: Colors.black,
   );
 
   @override

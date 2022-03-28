@@ -5,12 +5,6 @@ class AdjectivesGroupAllWord extends StatelessWidget {
   Color mainColor = Color(0xff425aa8);
   Color secondaryColor = Color(0xff425aa8);
 
-  final Widget adverbsGroupSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Language/adjective.svg',
-    color: Colors.black,
-    width: 35,
-  );
-
   final Widget allWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/AdverbsGroup/all,every,everything,total,whole.svg',
     width: 57,
@@ -22,14 +16,7 @@ class AdjectivesGroupAllWord extends StatelessWidget {
     return Container(
         width: 100.0,
         height: 65.0,
-        child: Row(children: [
-          adverbsGroupSymbol,
-          VerticalDivider(
-            width: 4,
-            color: secondaryColor,
-          ),
-          allWordSymbol,
-        ]),
+        child: allWordSymbol,
         margin: const EdgeInsets.fromLTRB(10, 0, 10, 0),
         decoration: BoxDecoration(
           color: mainColor,

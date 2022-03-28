@@ -5,12 +5,6 @@ class FaceFrownyWord extends StatelessWidget {
   Color mainColor = Color(0xff2fb4c3);
   Color secondaryColor = Color(0xff2fb4c3);
 
-  final Widget articlesGroupSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Language/article.svg',
-    color: Colors.black,
-    width: 35,
-  );
-
   final Widget anWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/ArticlesGroup/a,an,any.svg',
     width: 57,
@@ -22,14 +16,7 @@ class FaceFrownyWord extends StatelessWidget {
     return Container(
         width: 100.0,
         height: 65.0,
-        child: Row(children: [
-          articlesGroupSymbol,
-          VerticalDivider(
-            width: 4,
-            color: secondaryColor,
-          ),
-          anWordSymbol,
-        ]),
+        child: anWordSymbol,
         margin: const EdgeInsets.fromLTRB(10, 0, 10, 0),
         decoration: BoxDecoration(
           color: mainColor,

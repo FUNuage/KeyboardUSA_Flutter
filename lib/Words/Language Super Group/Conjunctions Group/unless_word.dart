@@ -5,12 +5,6 @@ class UnlessWord extends StatelessWidget {
   Color mainColor = Color(0xffe8b3f5);
   Color secondaryColor = Color(0xffe8b3f5);
 
-  final Widget conjunctionsGroupSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Language/conjunction.svg',
-    color: Colors.black,
-    width: 35,
-  );
-
   final Widget unlessWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/ConjunctionsGroup/unless.svg',
     width: 57,
@@ -22,14 +16,7 @@ class UnlessWord extends StatelessWidget {
     return Container(
         width: 100.0,
         height: 65.0,
-        child: Row(children: [
-          conjunctionsGroupSymbol,
-          VerticalDivider(
-            width: 4,
-            color: secondaryColor,
-          ),
-          unlessWordSymbol,
-        ]),
+        child: unlessWordSymbol,
         margin: const EdgeInsets.fromLTRB(10, 0, 10, 0),
         decoration: BoxDecoration(
           color: mainColor,

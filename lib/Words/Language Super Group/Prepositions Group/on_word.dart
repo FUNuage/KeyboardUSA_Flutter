@@ -5,12 +5,6 @@ class OnWord extends StatelessWidget {
   Color mainColor = Color(0xff66b282);
   Color secondaryColor = Color(0xff66b282);
 
-  final Widget prepositionsGroupSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Language/preposition.svg',
-    color: Colors.black,
-    width: 35,
-  );
-
   final Widget onWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/PrepositionsGroup/on.svg',
     width: 57,
@@ -22,14 +16,7 @@ class OnWord extends StatelessWidget {
     return Container(
         width: 100.0,
         height: 65.0,
-        child: Row(children: [
-          prepositionsGroupSymbol,
-          VerticalDivider(
-            width: 4,
-            color: secondaryColor,
-          ),
-          onWordSymbol,
-        ]),
+        child: onWordSymbol,
         margin: const EdgeInsets.fromLTRB(10, 0, 10, 0),
         decoration: BoxDecoration(
           color: mainColor,

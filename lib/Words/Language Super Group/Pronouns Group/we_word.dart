@@ -5,12 +5,6 @@ class WeWord extends StatelessWidget {
   Color mainColor = Color(0xff714c84);
   Color secondaryColor = Color(0xff714c84);
 
-  final Widget pronounsGroupSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Language/pronoun.svg',
-    color: Colors.black,
-    width: 35,
-  );
-
   final Widget weWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/PronounsGroup/we,us,ourselves.svg',
     width: 57,
@@ -22,14 +16,7 @@ class WeWord extends StatelessWidget {
     return Container(
         width: 100.0,
         height: 65.0,
-        child: Row(children: [
-          pronounsGroupSymbol,
-          VerticalDivider(
-            width: 4,
-            color: secondaryColor,
-          ),
-          weWordSymbol,
-        ]),
+        child: weWordSymbol,
         margin: const EdgeInsets.fromLTRB(10, 0, 10, 0),
         decoration: BoxDecoration(
           color: mainColor,

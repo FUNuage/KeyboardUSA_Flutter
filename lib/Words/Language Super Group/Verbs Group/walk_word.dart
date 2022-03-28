@@ -5,12 +5,6 @@ class WalkWord extends StatelessWidget {
   Color mainColor = const Color(0xffcb1d41);
   Color secondaryColor = const Color(0xffcb1d41);
 
-  final Widget verbsGroupSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Language/verb.svg',
-    color: Colors.black,
-    width: 35,
-  );
-
   final Widget walkWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/VerbsGroup/walk,walking.svg',
     width: 57,
@@ -22,14 +16,7 @@ class WalkWord extends StatelessWidget {
     return Container(
         width: 100.0,
         height: 65.0,
-        child: Row(children: [
-          verbsGroupSymbol,
-          VerticalDivider(
-            width: 4,
-            color: secondaryColor,
-          ),
-          walkWordSymbol,
-        ]),
+        child: walkWordSymbol,
         margin: const EdgeInsets.fromLTRB(10, 0, 10, 0),
         decoration: BoxDecoration(
           color: mainColor,

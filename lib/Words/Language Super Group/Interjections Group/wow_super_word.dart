@@ -5,12 +5,6 @@ class WowSuperWord extends StatelessWidget {
   Color mainColor = Color(0xffedaf4c);
   Color secondaryColor = Color(0xffedaf4c);
 
-  final Widget interjectionsGroupSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Language/interjection.svg',
-    color: Colors.black,
-    width: 35,
-  );
-
   final Widget wowSuperWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/InterjectionsGroup/wow,super,great,neat,cool-(exclamatory).svg',
     width: 57,
@@ -22,14 +16,7 @@ class WowSuperWord extends StatelessWidget {
     return Container(
         width: 100.0,
         height: 65.0,
-        child: Row(children: [
-          interjectionsGroupSymbol,
-          VerticalDivider(
-            width: 4,
-            color: secondaryColor,
-          ),
-          wowSuperWordSymbol,
-        ]),
+        child: wowSuperWordSymbol,
         margin: const EdgeInsets.fromLTRB(10, 0, 10, 0),
         decoration: BoxDecoration(
           color: mainColor,

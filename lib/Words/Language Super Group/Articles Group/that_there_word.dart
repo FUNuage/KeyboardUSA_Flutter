@@ -5,12 +5,6 @@ class ThatThereWord extends StatelessWidget {
   Color mainColor = Color(0xff2fb4c3);
   Color secondaryColor = Color(0xff2fb4c3);
 
-  final Widget articlesGroupSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Language/article.svg',
-    color: Colors.black,
-    width: 35,
-  );
-
   final Widget thatThereWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/ArticlesGroup/that_(there).svg',
     width: 57,
@@ -22,14 +16,7 @@ class ThatThereWord extends StatelessWidget {
     return Container(
         width: 100.0,
         height: 65.0,
-        child: Row(children: [
-          articlesGroupSymbol,
-          VerticalDivider(
-            width: 4,
-            color: secondaryColor,
-          ),
-          thatThereWordSymbol,
-        ]),
+        child: thatThereWordSymbol,
         margin: const EdgeInsets.fromLTRB(10, 0, 10, 0),
         decoration: BoxDecoration(
           color: mainColor,

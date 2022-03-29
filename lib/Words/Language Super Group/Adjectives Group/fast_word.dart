@@ -5,14 +5,8 @@ class FastWord extends StatelessWidget {
   Color mainColor = Color(0xff425aa8);
   Color secondaryColor = Color(0xff425aa8);
 
-  final Widget adverbsGroupSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Language/adjective.svg',
-    color: Colors.black,
-    width: 35,
-  );
-
   final Widget fastWordSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Language/AdverbsGroup/quick,fast,quickly,rapid,rapidly.svg',
+    'assets/bliss_symbols/Language/AdjectivesGroup/quick,fast,quickly,rapid,rapidly.svg',
     width: 57,
     color: Colors.black,
   );
@@ -22,14 +16,7 @@ class FastWord extends StatelessWidget {
     return Container(
         width: 100.0,
         height: 65.0,
-        child: Row(children: [
-          adverbsGroupSymbol,
-          VerticalDivider(
-            width: 4,
-            color: secondaryColor,
-          ),
-          fastWordSymbol,
-        ]),
+        child: fastWordSymbol,
         margin: const EdgeInsets.fromLTRB(10, 0, 10, 0),
         decoration: BoxDecoration(
           color: mainColor,

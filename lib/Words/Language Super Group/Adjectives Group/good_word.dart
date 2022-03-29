@@ -5,14 +5,8 @@ class GoodWord extends StatelessWidget {
   Color mainColor = Color(0xff425aa8);
   Color secondaryColor = Color(0xff425aa8);
 
-  final Widget adverbsGroupSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Language/adjective.svg',
-    color: Colors.black,
-    width: 35,
-  );
-
   final Widget goodWordSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Language/AdverbsGroup/good,well,fine,ok,okay,all_right.svg',
+    'assets/bliss_symbols/Language/AdjectivesGroup/good,well,fine,ok,okay,all_right.svg',
     width: 57,
     color: Colors.black,
   );
@@ -22,14 +16,7 @@ class GoodWord extends StatelessWidget {
     return Container(
         width: 100.0,
         height: 65.0,
-        child: Row(children: [
-          adverbsGroupSymbol,
-          VerticalDivider(
-            width: 4,
-            color: secondaryColor,
-          ),
-          goodWordSymbol,
-        ]),
+        child: goodWordSymbol,
         margin: const EdgeInsets.fromLTRB(10, 0, 10, 0),
         decoration: BoxDecoration(
           color: mainColor,

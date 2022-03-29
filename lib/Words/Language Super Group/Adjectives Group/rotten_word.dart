@@ -5,14 +5,8 @@ class RottenWord extends StatelessWidget {
   Color mainColor = Color(0xff425aa8);
   Color secondaryColor = Color(0xff425aa8);
 
-  final Widget adverbsGroupSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Language/adjective.svg',
-    color: Colors.black,
-    width: 35,
-  );
-
   final Widget rottenWordSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Language/AdverbsGroup/rotten,decomposed.svg',
+    'assets/bliss_symbols/Language/AdjectivesGroup/rotten,decomposed.svg',
     width: 57,
     color: Colors.black,
   );
@@ -22,14 +16,7 @@ class RottenWord extends StatelessWidget {
     return Container(
         width: 100.0,
         height: 65.0,
-        child: Row(children: [
-          adverbsGroupSymbol,
-          VerticalDivider(
-            width: 4,
-            color: secondaryColor,
-          ),
-          rottenWordSymbol,
-        ]),
+        child: rottenWordSymbol,
         margin: const EdgeInsets.fromLTRB(10, 0, 10, 0),
         decoration: BoxDecoration(
           color: mainColor,

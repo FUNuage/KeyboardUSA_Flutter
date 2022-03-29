@@ -5,14 +5,8 @@ class WideWord extends StatelessWidget {
   Color mainColor = Color(0xff425aa8);
   Color secondaryColor = Color(0xff425aa8);
 
-  final Widget adverbsGroupSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Language/adjective.svg',
-    color: Colors.black,
-    width: 35,
-  );
-
   final Widget wideWordSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Language/AdverbsGroup/wide,broad.svg',
+    'assets/bliss_symbols/Language/AdjectivesGroup/wide,broad.svg',
     width: 57,
     color: Colors.black,
   );
@@ -22,14 +16,7 @@ class WideWord extends StatelessWidget {
     return Container(
         width: 100.0,
         height: 65.0,
-        child: Row(children: [
-          adverbsGroupSymbol,
-          VerticalDivider(
-            width: 4,
-            color: secondaryColor,
-          ),
-          wideWordSymbol,
-        ]),
+        child: wideWordSymbol,
         margin: const EdgeInsets.fromLTRB(10, 0, 10, 0),
         decoration: BoxDecoration(
           color: mainColor,

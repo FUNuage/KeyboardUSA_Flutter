@@ -13,39 +13,57 @@ class PunctuationGroup extends StatelessWidget {
   Color mainColor = Color(0xffa4a59e);
   Color secondaryColor = Color(0xffa4a59e);
 
-  final Widget anSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Language/ArticlesGroup/a,an,any.svg',
+  final Widget backspaceSymbol = SvgPicture.asset(
+    'assets/bliss_symbols/Language/PunctuationGroup/backspace_(computer)-(to).svg',
     width: 100,
     color: Colors.black,
   );
 
-  final Widget thatThereSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Language/ArticlesGroup/that_(there).svg',
+  final Widget commaSymbol = SvgPicture.asset(
+    'assets/bliss_symbols/Language/PunctuationGroup/comma.svg',
     width: 100,
     color: Colors.black,
   );
 
-  final Widget thisSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Language/ArticlesGroup/this.svg',
+  final Widget ellipseSymbol = SvgPicture.asset(
+    'assets/bliss_symbols/Language/PunctuationGroup/oval,ellipse_(shape).svg',
     width: 100,
     color: Colors.black,
   );
 
-  final VoidCallback addAnWord;
-  final VoidCallback addThatThereWord;
-  final VoidCallback addWhenWord;
-  final VoidCallback addWhereWord;
-  final VoidCallback addWhereQWord;
-  final VoidCallback addNotWord;
-
-  PunctuationGroup(
-    this.addAnWord,
-    this.addThatThereWord,
-    this.addWhenWord,
-    this.addWhereWord,
-    this.addWhereQWord,
-    this.addNotWord,
+  final Widget periodSymbol = SvgPicture.asset(
+    'assets/bliss_symbols/Language/PunctuationGroup/period,point,full_stop,decimal_point.svg',
+    width: 100,
+    color: Colors.black,
   );
+
+  final Widget questionMarkSymbol = SvgPicture.asset(
+    'assets/bliss_symbols/Language/PunctuationGroup/question_mark.svg',
+    width: 100,
+    color: Colors.black,
+  );
+
+  final Widget exclamationMarkSymbol = SvgPicture.asset(
+    'assets/bliss_symbols/Language/PunctuationGroup/exclamation_mark.svg',
+    width: 100,
+    color: Colors.black,
+  );
+
+  // final VoidCallback addBackspaceWord;
+  // final VoidCallback addThatThereWord;
+  // final VoidCallback addWhenWord;
+  // final VoidCallback addWhereWord;
+  // final VoidCallback addWhereQWord;
+  // final VoidCallback addNotWord;
+
+  // PunctuationGroup(
+  //   this.addBackspaceWord,
+  //   this.addThatThereWord,
+  //   this.addWhenWord,
+  //   this.addWhereWord,
+  //   this.addWhereQWord,
+  //   this.addNotWord,
+  // );
 
   @override
   Widget build(BuildContext context) {
@@ -68,8 +86,8 @@ class PunctuationGroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () => addAnWord(),
-            child: anSymbol,
+            onPressed: () => {},
+            child: backspaceSymbol,
           ),
         ),
         Row(children: [
@@ -89,8 +107,8 @@ class PunctuationGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () => addThatThereWord(),
-              child: thatThereSymbol,
+              onPressed: () => {},
+              child: Text(""),
             ),
           ),
           Padding(
@@ -110,7 +128,335 @@ class PunctuationGroup extends StatelessWidget {
                 ),
               ),
               onPressed: () => {},
-              child: thisSymbol,
+              child: commaSymbol,
+            ),
+          ),
+          Padding(
+            padding: EdgeInsets.only(top: 5, right: 5),
+            child: OutlinedButton(
+              style: OutlinedButton.styleFrom(
+                fixedSize: Size(80, 65),
+                primary: secondaryColor,
+                backgroundColor: mainColor,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10.0),
+                ),
+                side: BorderSide(
+                  width: 4.0,
+                  color: secondaryColor,
+                  style: BorderStyle.solid,
+                ),
+              ),
+              onPressed: () => {},
+              child: ellipseSymbol,
+            ),
+          )
+        ]),
+        Row(children: [
+          Padding(
+            padding: EdgeInsets.only(top: 5, right: 5),
+            child: OutlinedButton(
+              style: OutlinedButton.styleFrom(
+                fixedSize: Size(80, 65),
+                primary: secondaryColor,
+                backgroundColor: mainColor,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10.0),
+                ),
+                side: BorderSide(
+                  width: 4.0,
+                  color: secondaryColor,
+                  style: BorderStyle.solid,
+                ),
+              ),
+              onPressed: () => {},
+              child: periodSymbol,
+            ),
+          ),
+          Padding(
+            padding: EdgeInsets.only(top: 5, right: 5),
+            child: OutlinedButton(
+              style: OutlinedButton.styleFrom(
+                fixedSize: Size(80, 65),
+                primary: secondaryColor,
+                backgroundColor: mainColor,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10.0),
+                ),
+                side: BorderSide(
+                  width: 4.0,
+                  color: secondaryColor,
+                  style: BorderStyle.solid,
+                ),
+              ),
+              onPressed: () => {},
+              child: questionMarkSymbol,
+            ),
+          ),
+          Padding(
+            padding: EdgeInsets.only(top: 5, right: 5),
+            child: OutlinedButton(
+              style: OutlinedButton.styleFrom(
+                fixedSize: Size(80, 65),
+                primary: secondaryColor,
+                backgroundColor: mainColor,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10.0),
+                ),
+                side: BorderSide(
+                  width: 4.0,
+                  color: secondaryColor,
+                  style: BorderStyle.solid,
+                ),
+              ),
+              onPressed: () => {},
+              child: exclamationMarkSymbol,
+            ),
+          ),
+          Padding(
+            padding: EdgeInsets.only(top: 5, right: 5),
+            child: OutlinedButton(
+              style: OutlinedButton.styleFrom(
+                fixedSize: Size(80, 65),
+                primary: secondaryColor,
+                backgroundColor: mainColor,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10.0),
+                ),
+                side: BorderSide(
+                  width: 4.0,
+                  color: secondaryColor,
+                  style: BorderStyle.solid,
+                ),
+              ),
+              onPressed: () => {},
+              child: Text("Accept Key"),
+            ),
+          )
+        ]),
+        Row(children: [
+          Padding(
+            padding: EdgeInsets.only(top: 5, right: 5),
+            child: OutlinedButton(
+              style: OutlinedButton.styleFrom(
+                fixedSize: Size(80, 65),
+                primary: secondaryColor,
+                backgroundColor: mainColor,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10.0),
+                ),
+                side: BorderSide(
+                  width: 4.0,
+                  color: secondaryColor,
+                  style: BorderStyle.solid,
+                ),
+              ),
+              onPressed: () => {},
+              child: Text("upArrowSentence"),
+            ),
+          ),
+          Padding(
+            padding: EdgeInsets.only(top: 5, right: 5),
+            child: OutlinedButton(
+              style: OutlinedButton.styleFrom(
+                fixedSize: Size(80, 65),
+                primary: secondaryColor,
+                backgroundColor: mainColor,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10.0),
+                ),
+                side: BorderSide(
+                  width: 4.0,
+                  color: secondaryColor,
+                  style: BorderStyle.solid,
+                ),
+              ),
+              onPressed: () => {},
+              child: Text("downArrowSentence"),
+            ),
+          )
+        ]),
+        Row(children: [
+          Padding(
+            padding: EdgeInsets.only(top: 5, right: 5),
+            child: OutlinedButton(
+              style: OutlinedButton.styleFrom(
+                fixedSize: Size(80, 65),
+                primary: secondaryColor,
+                backgroundColor: mainColor,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10.0),
+                ),
+                side: BorderSide(
+                  width: 4.0,
+                  color: secondaryColor,
+                  style: BorderStyle.solid,
+                ),
+              ),
+              onPressed: () => {},
+              child: Text("endOfParagraph"),
+            ),
+          ),
+          Padding(
+            padding: EdgeInsets.only(top: 5, right: 5),
+            child: OutlinedButton(
+              style: OutlinedButton.styleFrom(
+                fixedSize: Size(80, 65),
+                primary: secondaryColor,
+                backgroundColor: mainColor,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10.0),
+                ),
+                side: BorderSide(
+                  width: 4.0,
+                  color: secondaryColor,
+                  style: BorderStyle.solid,
+                ),
+              ),
+              onPressed: () => {},
+              child: Text("endOfPage"),
+            ),
+          ),
+          Padding(
+            padding: EdgeInsets.only(top: 5, right: 5),
+            child: OutlinedButton(
+              style: OutlinedButton.styleFrom(
+                fixedSize: Size(80, 65),
+                primary: secondaryColor,
+                backgroundColor: mainColor,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10.0),
+                ),
+                side: BorderSide(
+                  width: 4.0,
+                  color: secondaryColor,
+                  style: BorderStyle.solid,
+                ),
+              ),
+              onPressed: () => {},
+              child: Text("endOfDocument"),
+            ),
+          )
+        ]),
+        Padding(
+          padding: EdgeInsets.only(top: 5, right: 5),
+          child: OutlinedButton(
+            style: OutlinedButton.styleFrom(
+              fixedSize: Size(80, 65),
+              primary: secondaryColor,
+              backgroundColor: mainColor,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0),
+              ),
+              side: BorderSide(
+                width: 4.0,
+                color: secondaryColor,
+                style: BorderStyle.solid,
+              ),
+            ),
+            onPressed: () => {},
+            child: Text("NewBuffer"),
+          ),
+        ),
+        Row(children: [
+          Padding(
+            padding: EdgeInsets.only(top: 5, right: 5),
+            child: OutlinedButton(
+              style: OutlinedButton.styleFrom(
+                fixedSize: Size(80, 65),
+                primary: secondaryColor,
+                backgroundColor: mainColor,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10.0),
+                ),
+                side: BorderSide(
+                  width: 4.0,
+                  color: secondaryColor,
+                  style: BorderStyle.solid,
+                ),
+              ),
+              onPressed: () => {},
+              child: Text("listToConsole1"),
+            ),
+          ),
+          Padding(
+            padding: EdgeInsets.only(top: 5, right: 5),
+            child: OutlinedButton(
+              style: OutlinedButton.styleFrom(
+                fixedSize: Size(80, 65),
+                primary: secondaryColor,
+                backgroundColor: mainColor,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10.0),
+                ),
+                side: BorderSide(
+                  width: 4.0,
+                  color: secondaryColor,
+                  style: BorderStyle.solid,
+                ),
+              ),
+              onPressed: () => {},
+              child: Text("listToConsole2"),
+            ),
+          ),
+          Padding(
+            padding: EdgeInsets.only(top: 5, right: 5),
+            child: OutlinedButton(
+              style: OutlinedButton.styleFrom(
+                fixedSize: Size(80, 65),
+                primary: secondaryColor,
+                backgroundColor: mainColor,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10.0),
+                ),
+                side: BorderSide(
+                  width: 4.0,
+                  color: secondaryColor,
+                  style: BorderStyle.solid,
+                ),
+              ),
+              onPressed: () => {},
+              child: Text("ClearAll"),
+            ),
+          ),
+          Padding(
+            padding: EdgeInsets.only(top: 5, right: 5),
+            child: OutlinedButton(
+              style: OutlinedButton.styleFrom(
+                fixedSize: Size(80, 65),
+                primary: secondaryColor,
+                backgroundColor: mainColor,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10.0),
+                ),
+                side: BorderSide(
+                  width: 4.0,
+                  color: secondaryColor,
+                  style: BorderStyle.solid,
+                ),
+              ),
+              onPressed: () => {},
+              child: Text("ReadFile1"),
+            ),
+          ),
+          Padding(
+            padding: EdgeInsets.only(top: 5, right: 5),
+            child: OutlinedButton(
+              style: OutlinedButton.styleFrom(
+                fixedSize: Size(80, 65),
+                primary: secondaryColor,
+                backgroundColor: mainColor,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10.0),
+                ),
+                side: BorderSide(
+                  width: 4.0,
+                  color: secondaryColor,
+                  style: BorderStyle.solid,
+                ),
+              ),
+              onPressed: () => {},
+              child: Text("ReadFile2"),
             ),
           )
         ]),

@@ -386,6 +386,7 @@ class HomePageState extends State<HomePage> {
   static bool verbsGroup = false;
   static bool interjectionsGroup = false;
   static bool emojisGroup = false;
+  static bool punctuationGroup = false;
 
   void toggleWorldSuperGroup() {
     setState(() {
@@ -1089,6 +1090,33 @@ class HomePageState extends State<HomePage> {
       }
 
       emojisGroup = !emojisGroup;
+      interjectionsGroup = false;
+      verbsGroup = false;
+      prepositionsGroup = false;
+      conjunctionsGroup = false;
+      articlesGroup = false;
+      adverbsGroup = false;
+      adjectivesGroup = false;
+      pronounsGroup = false;
+
+      toggleWorldSuperGroup();
+      toggleAnimateSuperGroup();
+      togglePersonSuperGroup();
+      toggleScenesSuperGroup();
+      toggleConceptsSuperGroup();
+    });
+  }
+
+  void togglePunctuationGroup() {
+    setState(() {
+      if (groupName == "") {
+        groupName = "Punctuation group";
+      } else {
+        groupName = "";
+      }
+
+      punctuationGroup = !punctuationGroup;
+      emojisGroup = false;
       interjectionsGroup = false;
       verbsGroup = false;
       prepositionsGroup = false;
@@ -2918,7 +2946,8 @@ class HomePageState extends State<HomePage> {
                   togglePrepositionsGroup,
                   toggleConjunctionsGroup,
                   toggleInterjectionsGroup,
-                  toggleEmojisGroup),
+                  toggleEmojisGroup,
+                  togglePunctuationGroup),
               TopRightPanel(
                 addGroundWord,
                 addSkyWord,

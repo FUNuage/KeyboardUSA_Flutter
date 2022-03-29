@@ -6,7 +6,7 @@ class AdjectivesGroupAllWord extends StatelessWidget {
   Color secondaryColor = Color(0xff425aa8);
 
   final Widget allWordSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Language/AdverbsGroup/all,every,everything,total,whole.svg',
+    'assets/bliss_symbols/Language/AdjectivesGroup/all,every,everything,total,whole.svg',
     width: 57,
     color: Colors.black,
   );

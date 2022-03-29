@@ -67,7 +67,7 @@ class EmojisGroup extends StatelessWidget {
                     ),
                   ),
                   onPressed: () => addFaceSmileyWord(),
-                  child: Text("To add"),
+                  child: Text("🙂"),
                 ),
               ),
               Padding(
@@ -87,7 +87,7 @@ class EmojisGroup extends StatelessWidget {
                     ),
                   ),
                   onPressed: () => addFaceFrownyWord(),
-                  child: Text("To add"),
+                  child: Text("🙁"),
                 ),
               ),
               Padding(
@@ -107,7 +107,7 @@ class EmojisGroup extends StatelessWidget {
                     ),
                   ),
                   onPressed: () => addFaceIdeaWord(),
-                  child: Text("To add"),
+                  child: Text("💡"),
                 ),
               ),
               Padding(
@@ -127,7 +127,7 @@ class EmojisGroup extends StatelessWidget {
                     ),
                   ),
                   onPressed: () => addFaceStraightWord(),
-                  child: Text("To add"),
+                  child: Text("😐"),
                 ),
               ),
             ],

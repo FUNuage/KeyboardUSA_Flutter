@@ -6,7 +6,7 @@ class AmIsWord extends StatelessWidget {
   Color secondaryColor = const Color(0xffcb1d41);
 
   final Widget amIsWordSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Language/VerbsGroup/where.svg',
+    'assets/bliss_symbols/Language/VerbsGroup/be,am,are,is,exist-(to).svg',
     width: 57,
     color: Colors.black,
   );

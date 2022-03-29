@@ -5,12 +5,6 @@ class WhereQWord extends StatelessWidget {
   Color mainColor = Color(0xffc58137);
   Color secondaryColor = Color(0xffc58137);
 
-  final Widget adverbsGroupSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Language/adverb.svg',
-    color: Colors.black,
-    width: 35,
-  );
-
   final Widget whereQWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/AdverbsGroup/where-(question).svg',
     width: 57,
@@ -22,14 +16,7 @@ class WhereQWord extends StatelessWidget {
     return Container(
         width: 100.0,
         height: 65.0,
-        child: Row(children: [
-          adverbsGroupSymbol,
-          VerticalDivider(
-            width: 4,
-            color: secondaryColor,
-          ),
-          whereQWordSymbol,
-        ]),
+        child: whereQWordSymbol,
         margin: const EdgeInsets.fromLTRB(10, 0, 10, 0),
         decoration: BoxDecoration(
           color: mainColor,

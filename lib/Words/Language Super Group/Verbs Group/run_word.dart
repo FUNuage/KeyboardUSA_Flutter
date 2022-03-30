@@ -5,8 +5,6 @@ class RunWord extends StatelessWidget {
   Color mainColor = const Color(0xffcb1d41);
   Color secondaryColor = const Color(0xffcb1d41);
 
-
-
   final Widget runWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/VerbsGroup/run,jog.svg',
     width: 57,
@@ -16,21 +14,13 @@ class RunWord extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        width: 100.0,
+        width: 75.0,
         height: 65.0,
-        child: 
-          runWordSymbol,
-        
+        child: runWordSymbol,
         margin: const EdgeInsets.fromLTRB(10, 0, 10, 0),
         decoration: BoxDecoration(
           color: mainColor,
-          borderRadius: BorderRadius.all(
-            Radius.circular(10),
-          ), //BorderRadius.all,
-          border: Border.all(
-            color: secondaryColor,
-            width: 2.0,
-          ),
+          shape: BoxShape.circle, //BorderRadius.all,
         ));
   }
 }

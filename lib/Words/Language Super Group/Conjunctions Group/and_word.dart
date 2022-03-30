@@ -8,16 +8,17 @@ class AndWord extends StatelessWidget {
   final Widget andWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/ConjunctionsGroup/and,also,plus,too.svg',
     width: 57,
+    height: 30,
     color: Colors.black,
   );
 
   @override
   Widget build(BuildContext context) {
     return Container(
-        width: 100.0,
-        height: 65.0,
+        width: 57.0,
+        height: 30,
         child: andWordSymbol,
-        margin: const EdgeInsets.fromLTRB(10, 0, 10, 0),
+        margin: const EdgeInsets.fromLTRB(10, 00, 10, 0),
         decoration: BoxDecoration(
           color: mainColor,
           borderRadius: BorderRadius.all(

@@ -17,7 +17,7 @@ class IfWord extends StatelessWidget {
         width: 100.0,
         height: 65.0,
         child: ifWordSymbol,
-        margin: const EdgeInsets.fromLTRB(10, 0, 10, 0),
+        margin: const EdgeInsets.fromLTRB(10, 20, 10, 0),
         decoration: BoxDecoration(
           color: mainColor,
           borderRadius: BorderRadius.all(

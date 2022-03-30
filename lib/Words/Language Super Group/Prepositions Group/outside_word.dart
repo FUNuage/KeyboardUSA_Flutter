@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import '../preposition_shape.dart';
 
 class OutsideWord extends StatelessWidget {
   Color mainColor = Color(0xff66b282);
@@ -7,26 +8,25 @@ class OutsideWord extends StatelessWidget {
 
   final Widget outsideWordSymbol = SvgPicture.asset(
     'assets/bliss_symbols/Language/PrepositionsGroup/out,exterior,external,outside.svg',
-    width: 57,
-    color: Colors.black,
+    width: 70,
+    color: Color(0xff66b282),
   );
 
   @override
   Widget build(BuildContext context) {
     return Container(
-        width: 100.0,
-        height: 65.0,
+      alignment: Alignment.center,
+      width: 70.0,
+      height: 65.0,
+      child: CustomPaint(
+        painter: PrepositionShape(
+          strokeColor: mainColor,
+          strokeWidth: 0,
+          paintingStyle: PaintingStyle.fill,
+        ),
         child: outsideWordSymbol,
-        margin: const EdgeInsets.fromLTRB(10, 0, 10, 0),
-        decoration: BoxDecoration(
-          color: mainColor,
-          borderRadius: BorderRadius.all(
-            Radius.circular(10),
-          ), //BorderRadius.all,
-          border: Border.all(
-            color: secondaryColor,
-            width: 2.0,
-          ),
-        ));
+      ),
+      margin: const EdgeInsets.fromLTRB(10, 0, 10, 0),
+    );
   }
 }

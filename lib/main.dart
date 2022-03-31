@@ -2905,6 +2905,120 @@ class HomePageState extends State<HomePage> {
     });
   }
 
+  void addAcceptWord() {
+    setState(() {
+      BottomPanelState.cardList.add(AcceptWord());
+    });
+  }
+
+  void addBackspaceWord() {
+    setState(() {
+      BottomPanelState.cardList.add(BackspaceWord());
+    });
+  }
+
+  void addClearAllWord() {
+    setState(() {
+      BottomPanelState.cardList.add(ClearAllWord());
+    });
+  }
+
+  void addCommaWord() {
+    setState(() {
+      BottomPanelState.cardList.add(CommaWord());
+    });
+  }
+
+  void addDownArrowSentenceWord() {
+    setState(() {
+      BottomPanelState.cardList.add(DownArrowSentenceWord());
+    });
+  }
+
+  void addUpArrowSentenceWord() {
+    setState(() {
+      BottomPanelState.cardList.add(UpArrowSentenceWord());
+    });
+  }
+
+  void addEllipseWord() {
+    setState(() {
+      BottomPanelState.cardList.add(EllipseWord());
+    });
+  }
+
+  void addEndOfDocumentWord() {
+    setState(() {
+      BottomPanelState.cardList.add(EndOfDocumentWord());
+    });
+  }
+
+  void addEndOfPageWord() {
+    setState(() {
+      BottomPanelState.cardList.add(EndOfPageWord());
+    });
+  }
+
+  void addEndOfParagraphWord() {
+    setState(() {
+      BottomPanelState.cardList.add(EndOfParagraphWord());
+    });
+  }
+
+  void addExclamationMarkWord() {
+    setState(() {
+      BottomPanelState.cardList.add(ExclamationMarkWord());
+    });
+  }
+
+  void addQuestionMarkWord() {
+    setState(() {
+      BottomPanelState.cardList.add(QuestionMarkWord());
+    });
+  }
+
+  void addListToConsole1Word() {
+    setState(() {
+      BottomPanelState.cardList.add(ListToConsole1Word());
+    });
+  }
+
+  void addListToConsole2Word() {
+    setState(() {
+      BottomPanelState.cardList.add(ListToConsole2Word());
+    });
+  }
+
+  void addNewBufferWord() {
+    setState(() {
+      BottomPanelState.cardList.add(NewBufferWord());
+    });
+  }
+
+  void addPeriodWord() {
+    setState(() {
+      BottomPanelState.cardList.add(PeriodWord());
+    });
+  }
+
+  void addReadFile1Word() {
+    setState(() {
+      BottomPanelState.cardList.add(ReadFile1Word());
+    });
+  }
+
+  void addReadFile2Word() {
+    setState(() {
+      BottomPanelState.cardList.add(ReadFile2Word());
+    });
+  }
+
+  void addSpaceWord() {
+    setState(() {
+      BottomPanelState.cardList.add(SpaceWord());
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -3244,6 +3358,25 @@ class HomePageState extends State<HomePage> {
                 addFaceFrownyWord,
                 addFaceIdeaWord,
                 addFaceStraightWord,
+                addBackspaceWord,
+                addSpaceWord,
+                addCommaWord,
+                addEllipseWord,
+                addPeriodWord,
+                addQuestionMarkWord,
+                addExclamationMarkWord,
+                addAcceptWord,
+                addUpArrowSentenceWord,
+                addDownArrowSentenceWord,
+                addEndOfParagraphWord,
+                addEndOfPageWord,
+                addEndOfDocumentWord,
+                addNewBufferWord,
+                addListToConsole1Word,
+                addListToConsole2Word,
+                addClearAllWord,
+                addReadFile1Word,
+                addReadFile2Word,
               )
             ]),
             BottomPanel(),

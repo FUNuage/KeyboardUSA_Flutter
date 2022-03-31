@@ -16,14 +16,7 @@ class PeriodWord extends StatelessWidget {
     return Container(
         width: 100.0,
         height: 65.0,
-        child: Row(children: [
-          const Text(','),
-          VerticalDivider(
-            width: 4,
-            color: secondaryColor,
-          ),
-          periodWordSymbol,
-        ]),
+        child: periodWordSymbol,
         margin: const EdgeInsets.fromLTRB(10, 0, 10, 0),
         decoration: BoxDecoration(
           color: mainColor,

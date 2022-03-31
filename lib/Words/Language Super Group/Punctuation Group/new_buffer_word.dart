@@ -6,7 +6,7 @@ class NewBufferWord extends StatelessWidget {
   Color secondaryColor = Color(0xffa4a59e);
 
   final Widget newBufferWordSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Language/PunctuationGroup/exclamation_mark.svg',
+    'assets/bliss_symbols/Language/PunctuationGroup/new_buffer.svg',
     width: 57,
     color: Colors.black,
   );
@@ -16,14 +16,7 @@ class NewBufferWord extends StatelessWidget {
     return Container(
         width: 100.0,
         height: 65.0,
-        child: Row(children: [
-          const Text(','),
-          VerticalDivider(
-            width: 4,
-            color: secondaryColor,
-          ),
-          newBufferWordSymbol,
-        ]),
+        child: newBufferWordSymbol,
         margin: const EdgeInsets.fromLTRB(10, 0, 10, 0),
         decoration: BoxDecoration(
           color: mainColor,

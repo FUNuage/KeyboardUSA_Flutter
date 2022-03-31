@@ -6,7 +6,7 @@ class ClearAllWord extends StatelessWidget {
   Color secondaryColor = Color(0xffa4a59e);
 
   final Widget ClearAllWordSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Language/PunctuationGroup/exclamation_mark.svg',
+    'assets/bliss_symbols/Language/PunctuationGroup/clear_all.svg',
     width: 57,
     color: Colors.black,
   );
@@ -16,14 +16,7 @@ class ClearAllWord extends StatelessWidget {
     return Container(
         width: 100.0,
         height: 65.0,
-        child: Row(children: [
-          const Text(','),
-          VerticalDivider(
-            width: 4,
-            color: secondaryColor,
-          ),
-          ClearAllWordSymbol,
-        ]),
+        child: ClearAllWordSymbol,
         margin: const EdgeInsets.fromLTRB(10, 0, 10, 0),
         decoration: BoxDecoration(
           color: mainColor,

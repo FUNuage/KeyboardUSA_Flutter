@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class DownArrowWord extends StatelessWidget {
+class DownArrowSentenceWord extends StatelessWidget {
   Color mainColor = Color(0xffa4a59e);
   Color secondaryColor = Color(0xffa4a59e);
 
   final Widget downArrowWordSymbol = SvgPicture.asset(
-    'assets/bliss_symbols/Language/PunctuationGroup/exclamation_mark.svg',
+    'assets/bliss_symbols/Language/PunctuationGroup/down_arrow_sentence.svg',
     width: 57,
     color: Colors.black,
   );
@@ -16,14 +16,7 @@ class DownArrowWord extends StatelessWidget {
     return Container(
         width: 100.0,
         height: 65.0,
-        child: Row(children: [
-          const Text(','),
-          VerticalDivider(
-            width: 4,
-            color: secondaryColor,
-          ),
-          downArrowWordSymbol,
-        ]),
+        child: downArrowWordSymbol,
         margin: const EdgeInsets.fromLTRB(10, 0, 10, 0),
         decoration: BoxDecoration(
           color: mainColor,

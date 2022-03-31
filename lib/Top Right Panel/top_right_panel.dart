@@ -334,6 +334,25 @@ class TopRightPanel extends StatelessWidget {
   final VoidCallback addFaceFrownyWord;
   final VoidCallback addFaceIdeaWord;
   final VoidCallback addFaceStraightWord;
+  final VoidCallback addBackspaceWord;
+  final VoidCallback addSpaceWord;
+  final VoidCallback addCommaWord;
+  final VoidCallback addEllipseWord;
+  final VoidCallback addPeriodWord;
+  final VoidCallback addQuestionMarkWord;
+  final VoidCallback addExclamationMarkWord;
+  final VoidCallback addAcceptWord;
+  final VoidCallback addUpArrowSentenceWord;
+  final VoidCallback addDownArrowSentenceWord;
+  final VoidCallback addEndOfParagraphWord;
+  final VoidCallback addEndOfPageWord;
+  final VoidCallback addEndOfDocumentWord;
+  final VoidCallback addNewBufferWord;
+  final VoidCallback addListToConsole1Word;
+  final VoidCallback addListToConsole2Word;
+  final VoidCallback addClearAllWord;
+  final VoidCallback addReadFile1Word;
+  final VoidCallback addReadFile2Word;
 
   TopRightPanel(
     this.addGroundWord,
@@ -631,6 +650,25 @@ class TopRightPanel extends StatelessWidget {
     this.addFaceFrownyWord,
     this.addFaceIdeaWord,
     this.addFaceStraightWord,
+    this.addBackspaceWord,
+    this.addSpaceWord,
+    this.addCommaWord,
+    this.addEllipseWord,
+    this.addPeriodWord,
+    this.addQuestionMarkWord,
+    this.addExclamationMarkWord,
+    this.addAcceptWord,
+    this.addUpArrowSentenceWord,
+    this.addDownArrowSentenceWord,
+    this.addEndOfParagraphWord,
+    this.addEndOfPageWord,
+    this.addEndOfDocumentWord,
+    this.addNewBufferWord,
+    this.addListToConsole1Word,
+    this.addListToConsole2Word,
+    this.addClearAllWord,
+    this.addReadFile1Word,
+    this.addReadFile2Word,
   );
 
   @override
@@ -1133,7 +1171,27 @@ class TopRightPanel extends StatelessWidget {
               visible: HomePageState.punctuationGroup,
               child: Padding(
                 padding: EdgeInsets.all(10),
-                child: PunctuationGroup(),
+                child: PunctuationGroup(
+                  addBackspaceWord,
+                  addSpaceWord,
+                  addCommaWord,
+                  addEllipseWord,
+                  addPeriodWord,
+                  addQuestionMarkWord,
+                  addExclamationMarkWord,
+                  addAcceptWord,
+                  addUpArrowSentenceWord,
+                  addDownArrowSentenceWord,
+                  addEndOfParagraphWord,
+                  addEndOfPageWord,
+                  addEndOfDocumentWord,
+                  addNewBufferWord,
+                  addListToConsole1Word,
+                  addListToConsole2Word,
+                  addClearAllWord,
+                  addReadFile1Word,
+                  addReadFile2Word,
+                ),
               )),
         ]));
   }

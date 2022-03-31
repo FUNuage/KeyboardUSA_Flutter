@@ -49,21 +49,119 @@ class PunctuationGroup extends StatelessWidget {
     color: Colors.black,
   );
 
-  // final VoidCallback addBackspaceWord;
-  // final VoidCallback addThatThereWord;
-  // final VoidCallback addWhenWord;
-  // final VoidCallback addWhereWord;
-  // final VoidCallback addWhereQWord;
-  // final VoidCallback addNotWord;
+  final Widget acceptSymbol = SvgPicture.asset(
+    'assets/bliss_symbols/Language/PunctuationGroup/accept.svg',
+    width: 100,
+    color: Colors.black,
+  );
 
-  // PunctuationGroup(
-  //   this.addBackspaceWord,
-  //   this.addThatThereWord,
-  //   this.addWhenWord,
-  //   this.addWhereWord,
-  //   this.addWhereQWord,
-  //   this.addNotWord,
-  // );
+  final Widget downArrowSentenceSymbol = SvgPicture.asset(
+    'assets/bliss_symbols/Language/PunctuationGroup/down_arrow_sentence.svg',
+    width: 100,
+    color: Colors.black,
+  );
+
+  final Widget upArrowSentenceSymbol = SvgPicture.asset(
+    'assets/bliss_symbols/Language/PunctuationGroup/up_arrow_sentence.svg',
+    width: 100,
+    color: Colors.black,
+  );
+
+  final Widget endOfDocumentSymbol = SvgPicture.asset(
+    'assets/bliss_symbols/Language/PunctuationGroup/end_of_document.svg',
+    width: 100,
+    color: Colors.black,
+  );
+
+  final Widget endOfPageSymbol = SvgPicture.asset(
+    'assets/bliss_symbols/Language/PunctuationGroup/end_of_page.svg',
+    width: 100,
+    color: Colors.black,
+  );
+
+  final Widget endOfParagraphSymbol = SvgPicture.asset(
+    'assets/bliss_symbols/Language/PunctuationGroup/end_of_paragraph.svg',
+    width: 100,
+    color: Colors.black,
+  );
+
+  final Widget newBufferSymbol = SvgPicture.asset(
+    'assets/bliss_symbols/Language/PunctuationGroup/new_buffer.svg',
+    width: 100,
+    color: Colors.black,
+  );
+
+  final Widget clearAllSymbol = SvgPicture.asset(
+    'assets/bliss_symbols/Language/PunctuationGroup/clear_all.svg',
+    width: 100,
+    color: Colors.black,
+  );
+
+  final Widget listToConsole1Symbol = SvgPicture.asset(
+    'assets/bliss_symbols/Language/PunctuationGroup/list_to_console_1.svg',
+    width: 100,
+    color: Colors.black,
+  );
+
+  final Widget listToConsole2Symbol = SvgPicture.asset(
+    'assets/bliss_symbols/Language/PunctuationGroup/list_to_console_2.svg',
+    width: 100,
+    color: Colors.black,
+  );
+
+  final Widget readFile1Symbol = SvgPicture.asset(
+    'assets/bliss_symbols/Language/PunctuationGroup/read_file_1.svg',
+    width: 100,
+    color: Colors.black,
+  );
+
+  final Widget readFile2Symbol = SvgPicture.asset(
+    'assets/bliss_symbols/Language/PunctuationGroup/read_file_2.svg',
+    width: 100,
+    color: Colors.black,
+  );
+
+  final VoidCallback addBackspaceWord;
+  final VoidCallback addSpaceWord;
+  final VoidCallback addCommaWord;
+  final VoidCallback addEllipseWord;
+  final VoidCallback addPeriodWord;
+  final VoidCallback addQuestionMarkWord;
+  final VoidCallback addExclamationMarkWord;
+  final VoidCallback addAcceptWord;
+  final VoidCallback addUpArrowSentenceWord;
+  final VoidCallback addDownArrowSentenceWord;
+  final VoidCallback addEndOfParagraphWord;
+  final VoidCallback addEndOfPageWord;
+  final VoidCallback addEndOfDocumentWord;
+  final VoidCallback addNewBufferWord;
+  final VoidCallback addListToConsole1Word;
+  final VoidCallback addListToConsole2Word;
+  final VoidCallback addClearAllWord;
+  final VoidCallback addReadFile1Word;
+  final VoidCallback addReadFile2Word;
+
+  PunctuationGroup(
+    this.addBackspaceWord,
+    this.addSpaceWord,
+    this.addCommaWord,
+    this.addEllipseWord,
+    this.addPeriodWord,
+    this.addQuestionMarkWord,
+    this.addExclamationMarkWord,
+    this.addAcceptWord,
+    this.addUpArrowSentenceWord,
+    this.addDownArrowSentenceWord,
+    this.addEndOfParagraphWord,
+    this.addEndOfPageWord,
+    this.addEndOfDocumentWord,
+    this.addNewBufferWord,
+    this.addListToConsole1Word,
+    this.addListToConsole2Word,
+    this.addClearAllWord,
+    this.addReadFile1Word,
+    this.addReadFile2Word,
+  );
 
   @override
   Widget build(BuildContext context) {
@@ -86,7 +184,7 @@ class PunctuationGroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () => {},
+            onPressed: () => addBackspaceWord(),
             child: backspaceSymbol,
           ),
         ),
@@ -107,7 +205,7 @@ class PunctuationGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () => {},
+              onPressed: () => addSpaceWord(),
               child: Text(""),
             ),
           ),
@@ -127,7 +225,7 @@ class PunctuationGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () => {},
+              onPressed: () => addCommaWord(),
               child: commaSymbol,
             ),
           ),
@@ -147,7 +245,7 @@ class PunctuationGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () => {},
+              onPressed: () => addEllipseWord(),
               child: ellipseSymbol,
             ),
           )
@@ -169,7 +267,7 @@ class PunctuationGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () => {},
+              onPressed: () => addPeriodWord(),
               child: periodSymbol,
             ),
           ),
@@ -189,7 +287,7 @@ class PunctuationGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () => {},
+              onPressed: () => addQuestionMarkWord(),
               child: questionMarkSymbol,
             ),
           ),
@@ -209,7 +307,7 @@ class PunctuationGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () => {},
+              onPressed: () => addExclamationMarkWord(),
               child: exclamationMarkSymbol,
             ),
           ),
@@ -229,8 +327,8 @@ class PunctuationGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () => {},
-              child: Text("Accept Key"),
+              onPressed: () => addAcceptWord(),
+              child: acceptSymbol,
             ),
           )
         ]),
@@ -251,8 +349,8 @@ class PunctuationGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () => {},
-              child: Text("upArrowSentence"),
+              onPressed: () => addUpArrowSentenceWord(),
+              child: upArrowSentenceSymbol,
             ),
           ),
           Padding(
@@ -271,8 +369,8 @@ class PunctuationGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () => {},
-              child: Text("downArrowSentence"),
+              onPressed: () => addDownArrowSentenceWord(),
+              child: downArrowSentenceSymbol,
             ),
           )
         ]),
@@ -293,8 +391,8 @@ class PunctuationGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () => {},
-              child: Text("endOfParagraph"),
+              onPressed: () => addEndOfParagraphWord(),
+              child: endOfParagraphSymbol,
             ),
           ),
           Padding(
@@ -313,8 +411,8 @@ class PunctuationGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () => {},
-              child: Text("endOfPage"),
+              onPressed: () => addEndOfPageWord(),
+              child: endOfPageSymbol,
             ),
           ),
           Padding(
@@ -333,8 +431,8 @@ class PunctuationGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () => {},
-              child: Text("endOfDocument"),
+              onPressed: () => addEndOfDocumentWord(),
+              child: endOfDocumentSymbol,
             ),
           )
         ]),
@@ -354,8 +452,8 @@ class PunctuationGroup extends StatelessWidget {
                 style: BorderStyle.solid,
               ),
             ),
-            onPressed: () => {},
-            child: Text("NewBuffer"),
+            onPressed: () => addNewBufferWord(),
+            child: newBufferSymbol,
           ),
         ),
         Row(children: [
@@ -375,8 +473,8 @@ class PunctuationGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () => {},
-              child: Text("listToConsole1"),
+              onPressed: () => addListToConsole1Word(),
+              child: listToConsole1Symbol,
             ),
           ),
           Padding(
@@ -395,8 +493,8 @@ class PunctuationGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () => {},
-              child: Text("listToConsole2"),
+              onPressed: () => addListToConsole2Word(),
+              child: listToConsole2Symbol,
             ),
           ),
           Padding(
@@ -415,8 +513,8 @@ class PunctuationGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () => {},
-              child: Text("ClearAll"),
+              onPressed: () => addClearAllWord(),
+              child: clearAllSymbol,
             ),
           ),
           Padding(
@@ -435,8 +533,8 @@ class PunctuationGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () => {},
-              child: Text("ReadFile1"),
+              onPressed: () => addReadFile1Word(),
+              child: readFile1Symbol,
             ),
           ),
           Padding(
@@ -455,8 +553,8 @@ class PunctuationGroup extends StatelessWidget {
                   style: BorderStyle.solid,
                 ),
               ),
-              onPressed: () => {},
-              child: Text("ReadFile2"),
+              onPressed: () => addReadFile2Word(),
+              child: readFile2Symbol,
             ),
           )
         ]),
